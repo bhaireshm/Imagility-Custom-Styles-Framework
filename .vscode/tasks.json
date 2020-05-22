@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "scss-compile",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: scss-compile",
+			"detail": "node-sass -rw css/style.scss dist/css/style.css"
+		}
+	]
+}

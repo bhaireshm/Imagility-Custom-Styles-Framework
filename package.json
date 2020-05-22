@@ -1,0 +1,20 @@
+{
+  "name": "imagility-custom-styles-framework",
+  "version": "1.0.0",
+  "description": "Custom styles framework",
+  "devDependencies": {
+    "node-sass": "4.5.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "scss-compile": "node-sass css/style.scss dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaireshm/Imagility-Custom-Styles-Framework.git"
+  },
+  "author": "bhairesh",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework#readme"
+}
