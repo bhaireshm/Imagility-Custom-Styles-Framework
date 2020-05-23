@@ -1,6 +1,3 @@
-@import "colors", "fonts";
-@import "mixins/mixin-text";
-
 // Text 
 * html {
     font-family: $sans-pro;
@@ -121,4 +118,36 @@
 
 .im-text-hide {
     @include text-hide();
+}
+
+.im-text-success {
+    color: $text-success !important;
+}
+
+.im-text-warning {
+    color: $text-warning !important;
+}
+
+.im-text-info {
+    color: $text-info !important;
+}
+
+.im-text-danger {
+    color: $text-danger !important;
+}
+
+.im-success {
+    color: $success-color !important;
+}
+
+.im-warning {
+    color: $warning-color !important;
+}
+
+.im-info {
+    color: $info-color !important;
+}
+
+.im-danger {
+    color: $danger-color !important;
 }
