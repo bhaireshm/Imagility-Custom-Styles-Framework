@@ -2,15 +2,20 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "scss-compile",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"problemMatcher": [],
-			"label": "npm: scss-compile",
-			"detail": "node-sass -rw src/css/style.scss dist/css/style.css"
+			"label": "Sass Compile",
+			"type": "shell",
+			"command": "node-sass",
+			"args": [
+				"./src/scss/style.scss",
+				"./dist/css/style.css"
+			],
+			"group": "build",
+			"problemMatcher": [
+				"$node-sass"
+			],
+			"presentation": {
+				"reveal": "never"
+			}
 		}
 	]
 }
