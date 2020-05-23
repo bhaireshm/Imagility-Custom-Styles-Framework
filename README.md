@@ -1,7 +1,7 @@
-Imagility-Custom-Styles-Framework
+Imagility Custom Styles Framework
 ============================================================================
 
-### Installing Sass Project
+### Installing Sass Library
 
 ```
 Go to the project folder and execute "npm install"
@@ -15,12 +15,13 @@ Go to the project folder and execute "npm install"
 
 ```
 npm install node-sass@4.14.1 --save
+npm install sass-compile
 ```
 
 ### To Build & Compile Sass
 
 ```
-"node-sass css/style.scss dist/css/style.css"
+node-sass ./src/scss/style.scss ./dist/css/style.css
 ```
 
 If you are using Visual Studio Code press `Ctrl+Shift+B` and select `Sass Compile`, it will do rest.
