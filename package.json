@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/bhaireshm/Imagility-Custom-Styles-Framework.git"
   },
-  "author": "bhairesh",
+  "author": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework/graphs/contributors",
+  "contributors": [
+    "Aritha Consulting Services Pvt Ltd, Software Pundits"
+  ],
   "license": "ISC",
   "bugs": {},
   "homepage": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework#readme"
