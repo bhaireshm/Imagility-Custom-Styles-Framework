@@ -99,3 +99,27 @@
   text-shadow: none;
   background-color: transparent;
   border: 0; }
+
+.im-text-success {
+  color: #22DC27 !important; }
+
+.im-text-warning {
+  color: #FEBC54 !important; }
+
+.im-text-info {
+  color: #158FC4 !important; }
+
+.im-text-danger {
+  color: #E80B18 !important; }
+
+.im-success {
+  color: #22DC27 !important; }
+
+.im-warning {
+  color: #FEBC54 !important; }
+
+.im-info {
+  color: #158FC4 !important; }
+
+.im-danger {
+  color: #E80B18 !important; }
