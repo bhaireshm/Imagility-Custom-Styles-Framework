@@ -21,7 +21,7 @@ npm install sass-compile
 ### To Build & Compile Sass
 
 ```
-node-sass src/scss/style.scss dist/css/style.css
+node-sass ./src/scss/style.scss ./dist/css/style.css
 ```
 
 If you are using Visual Studio Code press `Ctrl+Shift+B` and select `Sass Compile`, it will do rest.
