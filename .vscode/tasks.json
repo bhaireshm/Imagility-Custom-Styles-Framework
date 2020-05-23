@@ -10,7 +10,7 @@
 			},
 			"problemMatcher": [],
 			"label": "npm: scss-compile",
-			"detail": "node-sass -rw css/style.scss dist/css/style.css"
+			"detail": "node-sass -rw src/css/style.scss dist/css/style.css"
 		}
 	]
 }

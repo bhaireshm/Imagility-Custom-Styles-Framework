@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "scss-compile": "node-sass src/css/style.scss dist/css/style.css"
+    "scss-compile": "node-sass src/scss/style.scss dist/css/style.css"
   },
   "repository": {
     "type": "git",

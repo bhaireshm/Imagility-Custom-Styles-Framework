@@ -1,0 +1,8 @@
+@import "variables";
+@import "colors";
+
+h1 {
+    // @include gradient(1, right); 
+    background-image: $gradient-1;
+    padding: 50px;
+}
