@@ -1,10 +1,9 @@
-/* ---------- Primary Colors ---------- */
+//  Primary Colors 
 $cerulean-blue: #0077A3;
 $denim-blue: #158FC4;
 $summer-sky-blue: #19A0DA;
 
-/* ---------- Accent colors ---------- */
-
+// Accent colors
 $chambray-blue:#47607D;
 $gun-powder:#4D4F5C;
 $lily-white:#F5F7F7;
@@ -12,10 +11,8 @@ $golden-tainoi:#FEBC54;
 $portage-blue:#8B92E2;
 $pelorous-blue:#2AA2BA;
 
-/* ---------- Semantic Colors ---------- */
-
-// chambray is repeated #47607D
-// summer sky is repeated #19A0DA
+// Semantic Colors
+// chambray is repeated #47607D, summer sky is repeated #19A0DA
 $mischka-gray:#A3A6B4;
 $white-smoke:#F6F6F6;
 $spray-blue:#8BCEE2;
@@ -27,7 +24,7 @@ $kelly-green:#4CBA20;
 $lime-green:#22DC27;
 $pastel-green:#86D87F;
 
-/* ---------- Neutral Colors ---------- */
+//  Neutral Colors
 $black: #000000;
 $black-rock:#2F3440;
 $slate-gray: #687C93;
@@ -35,8 +32,10 @@ $gainsboro-gray:#DEDEDE;
 $smoke-gray: #EDEDED;
 $white: #FFFFFF;
 
-/* ---------- Gradient Colors ----------*/
+//  Gradient Colors
 $dark-cerulean:#0D516E;
 $cerulean: #063689;
-$gradient-1: linear-gradient($summer-sky-blue, $dark-cerulean);
+// $gradient-1: linear-gradient($summer-sky-blue, $dark-cerulean);
+$gradient-1: $summer-sky-blue,
+$dark-cerulean;
 $gradient-2: linear-gradient($cerulean, $summer-sky-blue);
