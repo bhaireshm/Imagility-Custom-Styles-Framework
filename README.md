@@ -1,11 +1,12 @@
-magility-Custom-Styles-Framework
+Imagility-Custom-Styles-Framework
 ============================================================================
 
-**Installing Sass Project**
+### Installing Sass Project
 
-    1. Go to the project folder and execute
-        "npm install"
- 
+```
+Go to the project folder and execute "npm install"
+```
+
 `npm install` will install the required packages from package.json
 
 ## Getting started
@@ -21,3 +22,5 @@ npm install node-sass@4.14.1 --save
 ```
 "node-sass css/style.scss dist/css/style.css"
 ```
+
+If you are using Visual Studio Code press `Ctrl+Shift+B` and select `Sass Compile`, it will do rest.
