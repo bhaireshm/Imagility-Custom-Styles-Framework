@@ -1,0 +1,105 @@
+// All Text mixins
+@mixin body-1 {
+    font: {
+        weight: $semibold-weight;
+        size: 15px;
+    }
+}
+
+@mixin body-2 {
+    font: {
+        weight: $semibold-weight;
+        size: 13px;
+    }
+}
+
+@mixin caption-1 {
+    font: {
+        weight: $semibold-weight;
+        size: 14px;
+    }
+}
+
+@mixin caption-2 {
+    font: {
+        weight: $regular-weight;
+        size: 10px;
+    }
+}
+
+@mixin btn-1 {
+    font: {
+        weight: $semibold-weight;
+        size: 18px;
+    }
+}
+
+@mixin btn-2 {
+    font: {
+        weight: $bold-weight;
+        size: 14px;
+    }
+}
+
+
+@mixin im-heading-1 {
+    font: {
+        weight: $bold-weight;
+        size: 18px;
+    }
+}
+
+@mixin im-heading-2 {
+    font: {
+        weight: $semibold-weight;
+        size: 14px;
+    }
+}
+
+@mixin im-heading-3 {
+    font: {
+        weight: $bold-weight;
+        size: 12px;
+    }
+}
+
+@mixin im-heading-4 {
+    font: {
+        weight: $regular-weight;
+        size: 10px;
+    }
+}
+
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin text-hide() {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+// // Responsive alignment
+
+// @each $breakpoint in map-keys($grid-breakpoints) {
+//     @include media-breakpoint-up($breakpoint) {
+//         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+//         .text#{$infix}-left {
+//             text-align: left !important;
+//         }
+
+//         .text#{$infix}-right {
+//             text-align: right !important;
+//         }
+
+//         .text#{$infix}-center {
+//             text-align: center !important;
+//         }
+//     }
+// }

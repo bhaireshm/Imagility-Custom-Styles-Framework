@@ -1,0 +1,153 @@
+// Text 
+* html {
+    font-family: $sans-pro;
+}
+
+.im-h1 {
+    @include im-heading-1;
+}
+
+.im-h2 {
+    @include im-heading-2;
+}
+
+.im-h3 {
+    @include im-heading-3;
+}
+
+.im-h4 {
+    @include im-heading-4;
+}
+
+.im-btn-1 {
+    @include btn-1;
+}
+
+.im-btn-2 {
+    @include btn-2;
+}
+
+.im-caption-1 {
+    @include caption-1;
+}
+
+.im-caption-2 {
+    @include caption-2;
+}
+
+.im-body-1 {
+    @include body-1;
+}
+
+.im-body-2 {
+    @include body-2;
+}
+
+.im-text-sm {
+    font: {
+        weight: $regular-weight;
+        size: 11px;
+    }
+}
+
+.im-text-justify {
+    text-align: justify !important;
+}
+
+.im-text-nowrap {
+    white-space: nowrap !important;
+}
+
+.im-text-truncate {
+    @include text-truncate;
+}
+
+.im-text-left {
+    text-align: left !important;
+}
+
+.im-text-right {
+    text-align: right !important;
+}
+
+.im-text-center {
+    text-align: center !important;
+}
+
+// Transformation
+
+.im-text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.im-text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.im-text-capitalize {
+    text-transform: capitalize !important;
+}
+
+// Weight and italics
+
+.im-font-weight-light {
+    font-weight: $light-weight !important;
+}
+
+.im-font-weight-regular {
+    font-weight: $regular-weight !important;
+}
+
+.im-font-weight-bold {
+    font-weight: $bold-weight !important;
+}
+
+.im-font-italic {
+    font-style: italic !important;
+}
+
+// Contextual colors
+
+.im-text-white {
+    color: #fff !important;
+}
+
+.im-text-muted {
+    color: $slate-gray !important;
+}
+
+.im-text-hide {
+    @include text-hide();
+}
+
+.im-text-success {
+    color: $text-success !important;
+}
+
+.im-text-warning {
+    color: $text-warning !important;
+}
+
+.im-text-info {
+    color: $text-info !important;
+}
+
+.im-text-danger {
+    color: $text-danger !important;
+}
+
+.im-success {
+    color: $success-color !important;
+}
+
+.im-warning {
+    color: $warning-color !important;
+}
+
+.im-info {
+    color: $info-color !important;
+}
+
+.im-danger {
+    color: $danger-color !important;
+}

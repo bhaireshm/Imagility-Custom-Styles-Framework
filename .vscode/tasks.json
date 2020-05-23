@@ -16,6 +16,22 @@
 			"presentation": {
 				"reveal": "never"
 			}
+		},
+		{
+			"label": "Push Codes to Smithin Branch",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"git pull --all",
+				"git checkout smithin",
+				"git push",
+				"git checkout master"
+			],
+			"group": "test",
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
 		}
 	]
 }
