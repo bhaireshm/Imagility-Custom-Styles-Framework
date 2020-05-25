@@ -2,9 +2,10 @@
     @extend .form-control;
 
     font-family: $sans-pro;
-    border: 1px solid $mischka-gray;
+    border: 1.5px solid $mischka-gray;
     border-radius: $radius;
     height: $input-height;
+    font-size: $input-font-size;
 }
 
 .im-input:disabled,

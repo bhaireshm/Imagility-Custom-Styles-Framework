@@ -7,9 +7,6 @@ $success-color: $lime-green;
 $warning-color: $golden-tainoi;
 $danger-color: $venetian-red;
 
-$font-family-base: $sans-pro;
-$body-color: $white;
-
 $im-primary: $denim-blue !important;
 $im-secondary: $cerulean-blue !important;
 $im-success: $success-color !important;
@@ -18,9 +15,6 @@ $im-warning: $warning-color !important;
 $im-danger: $danger-color !important;
 $im-light: $gainsboro-gray !important;
 $im-dark: $black-rock !important;
-
-$font-color: $black-rock;
-$font-color-light: $smoke-gray;
 
 // $theme-colors: ("primary": $im-primary,
 //     "secondary": $im-secondary,
@@ -32,6 +26,11 @@ $font-color-light: $smoke-gray;
 //     "dark": $im-dark,
 // );
 
+$font-color: $black-rock;
+$font-color-light: $smoke-gray;
+$font-family-base: $sans-pro;
+$body-color: $white;
+
 $radius: 0.4rem;
 $pl: 2rem;
 $pr: $pl;
@@ -40,4 +39,5 @@ $pt: $pb;
 
 // Form Controls
 
-$input-height: 40px;
+$input-height: 45px;
+$input-font-size: 13px;
