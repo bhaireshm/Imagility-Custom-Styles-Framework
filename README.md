@@ -22,7 +22,7 @@ npm install sass-compile
 
 ```
 Execute the below command and then when ever you save a file it automatically builds and compiles.
-npm run watch-sass
+npm run watch-scss
 ```
 
 ```
