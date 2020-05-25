@@ -1,7 +1,9 @@
-// All Imports 
-
+// Custom Imports 
 @import "colors";
 @import "fonts";
 @import "variables";
 @import "mixins/mixin-text";
 @import "text";
+
+// Pluggin
+@import "../../node_modules/bootstrap/scss/bootstrap";

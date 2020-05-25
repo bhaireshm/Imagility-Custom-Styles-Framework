@@ -2,17 +2,16 @@ $to-right: 45deg;
 $to-left: 45deg;
 
 // Text Colors
-$info-color:$denim-blue;
-$success-color:$lime-green;
-$warning-color:$golden-tainoi;
-$danger-color:$venetian-red;
+$info-color:    $denim-blue;
+$success-color: $lime-green;
+$warning-color: $golden-tainoi;
+$danger-color:  $venetian-red;
 
-$text-success: $success-color;
-$text-info: $info-color;
-$text-warning: $warning-color;
-$text-danger: $danger-color;
-
-$btn-success: $success-color;
-$btn-info: $info-color;
-$btn-warning: $warning-color;
-$btn-danger: $danger-color;
+$primary:       $summer-sky-blue !default;
+$secondary:     $slate-gray !default;
+$success:       $success-color !default;
+$info:          $info-color !default;
+$warning:       $warning-color !default;
+$danger:        $danger-color !default;
+$light:         $gainsboro-gray !default;
+$dark:          $black-rock !default;

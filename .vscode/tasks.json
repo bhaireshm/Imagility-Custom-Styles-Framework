@@ -14,7 +14,8 @@
 				"$node-sass"
 			],
 			"presentation": {
-				"reveal": "never"
+				"reveal": "always",
+				"panel": "shared"
 			}
 		},
 		{

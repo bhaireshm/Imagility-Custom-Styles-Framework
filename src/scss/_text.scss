@@ -1,5 +1,5 @@
 // Text 
-* html {
+* {
     font-family: $sans-pro;
 }
 
@@ -121,33 +121,33 @@
 }
 
 .im-text-success {
-    color: $text-success !important;
+    color: $success !important;
 }
 
 .im-text-warning {
-    color: $text-warning !important;
+    color: $warning !important;
 }
 
 .im-text-info {
-    color: $text-info !important;
+    color: $info !important;
 }
 
 .im-text-danger {
-    color: $text-danger !important;
+    color: $danger !important;
 }
 
 .im-success {
-    color: $success-color !important;
+    color: $success !important;
 }
 
 .im-warning {
-    color: $warning-color !important;
+    color: $warning !important;
 }
 
 .im-info {
-    color: $info-color !important;
+    color: $info !important;
 }
 
 .im-danger {
-    color: $danger-color !important;
+    color: $danger !important;
 }

@@ -4,6 +4,8 @@
         weight: $semibold-weight;
         size: 15px;
     }
+
+    line-height: 20px;
 }
 
 @mixin body-2 {
@@ -11,6 +13,8 @@
         weight: $semibold-weight;
         size: 13px;
     }
+
+    line-height: 18px;
 }
 
 @mixin caption-1 {
@@ -18,6 +22,8 @@
         weight: $semibold-weight;
         size: 14px;
     }
+
+    line-height: 18px;
 }
 
 @mixin caption-2 {
@@ -25,6 +31,8 @@
         weight: $regular-weight;
         size: 10px;
     }
+
+    line-height: 12px;
 }
 
 @mixin btn-1 {
@@ -32,6 +40,8 @@
         weight: $semibold-weight;
         size: 18px;
     }
+
+    line-height: 20px;
 }
 
 @mixin btn-2 {
@@ -39,6 +49,8 @@
         weight: $bold-weight;
         size: 14px;
     }
+
+    line-height: 18px;
 }
 
 
@@ -47,6 +59,8 @@
         weight: $bold-weight;
         size: 18px;
     }
+
+    line-height: 40px;
 }
 
 @mixin im-heading-2 {
@@ -54,6 +68,8 @@
         weight: $semibold-weight;
         size: 14px;
     }
+
+    line-height: 30px;
 }
 
 @mixin im-heading-3 {
@@ -61,6 +77,8 @@
         weight: $bold-weight;
         size: 12px;
     }
+
+    line-height: 14px;
 }
 
 @mixin im-heading-4 {
@@ -68,6 +86,8 @@
         weight: $regular-weight;
         size: 10px;
     }
+
+    line-height: 12px;
 }
 
 @mixin text-truncate() {
@@ -83,23 +103,3 @@
     background-color: transparent;
     border: 0;
 }
-
-// // Responsive alignment
-
-// @each $breakpoint in map-keys($grid-breakpoints) {
-//     @include media-breakpoint-up($breakpoint) {
-//         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-//         .text#{$infix}-left {
-//             text-align: left !important;
-//         }
-
-//         .text#{$infix}-right {
-//             text-align: right !important;
-//         }
-
-//         .text#{$infix}-center {
-//             text-align: center !important;
-//         }
-//     }
-// }
