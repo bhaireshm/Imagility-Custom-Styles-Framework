@@ -18,9 +18,15 @@ npm install node-sass@4.14.1 --save
 npm install sass-compile
 ```
 
-### To Build & Compile Sass
+### Build & Compile Sass
 
 ```
+Execute the below command and then when ever you save a file it automatically builds and compiles.
+npm run watch-sass
+```
+
+```
+To Build and Compile sass manually. 
 node-sass ./src/scss/style.scss ./dist/css/style.css
 ```
 
