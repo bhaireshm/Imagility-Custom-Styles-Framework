@@ -1,0 +1,14 @@
+.im-input {
+    @extend .form-control;
+
+    font-family: $sans-pro;
+    border: 1px solid $mischka-gray;
+    border-radius: $radius;
+    height: $input-height;
+}
+
+.im-input:disabled,
+.im-input[disabled] {
+    background-color: $gainsboro-gray;
+    opacity: 1;
+}
