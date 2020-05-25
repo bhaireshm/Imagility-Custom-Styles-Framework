@@ -2,16 +2,38 @@ $to-right: 45deg;
 $to-left: 45deg;
 
 // Text Colors
-$info-color:    $denim-blue;
+$info-color: $denim-blue;
 $success-color: $lime-green;
 $warning-color: $golden-tainoi;
-$danger-color:  $venetian-red;
+$danger-color: $venetian-red;
 
-$primary:       $summer-sky-blue !default;
-$secondary:     $slate-gray !default;
-$success:       $success-color !default;
-$info:          $info-color !default;
-$warning:       $warning-color !default;
-$danger:        $danger-color !default;
-$light:         $gainsboro-gray !default;
-$dark:          $black-rock !default;
+$font-family-base: $sans-pro;
+$body-color: $white;
+
+$im-primary: $denim-blue !important;
+$im-secondary: $cerulean-blue !important;
+$im-success: $success-color !important;
+$im-info: $info-color !important;
+$im-warning: $warning-color !important;
+$im-danger: $danger-color !important;
+$im-light: $gainsboro-gray !important;
+$im-dark: $black-rock !important;
+
+$font-color: $black-rock;
+$font-color-light: $smoke-gray;
+
+// $theme-colors: ("primary": $im-primary,
+//     "secondary": $im-secondary,
+//     "success": $im-success,
+//     "info": $im-info,
+//     "warning": $im-warning,
+//     "danger": $im-danger,
+//     "light": $im-light,
+//     "dark": $im-dark,
+// );
+
+$radius: 0.4rem;
+$pl: 2rem;
+$pr: $pl;
+$pb: 0.5rem;
+$pt: $pb;

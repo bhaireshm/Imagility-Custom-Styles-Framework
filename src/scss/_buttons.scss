@@ -1,0 +1,54 @@
+.im-btn {
+    @extend .btn;
+    @include btn-2;
+
+    color: $white;
+    padding: $pb $pl;
+    border-radius: 0.5rem !important;
+
+    &-primary {
+        background-color: $im-primary;
+    }
+
+    &-secondary {
+        background-color: $im-secondary;
+    }
+}
+
+.im-btn-outline {
+    @extend .im-btn;
+    border: 2px solid $im-primary;
+    color: $summer-sky-blue;
+
+    &:hover {
+        @extend .im-btn-primary;
+    }
+}
+
+.im-btn-disabled {
+    @extend .disabled;
+    color: $font-color;
+    background-color: $gainsboro-gray;
+
+    &:hover {
+        cursor: default;
+        color: $font-color;
+    }
+}
+
+.im-btn-disabled-light {
+    @extend .im-btn-disabled;
+    background-color: $smoke-gray;
+}
+
+.im-btn-disabled-outline {
+    @extend .im-btn;
+    border: 2px solid $mischka-gray;
+    $font-color: $mischka-gray;
+    color: $font-color;
+    cursor: default !important;
+
+    &:hover {
+        color: $font-color;
+    }
+}
