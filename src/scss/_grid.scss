@@ -7,3 +7,11 @@
     @extend .container-fluid;
 }
 
+.im-input-group{
+    @extend .input-group;
+    @extend .input-group-prepend;
+}
+
+.im-input-group-text{
+    @extend .input-group-text;
+}

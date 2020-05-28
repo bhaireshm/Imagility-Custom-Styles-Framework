@@ -1,3 +1,5 @@
+// @import "mixins/mixin-forms";
+
 .im-input {
     @extend .form-control;
 
@@ -6,6 +8,11 @@
     border-radius: $radius;
     height: $input-height;
     font-size: $input-font-size;
+
+    &:focus {
+        border: 1.5px solid $mischka-gray;
+        color: $mischka-gray;
+    }
 }
 
 .im-input-error {

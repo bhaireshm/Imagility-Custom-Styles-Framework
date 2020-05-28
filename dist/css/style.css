@@ -1754,7 +1754,7 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
       vertical-align: middle; }
     .form-inline .form-control-plaintext {
       display: inline-block; }
-    .form-inline .input-group,
+    .form-inline .input-group, .form-inline .im-input-group,
     .form-inline .custom-select {
       width: auto; }
     .form-inline .form-check {
@@ -2481,7 +2481,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .btn-toolbar .input-group {
+  .btn-toolbar .input-group, .btn-toolbar .im-input-group {
     width: auto; }
 
 .btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child),
@@ -2574,105 +2574,177 @@ input[type="button"].btn-block {
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
 
-.input-group {
+.input-group, .im-input-group {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .input-group > .im-input, .input-group > .im-input-error, .input-group > .im-input-error-outline, .input-group > .im-input-success,
+  .input-group > .form-control, .im-input-group > .form-control, .input-group > .im-input, .im-input-group > .im-input, .input-group > .im-input-error, .im-input-group > .im-input-error, .input-group > .im-input-error-outline, .im-input-group > .im-input-error-outline, .input-group > .im-input-success, .im-input-group > .im-input-success,
   .input-group > .form-control-plaintext,
+  .im-input-group > .form-control-plaintext,
   .input-group > .custom-select,
-  .input-group > .custom-file {
+  .im-input-group > .custom-select,
+  .input-group > .custom-file,
+  .im-input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success,
+    .input-group > .form-control + .form-control, .im-input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .im-input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .im-input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .im-input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .im-input-group > .im-input-success + .form-control, .input-group > .form-control + .im-input, .im-input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .im-input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .im-input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .im-input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .im-input-group > .im-input-success + .im-input, .input-group > .form-control + .im-input-error, .im-input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .im-input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .im-input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .im-input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .im-input-group > .im-input-success + .im-input-error, .input-group > .form-control + .im-input-error-outline, .im-input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .im-input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .im-input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .im-input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .im-input-group > .im-input-success + .im-input-error-outline, .input-group > .form-control + .im-input-success, .im-input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .im-input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .im-input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .im-input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success, .im-input-group > .im-input-success + .im-input-success,
     .input-group > .form-control + .custom-select,
+    .im-input-group > .form-control + .custom-select,
     .input-group > .im-input + .custom-select,
+    .im-input-group > .im-input + .custom-select,
     .input-group > .im-input-error + .custom-select,
+    .im-input-group > .im-input-error + .custom-select,
     .input-group > .im-input-error-outline + .custom-select,
+    .im-input-group > .im-input-error-outline + .custom-select,
     .input-group > .im-input-success + .custom-select,
+    .im-input-group > .im-input-success + .custom-select,
     .input-group > .form-control + .custom-file,
+    .im-input-group > .form-control + .custom-file,
     .input-group > .im-input + .custom-file,
+    .im-input-group > .im-input + .custom-file,
     .input-group > .im-input-error + .custom-file,
+    .im-input-group > .im-input-error + .custom-file,
     .input-group > .im-input-error-outline + .custom-file,
+    .im-input-group > .im-input-error-outline + .custom-file,
     .input-group > .im-input-success + .custom-file,
+    .im-input-group > .im-input-success + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
+    .im-input-group > .form-control-plaintext + .form-control,
     .input-group > .form-control-plaintext + .im-input,
+    .im-input-group > .form-control-plaintext + .im-input,
     .input-group > .form-control-plaintext + .im-input-error,
+    .im-input-group > .form-control-plaintext + .im-input-error,
     .input-group > .form-control-plaintext + .im-input-error-outline,
+    .im-input-group > .form-control-plaintext + .im-input-error-outline,
     .input-group > .form-control-plaintext + .im-input-success,
+    .im-input-group > .form-control-plaintext + .im-input-success,
     .input-group > .form-control-plaintext + .custom-select,
+    .im-input-group > .form-control-plaintext + .custom-select,
     .input-group > .form-control-plaintext + .custom-file,
+    .im-input-group > .form-control-plaintext + .custom-file,
     .input-group > .custom-select + .form-control,
+    .im-input-group > .custom-select + .form-control,
     .input-group > .custom-select + .im-input,
+    .im-input-group > .custom-select + .im-input,
     .input-group > .custom-select + .im-input-error,
+    .im-input-group > .custom-select + .im-input-error,
     .input-group > .custom-select + .im-input-error-outline,
+    .im-input-group > .custom-select + .im-input-error-outline,
     .input-group > .custom-select + .im-input-success,
+    .im-input-group > .custom-select + .im-input-success,
     .input-group > .custom-select + .custom-select,
+    .im-input-group > .custom-select + .custom-select,
     .input-group > .custom-select + .custom-file,
+    .im-input-group > .custom-select + .custom-file,
     .input-group > .custom-file + .form-control,
+    .im-input-group > .custom-file + .form-control,
     .input-group > .custom-file + .im-input,
+    .im-input-group > .custom-file + .im-input,
     .input-group > .custom-file + .im-input-error,
+    .im-input-group > .custom-file + .im-input-error,
     .input-group > .custom-file + .im-input-error-outline,
+    .im-input-group > .custom-file + .im-input-error-outline,
     .input-group > .custom-file + .im-input-success,
+    .im-input-group > .custom-file + .im-input-success,
     .input-group > .custom-file + .custom-select,
-    .input-group > .custom-file + .custom-file {
+    .im-input-group > .custom-file + .custom-select,
+    .input-group > .custom-file + .custom-file,
+    .im-input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, .input-group > .im-input:focus, .input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus,
+  .input-group > .form-control:focus, .im-input-group > .form-control:focus, .input-group > .im-input:focus, .im-input-group > .im-input:focus, .input-group > .im-input-error:focus, .im-input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .im-input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus, .im-input-group > .im-input-success:focus,
   .input-group > .custom-select:focus,
-  .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
+  .im-input-group > .custom-select:focus,
+  .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label,
+  .im-input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
     z-index: 3; }
-  .input-group > .custom-file .custom-file-input:focus {
+  .input-group > .custom-file .custom-file-input:focus, .im-input-group > .custom-file .custom-file-input:focus {
     z-index: 4; }
-  .input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child),
-  .input-group > .custom-select:not(:last-child) {
+  .input-group > .form-control:not(:last-child), .im-input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .im-input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .im-input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .im-input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child), .im-input-group > .im-input-success:not(:last-child),
+  .input-group > .custom-select:not(:last-child),
+  .im-input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child),
-  .input-group > .custom-select:not(:first-child) {
+  .input-group > .form-control:not(:first-child), .im-input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .im-input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .im-input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .im-input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child), .im-input-group > .im-input-success:not(:first-child),
+  .input-group > .custom-select:not(:first-child),
+  .im-input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
-  .input-group > .custom-file {
+  
+  .input-group > .custom-file,
+  .im-input-group > .custom-file {
     display: flex;
     align-items: center; }
-    .input-group > .custom-file:not(:last-child) .custom-file-label,
-    .input-group > .custom-file:not(:last-child) .custom-file-label::after {
+    .input-group > .custom-file:not(:last-child) .custom-file-label, .im-input-group > .custom-file:not(:last-child) .custom-file-label,
+    .input-group > .custom-file:not(:last-child) .custom-file-label::after,
+    .im-input-group > .custom-file:not(:last-child) .custom-file-label::after {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-    .input-group > .custom-file:not(:first-child) .custom-file-label {
+    .input-group > .custom-file:not(:first-child) .custom-file-label, .im-input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 
-.input-group-prepend,
+.input-group-prepend, .im-input-group,
 .input-group-append {
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .im-btn, .input-group-prepend .im-btn-outline, .input-group-prepend .im-btn-disabled-outline,
+  .input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline,
   .input-group-append .btn,
   .input-group-append .im-btn,
   .input-group-append .im-btn-outline,
   .input-group-append .im-btn-disabled-outline {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .input-group-prepend .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus,
+    .input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus,
     .input-group-append .btn:focus,
     .input-group-append .im-btn:focus,
     .input-group-append .im-btn-outline:focus,
     .input-group-append .im-btn-disabled-outline:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .input-group-prepend .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .input-group-prepend .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline,
+  .input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline,
   .input-group-prepend .btn + .input-group-text,
+  .im-input-group .btn + .input-group-text,
   .input-group-prepend .im-btn + .input-group-text,
+  .im-input-group .im-btn + .input-group-text,
   .input-group-prepend .im-btn-outline + .input-group-text,
+  .im-input-group .im-btn-outline + .input-group-text,
   .input-group-prepend .im-btn-disabled-outline + .input-group-text,
+  .im-input-group .im-btn-disabled-outline + .input-group-text,
+  .input-group-prepend .btn + .im-input-group-text,
+  .im-input-group .btn + .im-input-group-text,
+  .input-group-prepend .im-btn + .im-input-group-text,
+  .im-input-group .im-btn + .im-input-group-text,
+  .input-group-prepend .im-btn-outline + .im-input-group-text,
+  .im-input-group .im-btn-outline + .im-input-group-text,
+  .input-group-prepend .im-btn-disabled-outline + .im-input-group-text,
+  .im-input-group .im-btn-disabled-outline + .im-input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
+  .im-input-group .input-group-text + .input-group-text,
+  .input-group-prepend .im-input-group-text + .input-group-text,
+  .im-input-group .im-input-group-text + .input-group-text,
+  .input-group-prepend .input-group-text + .im-input-group-text,
+  .im-input-group .input-group-text + .im-input-group-text,
+  .input-group-prepend .im-input-group-text + .im-input-group-text,
+  .im-input-group .im-input-group-text + .im-input-group-text,
   .input-group-prepend .input-group-text + .btn,
+  .im-input-group .input-group-text + .btn,
+  .input-group-prepend .im-input-group-text + .btn,
+  .im-input-group .im-input-group-text + .btn,
   .input-group-prepend .input-group-text + .im-btn,
+  .im-input-group .input-group-text + .im-btn,
+  .input-group-prepend .im-input-group-text + .im-btn,
+  .im-input-group .im-input-group-text + .im-btn,
   .input-group-prepend .input-group-text + .im-btn-outline,
+  .im-input-group .input-group-text + .im-btn-outline,
+  .input-group-prepend .im-input-group-text + .im-btn-outline,
+  .im-input-group .im-input-group-text + .im-btn-outline,
   .input-group-prepend .input-group-text + .im-btn-disabled-outline,
+  .im-input-group .input-group-text + .im-btn-disabled-outline,
+  .input-group-prepend .im-input-group-text + .im-btn-disabled-outline,
+  .im-input-group .im-input-group-text + .im-btn-disabled-outline,
   .input-group-append .btn + .btn,
   .input-group-append .im-btn + .btn,
   .input-group-append .im-btn-outline + .btn,
@@ -2693,20 +2765,31 @@ input[type="button"].btn-block {
   .input-group-append .im-btn + .input-group-text,
   .input-group-append .im-btn-outline + .input-group-text,
   .input-group-append .im-btn-disabled-outline + .input-group-text,
+  .input-group-append .btn + .im-input-group-text,
+  .input-group-append .im-btn + .im-input-group-text,
+  .input-group-append .im-btn-outline + .im-input-group-text,
+  .input-group-append .im-btn-disabled-outline + .im-input-group-text,
   .input-group-append .input-group-text + .input-group-text,
+  .input-group-append .im-input-group-text + .input-group-text,
+  .input-group-append .input-group-text + .im-input-group-text,
+  .input-group-append .im-input-group-text + .im-input-group-text,
   .input-group-append .input-group-text + .btn,
+  .input-group-append .im-input-group-text + .btn,
   .input-group-append .input-group-text + .im-btn,
+  .input-group-append .im-input-group-text + .im-btn,
   .input-group-append .input-group-text + .im-btn-outline,
-  .input-group-append .input-group-text + .im-btn-disabled-outline {
+  .input-group-append .im-input-group-text + .im-btn-outline,
+  .input-group-append .input-group-text + .im-btn-disabled-outline,
+  .input-group-append .im-input-group-text + .im-btn-disabled-outline {
     margin-left: -1px; }
 
-.input-group-prepend {
+.input-group-prepend, .im-input-group {
   margin-right: -1px; }
 
 .input-group-append {
   margin-left: -1px; }
 
-.input-group-text {
+.input-group-text, .im-input-group-text {
   display: flex;
   align-items: center;
   padding: 0.375rem 0.75rem;
@@ -2720,8 +2803,9 @@ input[type="button"].btn-block {
   background-color: #e9ecef;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
-  .input-group-text input[type="radio"],
-  .input-group-text input[type="checkbox"] {
+  .input-group-text input[type="radio"], .im-input-group-text input[type="radio"],
+  .input-group-text input[type="checkbox"],
+  .im-input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
 .input-group-lg > .form-control:not(textarea), .input-group-lg > .im-input:not(textarea), .input-group-lg > .im-input-error:not(textarea), .input-group-lg > .im-input-error-outline:not(textarea), .input-group-lg > .im-input-success:not(textarea),
@@ -2731,11 +2815,19 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control, .input-group-lg > .im-input, .input-group-lg > .im-input-error, .input-group-lg > .im-input-error-outline, .input-group-lg > .im-input-success,
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .im-input-group > .input-group-text,
+.input-group-lg > .input-group-prepend > .im-input-group-text,
+.input-group-lg > .im-input-group > .im-input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-append > .im-input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .im-input-group > .btn,
 .input-group-lg > .input-group-prepend > .im-btn,
+.input-group-lg > .im-input-group > .im-btn,
 .input-group-lg > .input-group-prepend > .im-btn-outline,
+.input-group-lg > .im-input-group > .im-btn-outline,
 .input-group-lg > .input-group-prepend > .im-btn-disabled-outline,
+.input-group-lg > .im-input-group > .im-btn-disabled-outline,
 .input-group-lg > .input-group-append > .btn,
 .input-group-lg > .input-group-append > .im-btn,
 .input-group-lg > .input-group-append > .im-btn-outline,
@@ -2752,11 +2844,19 @@ input[type="button"].btn-block {
 .input-group-sm > .form-control, .input-group-sm > .im-input, .input-group-sm > .im-input-error, .input-group-sm > .im-input-error-outline, .input-group-sm > .im-input-success,
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .im-input-group > .input-group-text,
+.input-group-sm > .input-group-prepend > .im-input-group-text,
+.input-group-sm > .im-input-group > .im-input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-append > .im-input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .im-input-group > .btn,
 .input-group-sm > .input-group-prepend > .im-btn,
+.input-group-sm > .im-input-group > .im-btn,
 .input-group-sm > .input-group-prepend > .im-btn-outline,
+.input-group-sm > .im-input-group > .im-btn-outline,
 .input-group-sm > .input-group-prepend > .im-btn-disabled-outline,
+.input-group-sm > .im-input-group > .im-btn-disabled-outline,
 .input-group-sm > .input-group-append > .btn,
 .input-group-sm > .input-group-append > .im-btn,
 .input-group-sm > .input-group-append > .im-btn-outline,
@@ -2770,33 +2870,95 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline,
+.input-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline,
 .input-group > .input-group-prepend > .input-group-text,
+.im-input-group > .input-group-prepend > .input-group-text,
+.input-group > .im-input-group > .input-group-text,
+.im-input-group > .im-input-group > .input-group-text,
+.input-group > .input-group-prepend > .im-input-group-text,
+.im-input-group > .input-group-prepend > .im-input-group-text,
+.input-group > .im-input-group > .im-input-group-text,
+.im-input-group > .im-input-group > .im-input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+.im-input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn,
+.im-input-group > .input-group-append:not(:last-child) > .im-btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn-outline,
+.im-input-group > .input-group-append:not(:last-child) > .im-btn-outline,
 .input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
+.im-input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
+.im-input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .im-input-group-text,
+.im-input-group > .input-group-append:not(:last-child) > .im-input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.im-input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle),
+.im-input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle),
+.im-input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle),
-.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+.im-input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.im-input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
+.im-input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline,
+.input-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline,
 .input-group > .input-group-append > .input-group-text,
+.im-input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-append > .im-input-group-text,
+.im-input-group > .input-group-append > .im-input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+.im-input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .im-input-group:not(:first-child) > .btn,
+.im-input-group > .im-input-group:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn,
+.im-input-group > .input-group-prepend:not(:first-child) > .im-btn,
+.input-group > .im-input-group:not(:first-child) > .im-btn,
+.im-input-group > .im-input-group:not(:first-child) > .im-btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
+.im-input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
+.input-group > .im-input-group:not(:first-child) > .im-btn-outline,
+.im-input-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.im-input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
+.im-input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.im-input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.input-group > .im-input-group:not(:first-child) > .input-group-text,
+.im-input-group > .im-input-group:not(:first-child) > .input-group-text,
+.input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
+.im-input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
+.input-group > .im-input-group:not(:first-child) > .im-input-group-text,
+.im-input-group > .im-input-group:not(:first-child) > .im-input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .im-input-group:first-child > .btn:not(:first-child),
+.im-input-group > .im-input-group:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
+.input-group > .im-input-group:first-child > .im-btn:not(:first-child),
+.im-input-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
+.im-input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
-.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+.im-input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
+.input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
+.im-input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
+.im-input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
+.input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child),
+.im-input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -7480,6 +7642,9 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0.4rem;
   height: 45px;
   font-size: 13px; }
+  .im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .im-input-success:focus {
+    border: 1.5px solid #A3A6B4;
+    color: #A3A6B4; }
 
 .im-input-error, .im-input-error-outline {
   color: #FD747C !important;
