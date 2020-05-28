@@ -10,14 +10,16 @@
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "popper.js": "^1.16.0",
-    "scss-compile": "^0.1.7"
+    "scss-compile": "^0.1.7",
+    "uglify-js": "^3.9.4"
   },
-  "main": "index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "scss-compile": "node-sass src/scss/style.scss dist/css/style.css",
     "scss-compressed": "node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
-    "watch-scss": "nodemon -e scss -x \"npm run scss-compile\""
+    "watch-scss": "nodemon -e scss -x \"npm run scss-compile\"",
+    "js-minify-standalone": "uglifyjs src/js/index.js dist/js/index.js"
   },
   "repository": {
     "type": "git",
