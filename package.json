@@ -4,14 +4,19 @@
   "description": "Custom styles framework",
   "devDependencies": {
     "bootstrap": "^4.5.0",
-    "font-awesome": "^4.7.0",
+    "clean-css": "^4.2.3",
+    "clean-css-cli": "^4.1.10",
+    "jquery": "^1.9.1",
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "popper.js": "^1.16.0",
+    "scss-compile": "^0.1.7"
   },
   "main": "index.js",
   "scripts": {
-    "scss-compile": "node-sass src/scss/style.scss dist/css/style.css && node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
-    "scss-compressed":"node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
+    "scss-compile": "node-sass src/scss/style.scss dist/css/style.css",
+    "scss-compressed": "node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
     "watch-scss": "nodemon -e scss -x \"npm run scss-compile\""
   },
   "repository": {
@@ -24,5 +29,6 @@
   ],
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework#readme"
+  "homepage": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework#readme",
+  "dependencies": {}
 }
