@@ -1,0 +1,42 @@
+.im-dropdown-toggle {
+    @extend .dropdown-toggle;
+    color: $font-color;
+    border: 1.5px solid $mischka-gray;
+    max-width: 200px;
+    border-radius: $radius;
+
+    &:after {
+        font-family: 'FontAwesome';
+        content: "\f078";
+        color: $gun-powder;
+        vertical-align: 0;
+        border-top: 0;
+        background-color: $gainsboro-gray;
+        border-radius: 50%;
+        float: right;
+    }
+
+    &:hover {
+        color: $font-color;
+    }
+}
+
+.im-dropdown-menu {
+    @extend .dropdown-menu;
+    background-color: $white;
+    border: 1.5px solid $mischka-gray;
+    border-radius: $radius;
+    color: $font-color;
+    font-size: 85%;
+    margin: 0.5rem 0 0;
+}
+
+.im-dropdown-item {
+    @extend .dropdown-item;
+    color: $mischka-gray;
+
+    &:hover {
+        background-color: $white;
+        color: $dark;
+    }
+}

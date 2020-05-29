@@ -1,0 +1,5 @@
+
+@mixin input-with-icon($type){
+    @extend .im-input;
+    color: $gainsboro-gray;
+}
