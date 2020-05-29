@@ -1,8 +1,27 @@
-
 /// @param {Keyword | Angle} $direction - Linear gradient direction
-/// @param {Arglist} $color-stops - List of color-stops composing the gradient
-@mixin linear-gradient($direction, $color-stops...) {
-    // background: nth(nth($color-stops, 1), 1);
-    // background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+
+@mixin linear-gradient($type) {
+
+    $color-stops: null;
+    $direction: 45deg;
+
+    @if ($type==1) {
+        $color-stops: $gradient-1;
+    }
+
+    @else if ($type==2) {
+        $color-stops: $gradient-2;
+    }
+
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
     background: linear-gradient($direction, $color-stops);
+}
+
+
+.im-gradient-1 {
+    @include linear-gradient(1);
+}
+
+.im-gradient-2 {
+    @include linear-gradient(2);
 }

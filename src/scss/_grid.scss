@@ -15,3 +15,8 @@
 .im-input-group-text{
     @extend .input-group-text;
 }
+
+.im-rounded{
+    @extend .rounded;
+    border-radius: $radius !important;
+}

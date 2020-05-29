@@ -16,15 +16,16 @@ $im-danger: $danger-color !important;
 $im-light: $gainsboro-gray !important;
 $im-dark: $black-rock !important;
 
-// $theme-colors: ("primary": $im-primary,
-//     "secondary": $im-secondary,
-//     "success": $im-success,
-//     "info": $im-info,
-//     "warning": $im-warning,
-//     "danger": $im-danger,
-//     "light": $im-light,
-//     "dark": $im-dark,
-// );
+$theme-colors: (
+    "primary": #158FC4,
+    "secondary": #0077A3,
+    "success": #86D87F,
+    "info": #158FC4,
+    "warning": #FEBC54,
+    "danger": #FD747C,
+    "light": #DEDEDE,
+    "dark": #2F3440,
+);
 
 $font-color: $black-rock;
 $font-color-light: $smoke-gray;
