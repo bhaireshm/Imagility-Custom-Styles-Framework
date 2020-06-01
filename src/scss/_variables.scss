@@ -29,6 +29,7 @@ $theme-colors: (
 
 $font-color: $black-rock;
 $font-color-light: $smoke-gray;
+$font-color-gray: $slate-gray;
 $font-family-base: $sans-pro;
 // $body-color: $white;
 
@@ -46,6 +47,5 @@ $custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml;cha
 
 // Breadcrumb
 $breadcrumb-divider: quote(">");
-$breadcrumb-divider-color: $font-color;
 $breadcrumb-item-padding: 5px;
 $breadcrumb-active-color: $im-dark;

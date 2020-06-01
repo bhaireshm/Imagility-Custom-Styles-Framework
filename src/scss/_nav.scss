@@ -228,6 +228,8 @@
 
 .breadcrumb-item {
     @extend .breadcrumb-item;
+    $font-color: $font-color-gray;
+
     color: $font-color !important;
 
     >a {
@@ -237,13 +239,12 @@
     +.breadcrumb-item::before {
         display: inline-block; // Suppress underlining of the separator in modern browsers
         padding-right: $breadcrumb-item-padding;
-        padding-left: $breadcrumb-item-padding;
         color: $breadcrumb-divider-color;
         content: "#{$breadcrumb-divider}";
     }
 
     &.active {
-        color: $breadcrumb-active-color;
+        color: $font-color;
         font-weight: 600;
     }
 
