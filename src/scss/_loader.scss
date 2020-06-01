@@ -1,0 +1,45 @@
+.im-spinner {
+    @extend .spinner-border;
+    @extend .spinner-border-sm;
+    margin-right: 5px;
+    font-size: 50%;
+    color: $im-primary;
+
+    &-dark {
+        color: $im-dark;
+    }
+}
+
+.im-progress {
+    @extend .progress;
+    border-radius: $radius * 2;
+    height: 0.5rem;
+
+    &-lg {
+        height: 0.75rem;
+    }
+
+    &-xl {
+        height: 1rem;
+    }
+}
+
+.im-progress-bar {
+    @extend .progress-bar;
+    border-radius: inherit !important;
+}
+
+.im-progress-value {
+    @extend .text-center;
+    @extend .mb-1;
+    color: $im-primary;
+    width: 100%;
+    font-size: 75%;
+}
+
+.im-progress-value[data-valuenow='100']:after {
+    font-family: 'FontAwesome', sans-serif;
+    content: "Done \f00c";
+    color: $im-primary;
+    font-size: 85%;
+}
