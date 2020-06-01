@@ -40,6 +40,6 @@ If you are using Visual Studio Code press `Ctrl+Shift+B` and select `Sass Compil
 
 ### References
 
-    [DateTimePicker](https://www.npmjs.com/package/bootstrap-datetime-picker)
-    [Select2 - Tags](https://select2.org/getting-started/basic-usage)
+   - [DateTimePicker](https://www.npmjs.com/package/bootstrap-datetime-picker)
+   - [Select2 - Tags](https://select2.org/getting-started/basic-usage)
 
