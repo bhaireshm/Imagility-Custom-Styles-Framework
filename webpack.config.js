@@ -22,7 +22,7 @@ module.exports = [
     {
         name: "date",
         entry: {
-            datetimepicker: './node_modules/bootstrap-datetime-picker/js/bootstrap-datetimepicker.js'
+            datetimepicker: './node_modules/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js'
         }, output: {
             filename: 'datetimepicker.js',
             path: path.resolve(__dirname, 'dist/js/')
