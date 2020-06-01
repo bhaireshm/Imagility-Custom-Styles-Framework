@@ -1,22 +1,31 @@
-
-.im-container{
+.im-container {
     @extend .container;
 }
 
-.im-container-fluid{
+.im-container-fluid {
     @extend .container-fluid;
 }
 
-.im-input-group{
+.im-input-group {
     @extend .input-group;
     @extend .input-group-prepend;
 }
 
-.im-input-group-text{
+.im-input-group-text {
     @extend .input-group-text;
 }
 
-.im-rounded{
+.im-rounded {
     @extend .rounded;
     border-radius: $radius !important;
+}
+
+.im-border {
+    @extend .border;
+    border: 1.5px solid $border-color;
+}
+
+.im-border-rounded {
+    @extend .im-border;
+    border-radius: $radius *2 !important;
 }

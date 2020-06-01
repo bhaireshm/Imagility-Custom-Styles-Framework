@@ -3,7 +3,7 @@
     @include btn-2;
 
     color: $white;
-    padding: $pb $pl;
+    // padding: $pb $pl;
     border-radius: 0.5rem !important;
 
     &-primary {
@@ -22,6 +22,7 @@
 
     &:hover {
         @extend .im-btn-primary;
+        color: $white;
     }
 }
 
@@ -50,5 +51,14 @@
 
     &:hover {
         color: $font-color;
+    }
+}
+
+.im-btn-search{
+    @extend .btn-link;
+    // bor`
+
+    &:focus {
+        @include remove-focus;
     }
 }

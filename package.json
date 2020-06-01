@@ -4,22 +4,27 @@
   "description": "Custom styles framework",
   "devDependencies": {
     "bootstrap": "^4.5.0",
+    "bootstrap-datetime-picker": "^2.4.4",
     "clean-css": "^4.2.3",
     "clean-css-cli": "^4.1.10",
-    "jquery": "^3.5.0",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "popper.js": "^1.16.0",
     "scss-compile": "^0.1.7",
-    "uglify-js": "^3.9.4"
+    "uglify-js": "^3.9.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
-  "main": "src/js/index.js",
+  "private": true,
   "scripts": {
     "scss-compile": "node-sass src/scss/style.scss dist/css/style.css",
     "scss-compressed": "node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
+    "scss-compile-datetimepicker": "node-sass src/scss/datetimepicker/datetimepicker.scss dist/css/datetimepicker/datetimepicker.css",
     "watch-scss": "nodemon -e scss -x \"npm run scss-compile\"",
-    "js-minify-standalone": "uglifyjs src/js/index.js dist/js/index.js"
+    "js-minify-standalone": "uglifyjs src/js/index.js dist/js/index.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -32,5 +37,7 @@
   "license": "ISC",
   "bugs": {},
   "homepage": "https://github.com/bhaireshm/Imagility-Custom-Styles-Framework#readme",
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

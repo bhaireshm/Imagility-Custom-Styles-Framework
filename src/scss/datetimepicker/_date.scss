@@ -1,0 +1,15 @@
+
+.datetimepicker{
+    @extend .datetimepicker;
+    border-radius: $radius;
+    min-width: 220px;
+    border: 1.5px solid gray;
+    padding: 10px;
+    font-size: 85%;
+}
+
+input.datetimepicker {
+    &:focus {
+        @include remove-focus;
+    }
+}

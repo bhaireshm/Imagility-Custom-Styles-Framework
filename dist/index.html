@@ -8,6 +8,8 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="./css/datetimepicker/datetimepicker.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -16,14 +18,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="./js/bootstrap.js"></script>
 
 </head>
 
 <body class="container mb-5 pb-5">
 
-    <!-- <p class="im-h1">Heading 1</p>
+    <p class="im-h1">Heading 1</p>
     <p class="im-h2">Heading 2</p>
     <p class="im-h3">Heading 3</p>
     <p class="im-h4">Heading 4</p>
@@ -58,18 +61,17 @@
     <p class="im-text-uppercase">Uppercased text.</p>
     <p class="im-text-capitalize">CapiTaliZed text.</p>
 
-    <hr>-->
+    <hr>
 
-    <!-- <button class="im-btn im-text-uppercase im-btn-primary">Default</button>
-    <button class="im-btn im-text-uppercase im-btn-secondary">Default</button>
-    <button class="im-btn im-text-uppercase im-btn-outline">Default</button>
+    <button class="im-btn im-text-uppercase im-btn-primary px-5">Default</button>
+    <button class="im-btn im-text-uppercase im-btn-secondary px-5">Default</button>
+    <button class="im-btn im-text-uppercase im-btn-outline px-5">Default</button>
     <br><br>
-    <button class="im-btn im-text-uppercase im-btn-disabled">Disabled</button>
-    <button class="im-btn im-text-uppercase im-btn-disabled-light">Disabled</button>
-    <button class="im-btn im-text-uppercase im-btn-disabled-outline">Disabled</button> 
-    <hr> -->
-    <br>
-    <!-- 
+    <button class="im-btn im-text-uppercase im-btn-disabled px-5">Disabled</button>
+    <button class="im-btn im-text-uppercase im-btn-disabled-light px-5">Disabled</button>
+    <button class="im-btn im-text-uppercase im-btn-disabled-outline px-5">Disabled</button>
+    <hr>
+
     <div class="im-container">
         <input type="text" class="im-input" placeholder="Placeholder" required>
         <br>
@@ -84,8 +86,8 @@
         <div class="im-input-container">
             <input type="password" class="im-input" placeholder="Password" required>
         </div>
-    </div>-->
-    <!-- <hr>
+    </div>
+    <hr>
     <div class="dropdown">
         <button class="im-input im-dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -96,9 +98,9 @@
             <a class="im-dropdown-item dropdown-item" href="#">Another action</a>
             <a class="dropdown-item im-dropdown-item" href="#">Something else here</a>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <hr>
+    <hr>
     <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="customCheck1">
         <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
@@ -155,7 +157,7 @@
     <hr>
     <div class="im-gradient-1 im-rounded im-text-center" style="height: 75px;">Gradient 1</div><br>
     <div class="im-gradient-2 im-rounded im-text-center" style="height: 75px;">Gradient 2</div>
-    <hr> -->
+    <hr>
 
 
     <nav aria-label="breadcrumb">
@@ -167,7 +169,34 @@
     </nav>
     <hr>
 
-    <!-- <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
+    <input type="date" value="" id="datetimepicker" class="datetimepicker">
+
+    <hr>
+
+    <div class="im-input-group im-border-rounded">
+        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+            class="im-input im-input-search">
+        <div class="im-input-group-append border-0">
+            <button id="button-search" type="button" class="im-btn im-btn-link text-success">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="im-input-group im-border">
+        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+            class="im-input bg-none border-0">
+        <div class="im-input-group-append border-0">
+            <button id="button-search" type="button" class="btn btn-search text-success"><i
+                    class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <hr>
+
+   <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -212,12 +241,13 @@
             <img src="img/icon1.png" alt="">
             <div>RECOMMENDED<br>TOOLS FOR YOU</div>
         </a>
-    </nav> -->
+    </nav> 
     <!-- <div>
         <i class="fa fa-chevron-down" aria-hidden="true" style="color: gray"></i>
     </div> -->
 
 </body>
-
+<script src="./js/datetimepicker.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

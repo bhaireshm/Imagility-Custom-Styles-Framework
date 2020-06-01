@@ -2,7 +2,10 @@
 @import "colors";
 @import "fonts";
 @import "variables";
+
+// Mixins
 @import "mixins/background-variant";
+@import "mixins/mixin-forms";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -13,3 +16,4 @@
 @import "grid";
 @import "dropdown";
 @import "nav";
+@import "datetimepicker/datetimepicker";

@@ -1159,22 +1159,22 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6; }
+    border-top: 1px solid #A3A6B4; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6; }
+    border-bottom: 2px solid #A3A6B4; }
   .table tbody + tbody {
-    border-top: 2px solid #dee2e6; }
+    border-top: 2px solid #A3A6B4; }
 
 .table-sm th,
 .table-sm td {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 1px solid #dee2e6; }
+  border: 1px solid #A3A6B4; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dee2e6; }
+    border: 1px solid #A3A6B4; }
   .table-bordered thead th,
   .table-bordered thead td {
     border-bottom-width: 2px; }
@@ -1347,7 +1347,7 @@ pre {
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: #dee2e6; }
+  border-color: #A3A6B4; }
 
 .table-dark {
   color: #fff;
@@ -2226,16 +2226,16 @@ fieldset:disabled a.im-btn-disabled-outline {
     .show > .btn-outline-dark.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(47, 52, 64, 0.5); }
 
-.btn-link {
+.btn-link, .im-btn-search {
   font-weight: 400;
   color: #158FC4;
   text-decoration: none; }
-  .btn-link:hover {
+  .btn-link:hover, .im-btn-search:hover {
     color: #0e5d7f;
     text-decoration: underline; }
-  .btn-link:focus, .btn-link.focus {
+  .btn-link:focus, .im-btn-search:focus, .btn-link.focus, .focus.im-btn-search {
     text-decoration: underline; }
-  .btn-link:disabled, .btn-link.disabled, .btn-link.im-disabled, .btn-link.im-btn-disabled, .btn-link.im-btn-disabled-light {
+  .btn-link:disabled, .im-btn-search:disabled, .btn-link.disabled, .btn-link.im-disabled, .im-disabled.im-btn-search, .btn-link.im-btn-disabled, .btn-link.im-btn-disabled-light, .im-btn-disabled-light.im-btn-search, .im-btn-disabled.im-btn-search, .disabled.im-btn-search {
     color: #6c757d;
     pointer-events: none; }
 
@@ -2732,105 +2732,172 @@ input[type="button"].btn-block {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 
-.input-group-prepend, .im-input-group,
-.input-group-append {
+.input-group-prepend, .im-input-group-prepend, .im-input-group,
+.input-group-append,
+.im-input-group-append {
   display: flex; }
-  .input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline,
+  .input-group-prepend .btn, .im-input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline,
   .input-group-append .btn,
+  .im-input-group-append .btn,
   .input-group-append .im-btn,
+  .im-input-group-append .im-btn,
   .input-group-append .im-btn-outline,
-  .input-group-append .im-btn-disabled-outline {
+  .im-input-group-append .im-btn-outline,
+  .input-group-append .im-btn-disabled-outline,
+  .im-input-group-append .im-btn-disabled-outline {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus,
+    .input-group-prepend .btn:focus, .im-input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus,
     .input-group-append .btn:focus,
+    .im-input-group-append .btn:focus,
     .input-group-append .im-btn:focus,
+    .im-input-group-append .im-btn:focus,
     .input-group-append .im-btn-outline:focus,
-    .input-group-append .im-btn-disabled-outline:focus {
+    .im-input-group-append .im-btn-outline:focus,
+    .input-group-append .im-btn-disabled-outline:focus,
+    .im-input-group-append .im-btn-disabled-outline:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline,
+  .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline,
   .input-group-prepend .btn + .input-group-text,
+  .im-input-group-prepend .btn + .input-group-text,
   .im-input-group .btn + .input-group-text,
   .input-group-prepend .im-btn + .input-group-text,
+  .im-input-group-prepend .im-btn + .input-group-text,
   .im-input-group .im-btn + .input-group-text,
   .input-group-prepend .im-btn-outline + .input-group-text,
+  .im-input-group-prepend .im-btn-outline + .input-group-text,
   .im-input-group .im-btn-outline + .input-group-text,
   .input-group-prepend .im-btn-disabled-outline + .input-group-text,
+  .im-input-group-prepend .im-btn-disabled-outline + .input-group-text,
   .im-input-group .im-btn-disabled-outline + .input-group-text,
   .input-group-prepend .btn + .im-input-group-text,
+  .im-input-group-prepend .btn + .im-input-group-text,
   .im-input-group .btn + .im-input-group-text,
   .input-group-prepend .im-btn + .im-input-group-text,
+  .im-input-group-prepend .im-btn + .im-input-group-text,
   .im-input-group .im-btn + .im-input-group-text,
   .input-group-prepend .im-btn-outline + .im-input-group-text,
+  .im-input-group-prepend .im-btn-outline + .im-input-group-text,
   .im-input-group .im-btn-outline + .im-input-group-text,
   .input-group-prepend .im-btn-disabled-outline + .im-input-group-text,
+  .im-input-group-prepend .im-btn-disabled-outline + .im-input-group-text,
   .im-input-group .im-btn-disabled-outline + .im-input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
+  .im-input-group-prepend .input-group-text + .input-group-text,
   .im-input-group .input-group-text + .input-group-text,
   .input-group-prepend .im-input-group-text + .input-group-text,
+  .im-input-group-prepend .im-input-group-text + .input-group-text,
   .im-input-group .im-input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .im-input-group-text,
+  .im-input-group-prepend .input-group-text + .im-input-group-text,
   .im-input-group .input-group-text + .im-input-group-text,
   .input-group-prepend .im-input-group-text + .im-input-group-text,
+  .im-input-group-prepend .im-input-group-text + .im-input-group-text,
   .im-input-group .im-input-group-text + .im-input-group-text,
   .input-group-prepend .input-group-text + .btn,
+  .im-input-group-prepend .input-group-text + .btn,
   .im-input-group .input-group-text + .btn,
   .input-group-prepend .im-input-group-text + .btn,
+  .im-input-group-prepend .im-input-group-text + .btn,
   .im-input-group .im-input-group-text + .btn,
   .input-group-prepend .input-group-text + .im-btn,
+  .im-input-group-prepend .input-group-text + .im-btn,
   .im-input-group .input-group-text + .im-btn,
   .input-group-prepend .im-input-group-text + .im-btn,
+  .im-input-group-prepend .im-input-group-text + .im-btn,
   .im-input-group .im-input-group-text + .im-btn,
   .input-group-prepend .input-group-text + .im-btn-outline,
+  .im-input-group-prepend .input-group-text + .im-btn-outline,
   .im-input-group .input-group-text + .im-btn-outline,
   .input-group-prepend .im-input-group-text + .im-btn-outline,
+  .im-input-group-prepend .im-input-group-text + .im-btn-outline,
   .im-input-group .im-input-group-text + .im-btn-outline,
   .input-group-prepend .input-group-text + .im-btn-disabled-outline,
+  .im-input-group-prepend .input-group-text + .im-btn-disabled-outline,
   .im-input-group .input-group-text + .im-btn-disabled-outline,
   .input-group-prepend .im-input-group-text + .im-btn-disabled-outline,
+  .im-input-group-prepend .im-input-group-text + .im-btn-disabled-outline,
   .im-input-group .im-input-group-text + .im-btn-disabled-outline,
   .input-group-append .btn + .btn,
+  .im-input-group-append .btn + .btn,
   .input-group-append .im-btn + .btn,
+  .im-input-group-append .im-btn + .btn,
   .input-group-append .im-btn-outline + .btn,
+  .im-input-group-append .im-btn-outline + .btn,
   .input-group-append .im-btn-disabled-outline + .btn,
+  .im-input-group-append .im-btn-disabled-outline + .btn,
   .input-group-append .btn + .im-btn,
+  .im-input-group-append .btn + .im-btn,
   .input-group-append .im-btn + .im-btn,
+  .im-input-group-append .im-btn + .im-btn,
   .input-group-append .im-btn-outline + .im-btn,
+  .im-input-group-append .im-btn-outline + .im-btn,
   .input-group-append .im-btn-disabled-outline + .im-btn,
+  .im-input-group-append .im-btn-disabled-outline + .im-btn,
   .input-group-append .btn + .im-btn-outline,
+  .im-input-group-append .btn + .im-btn-outline,
   .input-group-append .im-btn + .im-btn-outline,
+  .im-input-group-append .im-btn + .im-btn-outline,
   .input-group-append .im-btn-outline + .im-btn-outline,
+  .im-input-group-append .im-btn-outline + .im-btn-outline,
   .input-group-append .im-btn-disabled-outline + .im-btn-outline,
+  .im-input-group-append .im-btn-disabled-outline + .im-btn-outline,
   .input-group-append .btn + .im-btn-disabled-outline,
+  .im-input-group-append .btn + .im-btn-disabled-outline,
   .input-group-append .im-btn + .im-btn-disabled-outline,
+  .im-input-group-append .im-btn + .im-btn-disabled-outline,
   .input-group-append .im-btn-outline + .im-btn-disabled-outline,
+  .im-input-group-append .im-btn-outline + .im-btn-disabled-outline,
   .input-group-append .im-btn-disabled-outline + .im-btn-disabled-outline,
+  .im-input-group-append .im-btn-disabled-outline + .im-btn-disabled-outline,
   .input-group-append .btn + .input-group-text,
+  .im-input-group-append .btn + .input-group-text,
   .input-group-append .im-btn + .input-group-text,
+  .im-input-group-append .im-btn + .input-group-text,
   .input-group-append .im-btn-outline + .input-group-text,
+  .im-input-group-append .im-btn-outline + .input-group-text,
   .input-group-append .im-btn-disabled-outline + .input-group-text,
+  .im-input-group-append .im-btn-disabled-outline + .input-group-text,
   .input-group-append .btn + .im-input-group-text,
+  .im-input-group-append .btn + .im-input-group-text,
   .input-group-append .im-btn + .im-input-group-text,
+  .im-input-group-append .im-btn + .im-input-group-text,
   .input-group-append .im-btn-outline + .im-input-group-text,
+  .im-input-group-append .im-btn-outline + .im-input-group-text,
   .input-group-append .im-btn-disabled-outline + .im-input-group-text,
+  .im-input-group-append .im-btn-disabled-outline + .im-input-group-text,
   .input-group-append .input-group-text + .input-group-text,
+  .im-input-group-append .input-group-text + .input-group-text,
   .input-group-append .im-input-group-text + .input-group-text,
+  .im-input-group-append .im-input-group-text + .input-group-text,
   .input-group-append .input-group-text + .im-input-group-text,
+  .im-input-group-append .input-group-text + .im-input-group-text,
   .input-group-append .im-input-group-text + .im-input-group-text,
+  .im-input-group-append .im-input-group-text + .im-input-group-text,
   .input-group-append .input-group-text + .btn,
+  .im-input-group-append .input-group-text + .btn,
   .input-group-append .im-input-group-text + .btn,
+  .im-input-group-append .im-input-group-text + .btn,
   .input-group-append .input-group-text + .im-btn,
+  .im-input-group-append .input-group-text + .im-btn,
   .input-group-append .im-input-group-text + .im-btn,
+  .im-input-group-append .im-input-group-text + .im-btn,
   .input-group-append .input-group-text + .im-btn-outline,
+  .im-input-group-append .input-group-text + .im-btn-outline,
   .input-group-append .im-input-group-text + .im-btn-outline,
+  .im-input-group-append .im-input-group-text + .im-btn-outline,
   .input-group-append .input-group-text + .im-btn-disabled-outline,
-  .input-group-append .im-input-group-text + .im-btn-disabled-outline {
+  .im-input-group-append .input-group-text + .im-btn-disabled-outline,
+  .input-group-append .im-input-group-text + .im-btn-disabled-outline,
+  .im-input-group-append .im-input-group-text + .im-btn-disabled-outline {
     margin-left: -1px; }
 
-.input-group-prepend, .im-input-group {
+.input-group-prepend, .im-input-group-prepend, .im-input-group {
   margin-right: -1px; }
 
-.input-group-append {
+
+.input-group-append,
+.im-input-group-append {
   margin-left: -1px; }
 
 .input-group-text, .im-input-group-text {
@@ -2859,23 +2926,35 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control, .input-group-lg > .im-input, .input-group-lg > .im-input-error, .input-group-lg > .im-input-error-outline, .input-group-lg > .im-input-success,
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .im-input-group-prepend > .input-group-text,
 .input-group-lg > .im-input-group > .input-group-text,
 .input-group-lg > .input-group-prepend > .im-input-group-text,
+.input-group-lg > .im-input-group-prepend > .im-input-group-text,
 .input-group-lg > .im-input-group > .im-input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .im-input-group-append > .input-group-text,
 .input-group-lg > .input-group-append > .im-input-group-text,
+.input-group-lg > .im-input-group-append > .im-input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .im-input-group-prepend > .btn,
 .input-group-lg > .im-input-group > .btn,
 .input-group-lg > .input-group-prepend > .im-btn,
+.input-group-lg > .im-input-group-prepend > .im-btn,
 .input-group-lg > .im-input-group > .im-btn,
 .input-group-lg > .input-group-prepend > .im-btn-outline,
+.input-group-lg > .im-input-group-prepend > .im-btn-outline,
 .input-group-lg > .im-input-group > .im-btn-outline,
 .input-group-lg > .input-group-prepend > .im-btn-disabled-outline,
+.input-group-lg > .im-input-group-prepend > .im-btn-disabled-outline,
 .input-group-lg > .im-input-group > .im-btn-disabled-outline,
 .input-group-lg > .input-group-append > .btn,
+.input-group-lg > .im-input-group-append > .btn,
 .input-group-lg > .input-group-append > .im-btn,
+.input-group-lg > .im-input-group-append > .im-btn,
 .input-group-lg > .input-group-append > .im-btn-outline,
-.input-group-lg > .input-group-append > .im-btn-disabled-outline {
+.input-group-lg > .im-input-group-append > .im-btn-outline,
+.input-group-lg > .input-group-append > .im-btn-disabled-outline,
+.input-group-lg > .im-input-group-append > .im-btn-disabled-outline {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -2888,23 +2967,35 @@ input[type="button"].btn-block {
 .input-group-sm > .form-control, .input-group-sm > .im-input, .input-group-sm > .im-input-error, .input-group-sm > .im-input-error-outline, .input-group-sm > .im-input-success,
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .im-input-group-prepend > .input-group-text,
 .input-group-sm > .im-input-group > .input-group-text,
 .input-group-sm > .input-group-prepend > .im-input-group-text,
+.input-group-sm > .im-input-group-prepend > .im-input-group-text,
 .input-group-sm > .im-input-group > .im-input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .im-input-group-append > .input-group-text,
 .input-group-sm > .input-group-append > .im-input-group-text,
+.input-group-sm > .im-input-group-append > .im-input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .im-input-group-prepend > .btn,
 .input-group-sm > .im-input-group > .btn,
 .input-group-sm > .input-group-prepend > .im-btn,
+.input-group-sm > .im-input-group-prepend > .im-btn,
 .input-group-sm > .im-input-group > .im-btn,
 .input-group-sm > .input-group-prepend > .im-btn-outline,
+.input-group-sm > .im-input-group-prepend > .im-btn-outline,
 .input-group-sm > .im-input-group > .im-btn-outline,
 .input-group-sm > .input-group-prepend > .im-btn-disabled-outline,
+.input-group-sm > .im-input-group-prepend > .im-btn-disabled-outline,
 .input-group-sm > .im-input-group > .im-btn-disabled-outline,
 .input-group-sm > .input-group-append > .btn,
+.input-group-sm > .im-input-group-append > .btn,
 .input-group-sm > .input-group-append > .im-btn,
+.input-group-sm > .im-input-group-append > .im-btn,
 .input-group-sm > .input-group-append > .im-btn-outline,
-.input-group-sm > .input-group-append > .im-btn-disabled-outline {
+.input-group-sm > .im-input-group-append > .im-btn-outline,
+.input-group-sm > .input-group-append > .im-btn-disabled-outline,
+.input-group-sm > .im-input-group-append > .im-btn-disabled-outline {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2914,93 +3005,149 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline,
+.input-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline,
 .input-group > .input-group-prepend > .input-group-text,
 .im-input-group > .input-group-prepend > .input-group-text,
+.input-group > .im-input-group-prepend > .input-group-text,
+.im-input-group > .im-input-group-prepend > .input-group-text,
 .input-group > .im-input-group > .input-group-text,
 .im-input-group > .im-input-group > .input-group-text,
 .input-group > .input-group-prepend > .im-input-group-text,
 .im-input-group > .input-group-prepend > .im-input-group-text,
+.input-group > .im-input-group-prepend > .im-input-group-text,
+.im-input-group > .im-input-group-prepend > .im-input-group-text,
 .input-group > .im-input-group > .im-input-group-text,
 .im-input-group > .im-input-group > .im-input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .im-input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .im-input-group-append:not(:last-child) > .btn,
+.im-input-group > .im-input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn,
+.input-group > .im-input-group-append:not(:last-child) > .im-btn,
+.im-input-group > .im-input-group-append:not(:last-child) > .im-btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn-outline,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-outline,
+.input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
+.im-input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
 .input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
+.input-group > .im-input-group-append:not(:last-child) > .im-btn-disabled-outline,
+.im-input-group > .im-input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .im-input-group > .input-group-append:not(:last-child) > .input-group-text,
+.input-group > .im-input-group-append:not(:last-child) > .input-group-text,
+.im-input-group > .im-input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .im-input-group-text,
 .im-input-group > .input-group-append:not(:last-child) > .im-input-group-text,
+.input-group > .im-input-group-append:not(:last-child) > .im-input-group-text,
+.im-input-group > .im-input-group-append:not(:last-child) > .im-input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .im-input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .im-input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .im-input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .im-input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .im-input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.input-group > .im-input-group-append:last-child > .input-group-text:not(:last-child),
+.im-input-group > .im-input-group-append:last-child > .input-group-text:not(:last-child),
 .input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
-.im-input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child) {
+.im-input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
+.input-group > .im-input-group-append:last-child > .im-input-group-text:not(:last-child),
+.im-input-group > .im-input-group-append:last-child > .im-input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline,
+.input-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline,
 .input-group > .input-group-append > .input-group-text,
 .im-input-group > .input-group-append > .input-group-text,
+.input-group > .im-input-group-append > .input-group-text,
+.im-input-group > .im-input-group-append > .input-group-text,
 .input-group > .input-group-append > .im-input-group-text,
 .im-input-group > .input-group-append > .im-input-group-text,
+.input-group > .im-input-group-append > .im-input-group-text,
+.im-input-group > .im-input-group-append > .im-input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .im-input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .im-input-group-prepend:not(:first-child) > .btn,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .btn,
 .input-group > .im-input-group:not(:first-child) > .btn,
 .im-input-group > .im-input-group:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn,
+.input-group > .im-input-group-prepend:not(:first-child) > .im-btn,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn,
 .input-group > .im-input-group:not(:first-child) > .im-btn,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
+.input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
 .input-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.input-group > .im-input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .im-input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.input-group > .im-input-group-prepend:not(:first-child) > .input-group-text,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .im-input-group:not(:first-child) > .input-group-text,
 .im-input-group > .im-input-group:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
+.input-group > .im-input-group-prepend:not(:first-child) > .im-input-group-text,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .im-input-group-text,
 .input-group > .im-input-group:not(:first-child) > .im-input-group-text,
 .im-input-group > .im-input-group:not(:first-child) > .im-input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .btn:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .im-input-group:first-child > .btn:not(:first-child),
 .im-input-group > .im-input-group:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .im-btn:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .im-btn:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .input-group-text:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .input-group-text:not(:first-child),
 .input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
 .im-input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child) {
   border-top-left-radius: 0;
@@ -4590,7 +4737,7 @@ a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-d
   align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #A3A6B4;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
   .modal-header .close {
@@ -4612,7 +4759,7 @@ a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-d
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #A3A6B4;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px); }
   .modal-footer > * {
@@ -5137,20 +5284,20 @@ button.bg-dark:focus {
 .bg-transparent {
   background-color: transparent !important; }
 
-.border {
-  border: 1px solid #dee2e6 !important; }
+.border, .im-border, .im-border-rounded {
+  border: 1px solid #A3A6B4 !important; }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important; }
+  border-top: 1px solid #A3A6B4 !important; }
 
 .border-right {
-  border-right: 1px solid #dee2e6 !important; }
+  border-right: 1px solid #A3A6B4 !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important; }
+  border-bottom: 1px solid #A3A6B4 !important; }
 
 .border-left {
-  border-left: 1px solid #dee2e6 !important; }
+  border-left: 1px solid #A3A6B4 !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -7538,10 +7685,10 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark td,
     .table-dark thead th,
     .table-dark tbody + tbody {
-      border-color: #dee2e6; }
+      border-color: #A3A6B4; }
   .table .thead-dark th {
     color: inherit;
-    border-color: #dee2e6; } }
+    border-color: #A3A6B4; } }
 
 * {
   font-family: "Source Sans Pro", sans-serif !important; }
@@ -7688,7 +7835,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 13px;
   line-height: 22px;
   color: #fff;
-  padding: 0.5rem 2rem;
   border-radius: 0.5rem !important; }
   .im-btn-primary, .im-btn-outline:hover {
     background-color: #158FC4 !important; }
@@ -7698,6 +7844,8 @@ a.text-dark:hover, a.text-dark:focus {
 .im-btn-outline {
   border: 2px solid #158FC4 !important;
   color: #19A0DA; }
+  .im-btn-outline:hover {
+    color: #fff; }
 
 .im-btn-disabled, .im-btn-disabled-light {
   color: #2F3440;
@@ -7715,6 +7863,10 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: default !important; }
   .im-btn-disabled-outline:hover {
     color: #A3A6B4; }
+
+.im-btn-search:focus {
+  outline: none;
+  box-shadow: none; }
 
 .im-spinner {
   margin-right: 5px;
@@ -7781,8 +7933,24 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #DEDEDE;
   opacity: 1; }
 
+input.im-input:focus, input.im-input-error:focus, input.im-input-error-outline:focus, input.im-input-success:focus {
+  outline: none;
+  box-shadow: none; }
+
+.im-input-group {
+  border-radius: 0.4rem; }
+
+.im-input-search {
+  border: 0 !important; }
+
 .im-rounded {
   border-radius: 0.4rem !important; }
+
+.im-border, .im-border-rounded {
+  border: 1.5px solid #A3A6B4; }
+
+.im-border-rounded {
+  border-radius: 0.8rem !important; }
 
 .im-dropdown-toggle {
   color: #2F3440;
@@ -8027,3 +8195,815 @@ a.text-dark:hover, a.text-dark:focus {
     font-weight: 600; }
   .breadcrumb-item:hover {
     text-decoration: none !important; }
+
+/*!
+ * Datetimepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Improvements by Andrew Rowls
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.datetimepicker {
+  padding: 4px;
+  margin-top: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  direction: ltr; }
+
+.datetimepicker-inline {
+  width: 220px; }
+
+.datetimepicker-rtl.datetimepicker {
+  direction: rtl; }
+
+.datetimepicker-rtl.datetimepicker table tr td span {
+  float: right; }
+
+.datetimepicker-dropdown, .datetimepicker-dropdown-left {
+  top: 0;
+  left: 0; }
+
+[class*=" datetimepicker-dropdown"]:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #cccccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  position: absolute; }
+
+[class*=" datetimepicker-dropdown"]:after {
+  content: '';
+  display: inline-block;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  position: absolute; }
+
+[class*=" datetimepicker-dropdown-top"]:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #cccccc;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 0; }
+
+[class*=" datetimepicker-dropdown-top"]:after {
+  content: '';
+  display: inline-block;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffffff;
+  border-bottom: 0; }
+
+.datetimepicker-dropdown-bottom-left:before {
+  top: -7px;
+  right: 6px; }
+
+.datetimepicker-dropdown-bottom-left:after {
+  top: -6px;
+  right: 7px; }
+
+.datetimepicker-dropdown-bottom-right:before {
+  top: -7px;
+  left: 6px; }
+
+.datetimepicker-dropdown-bottom-right:after {
+  top: -6px;
+  left: 7px; }
+
+.datetimepicker-dropdown-top-left:before {
+  bottom: -7px;
+  right: 6px; }
+
+.datetimepicker-dropdown-top-left:after {
+  bottom: -6px;
+  right: 7px; }
+
+.datetimepicker-dropdown-top-right:before {
+  bottom: -7px;
+  left: 6px; }
+
+.datetimepicker-dropdown-top-right:after {
+  bottom: -6px;
+  left: 7px; }
+
+.datetimepicker > div {
+  display: none; }
+
+.minutes.datetimepicker div.datetimepicker-minutes {
+  display: block; }
+
+.hours.datetimepicker div.datetimepicker-hours {
+  display: block; }
+
+.days.datetimepicker div.datetimepicker-days {
+  display: block; }
+
+.months.datetimepicker div.datetimepicker-months {
+  display: block; }
+
+.years.datetimepicker div.datetimepicker-years {
+  display: block; }
+
+.datetimepicker table {
+  margin: 0; }
+
+.datetimepicker td,
+.datetimepicker th {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none; }
+
+.table-striped .datetimepicker table tr td,
+.table-striped .datetimepicker table tr th {
+  background-color: transparent; }
+
+.datetimepicker table tr td.minute:hover {
+  background: #eeeeee;
+  cursor: pointer; }
+
+.datetimepicker table tr td.hour:hover {
+  background: #eeeeee;
+  cursor: pointer; }
+
+.datetimepicker table tr td.day:hover {
+  background: #eeeeee;
+  cursor: pointer; }
+
+.datetimepicker table tr td.old,
+.datetimepicker table tr td.new {
+  color: #999999; }
+
+.datetimepicker table tr td.disabled, .datetimepicker table tr td.im-disabled, .datetimepicker table tr td.im-btn-disabled, .datetimepicker table tr td.im-btn-disabled-light,
+.datetimepicker table tr td.disabled:hover,
+.datetimepicker table tr td.im-disabled:hover,
+.datetimepicker table tr td.im-btn-disabled:hover,
+.datetimepicker table tr td.im-btn-disabled-light:hover {
+  background: none;
+  color: #999999;
+  cursor: default; }
+
+.datetimepicker table tr td.today,
+.datetimepicker table tr td.today:hover,
+.datetimepicker table tr td.today.disabled,
+.datetimepicker table tr td.today.im-disabled,
+.datetimepicker table tr td.today.im-btn-disabled,
+.datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.disabled:hover,
+.datetimepicker table tr td.today.im-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover {
+  background-color: #fde19a;
+  background-image: -moz-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -ms-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdd49a), to(#fdf59a));
+  background-image: -webkit-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: -o-linear-gradient(top, #fdd49a, #fdf59a);
+  background-image: linear-gradient(to bottom, #fdd49a, #fdf59a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdd49a', endColorstr='#fdf59a', GradientType=0);
+  border-color: #fdf59a #fdf59a #fbed50;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+
+
+.datetimepicker table tr td.today:hover,
+.datetimepicker table tr td.today:hover:hover,
+.datetimepicker table tr td.today.disabled:hover,
+.datetimepicker table tr td.today.im-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.disabled:hover:hover,
+.datetimepicker table tr td.today.im-disabled:hover:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td.today:active,
+.datetimepicker table tr td.today:hover:active,
+.datetimepicker table tr td.today.disabled:active,
+.datetimepicker table tr td.today.im-disabled:active,
+.datetimepicker table tr td.today.im-btn-disabled:active,
+.datetimepicker table tr td.today.im-btn-disabled-light:active,
+.datetimepicker table tr td.today.disabled:hover:active,
+.datetimepicker table tr td.today.im-disabled:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.today.active,
+.datetimepicker table tr td.today.im-navitem-active,
+.datetimepicker table tr td.today:hover.active,
+.datetimepicker table tr td.today.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.active,
+.datetimepicker table tr td.today.active.im-disabled,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active,
+.datetimepicker table tr td.today.active.im-btn-disabled,
+.datetimepicker table tr td.today.active.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.today.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled:hover.active,
+.datetimepicker table tr td.today.im-disabled:hover.active,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled,
+.datetimepicker table tr td.today.im-disabled,
+.datetimepicker table tr td.today.im-btn-disabled,
+.datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today:hover.disabled,
+.datetimepicker table tr td.today.im-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.disabled.disabled,
+.datetimepicker table tr td.today.im-disabled,
+.datetimepicker table tr td.today.im-disabled,
+.datetimepicker table tr td.today.im-btn-disabled,
+.datetimepicker table tr td.today.im-btn-disabled,
+.datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.disabled:hover.disabled,
+.datetimepicker table tr td.today.im-disabled:hover,
+.datetimepicker table tr td.today.im-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today[disabled],
+.datetimepicker table tr td.today:hover[disabled],
+.datetimepicker table tr td.today.disabled[disabled],
+.datetimepicker table tr td.today.im-disabled[disabled],
+.datetimepicker table tr td.today.im-btn-disabled[disabled],
+.datetimepicker table tr td.today.im-btn-disabled-light[disabled],
+.datetimepicker table tr td.today.disabled:hover[disabled],
+.datetimepicker table tr td.today.im-disabled:hover[disabled],
+.datetimepicker table tr td.today.im-btn-disabled:hover[disabled],
+.datetimepicker table tr td.today.im-btn-disabled-light:hover[disabled] {
+  background-color: #fdf59a; }
+
+
+.datetimepicker table tr td.today:active,
+.datetimepicker table tr td.today:hover:active,
+.datetimepicker table tr td.today.disabled:active,
+.datetimepicker table tr td.today.im-disabled:active,
+.datetimepicker table tr td.today.im-btn-disabled:active,
+.datetimepicker table tr td.today.im-btn-disabled-light:active,
+.datetimepicker table tr td.today.disabled:hover:active,
+.datetimepicker table tr td.today.im-disabled:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.today.active,
+.datetimepicker table tr td.today.im-navitem-active,
+.datetimepicker table tr td.today:hover.active,
+.datetimepicker table tr td.today.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.active,
+.datetimepicker table tr td.today.active.im-disabled,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active,
+.datetimepicker table tr td.today.active.im-btn-disabled,
+.datetimepicker table tr td.today.active.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.today.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled:hover.active,
+.datetimepicker table tr td.today.im-disabled:hover.active,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.im-navitem-active:hover {
+  background-color: #fbf069; }
+
+.datetimepicker table tr td.active, .datetimepicker table tr td.im-navitem-active,
+.datetimepicker table tr td.active:hover,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.active.disabled,
+.datetimepicker table tr td.active.im-disabled,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.active.disabled:hover,
+.datetimepicker table tr td.active.im-disabled:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover {
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+
+.datetimepicker table tr td.active:hover,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.active:hover:hover,
+.datetimepicker table tr td.im-navitem-active:hover:hover,
+.datetimepicker table tr td.active.disabled:hover,
+.datetimepicker table tr td.active.im-disabled:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.disabled:hover:hover,
+.datetimepicker table tr td.active.im-disabled:hover:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.im-navitem-active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.im-disabled:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td.active.im-btn-disabled:active,
+.datetimepicker table tr td.active.im-btn-disabled-light:active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td.disabled.im-navitem-active:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.im-disabled:hover:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.im-navitem-active,
+.datetimepicker table tr td.im-navitem-active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.active.im-disabled,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.active.active.im-btn-disabled,
+.datetimepicker table tr td.active.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.active.disabled:hover.active,
+.datetimepicker table tr td.active.im-disabled:hover.active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover.active,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.disabled,
+.datetimepicker table tr td.active.im-disabled,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.active:hover.disabled,
+.datetimepicker table tr td.active.im-disabled:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-navitem-active:hover.disabled,
+.datetimepicker table tr td.active.disabled.disabled,
+.datetimepicker table tr td.active.im-disabled,
+.datetimepicker table tr td.active.im-disabled,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.disabled.im-navitem-active,
+.datetimepicker table tr td.active.disabled:hover.disabled,
+.datetimepicker table tr td.active.im-disabled:hover,
+.datetimepicker table tr td.active.im-disabled:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover.disabled,
+.datetimepicker table tr td.active[disabled],
+.datetimepicker table tr td.im-navitem-active[disabled],
+.datetimepicker table tr td.active:hover[disabled],
+.datetimepicker table tr td.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.active.disabled[disabled],
+.datetimepicker table tr td.active.im-disabled[disabled],
+.datetimepicker table tr td.im-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td.active.im-btn-disabled[disabled],
+.datetimepicker table tr td.active.im-btn-disabled-light[disabled],
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active[disabled],
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td.disabled.im-navitem-active[disabled],
+.datetimepicker table tr td.active.disabled:hover[disabled],
+.datetimepicker table tr td.active.im-disabled:hover[disabled],
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.active.im-btn-disabled:hover[disabled],
+.datetimepicker table tr td.active.im-btn-disabled-light:hover[disabled],
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.disabled.im-navitem-active:hover[disabled] {
+  background-color: #0044cc; }
+
+
+.datetimepicker table tr td.active:active,
+.datetimepicker table tr td.im-navitem-active:active,
+.datetimepicker table tr td.active:hover:active,
+.datetimepicker table tr td.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.disabled:active,
+.datetimepicker table tr td.active.im-disabled:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td.active.im-btn-disabled:active,
+.datetimepicker table tr td.active.im-btn-disabled-light:active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td.disabled.im-navitem-active:active,
+.datetimepicker table tr td.active.disabled:hover:active,
+.datetimepicker table tr td.active.im-disabled:hover:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.active,
+.datetimepicker table tr td.im-navitem-active,
+.datetimepicker table tr td.im-navitem-active,
+.datetimepicker table tr td.active:hover.active,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.im-navitem-active:hover,
+.datetimepicker table tr td.active.disabled.active,
+.datetimepicker table tr td.active.active.im-disabled,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.active.active.im-btn-disabled,
+.datetimepicker table tr td.active.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-navitem-active,
+.datetimepicker table tr td.active.disabled:hover.active,
+.datetimepicker table tr td.active.im-disabled:hover.active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover.active,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-navitem-active:hover {
+  background-color: #003399; }
+
+.datetimepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.datetimepicker .datetimepicker-hours span {
+  height: 26px;
+  line-height: 26px; }
+
+.datetimepicker .datetimepicker-hours table tr td span.hour_am,
+.datetimepicker .datetimepicker-hours table tr td span.hour_pm {
+  width: 14.6%; }
+
+.datetimepicker .datetimepicker-hours fieldset legend,
+.datetimepicker .datetimepicker-minutes fieldset legend {
+  margin-bottom: inherit;
+  line-height: 30px; }
+
+.datetimepicker .datetimepicker-minutes span {
+  height: 26px;
+  line-height: 26px; }
+
+.datetimepicker table tr td span:hover {
+  background: #eeeeee; }
+
+.datetimepicker table tr td span.disabled, .datetimepicker table tr td span.im-disabled, .datetimepicker table tr td span.im-btn-disabled, .datetimepicker table tr td span.im-btn-disabled-light,
+.datetimepicker table tr td span.disabled:hover,
+.datetimepicker table tr td span.im-disabled:hover,
+.datetimepicker table tr td span.im-btn-disabled:hover,
+.datetimepicker table tr td span.im-btn-disabled-light:hover {
+  background: none;
+  color: #999999;
+  cursor: default; }
+
+.datetimepicker table tr td span.active, .datetimepicker table tr td span.im-navitem-active,
+.datetimepicker table tr td span.active:hover,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.active.disabled,
+.datetimepicker table tr td span.active.im-disabled,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.active.disabled:hover,
+.datetimepicker table tr td span.active.im-disabled:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover {
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+
+.datetimepicker table tr td span.active:hover,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.active:hover:hover,
+.datetimepicker table tr td span.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.active.disabled:hover,
+.datetimepicker table tr td span.active.im-disabled:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.disabled:hover:hover,
+.datetimepicker table tr td span.active.im-disabled:hover:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.im-navitem-active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.im-disabled:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.active.im-btn-disabled:active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.disabled.im-navitem-active:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.im-disabled:hover:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.im-navitem-active,
+.datetimepicker table tr td span.im-navitem-active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.active.im-disabled,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.active.active.im-btn-disabled,
+.datetimepicker table tr td span.active.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.active.disabled:hover.active,
+.datetimepicker table tr td span.active.im-disabled:hover.active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover.active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.disabled,
+.datetimepicker table tr td span.active.im-disabled,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.active:hover.disabled,
+.datetimepicker table tr td span.active.im-disabled:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-navitem-active:hover.disabled,
+.datetimepicker table tr td span.active.disabled.disabled,
+.datetimepicker table tr td span.active.im-disabled,
+.datetimepicker table tr td span.active.im-disabled,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.disabled.im-navitem-active,
+.datetimepicker table tr td span.active.disabled:hover.disabled,
+.datetimepicker table tr td span.active.im-disabled:hover,
+.datetimepicker table tr td span.active.im-disabled:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover.disabled,
+.datetimepicker table tr td span.active[disabled],
+.datetimepicker table tr td span.im-navitem-active[disabled],
+.datetimepicker table tr td span.active:hover[disabled],
+.datetimepicker table tr td span.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.active.disabled[disabled],
+.datetimepicker table tr td span.active.im-disabled[disabled],
+.datetimepicker table tr td span.im-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled-light[disabled],
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active[disabled],
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td span.disabled.im-navitem-active[disabled],
+.datetimepicker table tr td span.active.disabled:hover[disabled],
+.datetimepicker table tr td span.active.im-disabled:hover[disabled],
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled:hover[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover[disabled],
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.disabled.im-navitem-active:hover[disabled] {
+  background-color: #0044cc; }
+
+
+.datetimepicker table tr td span.active:active,
+.datetimepicker table tr td span.im-navitem-active:active,
+.datetimepicker table tr td span.active:hover:active,
+.datetimepicker table tr td span.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.disabled:active,
+.datetimepicker table tr td span.active.im-disabled:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.active.im-btn-disabled:active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.disabled.im-navitem-active:active,
+.datetimepicker table tr td span.active.disabled:hover:active,
+.datetimepicker table tr td span.active.im-disabled:hover:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.active,
+.datetimepicker table tr td span.im-navitem-active,
+.datetimepicker table tr td span.im-navitem-active,
+.datetimepicker table tr td span.active:hover.active,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.im-navitem-active:hover,
+.datetimepicker table tr td span.active.disabled.active,
+.datetimepicker table tr td span.active.active.im-disabled,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.active.active.im-btn-disabled,
+.datetimepicker table tr td span.active.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-navitem-active,
+.datetimepicker table tr td span.active.disabled:hover.active,
+.datetimepicker table tr td span.active.im-disabled:hover.active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover.active,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover.active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-navitem-active:hover {
+  background-color: #003399; }
+
+.datetimepicker table tr td span.old {
+  color: #999999; }
+
+.datetimepicker th.switch {
+  width: 145px; }
+
+.datetimepicker th span.glyphicon {
+  pointer-events: none; }
+
+.datetimepicker thead tr:first-child th,
+.datetimepicker tfoot th {
+  cursor: pointer; }
+
+.datetimepicker thead tr:first-child th:hover,
+.datetimepicker tfoot th:hover {
+  background: #eeeeee; }
+
+.input-append.date .add-on i,
+.input-prepend.date .add-on i,
+.input-group.date .input-group-addon span,
+.date.im-input-group .input-group-addon span {
+  cursor: pointer;
+  width: 14px;
+  height: 14px; }
+
+.datetimepicker {
+  border-radius: 0.4rem;
+  min-width: 220px;
+  border: 1.5px solid gray;
+  padding: 10px;
+  font-size: 85%; }
+
+input.datetimepicker:focus {
+  outline: none;
+  box-shadow: none; }

@@ -1,5 +1,9 @@
-
-@mixin input-with-icon($type){
+@mixin input-with-icon($type) {
     @extend .im-input;
     color: $gainsboro-gray;
+}
+
+@mixin remove-focus {
+    outline: none;
+    box-shadow: none;
 }
