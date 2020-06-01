@@ -2,7 +2,7 @@
 
 // Text 
 * {
-    font-family: $sans-pro;
+    font-family: $sans-pro !important;
 }
 
 .im-h1 {
@@ -152,4 +152,11 @@
 
 .im-danger {
     color: $danger !important;
+}
+
+.im-disabled {
+    @extend .disabled;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+    text-decoration: none !important;
 }
