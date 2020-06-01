@@ -71,6 +71,21 @@ input.im-input {
     @extend .input-group-append;
 }
 
+.im-textbox{
+    @extend .im-input;
+    border-radius: $radius * 2;
+    color: $im-dark;
+    font-weight: 400;
+}
+
+.im-textarea{
+    @extend .form-control;
+    border-radius: $radius * 2;
+    color: $im-dark;
+    font-weight: 400;
+    min-height: 100px;;
+}
+
 // .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
 //     font-family: "FontAwesome";
 //     content: "\f00c";

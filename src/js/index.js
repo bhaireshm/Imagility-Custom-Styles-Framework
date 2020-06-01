@@ -4,6 +4,11 @@ setTimeout(function () {
     c++;
 }, 1000);
 
-$('.datetimepicker').datetimepicker({
-    format: 'yyyy/mm/dd hh:ii'
+$('#datetimepicker').datetimepicker({
+    format: 'dd-mm-yyyy'
 });
+
+var s2 = require('../../node_modules/select2/dist/js/select2.full');
+
+// console.log(s2);
+
