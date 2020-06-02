@@ -1,5 +1,6 @@
 .im-input {
     @extend .form-control;
+    @extend .im-box-shadow;
 
     font-family: $sans-pro;
     border: 1.5px solid $mischka-gray;
@@ -71,19 +72,21 @@ input.im-input {
     @extend .input-group-append;
 }
 
-.im-textbox{
+.im-textbox {
     @extend .im-input;
     border-radius: $radius * 2;
     color: $im-dark;
     font-weight: 400;
 }
 
-.im-textarea{
+.im-textarea {
+    @extend .im-box-shadow;
     @extend .form-control;
     border-radius: $radius * 2;
+    border: 1.5px solid $mischka-gray;
     color: $im-dark;
     font-weight: 400;
-    min-height: 100px;;
+    min-height: 100px;
 }
 
 // .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
