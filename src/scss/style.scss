@@ -7,9 +7,11 @@
 @import "mixins/background-variant";
 @import "mixins/mixin-forms";
 
+// Pluggin
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import "text";
+// Cusom Styles
+@import "text"; 
 @import "buttons";
 @import "loader";
 @import "forms";

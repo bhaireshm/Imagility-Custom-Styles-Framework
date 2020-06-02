@@ -254,7 +254,7 @@
 
 .im-tab-item {
     @extend .nav-item;
-
+ 
 }
 
 .im-tab-link {
@@ -262,7 +262,7 @@
     color: $font-color-gray;
 }
 
-.active {
+.im-active {
     border-bottom: 2px solid $im-primary;
     color : $font-color;
     font-weight: bold;

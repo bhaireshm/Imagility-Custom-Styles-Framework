@@ -1,19 +1,29 @@
-
-.datetimepicker{
+.datetimepicker {
     @extend .datetimepicker;
+    @extend .im-box-shadow-none;
     border-radius: $radius;
     min-width: 220px;
-    border: 1.5px solid gray;
+    border: 1.5px solid $border-color;
     padding: 10px;
     font-size: 85%;
 }
 
 input.datetimepicker {
     &:focus {
-        @include remove-focus;
+        @extend .remove-focus;
     }
 }
 
-.day.active {
-    
-}
+// th.prev, th.next {
+//     @extend .prev;
+//     background-color: $border-color;
+//     border-radius: 15px;
+//     font-size: 75%;
+// }
+
+// th.prev:first-child, th.next:first-child{
+//     font-family:"FontAwesome";
+//     content: "\f078";
+// }
+
+.day.active {}

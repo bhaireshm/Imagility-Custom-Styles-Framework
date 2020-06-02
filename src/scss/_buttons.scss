@@ -1,3 +1,11 @@
+.btn {
+    @extend .btn;
+
+    &:focus {
+        @extend .remove-focus;
+    }
+}
+
 .im-btn {
     @extend .btn;
     @include btn-2;
@@ -54,11 +62,11 @@
     }
 }
 
-.im-btn-search{
+.im-btn-search {
     @extend .btn-link;
-    // bor`
+    @extend .btn;
 
     &:focus {
-        @include remove-focus;
+        @extend .remove-focus;
     }
 }

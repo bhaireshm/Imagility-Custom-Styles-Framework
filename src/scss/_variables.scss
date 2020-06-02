@@ -14,7 +14,7 @@ $im-info: $info-color !important;
 $im-warning: $warning-color !important;
 $im-danger: $danger-color !important;
 $im-light: $gainsboro-gray !important;
-$im-dark: $black-rock !important;
+$im-dark: $black-rock !important; 
 $im-gray: $slate-gray !important;
 
 $theme-colors: (
@@ -52,3 +52,62 @@ $custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml;cha
 $breadcrumb-divider: quote(">");
 $breadcrumb-item-padding: 5px;
 $breadcrumb-active-color: $im-dark;
+
+// // ---------------------------------------------------------------------------
+
+// $blue: #158FC4;
+// $red: #FD747C;
+// $cyan: #19A0DA;
+// $yellow: #FEBC54;
+// $green: #86D87F;
+// $light: #DEDEDE;
+// $dark: #2F3440;
+
+// $primary:       $blue !default;
+// // $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $light !default;
+// $dark:          $dark !default;
+
+// $enable-shadows: true;
+// $enable-gradients: true;
+// $enable-responsive-font-sizes: true;
+// $font-family-sans-serif: "Source Sans Pro",sans-serif;
+// $font-family-monospace: "Source Sans Pro",sans-serif;
+// $enable-rounded: 0.4rem;
+// $font-weight-light: 100;
+// $font-weight-normal: 200;
+// $font-weight-bold: 300;
+// $font-weight-bolder: 400;
+// $input-btn-padding-x: 0.5rem;
+// $input-btn-padding-y: 0.5rem;
+// $input-btn-font-family: "Source Sans Pro",sans-serif;
+// $border-radius: .4rem;
+// $border-radius-lg: .6rem;
+// $badge-pill-border-radius: 12rem;
+// $h1-font-size: 34px;
+// $h2-font-size: 22px;
+// $h3-font-size: 17px;
+// $h4-font-size: 15px;
+// $h5-font-size: 13px;
+// $h6-font-size: 11px;
+// $small-font-size: 11px;
+// $input-btn-focus-color: rgba($primary, .25);
+// $box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
+// $form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='%2386D87F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+// $form-feedback-icon-invalid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C' cx='6' cy='6' r='4.5'/></svg>");
+// $nav-link-disabled-color: #687C93;
+// $nav-tabs-link-active-color: $primary;
+// $nav-tabs-border-color: none;
+// $nav-tabs-border-width: none;
+// $dropdown-border-color: #A3A6B4;
+// $dropdown-font-size: 85%;
+// $dropdown-link-color: #2F3440;
+// $dropdown-link-hover-color: darken(#2F3440, 5%);
+// $breadcrumb-divider: quote(">");
+// $progress-height: 0.5rem;
+// $progress-border-radius: $border-radius * 2;
+// $progress-bar-animation-timing: .5s linear infinite;

@@ -17,9 +17,11 @@
 .im-input-error {
     @extend .im-input;
     @extend .is-invalid;
+    
     color: $im-danger;
     border: 1.5px solid $im-danger;
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C'  cx='6' cy='6' r='4.5'/></svg>");
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C' cx='6' cy='6' r='4.5'/></svg>");
+    // background-repeat: no-repeat;
 
     &:focus {
         border: 1.5px solid $im-danger;
