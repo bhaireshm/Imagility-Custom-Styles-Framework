@@ -4,11 +4,14 @@ setTimeout(function () {
     c++;
 }, 1000);
 
+console.log("Started...");
+
+
 $('#datetimepicker').datetimepicker({
     format: 'dd-mm-yyyy'
 });
 
-var s2 = require('../../node_modules/select2/dist/js/select2.full');
+// var s2 = require('../../node_modules/select2/dist/js/select2.full');
 
-// console.log(s2);
+// In your Javascript (external .js resource or <script> tag)
 

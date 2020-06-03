@@ -17,7 +17,7 @@
 .im-input-error {
     @extend .im-input;
     @extend .is-invalid;
-    
+
     color: $im-danger;
     border: 1.5px solid $im-danger;
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C' cx='6' cy='6' r='4.5'/></svg>");
@@ -52,8 +52,16 @@
 
 input.im-input {
     &:focus {
-        outline: none;
-        box-shadow: none;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+textarea.im-textarea {
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 1.5px solid $mischka-gray;
     }
 }
 
@@ -111,3 +119,54 @@ input.im-input {
 //     background-color: $im-primary;
 //     transform: translateX(0.75rem);
 // }
+
+
+// Select Input box
+.select2-container--default .select2-selection--multiple {
+    @extend .im-input;
+    border: 1.5px solid $mischka-gray !important;
+    border-radius: $radius !important;
+}
+
+// Tags
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $patterns-blue !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    padding: 4px !important;
+    margin-top: 0px !important;
+    font-size: $input-font-size !important;
+    color: $font-color !important
+}
+
+// Tag remove btn
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: $font-color !important;
+    border-radius: 1.5rem !important;
+    color: $white-smoke !important;
+    font-size: 1em !important;
+    padding: 0px 5px !important;
+}
+
+// Tag content
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    padding-left: 5px !important;
+}
+
+// List Box
+.select2-container--open .select2-dropdown--above{
+    border: 1.5px solid $mischka-gray !important;
+    margin: 2px 0px !important;
+    border-radius: $radius !important;
+}
+
+.select2-container--open .select2-dropdown--below{
+    border: 1.5px solid $mischka-gray !important;
+    margin: 2px 0px !important;
+    border-radius: $radius !important;
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{
+    border-radius: $radius !important;
+    margin-top: 0.5rem !important;
+}

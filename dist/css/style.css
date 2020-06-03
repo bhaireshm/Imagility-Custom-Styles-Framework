@@ -9,7 +9,7 @@
   background: -webkit-linear-gradient(45deg, #19A0DA 0%, #063689 100%);
   background: linear-gradient(45deg, #19A0DA 0%, #063689 100%); }
 
-.im-box-shadow, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .im-textarea {
+.im-box-shadow, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .select2-container--default .select2-selection--multiple, .im-textarea {
   -webkit-box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
   -moz-box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
   box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8); }
@@ -20,6 +20,9 @@
 .remove-focus, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, input.datetimepicker:focus {
   outline: none;
   box-shadow: none; }
+
+.im-border, .im-border-rounded {
+  border: 1.5px solid !important; }
 
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -1422,7 +1425,7 @@ pre {
   .table-responsive > .table-bordered {
     border: 0; }
 
-.form-control, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .im-textarea {
+.form-control, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .select2-container--default .select2-selection--multiple, .im-textarea {
   display: block;
   width: 100%;
   height: 45px;
@@ -1437,34 +1440,35 @@ pre {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .form-control, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .im-textarea {
+    .form-control, .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .select2-container--default .select2-selection--multiple, .im-textarea {
       transition: none; } }
-  .form-control::-ms-expand, .im-input::-ms-expand, .im-input-error::-ms-expand, .im-input-error-outline::-ms-expand, .im-input-success::-ms-expand, .im-textbox::-ms-expand, .im-textarea::-ms-expand {
+  .form-control::-ms-expand, .im-input::-ms-expand, .im-input-error::-ms-expand, .im-input-error-outline::-ms-expand, .im-input-success::-ms-expand, .im-textbox::-ms-expand, .select2-container--default .select2-selection--multiple::-ms-expand, .im-textarea::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:-moz-focusring, .im-input:-moz-focusring, .im-input-error:-moz-focusring, .im-input-error-outline:-moz-focusring, .im-input-success:-moz-focusring, .im-textbox:-moz-focusring, .im-textarea:-moz-focusring {
+  .form-control:-moz-focusring, .im-input:-moz-focusring, .im-input-error:-moz-focusring, .im-input-error-outline:-moz-focusring, .im-input-success:-moz-focusring, .im-textbox:-moz-focusring, .select2-container--default .select2-selection--multiple:-moz-focusring, .im-textarea:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #495057; }
-  .form-control:focus, .im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .im-input-success:focus, .im-textbox:focus, .im-textarea:focus {
+  .form-control:focus, .im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .im-input-success:focus, .im-textbox:focus, .select2-container--default .select2-selection--multiple:focus, .im-textarea:focus {
     color: #495057;
     background-color: #fff;
     border-color: #6ac7ef;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.25); }
-  .form-control::placeholder, .im-input::placeholder, .im-input-error::placeholder, .im-input-error-outline::placeholder, .im-input-success::placeholder, .im-textbox::placeholder, .im-textarea::placeholder {
+  .form-control::placeholder, .im-input::placeholder, .im-input-error::placeholder, .im-input-error-outline::placeholder, .im-input-success::placeholder, .im-textbox::placeholder, .select2-container--default .select2-selection--multiple::placeholder, .im-textarea::placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:disabled, .im-input:disabled, .im-input-error:disabled, .im-input-error-outline:disabled, .im-input-success:disabled, .im-textbox:disabled, .im-textarea:disabled, .form-control[readonly], .im-input[readonly], .im-input-error[readonly], .im-input-error-outline[readonly], .im-input-success[readonly], .im-textbox[readonly], .im-textarea[readonly] {
+  .form-control:disabled, .im-input:disabled, .im-input-error:disabled, .im-input-error-outline:disabled, .im-input-success:disabled, .im-textbox:disabled, .select2-container--default .select2-selection--multiple:disabled, .im-textarea:disabled, .form-control[readonly], .im-input[readonly], .im-input-error[readonly], .im-input-error-outline[readonly], .im-input-success[readonly], .im-textbox[readonly], .select2-container--default .select2-selection--multiple[readonly], .im-textarea[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
-input[type="date"].form-control, input.im-input[type="date"], input.im-input-error[type="date"], input.im-input-error-outline[type="date"], input.im-input-success[type="date"], input.im-textbox[type="date"], input.im-textarea[type="date"],
+input[type="date"].form-control, input.im-input[type="date"], input.im-input-error[type="date"], input.im-input-error-outline[type="date"], input.im-input-success[type="date"], input.im-textbox[type="date"], .select2-container--default input.select2-selection--multiple[type="date"], input.im-textarea[type="date"],
 input[type="time"].form-control,
 input.im-input[type="time"],
 input.im-input-error[type="time"],
 input.im-input-error-outline[type="time"],
 input.im-input-success[type="time"],
 input.im-textbox[type="time"],
+.select2-container--default input.select2-selection--multiple[type="time"],
 input.im-textarea[type="time"],
 input[type="datetime-local"].form-control,
 input.im-input[type="datetime-local"],
@@ -1472,6 +1476,7 @@ input.im-input-error[type="datetime-local"],
 input.im-input-error-outline[type="datetime-local"],
 input.im-input-success[type="datetime-local"],
 input.im-textbox[type="datetime-local"],
+.select2-container--default input.select2-selection--multiple[type="datetime-local"],
 input.im-textarea[type="datetime-local"],
 input[type="month"].form-control,
 input.im-input[type="month"],
@@ -1479,10 +1484,11 @@ input.im-input-error[type="month"],
 input.im-input-error-outline[type="month"],
 input.im-input-success[type="month"],
 input.im-textbox[type="month"],
+.select2-container--default input.select2-selection--multiple[type="month"],
 input.im-textarea[type="month"] {
   appearance: none; }
 
-select.form-control:focus::-ms-value, select.im-input:focus::-ms-value, select.im-input-error:focus::-ms-value, select.im-input-error-outline:focus::-ms-value, select.im-input-success:focus::-ms-value, select.im-textbox:focus::-ms-value, select.im-textarea:focus::-ms-value {
+select.form-control:focus::-ms-value, select.im-input:focus::-ms-value, select.im-input-error:focus::-ms-value, select.im-input-error-outline:focus::-ms-value, select.im-input-success:focus::-ms-value, select.im-textbox:focus::-ms-value, .select2-container--default select.select2-selection--multiple:focus::-ms-value, select.im-textarea:focus::-ms-value {
   color: #495057;
   background-color: #fff; }
 
@@ -1539,10 +1545,10 @@ select.form-control:focus::-ms-value, select.im-input:focus::-ms-value, select.i
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-select.form-control[size], select.im-input[size], select.im-input-error[size], select.im-input-error-outline[size], select.im-input-success[size], select.im-textbox[size], select.im-textarea[size], select.form-control[multiple], select.im-input[multiple], select.im-input-error[multiple], select.im-input-error-outline[multiple], select.im-input-success[multiple], select.im-textbox[multiple], select.im-textarea[multiple] {
+select.form-control[size], select.im-input[size], select.im-input-error[size], select.im-input-error-outline[size], select.im-input-success[size], select.im-textbox[size], .select2-container--default select.select2-selection--multiple[size], select.im-textarea[size], select.form-control[multiple], select.im-input[multiple], select.im-input-error[multiple], select.im-input-error-outline[multiple], select.im-input-success[multiple], select.im-textbox[multiple], .select2-container--default select.select2-selection--multiple[multiple], select.im-textarea[multiple] {
   height: auto; }
 
-textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-input-error-outline, textarea.im-input-success, textarea.im-textbox, textarea.im-textarea {
+textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-input-error-outline, textarea.im-input-success, textarea.im-textbox, .select2-container--default textarea.select2-selection--multiple, textarea.im-textarea {
   height: auto; }
 
 .form-group {
@@ -1618,18 +1624,18 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
 .im-input-success ~ .valid-tooltip {
   display: block; }
 
-.was-validated .form-control:valid, .was-validated .im-input:valid, .was-validated .im-input-error:valid, .was-validated .im-input-error-outline:valid, .was-validated .im-input-success:valid, .was-validated .im-textbox:valid, .was-validated .im-textarea:valid, .form-control.is-valid, .is-valid.im-input, .is-valid.im-input-error, .is-valid.im-input-error-outline, .im-input-success, .is-valid.im-textbox, .is-valid.im-textarea {
+.was-validated .form-control:valid, .was-validated .im-input:valid, .was-validated .im-input-error:valid, .was-validated .im-input-error-outline:valid, .was-validated .im-input-success:valid, .was-validated .im-textbox:valid, .was-validated .select2-container--default .select2-selection--multiple:valid, .select2-container--default .was-validated .select2-selection--multiple:valid, .was-validated .im-textarea:valid, .form-control.is-valid, .is-valid.im-input, .is-valid.im-input-error, .is-valid.im-input-error-outline, .im-input-success, .is-valid.im-textbox, .select2-container--default .is-valid.select2-selection--multiple, .select2-container--default .select2-selection--multiple.im-input-success, .is-valid.im-textarea {
   border-color: #86D87F;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2386D87F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-control:valid:focus, .was-validated .im-input:valid:focus, .was-validated .im-input-error:valid:focus, .was-validated .im-input-error-outline:valid:focus, .was-validated .im-input-success:valid:focus, .was-validated .im-textbox:valid:focus, .was-validated .im-textarea:valid:focus, .form-control.is-valid:focus, .is-valid.im-input:focus, .is-valid.im-input-error:focus, .is-valid.im-input-error-outline:focus, .im-input-success:focus, .is-valid.im-textbox:focus, .is-valid.im-textarea:focus {
+  .was-validated .form-control:valid:focus, .was-validated .im-input:valid:focus, .was-validated .im-input-error:valid:focus, .was-validated .im-input-error-outline:valid:focus, .was-validated .im-input-success:valid:focus, .was-validated .im-textbox:valid:focus, .was-validated .select2-container--default .select2-selection--multiple:valid:focus, .select2-container--default .was-validated .select2-selection--multiple:valid:focus, .was-validated .im-textarea:valid:focus, .form-control.is-valid:focus, .is-valid.im-input:focus, .is-valid.im-input-error:focus, .is-valid.im-input-error-outline:focus, .im-input-success:focus, .is-valid.im-textbox:focus, .select2-container--default .is-valid.select2-selection--multiple:focus, .is-valid.im-textarea:focus {
     border-color: #86D87F;
     box-shadow: 0 0 0 0.2rem rgba(134, 216, 127, 0.25); }
 
-.was-validated textarea.form-control:valid, .was-validated textarea.im-input:valid, .was-validated textarea.im-input-error:valid, .was-validated textarea.im-input-error-outline:valid, .was-validated textarea.im-input-success:valid, .was-validated textarea.im-textbox:valid, .was-validated textarea.im-textarea:valid, textarea.form-control.is-valid, textarea.is-valid.im-input, textarea.is-valid.im-input-error, textarea.is-valid.im-input-error-outline, textarea.im-input-success, textarea.is-valid.im-textbox, textarea.is-valid.im-textarea {
+.was-validated textarea.form-control:valid, .was-validated textarea.im-input:valid, .was-validated textarea.im-input-error:valid, .was-validated textarea.im-input-error-outline:valid, .was-validated textarea.im-input-success:valid, .was-validated textarea.im-textbox:valid, .was-validated .select2-container--default textarea.select2-selection--multiple:valid, .select2-container--default .was-validated textarea.select2-selection--multiple:valid, .was-validated textarea.im-textarea:valid, textarea.form-control.is-valid, textarea.is-valid.im-input, textarea.is-valid.im-input-error, textarea.is-valid.im-input-error-outline, textarea.im-input-success, textarea.is-valid.im-textbox, .select2-container--default textarea.is-valid.select2-selection--multiple, .select2-container--default textarea.select2-selection--multiple.im-input-success, textarea.is-valid.im-textarea {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
@@ -1703,18 +1709,18 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
 .im-input-error-outline ~ .invalid-tooltip {
   display: block; }
 
-.was-validated .form-control:invalid, .was-validated .im-input:invalid, .was-validated .im-input-error:invalid, .was-validated .im-input-error-outline:invalid, .was-validated .im-input-success:invalid, .was-validated .im-textbox:invalid, .was-validated .im-textarea:invalid, .form-control.is-invalid, .is-invalid.im-input, .im-input-error, .im-input-error-outline, .is-invalid.im-input-success, .is-invalid.im-textbox, .is-invalid.im-textarea {
+.was-validated .form-control:invalid, .was-validated .im-input:invalid, .was-validated .im-input-error:invalid, .was-validated .im-input-error-outline:invalid, .was-validated .im-input-success:invalid, .was-validated .im-textbox:invalid, .was-validated .select2-container--default .select2-selection--multiple:invalid, .select2-container--default .was-validated .select2-selection--multiple:invalid, .was-validated .im-textarea:invalid, .form-control.is-invalid, .is-invalid.im-input, .im-input-error, .im-input-error-outline, .is-invalid.im-input-success, .is-invalid.im-textbox, .select2-container--default .is-invalid.select2-selection--multiple, .select2-container--default .select2-selection--multiple.im-input-error, .select2-container--default .select2-selection--multiple.im-input-error-outline, .is-invalid.im-textarea {
   border-color: #FD747C;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23FD747C' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
-  .was-validated .form-control:invalid:focus, .was-validated .im-input:invalid:focus, .was-validated .im-input-error:invalid:focus, .was-validated .im-input-error-outline:invalid:focus, .was-validated .im-input-success:invalid:focus, .was-validated .im-textbox:invalid:focus, .was-validated .im-textarea:invalid:focus, .form-control.is-invalid:focus, .is-invalid.im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .is-invalid.im-input-success:focus, .is-invalid.im-textbox:focus, .is-invalid.im-textarea:focus {
+  .was-validated .form-control:invalid:focus, .was-validated .im-input:invalid:focus, .was-validated .im-input-error:invalid:focus, .was-validated .im-input-error-outline:invalid:focus, .was-validated .im-input-success:invalid:focus, .was-validated .im-textbox:invalid:focus, .was-validated .select2-container--default .select2-selection--multiple:invalid:focus, .select2-container--default .was-validated .select2-selection--multiple:invalid:focus, .was-validated .im-textarea:invalid:focus, .form-control.is-invalid:focus, .is-invalid.im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .is-invalid.im-input-success:focus, .is-invalid.im-textbox:focus, .select2-container--default .is-invalid.select2-selection--multiple:focus, .is-invalid.im-textarea:focus {
     border-color: #FD747C;
     box-shadow: 0 0 0 0.2rem rgba(253, 116, 124, 0.25); }
 
-.was-validated textarea.form-control:invalid, .was-validated textarea.im-input:invalid, .was-validated textarea.im-input-error:invalid, .was-validated textarea.im-input-error-outline:invalid, .was-validated textarea.im-input-success:invalid, .was-validated textarea.im-textbox:invalid, .was-validated textarea.im-textarea:invalid, textarea.form-control.is-invalid, textarea.is-invalid.im-input, textarea.im-input-error, textarea.im-input-error-outline, textarea.is-invalid.im-input-success, textarea.is-invalid.im-textbox, textarea.is-invalid.im-textarea {
+.was-validated textarea.form-control:invalid, .was-validated textarea.im-input:invalid, .was-validated textarea.im-input-error:invalid, .was-validated textarea.im-input-error-outline:invalid, .was-validated textarea.im-input-success:invalid, .was-validated textarea.im-textbox:invalid, .was-validated .select2-container--default textarea.select2-selection--multiple:invalid, .select2-container--default .was-validated textarea.select2-selection--multiple:invalid, .was-validated textarea.im-textarea:invalid, textarea.form-control.is-invalid, textarea.is-invalid.im-input, textarea.im-input-error, textarea.im-input-error-outline, textarea.is-invalid.im-input-success, textarea.is-invalid.im-textbox, .select2-container--default textarea.is-invalid.select2-selection--multiple, .select2-container--default textarea.select2-selection--multiple.im-input-error, .select2-container--default textarea.select2-selection--multiple.im-input-error-outline, textarea.is-invalid.im-textarea {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
@@ -1776,7 +1782,7 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline .im-input, .form-inline .im-input-error, .form-inline .im-input-error-outline, .form-inline .im-input-success, .form-inline .im-textbox, .form-inline .im-textarea {
+    .form-inline .form-control, .form-inline .im-input, .form-inline .im-input-error, .form-inline .im-input-error-outline, .form-inline .im-input-success, .form-inline .im-textbox, .form-inline .select2-container--default .select2-selection--multiple, .select2-container--default .form-inline .select2-selection--multiple, .form-inline .im-textarea {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -2665,7 +2671,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .im-input-group > .form-control, .input-group > .im-input, .im-input-group > .im-input, .input-group > .im-input-error, .im-input-group > .im-input-error, .input-group > .im-input-error-outline, .im-input-group > .im-input-error-outline, .input-group > .im-input-success, .im-input-group > .im-input-success, .input-group > .im-textbox, .im-input-group > .im-textbox, .input-group > .im-textarea, .im-input-group > .im-textarea,
+  .input-group > .form-control, .im-input-group > .form-control, .input-group > .im-input, .im-input-group > .im-input, .input-group > .im-input-error, .im-input-group > .im-input-error, .input-group > .im-input-error-outline, .im-input-group > .im-input-error-outline, .input-group > .im-input-success, .im-input-group > .im-input-success, .input-group > .im-textbox, .im-input-group > .im-textbox, .select2-container--default .input-group > .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple, .input-group > .im-textarea, .im-input-group > .im-textarea,
   .input-group > .form-control-plaintext,
   .im-input-group > .form-control-plaintext,
   .input-group > .custom-select,
@@ -2677,7 +2683,7 @@ input[type="button"].btn-block {
     width: 1%;
     min-width: 0;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .im-input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .im-input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .im-input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .im-input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .im-input-group > .im-input-success + .form-control, .input-group > .im-textbox + .form-control, .im-input-group > .im-textbox + .form-control, .input-group > .im-textarea + .form-control, .im-input-group > .im-textarea + .form-control, .input-group > .form-control + .im-input, .im-input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .im-input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .im-input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .im-input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .im-input-group > .im-input-success + .im-input, .input-group > .im-textbox + .im-input, .im-input-group > .im-textbox + .im-input, .input-group > .im-textarea + .im-input, .im-input-group > .im-textarea + .im-input, .input-group > .form-control + .im-input-error, .im-input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .im-input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .im-input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .im-input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .im-input-group > .im-input-success + .im-input-error, .input-group > .im-textbox + .im-input-error, .im-input-group > .im-textbox + .im-input-error, .input-group > .im-textarea + .im-input-error, .im-input-group > .im-textarea + .im-input-error, .input-group > .form-control + .im-input-error-outline, .im-input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .im-input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .im-input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .im-input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .im-input-group > .im-input-success + .im-input-error-outline, .input-group > .im-textbox + .im-input-error-outline, .im-input-group > .im-textbox + .im-input-error-outline, .input-group > .im-textarea + .im-input-error-outline, .im-input-group > .im-textarea + .im-input-error-outline, .input-group > .form-control + .im-input-success, .im-input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .im-input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .im-input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .im-input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success, .im-input-group > .im-input-success + .im-input-success, .input-group > .im-textbox + .im-input-success, .im-input-group > .im-textbox + .im-input-success, .input-group > .im-textarea + .im-input-success, .im-input-group > .im-textarea + .im-input-success, .input-group > .form-control + .im-textbox, .im-input-group > .form-control + .im-textbox, .input-group > .im-input + .im-textbox, .im-input-group > .im-input + .im-textbox, .input-group > .im-input-error + .im-textbox, .im-input-group > .im-input-error + .im-textbox, .input-group > .im-input-error-outline + .im-textbox, .im-input-group > .im-input-error-outline + .im-textbox, .input-group > .im-input-success + .im-textbox, .im-input-group > .im-input-success + .im-textbox, .input-group > .im-textbox + .im-textbox, .im-input-group > .im-textbox + .im-textbox, .input-group > .im-textarea + .im-textbox, .im-input-group > .im-textarea + .im-textbox, .input-group > .form-control + .im-textarea, .im-input-group > .form-control + .im-textarea, .input-group > .im-input + .im-textarea, .im-input-group > .im-input + .im-textarea, .input-group > .im-input-error + .im-textarea, .im-input-group > .im-input-error + .im-textarea, .input-group > .im-input-error-outline + .im-textarea, .im-input-group > .im-input-error-outline + .im-textarea, .input-group > .im-input-success + .im-textarea, .im-input-group > .im-input-success + .im-textarea, .input-group > .im-textbox + .im-textarea, .im-input-group > .im-textbox + .im-textarea, .input-group > .im-textarea + .im-textarea, .im-input-group > .im-textarea + .im-textarea,
+    .input-group > .form-control + .form-control, .im-input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .im-input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .im-input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .im-input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .im-input-group > .im-input-success + .form-control, .input-group > .im-textbox + .form-control, .im-input-group > .im-textbox + .form-control, .select2-container--default .input-group > .select2-selection--multiple + .form-control, .select2-container--default .im-input-group > .select2-selection--multiple + .form-control, .input-group > .im-textarea + .form-control, .im-input-group > .im-textarea + .form-control, .input-group > .form-control + .im-input, .im-input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .im-input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .im-input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .im-input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .im-input-group > .im-input-success + .im-input, .input-group > .im-textbox + .im-input, .im-input-group > .im-textbox + .im-input, .select2-container--default .input-group > .select2-selection--multiple + .im-input, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input, .input-group > .im-textarea + .im-input, .im-input-group > .im-textarea + .im-input, .input-group > .form-control + .im-input-error, .im-input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .im-input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .im-input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .im-input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .im-input-group > .im-input-success + .im-input-error, .input-group > .im-textbox + .im-input-error, .im-input-group > .im-textbox + .im-input-error, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error, .input-group > .im-textarea + .im-input-error, .im-input-group > .im-textarea + .im-input-error, .input-group > .form-control + .im-input-error-outline, .im-input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .im-input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .im-input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .im-input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .im-input-group > .im-input-success + .im-input-error-outline, .input-group > .im-textbox + .im-input-error-outline, .im-input-group > .im-textbox + .im-input-error-outline, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error-outline, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error-outline, .input-group > .im-textarea + .im-input-error-outline, .im-input-group > .im-textarea + .im-input-error-outline, .input-group > .form-control + .im-input-success, .im-input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .im-input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .im-input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .im-input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success, .im-input-group > .im-input-success + .im-input-success, .input-group > .im-textbox + .im-input-success, .im-input-group > .im-textbox + .im-input-success, .select2-container--default .input-group > .select2-selection--multiple + .im-input-success, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-success, .input-group > .im-textarea + .im-input-success, .im-input-group > .im-textarea + .im-input-success, .input-group > .form-control + .im-textbox, .im-input-group > .form-control + .im-textbox, .input-group > .im-input + .im-textbox, .im-input-group > .im-input + .im-textbox, .input-group > .im-input-error + .im-textbox, .im-input-group > .im-input-error + .im-textbox, .input-group > .im-input-error-outline + .im-textbox, .im-input-group > .im-input-error-outline + .im-textbox, .input-group > .im-input-success + .im-textbox, .im-input-group > .im-input-success + .im-textbox, .input-group > .im-textbox + .im-textbox, .im-input-group > .im-textbox + .im-textbox, .select2-container--default .input-group > .select2-selection--multiple + .im-textbox, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textbox, .input-group > .im-textarea + .im-textbox, .im-input-group > .im-textarea + .im-textbox, .select2-container--default .input-group > .form-control + .select2-selection--multiple, .select2-container--default .im-input-group > .form-control + .select2-selection--multiple, .select2-container--default .input-group > .im-input + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .input-group > .im-textarea + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textarea + .select2-selection--multiple, .input-group > .form-control + .im-textarea, .im-input-group > .form-control + .im-textarea, .input-group > .im-input + .im-textarea, .im-input-group > .im-input + .im-textarea, .input-group > .im-input-error + .im-textarea, .im-input-group > .im-input-error + .im-textarea, .input-group > .im-input-error-outline + .im-textarea, .im-input-group > .im-input-error-outline + .im-textarea, .input-group > .im-input-success + .im-textarea, .im-input-group > .im-input-success + .im-textarea, .input-group > .im-textbox + .im-textarea, .im-input-group > .im-textbox + .im-textarea, .select2-container--default .input-group > .select2-selection--multiple + .im-textarea, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textarea, .input-group > .im-textarea + .im-textarea, .im-input-group > .im-textarea + .im-textarea,
     .input-group > .form-control + .custom-select,
     .im-input-group > .form-control + .custom-select,
     .input-group > .im-input + .custom-select,
@@ -2690,6 +2696,8 @@ input[type="button"].btn-block {
     .im-input-group > .im-input-success + .custom-select,
     .input-group > .im-textbox + .custom-select,
     .im-input-group > .im-textbox + .custom-select,
+    .select2-container--default .input-group > .select2-selection--multiple + .custom-select,
+    .select2-container--default .im-input-group > .select2-selection--multiple + .custom-select,
     .input-group > .im-textarea + .custom-select,
     .im-input-group > .im-textarea + .custom-select,
     .input-group > .form-control + .custom-file,
@@ -2704,6 +2712,8 @@ input[type="button"].btn-block {
     .im-input-group > .im-input-success + .custom-file,
     .input-group > .im-textbox + .custom-file,
     .im-input-group > .im-textbox + .custom-file,
+    .select2-container--default .input-group > .select2-selection--multiple + .custom-file,
+    .select2-container--default .im-input-group > .select2-selection--multiple + .custom-file,
     .input-group > .im-textarea + .custom-file,
     .im-input-group > .im-textarea + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
@@ -2718,6 +2728,8 @@ input[type="button"].btn-block {
     .im-input-group > .form-control-plaintext + .im-input-success,
     .input-group > .form-control-plaintext + .im-textbox,
     .im-input-group > .form-control-plaintext + .im-textbox,
+    .select2-container--default .input-group > .form-control-plaintext + .select2-selection--multiple,
+    .select2-container--default .im-input-group > .form-control-plaintext + .select2-selection--multiple,
     .input-group > .form-control-plaintext + .im-textarea,
     .im-input-group > .form-control-plaintext + .im-textarea,
     .input-group > .form-control-plaintext + .custom-select,
@@ -2736,6 +2748,8 @@ input[type="button"].btn-block {
     .im-input-group > .custom-select + .im-input-success,
     .input-group > .custom-select + .im-textbox,
     .im-input-group > .custom-select + .im-textbox,
+    .select2-container--default .input-group > .custom-select + .select2-selection--multiple,
+    .select2-container--default .im-input-group > .custom-select + .select2-selection--multiple,
     .input-group > .custom-select + .im-textarea,
     .im-input-group > .custom-select + .im-textarea,
     .input-group > .custom-select + .custom-select,
@@ -2754,6 +2768,8 @@ input[type="button"].btn-block {
     .im-input-group > .custom-file + .im-input-success,
     .input-group > .custom-file + .im-textbox,
     .im-input-group > .custom-file + .im-textbox,
+    .select2-container--default .input-group > .custom-file + .select2-selection--multiple,
+    .select2-container--default .im-input-group > .custom-file + .select2-selection--multiple,
     .input-group > .custom-file + .im-textarea,
     .im-input-group > .custom-file + .im-textarea,
     .input-group > .custom-file + .custom-select,
@@ -2761,7 +2777,7 @@ input[type="button"].btn-block {
     .input-group > .custom-file + .custom-file,
     .im-input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, .im-input-group > .form-control:focus, .input-group > .im-input:focus, .im-input-group > .im-input:focus, .input-group > .im-input-error:focus, .im-input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .im-input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus, .im-input-group > .im-input-success:focus, .input-group > .im-textbox:focus, .im-input-group > .im-textbox:focus, .input-group > .im-textarea:focus, .im-input-group > .im-textarea:focus,
+  .input-group > .form-control:focus, .im-input-group > .form-control:focus, .input-group > .im-input:focus, .im-input-group > .im-input:focus, .input-group > .im-input-error:focus, .im-input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .im-input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus, .im-input-group > .im-input-success:focus, .input-group > .im-textbox:focus, .im-input-group > .im-textbox:focus, .select2-container--default .input-group > .select2-selection--multiple:focus, .select2-container--default .im-input-group > .select2-selection--multiple:focus, .input-group > .im-textarea:focus, .im-input-group > .im-textarea:focus,
   .input-group > .custom-select:focus,
   .im-input-group > .custom-select:focus,
   .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label,
@@ -2769,12 +2785,12 @@ input[type="button"].btn-block {
     z-index: 3; }
   .input-group > .custom-file .custom-file-input:focus, .im-input-group > .custom-file .custom-file-input:focus {
     z-index: 4; }
-  .input-group > .form-control:not(:last-child), .im-input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .im-input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .im-input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .im-input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child), .im-input-group > .im-input-success:not(:last-child), .input-group > .im-textbox:not(:last-child), .im-input-group > .im-textbox:not(:last-child), .input-group > .im-textarea:not(:last-child), .im-input-group > .im-textarea:not(:last-child),
+  .input-group > .form-control:not(:last-child), .im-input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .im-input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .im-input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .im-input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child), .im-input-group > .im-input-success:not(:last-child), .input-group > .im-textbox:not(:last-child), .im-input-group > .im-textbox:not(:last-child), .select2-container--default .input-group > .select2-selection--multiple:not(:last-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:last-child), .input-group > .im-textarea:not(:last-child), .im-input-group > .im-textarea:not(:last-child),
   .input-group > .custom-select:not(:last-child),
   .im-input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .im-input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .im-input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .im-input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .im-input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child), .im-input-group > .im-input-success:not(:first-child), .input-group > .im-textbox:not(:first-child), .im-input-group > .im-textbox:not(:first-child), .input-group > .im-textarea:not(:first-child), .im-input-group > .im-textarea:not(:first-child),
+  .input-group > .form-control:not(:first-child), .im-input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .im-input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .im-input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .im-input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child), .im-input-group > .im-input-success:not(:first-child), .input-group > .im-textbox:not(:first-child), .im-input-group > .im-textbox:not(:first-child), .select2-container--default .input-group > .select2-selection--multiple:not(:first-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:first-child), .input-group > .im-textarea:not(:first-child), .im-input-group > .im-textarea:not(:first-child),
   .input-group > .custom-select:not(:first-child),
   .im-input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
@@ -3022,11 +3038,11 @@ input[type="button"].btn-block {
   .im-input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group-lg > .form-control:not(textarea), .input-group-lg > .im-input:not(textarea), .input-group-lg > .im-input-error:not(textarea), .input-group-lg > .im-input-error-outline:not(textarea), .input-group-lg > .im-input-success:not(textarea), .input-group-lg > .im-textbox:not(textarea), .input-group-lg > .im-textarea:not(textarea),
+.input-group-lg > .form-control:not(textarea), .input-group-lg > .im-input:not(textarea), .input-group-lg > .im-input-error:not(textarea), .input-group-lg > .im-input-error-outline:not(textarea), .input-group-lg > .im-input-success:not(textarea), .input-group-lg > .im-textbox:not(textarea), .select2-container--default .input-group-lg > .select2-selection--multiple:not(textarea), .input-group-lg > .im-textarea:not(textarea),
 .input-group-lg > .custom-select {
   height: calc(1.5em + 1rem + 2px); }
 
-.input-group-lg > .form-control, .input-group-lg > .im-input, .input-group-lg > .im-input-error, .input-group-lg > .im-input-error-outline, .input-group-lg > .im-input-success, .input-group-lg > .im-textbox, .input-group-lg > .im-textarea,
+.input-group-lg > .form-control, .input-group-lg > .im-input, .input-group-lg > .im-input-error, .input-group-lg > .im-input-error-outline, .input-group-lg > .im-input-success, .input-group-lg > .im-textbox, .select2-container--default .input-group-lg > .select2-selection--multiple, .input-group-lg > .im-textarea,
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .im-input-group-prepend > .input-group-text,
@@ -3068,11 +3084,11 @@ input[type="button"].btn-block {
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.input-group-sm > .form-control:not(textarea), .input-group-sm > .im-input:not(textarea), .input-group-sm > .im-input-error:not(textarea), .input-group-sm > .im-input-error-outline:not(textarea), .input-group-sm > .im-input-success:not(textarea), .input-group-sm > .im-textbox:not(textarea), .input-group-sm > .im-textarea:not(textarea),
+.input-group-sm > .form-control:not(textarea), .input-group-sm > .im-input:not(textarea), .input-group-sm > .im-input-error:not(textarea), .input-group-sm > .im-input-error-outline:not(textarea), .input-group-sm > .im-input-success:not(textarea), .input-group-sm > .im-textbox:not(textarea), .select2-container--default .input-group-sm > .select2-selection--multiple:not(textarea), .input-group-sm > .im-textarea:not(textarea),
 .input-group-sm > .custom-select {
   height: calc(1.5em + 0.5rem + 2px); }
 
-.input-group-sm > .form-control, .input-group-sm > .im-input, .input-group-sm > .im-input-error, .input-group-sm > .im-input-error-outline, .input-group-sm > .im-input-success, .input-group-sm > .im-textbox, .input-group-sm > .im-textarea,
+.input-group-sm > .form-control, .input-group-sm > .im-input, .input-group-sm > .im-input-error, .input-group-sm > .im-input-error-outline, .input-group-sm > .im-input-success, .input-group-sm > .im-textbox, .select2-container--default .input-group-sm > .select2-selection--multiple, .input-group-sm > .im-textarea,
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .im-input-group-prepend > .input-group-text,
@@ -8077,13 +8093,13 @@ body {
   color: #158FC4 !important;
   font-size: 85%; }
 
-.im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox {
+.im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .select2-container--default .select2-selection--multiple {
   font-family: "Source Sans Pro", sans-serif;
   border: 1.5px solid #A3A6B4;
   border-radius: 0.4rem;
   height: 45px;
   font-size: 13px; }
-  .im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .im-input-success:focus, .im-textbox:focus {
+  .im-input:focus, .im-input-error:focus, .im-input-error-outline:focus, .im-input-success:focus, .im-textbox:focus, .select2-container--default .select2-selection--multiple:focus {
     border: 1.5px solid #A3A6B4;
     color: #A3A6B4; }
 
@@ -8105,18 +8121,24 @@ body {
   border: 1.5px solid #86D87F !important;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='%2386D87F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>"); }
 
-.im-input:disabled, .im-input-error:disabled, .im-input-error-outline:disabled, .im-input-success:disabled, .im-textbox:disabled,
+.im-input:disabled, .im-input-error:disabled, .im-input-error-outline:disabled, .im-input-success:disabled, .im-textbox:disabled, .select2-container--default .select2-selection--multiple:disabled,
 .im-input[disabled],
 .im-input-error[disabled],
 .im-input-error-outline[disabled],
 .im-input-success[disabled],
-.im-textbox[disabled] {
+.im-textbox[disabled],
+.select2-container--default .select2-selection--multiple[disabled] {
   background-color: #DEDEDE;
   opacity: 1; }
 
-input.im-input:focus, input.im-input-error:focus, input.im-input-error-outline:focus, input.im-input-success:focus, input.im-textbox:focus {
-  outline: none;
-  box-shadow: none; }
+input.im-input:focus, input.im-input-error:focus, input.im-input-error-outline:focus, input.im-input-success:focus, input.im-textbox:focus, .select2-container--default input.select2-selection--multiple:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+textarea.im-textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1.5px solid #A3A6B4; }
 
 .im-input-group {
   border-radius: 0.4rem; }
@@ -8135,6 +8157,43 @@ input.im-input:focus, input.im-input-error:focus, input.im-input-error-outline:f
   color: #2F3440 !important;
   font-weight: 400;
   min-height: 100px; }
+
+.select2-container--default .select2-selection--multiple {
+  border: 1.5px solid #A3A6B4 !important;
+  border-radius: 0.4rem !important; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #E0F0F7 !important;
+  border: none !important;
+  border-radius: 1rem !important;
+  padding: 4px !important;
+  margin-top: 0px !important;
+  font-size: 13px !important;
+  color: #2F3440 !important; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  background-color: #2F3440 !important;
+  border-radius: 1.5rem !important;
+  color: #F6F6F6 !important;
+  font-size: 1em !important;
+  padding: 0px 5px !important; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  padding-left: 5px !important; }
+
+.select2-container--open .select2-dropdown--above {
+  border: 1.5px solid #A3A6B4 !important;
+  margin: 2px 0px !important;
+  border-radius: 0.4rem !important; }
+
+.select2-container--open .select2-dropdown--below {
+  border: 1.5px solid #A3A6B4 !important;
+  margin: 2px 0px !important;
+  border-radius: 0.4rem !important; }
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+  border-radius: 0.4rem !important;
+  margin-top: 0.5rem !important; }
 
 .im-rounded {
   border-radius: 0.4rem !important; }
