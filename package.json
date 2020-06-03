@@ -11,6 +11,7 @@
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
     "popper.js": "^1.16.0",
     "scss-compile": "^0.1.7",
     "select2": "^4.0.13",
@@ -20,11 +21,12 @@
   },
   "private": true,
   "scripts": {
+    "main": "npm-run-all scss-compile js-build",
     "scss-compile": "node-sass src/scss/style.scss dist/css/style.css",
-    "scss-compressed": "node-sass src/scss/style.scss dist/css/style.min.css --output-style compressed",
+    "scss-compressed": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/style.scss dist/css/style.min.css --output-style compressed",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
     "scss-compile-datetimepicker": "node-sass src/scss/datetimepicker/datetimepicker.scss dist/css/datetimepicker/datetimepicker.css",
-    "watch-scss": "nodemon -e scss -x \"npm run scss-compile\"",
+    "watch-scss": "nodemon -e scss -x \"npm run main\"",
     "js-minify-standalone": "uglifyjs src/js/index.js dist/js/index.js",
     "js-build": "webpack"
   },
