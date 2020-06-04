@@ -11,9 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="./img/site.webmanifest">
 
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./css/datetimepicker/datetimepicker.css">
@@ -26,6 +26,9 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -178,6 +181,28 @@
     <div class="im-gradient-2 im-rounded im-text-center" style="height: 75px;"></div>
     <hr>
 
+    <label for="">Tags</label><br>
+
+    <div class="row">
+        <select class="js-example-basic-multiple col-6 im-dropdown-list" name="states[]" multiple="multiple"
+            style="width: '80%'">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+            <option value="WY">wuhan</option>
+            <option value="WY">Japan</option>
+            <option value="WY">Barn owl</option>
+            <option value="WY">aria</option>
+            <option value="WY">chevron</option>
+        </select>
+    </div>
+
+    <br>
+
+    <button class="im-tag ">John</button> <button class="im-x"></button>
+    <button class="im-tag">Rim Jhong</button>
+
+    <hr>
+
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -208,15 +233,28 @@
 
     <br> -->
 
-    <div class="im-input-group im-border col-5">
-        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
-            class="im-input im-box-shadow-none bg-none border-0">
-        <div class="im-input-group-append border-0">
-            <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
-                    class="fa fa-search"></i></button>
+    <div class="row">
+        <div class="col-6">
+            <div class="im-search-group">
+                <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+                    class="im-input im-search">
+                <div class="im-input-group-append border-0">
+                    <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="im-search-group">
+                <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+                    class="im-input im-search">
+                <div class="im-input-group-append border-0">
+                    <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
         </div>
     </div>
-
     <hr>
 
     <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
@@ -292,8 +330,7 @@
                     <a class="im-tab-link im-active" href="javascript:void(0);">Active</a>
                 </li>
                 <li class="im-tab-item">
-                    <a class="im-tab-link" href="javascript:void(0);" tabindex="-1"
-                        aria-disabled="true">select</a>
+                    <a class="im-tab-link" href="javascript:void(0);" tabindex="-1" aria-disabled="true">select</a>
                 </li>
                 <li class="im-tab-item">
                     <a class="im-tab-link disabled" href="javascript:void(0);" tabindex="-1"
@@ -304,20 +341,6 @@
     </div>
 
     <hr>
-    <label for="">Tags</label><br>
-
-    <div class="row">
-        <select class="js-example-basic-multiple col-6" name="states[]" multiple="multiple" style="width: '80%'">
-            <option value="AL">Alabama</option>
-            <option value="WY">Wyoming</option>
-            <option value="WY">wuhan</option>
-            <option value="WY">Japan</option>
-            <option value="WY">Barn owl</option>
-            <option value="WY">aria</option>
-            <option value="WY">chevron</option>
-        </select>
-    </div>
-
 
     <!-- <div>
         <i class="fa fa-chevron-down" aria-hidden="true" style="color: gray"></i>
@@ -335,6 +358,7 @@
             }
         });
     });
+    
 </script>
 
 </html>

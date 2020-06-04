@@ -6558,7 +6558,7 @@ button.bg-dark:focus {
 .p-1 {
   padding: 0.25rem !important; }
 
-.pt-1,
+.pt-1, .im-tag,
 .py-1 {
   padding-top: 0.25rem !important; }
 
@@ -6566,7 +6566,7 @@ button.bg-dark:focus {
 .px-1 {
   padding-right: 0.25rem !important; }
 
-.pb-1,
+.pb-1, .im-tag,
 .py-1 {
   padding-bottom: 0.25rem !important; }
 
@@ -6600,7 +6600,7 @@ button.bg-dark:focus {
 .py-3 {
   padding-top: 1rem !important; }
 
-.pr-3,
+.pr-3, .im-tag,
 .px-3 {
   padding-right: 1rem !important; }
 
@@ -6608,7 +6608,7 @@ button.bg-dark:focus {
 .py-3 {
   padding-bottom: 1rem !important; }
 
-.pl-3,
+.pl-3, .im-tag,
 .px-3 {
   padding-left: 1rem !important; }
 
@@ -8325,7 +8325,19 @@ textarea.im-textarea:focus {
 
 .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
   border-radius: 0.4rem !important;
-  margin-top: 0.5rem !important; }
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.3rem !important; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #F6F6F6;
+  border-radius: 0.4rem; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0 5px #A3A6B4; }
 
 input.im-input.im-search, input.im-search.im-input-error, input.im-search.im-input-error-outline, input.im-search.im-input-success, input.im-search.im-textbox, .select2-container--default input.im-search.select2-selection--multiple {
   margin-left: 15px !important;
@@ -8333,6 +8345,37 @@ input.im-input.im-search, input.im-search.im-input-error, input.im-search.im-inp
 
 .im-search-group {
   border-radius: 2rem; }
+
+.im-x {
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: #2F3440 !important;
+  border-radius: 1.5rem !important;
+  color: #F6F6F6 !important;
+  font-size: 1em !important;
+  padding: 0px 5px !important;
+  font-family: "FontAwesome";
+  content: "\f00c"; }
+  .im-x:focus {
+    box-shadow: none;
+    outline: none; }
+
+body::-webkit-scrollbar {
+  width: 1em; }
+
+.im-tag {
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #E0F0F7 !important;
+  border: none !important;
+  border-radius: 1rem !important;
+  margin-top: 0px !important;
+  font-size: 13px !important;
+  color: #2F3440 !important; }
+  .im-tag:focus {
+    box-shadow: none;
+    outline: none; }
 
 .im-rounded {
   border-radius: 0.4rem !important; }
