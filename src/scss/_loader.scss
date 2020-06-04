@@ -1,6 +1,6 @@
 .im-spinner {
-    // @extend .spinner-border;
-    // @extend .spinner-border-sm;
+    @extend .spinner-border;
+    @extend .spinner-border-sm;
     margin-right: 5px;
     font-size: 50%;
     color: $im-primary;

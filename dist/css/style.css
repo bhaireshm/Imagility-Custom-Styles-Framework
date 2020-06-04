@@ -14,14 +14,14 @@
   -moz-box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
   box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8); }
 
-.im-box-shadow-none, .datetimepicker {
+.im-box-shadow-none, .im-search, .datetimepicker {
   box-shadow: none !important; }
 
 .remove-focus, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, input.datetimepicker:focus {
   outline: none;
   box-shadow: none; }
 
-.im-border, .im-border-rounded {
+.im-border, .im-search-group, .im-border-rounded {
   border: 1.5px solid !important; }
 
 /*!
@@ -1788,7 +1788,7 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
       vertical-align: middle; }
     .form-inline .form-control-plaintext {
       display: inline-block; }
-    .form-inline .input-group, .form-inline .im-input-group,
+    .form-inline .input-group, .form-inline .im-search-group, .form-inline .im-input-group,
     .form-inline .custom-select {
       width: auto; }
     .form-inline .form-check {
@@ -2563,7 +2563,7 @@ input[type="button"].btn-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .btn-toolbar .input-group, .btn-toolbar .im-input-group {
+  .btn-toolbar .input-group, .btn-toolbar .im-search-group, .btn-toolbar .im-input-group {
     width: auto; }
 
 .btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child),
@@ -2665,147 +2665,202 @@ input[type="button"].btn-block {
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
 
-.input-group, .im-input-group {
+.input-group, .im-search-group, .im-input-group {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .im-input-group > .form-control, .input-group > .im-input, .im-input-group > .im-input, .input-group > .im-input-error, .im-input-group > .im-input-error, .input-group > .im-input-error-outline, .im-input-group > .im-input-error-outline, .input-group > .im-input-success, .im-input-group > .im-input-success, .input-group > .im-textbox, .im-input-group > .im-textbox, .select2-container--default .input-group > .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple, .input-group > .im-textarea, .im-input-group > .im-textarea,
+  .input-group > .form-control, .im-search-group > .form-control, .im-input-group > .form-control, .input-group > .im-input, .im-search-group > .im-input, .im-input-group > .im-input, .input-group > .im-input-error, .im-search-group > .im-input-error, .im-input-group > .im-input-error, .input-group > .im-input-error-outline, .im-search-group > .im-input-error-outline, .im-input-group > .im-input-error-outline, .input-group > .im-input-success, .im-search-group > .im-input-success, .im-input-group > .im-input-success, .input-group > .im-textbox, .im-search-group > .im-textbox, .im-input-group > .im-textbox, .select2-container--default .input-group > .select2-selection--multiple, .select2-container--default .im-search-group > .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple, .input-group > .im-textarea, .im-search-group > .im-textarea, .im-input-group > .im-textarea,
   .input-group > .form-control-plaintext,
+  .im-search-group > .form-control-plaintext,
   .im-input-group > .form-control-plaintext,
   .input-group > .custom-select,
+  .im-search-group > .custom-select,
   .im-input-group > .custom-select,
   .input-group > .custom-file,
+  .im-search-group > .custom-file,
   .im-input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     min-width: 0;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .im-input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .im-input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .im-input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .im-input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .im-input-group > .im-input-success + .form-control, .input-group > .im-textbox + .form-control, .im-input-group > .im-textbox + .form-control, .select2-container--default .input-group > .select2-selection--multiple + .form-control, .select2-container--default .im-input-group > .select2-selection--multiple + .form-control, .input-group > .im-textarea + .form-control, .im-input-group > .im-textarea + .form-control, .input-group > .form-control + .im-input, .im-input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .im-input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .im-input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .im-input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .im-input-group > .im-input-success + .im-input, .input-group > .im-textbox + .im-input, .im-input-group > .im-textbox + .im-input, .select2-container--default .input-group > .select2-selection--multiple + .im-input, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input, .input-group > .im-textarea + .im-input, .im-input-group > .im-textarea + .im-input, .input-group > .form-control + .im-input-error, .im-input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .im-input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .im-input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .im-input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .im-input-group > .im-input-success + .im-input-error, .input-group > .im-textbox + .im-input-error, .im-input-group > .im-textbox + .im-input-error, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error, .input-group > .im-textarea + .im-input-error, .im-input-group > .im-textarea + .im-input-error, .input-group > .form-control + .im-input-error-outline, .im-input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .im-input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .im-input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .im-input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .im-input-group > .im-input-success + .im-input-error-outline, .input-group > .im-textbox + .im-input-error-outline, .im-input-group > .im-textbox + .im-input-error-outline, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error-outline, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error-outline, .input-group > .im-textarea + .im-input-error-outline, .im-input-group > .im-textarea + .im-input-error-outline, .input-group > .form-control + .im-input-success, .im-input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .im-input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .im-input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .im-input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success, .im-input-group > .im-input-success + .im-input-success, .input-group > .im-textbox + .im-input-success, .im-input-group > .im-textbox + .im-input-success, .select2-container--default .input-group > .select2-selection--multiple + .im-input-success, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-success, .input-group > .im-textarea + .im-input-success, .im-input-group > .im-textarea + .im-input-success, .input-group > .form-control + .im-textbox, .im-input-group > .form-control + .im-textbox, .input-group > .im-input + .im-textbox, .im-input-group > .im-input + .im-textbox, .input-group > .im-input-error + .im-textbox, .im-input-group > .im-input-error + .im-textbox, .input-group > .im-input-error-outline + .im-textbox, .im-input-group > .im-input-error-outline + .im-textbox, .input-group > .im-input-success + .im-textbox, .im-input-group > .im-input-success + .im-textbox, .input-group > .im-textbox + .im-textbox, .im-input-group > .im-textbox + .im-textbox, .select2-container--default .input-group > .select2-selection--multiple + .im-textbox, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textbox, .input-group > .im-textarea + .im-textbox, .im-input-group > .im-textarea + .im-textbox, .select2-container--default .input-group > .form-control + .select2-selection--multiple, .select2-container--default .im-input-group > .form-control + .select2-selection--multiple, .select2-container--default .input-group > .im-input + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .input-group > .im-textarea + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textarea + .select2-selection--multiple, .input-group > .form-control + .im-textarea, .im-input-group > .form-control + .im-textarea, .input-group > .im-input + .im-textarea, .im-input-group > .im-input + .im-textarea, .input-group > .im-input-error + .im-textarea, .im-input-group > .im-input-error + .im-textarea, .input-group > .im-input-error-outline + .im-textarea, .im-input-group > .im-input-error-outline + .im-textarea, .input-group > .im-input-success + .im-textarea, .im-input-group > .im-input-success + .im-textarea, .input-group > .im-textbox + .im-textarea, .im-input-group > .im-textbox + .im-textarea, .select2-container--default .input-group > .select2-selection--multiple + .im-textarea, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textarea, .input-group > .im-textarea + .im-textarea, .im-input-group > .im-textarea + .im-textarea,
+    .input-group > .form-control + .form-control, .im-search-group > .form-control + .form-control, .im-input-group > .form-control + .form-control, .input-group > .im-input + .form-control, .im-search-group > .im-input + .form-control, .im-input-group > .im-input + .form-control, .input-group > .im-input-error + .form-control, .im-search-group > .im-input-error + .form-control, .im-input-group > .im-input-error + .form-control, .input-group > .im-input-error-outline + .form-control, .im-search-group > .im-input-error-outline + .form-control, .im-input-group > .im-input-error-outline + .form-control, .input-group > .im-input-success + .form-control, .im-search-group > .im-input-success + .form-control, .im-input-group > .im-input-success + .form-control, .input-group > .im-textbox + .form-control, .im-search-group > .im-textbox + .form-control, .im-input-group > .im-textbox + .form-control, .select2-container--default .input-group > .select2-selection--multiple + .form-control, .select2-container--default .im-search-group > .select2-selection--multiple + .form-control, .select2-container--default .im-input-group > .select2-selection--multiple + .form-control, .input-group > .im-textarea + .form-control, .im-search-group > .im-textarea + .form-control, .im-input-group > .im-textarea + .form-control, .input-group > .form-control + .im-input, .im-search-group > .form-control + .im-input, .im-input-group > .form-control + .im-input, .input-group > .im-input + .im-input, .im-search-group > .im-input + .im-input, .im-input-group > .im-input + .im-input, .input-group > .im-input-error + .im-input, .im-search-group > .im-input-error + .im-input, .im-input-group > .im-input-error + .im-input, .input-group > .im-input-error-outline + .im-input, .im-search-group > .im-input-error-outline + .im-input, .im-input-group > .im-input-error-outline + .im-input, .input-group > .im-input-success + .im-input, .im-search-group > .im-input-success + .im-input, .im-input-group > .im-input-success + .im-input, .input-group > .im-textbox + .im-input, .im-search-group > .im-textbox + .im-input, .im-input-group > .im-textbox + .im-input, .select2-container--default .input-group > .select2-selection--multiple + .im-input, .select2-container--default .im-search-group > .select2-selection--multiple + .im-input, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input, .input-group > .im-textarea + .im-input, .im-search-group > .im-textarea + .im-input, .im-input-group > .im-textarea + .im-input, .input-group > .form-control + .im-input-error, .im-search-group > .form-control + .im-input-error, .im-input-group > .form-control + .im-input-error, .input-group > .im-input + .im-input-error, .im-search-group > .im-input + .im-input-error, .im-input-group > .im-input + .im-input-error, .input-group > .im-input-error + .im-input-error, .im-search-group > .im-input-error + .im-input-error, .im-input-group > .im-input-error + .im-input-error, .input-group > .im-input-error-outline + .im-input-error, .im-search-group > .im-input-error-outline + .im-input-error, .im-input-group > .im-input-error-outline + .im-input-error, .input-group > .im-input-success + .im-input-error, .im-search-group > .im-input-success + .im-input-error, .im-input-group > .im-input-success + .im-input-error, .input-group > .im-textbox + .im-input-error, .im-search-group > .im-textbox + .im-input-error, .im-input-group > .im-textbox + .im-input-error, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error, .select2-container--default .im-search-group > .select2-selection--multiple + .im-input-error, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error, .input-group > .im-textarea + .im-input-error, .im-search-group > .im-textarea + .im-input-error, .im-input-group > .im-textarea + .im-input-error, .input-group > .form-control + .im-input-error-outline, .im-search-group > .form-control + .im-input-error-outline, .im-input-group > .form-control + .im-input-error-outline, .input-group > .im-input + .im-input-error-outline, .im-search-group > .im-input + .im-input-error-outline, .im-input-group > .im-input + .im-input-error-outline, .input-group > .im-input-error + .im-input-error-outline, .im-search-group > .im-input-error + .im-input-error-outline, .im-input-group > .im-input-error + .im-input-error-outline, .input-group > .im-input-error-outline + .im-input-error-outline, .im-search-group > .im-input-error-outline + .im-input-error-outline, .im-input-group > .im-input-error-outline + .im-input-error-outline, .input-group > .im-input-success + .im-input-error-outline, .im-search-group > .im-input-success + .im-input-error-outline, .im-input-group > .im-input-success + .im-input-error-outline, .input-group > .im-textbox + .im-input-error-outline, .im-search-group > .im-textbox + .im-input-error-outline, .im-input-group > .im-textbox + .im-input-error-outline, .select2-container--default .input-group > .select2-selection--multiple + .im-input-error-outline, .select2-container--default .im-search-group > .select2-selection--multiple + .im-input-error-outline, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-error-outline, .input-group > .im-textarea + .im-input-error-outline, .im-search-group > .im-textarea + .im-input-error-outline, .im-input-group > .im-textarea + .im-input-error-outline, .input-group > .form-control + .im-input-success, .im-search-group > .form-control + .im-input-success, .im-input-group > .form-control + .im-input-success, .input-group > .im-input + .im-input-success, .im-search-group > .im-input + .im-input-success, .im-input-group > .im-input + .im-input-success, .input-group > .im-input-error + .im-input-success, .im-search-group > .im-input-error + .im-input-success, .im-input-group > .im-input-error + .im-input-success, .input-group > .im-input-error-outline + .im-input-success, .im-search-group > .im-input-error-outline + .im-input-success, .im-input-group > .im-input-error-outline + .im-input-success, .input-group > .im-input-success + .im-input-success, .im-search-group > .im-input-success + .im-input-success, .im-input-group > .im-input-success + .im-input-success, .input-group > .im-textbox + .im-input-success, .im-search-group > .im-textbox + .im-input-success, .im-input-group > .im-textbox + .im-input-success, .select2-container--default .input-group > .select2-selection--multiple + .im-input-success, .select2-container--default .im-search-group > .select2-selection--multiple + .im-input-success, .select2-container--default .im-input-group > .select2-selection--multiple + .im-input-success, .input-group > .im-textarea + .im-input-success, .im-search-group > .im-textarea + .im-input-success, .im-input-group > .im-textarea + .im-input-success, .input-group > .form-control + .im-textbox, .im-search-group > .form-control + .im-textbox, .im-input-group > .form-control + .im-textbox, .input-group > .im-input + .im-textbox, .im-search-group > .im-input + .im-textbox, .im-input-group > .im-input + .im-textbox, .input-group > .im-input-error + .im-textbox, .im-search-group > .im-input-error + .im-textbox, .im-input-group > .im-input-error + .im-textbox, .input-group > .im-input-error-outline + .im-textbox, .im-search-group > .im-input-error-outline + .im-textbox, .im-input-group > .im-input-error-outline + .im-textbox, .input-group > .im-input-success + .im-textbox, .im-search-group > .im-input-success + .im-textbox, .im-input-group > .im-input-success + .im-textbox, .input-group > .im-textbox + .im-textbox, .im-search-group > .im-textbox + .im-textbox, .im-input-group > .im-textbox + .im-textbox, .select2-container--default .input-group > .select2-selection--multiple + .im-textbox, .select2-container--default .im-search-group > .select2-selection--multiple + .im-textbox, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textbox, .input-group > .im-textarea + .im-textbox, .im-search-group > .im-textarea + .im-textbox, .im-input-group > .im-textarea + .im-textbox, .select2-container--default .input-group > .form-control + .select2-selection--multiple, .select2-container--default .im-search-group > .form-control + .select2-selection--multiple, .select2-container--default .im-input-group > .form-control + .select2-selection--multiple, .select2-container--default .input-group > .im-input + .select2-selection--multiple, .select2-container--default .im-search-group > .im-input + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .im-search-group > .im-input-error + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error + .select2-selection--multiple, .select2-container--default .input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .im-search-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-error-outline + .select2-selection--multiple, .select2-container--default .input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .im-search-group > .im-input-success + .select2-selection--multiple, .select2-container--default .im-input-group > .im-input-success + .select2-selection--multiple, .select2-container--default .input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .im-search-group > .im-textbox + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textbox + .select2-selection--multiple, .select2-container--default .input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .im-search-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .im-input-group > .select2-selection--multiple + .select2-selection--multiple, .select2-container--default .input-group > .im-textarea + .select2-selection--multiple, .select2-container--default .im-search-group > .im-textarea + .select2-selection--multiple, .select2-container--default .im-input-group > .im-textarea + .select2-selection--multiple, .input-group > .form-control + .im-textarea, .im-search-group > .form-control + .im-textarea, .im-input-group > .form-control + .im-textarea, .input-group > .im-input + .im-textarea, .im-search-group > .im-input + .im-textarea, .im-input-group > .im-input + .im-textarea, .input-group > .im-input-error + .im-textarea, .im-search-group > .im-input-error + .im-textarea, .im-input-group > .im-input-error + .im-textarea, .input-group > .im-input-error-outline + .im-textarea, .im-search-group > .im-input-error-outline + .im-textarea, .im-input-group > .im-input-error-outline + .im-textarea, .input-group > .im-input-success + .im-textarea, .im-search-group > .im-input-success + .im-textarea, .im-input-group > .im-input-success + .im-textarea, .input-group > .im-textbox + .im-textarea, .im-search-group > .im-textbox + .im-textarea, .im-input-group > .im-textbox + .im-textarea, .select2-container--default .input-group > .select2-selection--multiple + .im-textarea, .select2-container--default .im-search-group > .select2-selection--multiple + .im-textarea, .select2-container--default .im-input-group > .select2-selection--multiple + .im-textarea, .input-group > .im-textarea + .im-textarea, .im-search-group > .im-textarea + .im-textarea, .im-input-group > .im-textarea + .im-textarea,
     .input-group > .form-control + .custom-select,
+    .im-search-group > .form-control + .custom-select,
     .im-input-group > .form-control + .custom-select,
     .input-group > .im-input + .custom-select,
+    .im-search-group > .im-input + .custom-select,
     .im-input-group > .im-input + .custom-select,
     .input-group > .im-input-error + .custom-select,
+    .im-search-group > .im-input-error + .custom-select,
     .im-input-group > .im-input-error + .custom-select,
     .input-group > .im-input-error-outline + .custom-select,
+    .im-search-group > .im-input-error-outline + .custom-select,
     .im-input-group > .im-input-error-outline + .custom-select,
     .input-group > .im-input-success + .custom-select,
+    .im-search-group > .im-input-success + .custom-select,
     .im-input-group > .im-input-success + .custom-select,
     .input-group > .im-textbox + .custom-select,
+    .im-search-group > .im-textbox + .custom-select,
     .im-input-group > .im-textbox + .custom-select,
     .select2-container--default .input-group > .select2-selection--multiple + .custom-select,
+    .select2-container--default .im-search-group > .select2-selection--multiple + .custom-select,
     .select2-container--default .im-input-group > .select2-selection--multiple + .custom-select,
     .input-group > .im-textarea + .custom-select,
+    .im-search-group > .im-textarea + .custom-select,
     .im-input-group > .im-textarea + .custom-select,
     .input-group > .form-control + .custom-file,
+    .im-search-group > .form-control + .custom-file,
     .im-input-group > .form-control + .custom-file,
     .input-group > .im-input + .custom-file,
+    .im-search-group > .im-input + .custom-file,
     .im-input-group > .im-input + .custom-file,
     .input-group > .im-input-error + .custom-file,
+    .im-search-group > .im-input-error + .custom-file,
     .im-input-group > .im-input-error + .custom-file,
     .input-group > .im-input-error-outline + .custom-file,
+    .im-search-group > .im-input-error-outline + .custom-file,
     .im-input-group > .im-input-error-outline + .custom-file,
     .input-group > .im-input-success + .custom-file,
+    .im-search-group > .im-input-success + .custom-file,
     .im-input-group > .im-input-success + .custom-file,
     .input-group > .im-textbox + .custom-file,
+    .im-search-group > .im-textbox + .custom-file,
     .im-input-group > .im-textbox + .custom-file,
     .select2-container--default .input-group > .select2-selection--multiple + .custom-file,
+    .select2-container--default .im-search-group > .select2-selection--multiple + .custom-file,
     .select2-container--default .im-input-group > .select2-selection--multiple + .custom-file,
     .input-group > .im-textarea + .custom-file,
+    .im-search-group > .im-textarea + .custom-file,
     .im-input-group > .im-textarea + .custom-file,
     .input-group > .form-control-plaintext + .form-control,
+    .im-search-group > .form-control-plaintext + .form-control,
     .im-input-group > .form-control-plaintext + .form-control,
     .input-group > .form-control-plaintext + .im-input,
+    .im-search-group > .form-control-plaintext + .im-input,
     .im-input-group > .form-control-plaintext + .im-input,
     .input-group > .form-control-plaintext + .im-input-error,
+    .im-search-group > .form-control-plaintext + .im-input-error,
     .im-input-group > .form-control-plaintext + .im-input-error,
     .input-group > .form-control-plaintext + .im-input-error-outline,
+    .im-search-group > .form-control-plaintext + .im-input-error-outline,
     .im-input-group > .form-control-plaintext + .im-input-error-outline,
     .input-group > .form-control-plaintext + .im-input-success,
+    .im-search-group > .form-control-plaintext + .im-input-success,
     .im-input-group > .form-control-plaintext + .im-input-success,
     .input-group > .form-control-plaintext + .im-textbox,
+    .im-search-group > .form-control-plaintext + .im-textbox,
     .im-input-group > .form-control-plaintext + .im-textbox,
     .select2-container--default .input-group > .form-control-plaintext + .select2-selection--multiple,
+    .select2-container--default .im-search-group > .form-control-plaintext + .select2-selection--multiple,
     .select2-container--default .im-input-group > .form-control-plaintext + .select2-selection--multiple,
     .input-group > .form-control-plaintext + .im-textarea,
+    .im-search-group > .form-control-plaintext + .im-textarea,
     .im-input-group > .form-control-plaintext + .im-textarea,
     .input-group > .form-control-plaintext + .custom-select,
+    .im-search-group > .form-control-plaintext + .custom-select,
     .im-input-group > .form-control-plaintext + .custom-select,
     .input-group > .form-control-plaintext + .custom-file,
+    .im-search-group > .form-control-plaintext + .custom-file,
     .im-input-group > .form-control-plaintext + .custom-file,
     .input-group > .custom-select + .form-control,
+    .im-search-group > .custom-select + .form-control,
     .im-input-group > .custom-select + .form-control,
     .input-group > .custom-select + .im-input,
+    .im-search-group > .custom-select + .im-input,
     .im-input-group > .custom-select + .im-input,
     .input-group > .custom-select + .im-input-error,
+    .im-search-group > .custom-select + .im-input-error,
     .im-input-group > .custom-select + .im-input-error,
     .input-group > .custom-select + .im-input-error-outline,
+    .im-search-group > .custom-select + .im-input-error-outline,
     .im-input-group > .custom-select + .im-input-error-outline,
     .input-group > .custom-select + .im-input-success,
+    .im-search-group > .custom-select + .im-input-success,
     .im-input-group > .custom-select + .im-input-success,
     .input-group > .custom-select + .im-textbox,
+    .im-search-group > .custom-select + .im-textbox,
     .im-input-group > .custom-select + .im-textbox,
     .select2-container--default .input-group > .custom-select + .select2-selection--multiple,
+    .select2-container--default .im-search-group > .custom-select + .select2-selection--multiple,
     .select2-container--default .im-input-group > .custom-select + .select2-selection--multiple,
     .input-group > .custom-select + .im-textarea,
+    .im-search-group > .custom-select + .im-textarea,
     .im-input-group > .custom-select + .im-textarea,
     .input-group > .custom-select + .custom-select,
+    .im-search-group > .custom-select + .custom-select,
     .im-input-group > .custom-select + .custom-select,
     .input-group > .custom-select + .custom-file,
+    .im-search-group > .custom-select + .custom-file,
     .im-input-group > .custom-select + .custom-file,
     .input-group > .custom-file + .form-control,
+    .im-search-group > .custom-file + .form-control,
     .im-input-group > .custom-file + .form-control,
     .input-group > .custom-file + .im-input,
+    .im-search-group > .custom-file + .im-input,
     .im-input-group > .custom-file + .im-input,
     .input-group > .custom-file + .im-input-error,
+    .im-search-group > .custom-file + .im-input-error,
     .im-input-group > .custom-file + .im-input-error,
     .input-group > .custom-file + .im-input-error-outline,
+    .im-search-group > .custom-file + .im-input-error-outline,
     .im-input-group > .custom-file + .im-input-error-outline,
     .input-group > .custom-file + .im-input-success,
+    .im-search-group > .custom-file + .im-input-success,
     .im-input-group > .custom-file + .im-input-success,
     .input-group > .custom-file + .im-textbox,
+    .im-search-group > .custom-file + .im-textbox,
     .im-input-group > .custom-file + .im-textbox,
     .select2-container--default .input-group > .custom-file + .select2-selection--multiple,
+    .select2-container--default .im-search-group > .custom-file + .select2-selection--multiple,
     .select2-container--default .im-input-group > .custom-file + .select2-selection--multiple,
     .input-group > .custom-file + .im-textarea,
+    .im-search-group > .custom-file + .im-textarea,
     .im-input-group > .custom-file + .im-textarea,
     .input-group > .custom-file + .custom-select,
+    .im-search-group > .custom-file + .custom-select,
     .im-input-group > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file,
+    .im-search-group > .custom-file + .custom-file,
     .im-input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, .im-input-group > .form-control:focus, .input-group > .im-input:focus, .im-input-group > .im-input:focus, .input-group > .im-input-error:focus, .im-input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .im-input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus, .im-input-group > .im-input-success:focus, .input-group > .im-textbox:focus, .im-input-group > .im-textbox:focus, .select2-container--default .input-group > .select2-selection--multiple:focus, .select2-container--default .im-input-group > .select2-selection--multiple:focus, .input-group > .im-textarea:focus, .im-input-group > .im-textarea:focus,
+  .input-group > .form-control:focus, .im-search-group > .form-control:focus, .im-input-group > .form-control:focus, .input-group > .im-input:focus, .im-search-group > .im-input:focus, .im-input-group > .im-input:focus, .input-group > .im-input-error:focus, .im-search-group > .im-input-error:focus, .im-input-group > .im-input-error:focus, .input-group > .im-input-error-outline:focus, .im-search-group > .im-input-error-outline:focus, .im-input-group > .im-input-error-outline:focus, .input-group > .im-input-success:focus, .im-search-group > .im-input-success:focus, .im-input-group > .im-input-success:focus, .input-group > .im-textbox:focus, .im-search-group > .im-textbox:focus, .im-input-group > .im-textbox:focus, .select2-container--default .input-group > .select2-selection--multiple:focus, .select2-container--default .im-search-group > .select2-selection--multiple:focus, .select2-container--default .im-input-group > .select2-selection--multiple:focus, .input-group > .im-textarea:focus, .im-search-group > .im-textarea:focus, .im-input-group > .im-textarea:focus,
   .input-group > .custom-select:focus,
+  .im-search-group > .custom-select:focus,
   .im-input-group > .custom-select:focus,
   .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label,
+  .im-search-group > .custom-file .custom-file-input:focus ~ .custom-file-label,
   .im-input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
     z-index: 3; }
-  .input-group > .custom-file .custom-file-input:focus, .im-input-group > .custom-file .custom-file-input:focus {
+  .input-group > .custom-file .custom-file-input:focus, .im-search-group > .custom-file .custom-file-input:focus, .im-input-group > .custom-file .custom-file-input:focus {
     z-index: 4; }
-  .input-group > .form-control:not(:last-child), .im-input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .im-input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .im-input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .im-input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child), .im-input-group > .im-input-success:not(:last-child), .input-group > .im-textbox:not(:last-child), .im-input-group > .im-textbox:not(:last-child), .select2-container--default .input-group > .select2-selection--multiple:not(:last-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:last-child), .input-group > .im-textarea:not(:last-child), .im-input-group > .im-textarea:not(:last-child),
+  .input-group > .form-control:not(:last-child), .im-search-group > .form-control:not(:last-child), .im-input-group > .form-control:not(:last-child), .input-group > .im-input:not(:last-child), .im-search-group > .im-input:not(:last-child), .im-input-group > .im-input:not(:last-child), .input-group > .im-input-error:not(:last-child), .im-search-group > .im-input-error:not(:last-child), .im-input-group > .im-input-error:not(:last-child), .input-group > .im-input-error-outline:not(:last-child), .im-search-group > .im-input-error-outline:not(:last-child), .im-input-group > .im-input-error-outline:not(:last-child), .input-group > .im-input-success:not(:last-child), .im-search-group > .im-input-success:not(:last-child), .im-input-group > .im-input-success:not(:last-child), .input-group > .im-textbox:not(:last-child), .im-search-group > .im-textbox:not(:last-child), .im-input-group > .im-textbox:not(:last-child), .select2-container--default .input-group > .select2-selection--multiple:not(:last-child), .select2-container--default .im-search-group > .select2-selection--multiple:not(:last-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:last-child), .input-group > .im-textarea:not(:last-child), .im-search-group > .im-textarea:not(:last-child), .im-input-group > .im-textarea:not(:last-child),
   .input-group > .custom-select:not(:last-child),
+  .im-search-group > .custom-select:not(:last-child),
   .im-input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .im-input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .im-input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .im-input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .im-input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child), .im-input-group > .im-input-success:not(:first-child), .input-group > .im-textbox:not(:first-child), .im-input-group > .im-textbox:not(:first-child), .select2-container--default .input-group > .select2-selection--multiple:not(:first-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:first-child), .input-group > .im-textarea:not(:first-child), .im-input-group > .im-textarea:not(:first-child),
+  .input-group > .form-control:not(:first-child), .im-search-group > .form-control:not(:first-child), .im-input-group > .form-control:not(:first-child), .input-group > .im-input:not(:first-child), .im-search-group > .im-input:not(:first-child), .im-input-group > .im-input:not(:first-child), .input-group > .im-input-error:not(:first-child), .im-search-group > .im-input-error:not(:first-child), .im-input-group > .im-input-error:not(:first-child), .input-group > .im-input-error-outline:not(:first-child), .im-search-group > .im-input-error-outline:not(:first-child), .im-input-group > .im-input-error-outline:not(:first-child), .input-group > .im-input-success:not(:first-child), .im-search-group > .im-input-success:not(:first-child), .im-input-group > .im-input-success:not(:first-child), .input-group > .im-textbox:not(:first-child), .im-search-group > .im-textbox:not(:first-child), .im-input-group > .im-textbox:not(:first-child), .select2-container--default .input-group > .select2-selection--multiple:not(:first-child), .select2-container--default .im-search-group > .select2-selection--multiple:not(:first-child), .select2-container--default .im-input-group > .select2-selection--multiple:not(:first-child), .input-group > .im-textarea:not(:first-child), .im-search-group > .im-textarea:not(:first-child), .im-input-group > .im-textarea:not(:first-child),
   .input-group > .custom-select:not(:first-child),
+  .im-search-group > .custom-select:not(:first-child),
   .im-input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
   
   .input-group > .custom-file,
+  .im-search-group > .custom-file,
   .im-input-group > .custom-file {
     display: flex;
     align-items: center; }
-    .input-group > .custom-file:not(:last-child) .custom-file-label, .im-input-group > .custom-file:not(:last-child) .custom-file-label,
+    .input-group > .custom-file:not(:last-child) .custom-file-label, .im-search-group > .custom-file:not(:last-child) .custom-file-label, .im-input-group > .custom-file:not(:last-child) .custom-file-label,
     .input-group > .custom-file:not(:last-child) .custom-file-label::after,
+    .im-search-group > .custom-file:not(:last-child) .custom-file-label::after,
     .im-input-group > .custom-file:not(:last-child) .custom-file-label::after {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-    .input-group > .custom-file:not(:first-child) .custom-file-label, .im-input-group > .custom-file:not(:first-child) .custom-file-label {
+    .input-group > .custom-file:not(:first-child) .custom-file-label, .im-search-group > .custom-file:not(:first-child) .custom-file-label, .im-input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 
@@ -3134,170 +3189,250 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search,
+.input-group > .input-group-prepend > .btn, .im-search-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-search-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-search-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-search-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-search-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-search-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-search-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-search-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-search-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-search-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-search-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-search-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-search-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-search-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-search-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search,
 .input-group > .input-group-prepend > .input-group-text,
+.im-search-group > .input-group-prepend > .input-group-text,
 .im-input-group > .input-group-prepend > .input-group-text,
 .input-group > .im-input-group-prepend > .input-group-text,
+.im-search-group > .im-input-group-prepend > .input-group-text,
 .im-input-group > .im-input-group-prepend > .input-group-text,
 .input-group > .im-input-group > .input-group-text,
+.im-search-group > .im-input-group > .input-group-text,
 .im-input-group > .im-input-group > .input-group-text,
 .input-group > .input-group-prepend > .im-input-group-text,
+.im-search-group > .input-group-prepend > .im-input-group-text,
 .im-input-group > .input-group-prepend > .im-input-group-text,
 .input-group > .im-input-group-prepend > .im-input-group-text,
+.im-search-group > .im-input-group-prepend > .im-input-group-text,
 .im-input-group > .im-input-group-prepend > .im-input-group-text,
 .input-group > .im-input-group > .im-input-group-text,
+.im-search-group > .im-input-group > .im-input-group-text,
 .im-input-group > .im-input-group > .im-input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+.im-search-group > .input-group-append:not(:last-child) > .btn,
 .im-input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .im-input-group-append:not(:last-child) > .btn,
+.im-search-group > .im-input-group-append:not(:last-child) > .btn,
 .im-input-group > .im-input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn,
+.im-search-group > .input-group-append:not(:last-child) > .im-btn,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn,
 .input-group > .im-input-group-append:not(:last-child) > .im-btn,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-btn,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn,
 .input-group > .input-group-append:not(:last-child) > .im-btn-outline,
+.im-search-group > .input-group-append:not(:last-child) > .im-btn-outline,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-outline,
 .input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
 .input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
+.im-search-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .input-group > .im-input-group-append:not(:last-child) > .im-btn-disabled-outline,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .input-group > .input-group-append:not(:last-child) > .im-btn-search,
+.im-search-group > .input-group-append:not(:last-child) > .im-btn-search,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-search,
 .input-group > .im-input-group-append:not(:last-child) > .im-btn-search,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-btn-search,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn-search,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
+.im-search-group > .input-group-append:not(:last-child) > .input-group-text,
 .im-input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .im-input-group-append:not(:last-child) > .input-group-text,
+.im-search-group > .im-input-group-append:not(:last-child) > .input-group-text,
 .im-input-group > .im-input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .im-input-group-text,
+.im-search-group > .input-group-append:not(:last-child) > .im-input-group-text,
 .im-input-group > .input-group-append:not(:last-child) > .im-input-group-text,
 .input-group > .im-input-group-append:not(:last-child) > .im-input-group-text,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-input-group-text,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .im-input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .im-input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
+.im-search-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .im-input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .input-group > .im-input-group-append:last-child > .input-group-text:not(:last-child),
+.im-search-group > .im-input-group-append:last-child > .input-group-text:not(:last-child),
 .im-input-group > .im-input-group-append:last-child > .input-group-text:not(:last-child),
 .input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
+.im-search-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
 .im-input-group > .input-group-append:last-child > .im-input-group-text:not(:last-child),
 .input-group > .im-input-group-append:last-child > .im-input-group-text:not(:last-child),
+.im-search-group > .im-input-group-append:last-child > .im-input-group-text:not(:last-child),
 .im-input-group > .im-input-group-append:last-child > .im-input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search,
+.input-group > .input-group-append > .btn, .im-search-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-search-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-search-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-search-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-search-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-search-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-search-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-search-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-search-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-search-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search,
 .input-group > .input-group-append > .input-group-text,
+.im-search-group > .input-group-append > .input-group-text,
 .im-input-group > .input-group-append > .input-group-text,
 .input-group > .im-input-group-append > .input-group-text,
+.im-search-group > .im-input-group-append > .input-group-text,
 .im-input-group > .im-input-group-append > .input-group-text,
 .input-group > .input-group-append > .im-input-group-text,
+.im-search-group > .input-group-append > .im-input-group-text,
 .im-input-group > .input-group-append > .im-input-group-text,
 .input-group > .im-input-group-append > .im-input-group-text,
+.im-search-group > .im-input-group-append > .im-input-group-text,
 .im-input-group > .im-input-group-append > .im-input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+.im-search-group > .input-group-prepend:not(:first-child) > .btn,
 .im-input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .im-input-group-prepend:not(:first-child) > .btn,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .btn,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .btn,
 .input-group > .im-input-group:not(:first-child) > .btn,
+.im-search-group > .im-input-group:not(:first-child) > .btn,
 .im-input-group > .im-input-group:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-btn,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn,
 .input-group > .im-input-group-prepend:not(:first-child) > .im-btn,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-btn,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn,
 .input-group > .im-input-group:not(:first-child) > .im-btn,
+.im-search-group > .im-input-group:not(:first-child) > .im-btn,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
 .input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
 .input-group > .im-input-group:not(:first-child) > .im-btn-outline,
+.im-search-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .im-input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
+.im-search-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-disabled-outline,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-search,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-btn-search,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-search,
 .input-group > .im-input-group-prepend:not(:first-child) > .im-btn-search,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-btn-search,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-search,
 .input-group > .im-input-group:not(:first-child) > .im-btn-search,
+.im-search-group > .im-input-group:not(:first-child) > .im-btn-search,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-search,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.im-search-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .im-input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .im-input-group-prepend:not(:first-child) > .input-group-text,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .input-group-text,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .im-input-group:not(:first-child) > .input-group-text,
+.im-search-group > .im-input-group:not(:first-child) > .input-group-text,
 .im-input-group > .im-input-group:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-input-group-text,
 .input-group > .im-input-group-prepend:not(:first-child) > .im-input-group-text,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-input-group-text,
 .im-input-group > .im-input-group-prepend:not(:first-child) > .im-input-group-text,
 .input-group > .im-input-group:not(:first-child) > .im-input-group-text,
+.im-search-group > .im-input-group:not(:first-child) > .im-input-group-text,
 .im-input-group > .im-input-group:not(:first-child) > .im-input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .btn:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .btn:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .im-input-group:first-child > .btn:not(:first-child),
+.im-search-group > .im-input-group:first-child > .btn:not(:first-child),
 .im-input-group > .im-input-group:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .im-btn:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-btn:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .im-btn:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-disabled-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-search:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-btn-search:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-search:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .im-btn-search:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-btn-search:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .im-btn-search:not(:first-child),
 .input-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .input-group-text:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .input-group-text:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .input-group-text:not(:first-child),
 .input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
+.im-search-group > .im-input-group:first-child > .input-group-text:not(:first-child),
 .im-input-group > .im-input-group:first-child > .input-group-text:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .input-group > .im-input-group-prepend:first-child > .im-input-group-text:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .im-input-group > .im-input-group-prepend:first-child > .im-input-group-text:not(:first-child),
 .input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-input-group-text:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -5354,7 +5489,7 @@ a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-d
   to {
     transform: rotate(360deg); } }
 
-.spinner-border {
+.spinner-border, .im-spinner {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -5364,7 +5499,7 @@ a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-d
   border-radius: 50%;
   animation: spinner-border .75s linear infinite; }
 
-.spinner-border-sm {
+.spinner-border-sm, .im-spinner {
   width: 1rem;
   height: 1rem;
   border-width: 0.2em; }
@@ -5478,7 +5613,7 @@ button.bg-dark:focus {
 .bg-transparent {
   background-color: transparent !important; }
 
-.border, .im-border, .im-border-rounded {
+.border, .im-border, .im-search-group, .im-border-rounded {
   border: 1px solid #A3A6B4 !important; }
 
 .border-top {
@@ -5493,7 +5628,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #A3A6B4 !important; }
 
-.border-0 {
+.border-0, .im-search {
   border: 0 !important; }
 
 .border-top-0 {
@@ -8143,9 +8278,6 @@ textarea.im-textarea:focus {
 .im-input-group {
   border-radius: 0.4rem; }
 
-.im-input-search {
-  border: 0 !important; }
-
 .im-textbox {
   border-radius: 0.8rem;
   color: #2F3440 !important;
@@ -8195,10 +8327,17 @@ textarea.im-textarea:focus {
   border-radius: 0.4rem !important;
   margin-top: 0.5rem !important; }
 
+input.im-input.im-search, input.im-search.im-input-error, input.im-search.im-input-error-outline, input.im-search.im-input-success, input.im-search.im-textbox, .select2-container--default input.im-search.select2-selection--multiple {
+  margin-left: 15px !important;
+  color: #2F3440 !important; }
+
+.im-search-group {
+  border-radius: 2rem; }
+
 .im-rounded {
   border-radius: 0.4rem !important; }
 
-.im-border, .im-border-rounded {
+.im-border, .im-search-group, .im-border-rounded {
   border: 1.5px solid #A3A6B4; }
 
 .im-border-rounded {
@@ -9506,6 +9645,7 @@ textarea.im-textarea:focus {
 .input-append.date .add-on i,
 .input-prepend.date .add-on i,
 .input-group.date .input-group-addon span,
+.date.im-search-group .input-group-addon span,
 .date.im-input-group .input-group-addon span {
   cursor: pointer;
   width: 14px;
