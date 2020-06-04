@@ -35,6 +35,15 @@ $white: #fff;
 //  Gradient Colors
 $dark-cerulean:#0D516E;
 $cerulean: #063689;
+// $gradient-1: linear-gradient($summer-sky-blue, $dark-cerulean);
+$gradient-1: $summer-sky-blue,
+$dark-cerulean;
+$gradient-2: linear-gradient($cerulean, $summer-sky-blue);
+
+
+//nav-color
+
+$vivid-blue:#01a0da;
 
 $gradient-1-1: $summer-sky-blue;
 $gradient-1-2: $dark-cerulean;
