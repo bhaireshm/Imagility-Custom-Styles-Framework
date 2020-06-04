@@ -17,7 +17,7 @@
 .im-box-shadow-none, .im-search, .datetimepicker {
   box-shadow: none !important; }
 
-.remove-focus, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, input.datetimepicker:focus {
+.remove-focus, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, input.datetimepicker:focus {
   outline: none;
   box-shadow: none; }
 
@@ -464,26 +464,26 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .im-card-container, .im-card-div {
+.container, .im-card-container, .im-card-div, .im-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container, .im-card-container, .im-card-div {
+    .container, .im-card-container, .im-card-div, .im-container {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container, .im-card-container, .im-card-div {
+    .container, .im-card-container, .im-card-div, .im-container {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container, .im-card-container, .im-card-div {
+    .container, .im-card-container, .im-card-div, .im-container {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container, .im-card-container, .im-card-div {
+    .container, .im-card-container, .im-card-div, .im-container {
       max-width: 1140px; } }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .im-container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -491,19 +491,19 @@ pre {
   margin-left: auto; }
 
 @media (min-width: 576px) {
-  .container, .im-card-container, .im-card-div, .container-sm {
+  .container, .im-card-container, .im-card-div, .im-container, .container-sm {
     max-width: 540px; } }
 
 @media (min-width: 768px) {
-  .container, .im-card-container, .im-card-div, .container-sm, .container-md {
+  .container, .im-card-container, .im-card-div, .im-container, .container-sm, .container-md {
     max-width: 720px; } }
 
 @media (min-width: 992px) {
-  .container, .im-card-container, .im-card-div, .container-sm, .container-md, .container-lg {
+  .container, .im-card-container, .im-card-div, .im-container, .container-sm, .container-md, .container-lg {
     max-width: 960px; } }
 
 @media (min-width: 1200px) {
-  .container, .im-card-container, .im-card-div, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .im-card-container, .im-card-div, .im-container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
 .row, .im-card-row, .im-card-tab-row, .im-card-div-row, .im-company-title-row, .im-company-second-row, .im-company-second-first-row, .div-recent-row, .chat-row {
@@ -1172,15 +1172,17 @@ pre {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529; }
-  .table th,
-  .table td {
+  .table th, .im-card-table th, .im-card-no-border-table th,
+  .table td,
+  .im-card-table td,
+  .im-card-no-border-table td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #A3A6B4; }
-  .table thead th {
+  .table thead th, .im-card-table thead th, .im-card-no-border-table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #A3A6B4; }
-  .table tbody + tbody {
+  .table tbody + tbody, .im-card-table tbody + tbody, .im-card-no-border-table tbody + tbody {
     border-top: 2px solid #A3A6B4; }
 
 .table-sm th,
@@ -1809,7 +1811,7 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search {
+.btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -1824,25 +1826,26 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search {
+    .btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
       transition: none; } }
-  .btn:hover, .im-btn:hover, .im-btn-outline:hover, .im-btn-disabled-outline:hover, .im-btn-search:hover {
+  .btn:hover, .im-btn:hover, .im-btn-outline:hover, .im-btn-disabled-outline:hover, .im-btn-search:hover, .im-card-link:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .focus.btn, .focus.im-btn, .focus.im-btn-outline, .focus.im-btn-disabled-outline, .focus.im-btn-search {
+  .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, .focus.btn, .focus.im-btn, .focus.im-btn-outline, .focus.im-btn-disabled-outline, .focus.im-btn-search, .focus.im-card-link {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.25); }
-  .im-disabled.btn, .im-disabled.im-btn, .im-disabled.im-btn-outline, .im-disabled.im-btn-disabled-outline, .im-disabled.im-btn-search, .disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .disabled.im-btn, .disabled.im-btn-outline, .im-btn-outline.im-btn-disabled, .im-btn-outline.im-btn-disabled-light, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-light.im-btn-disabled-outline, .im-btn-disabled.im-btn-disabled-outline, .disabled.im-btn-disabled-outline, .disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .btn:disabled, .im-btn:disabled, .im-btn-outline:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled {
+  .im-disabled.btn, .im-disabled.im-btn, .im-disabled.im-btn-outline, .im-disabled.im-btn-disabled-outline, .im-disabled.im-btn-search, .im-disabled.im-card-link, .disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .disabled.im-btn, .disabled.im-btn-outline, .im-btn-outline.im-btn-disabled, .im-btn-outline.im-btn-disabled-light, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-light.im-btn-disabled-outline, .im-btn-disabled.im-btn-disabled-outline, .disabled.im-btn-disabled-outline, .disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .disabled.im-card-link, .im-card-link.im-btn-disabled, .im-card-link.im-btn-disabled-light, .btn:disabled, .im-btn:disabled, .im-btn-outline:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled, .im-card-link:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light) {
+  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-card-link:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light) {
     cursor: pointer; }
 
-a.im-disabled.btn, a.im-disabled.im-btn, a.im-disabled.im-btn-outline, a.im-disabled.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.disabled.im-btn, a.disabled.im-btn-outline, a.im-btn-outline.im-btn-disabled, a.im-btn-outline.im-btn-disabled-light, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-light.im-btn-disabled-outline, a.im-btn-disabled.im-btn-disabled-outline, a.disabled.im-btn-disabled-outline, a.disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light,
+a.im-disabled.btn, a.im-disabled.im-btn, a.im-disabled.im-btn-outline, a.im-disabled.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.im-disabled.im-card-link, a.disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.disabled.im-btn, a.disabled.im-btn-outline, a.im-btn-outline.im-btn-disabled, a.im-btn-outline.im-btn-disabled-light, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-light.im-btn-disabled-outline, a.im-btn-disabled.im-btn-disabled-outline, a.disabled.im-btn-disabled-outline, a.disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light, a.disabled.im-card-link, a.im-card-link.im-btn-disabled, a.im-card-link.im-btn-disabled-light,
 fieldset:disabled a.btn,
 fieldset:disabled a.im-btn,
 fieldset:disabled a.im-btn-outline,
 fieldset:disabled a.im-btn-disabled-outline,
-fieldset:disabled a.im-btn-search {
+fieldset:disabled a.im-btn-search,
+fieldset:disabled a.im-card-link {
   pointer-events: none; }
 
 .btn-primary {
@@ -2266,13 +2269,13 @@ fieldset:disabled a.im-btn-search {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .im-btn, .btn-group-lg > .im-btn-outline, .btn-group-lg > .im-btn-disabled-outline, .btn-group-lg > .im-btn-search {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .im-btn, .btn-group-lg > .im-btn-outline, .btn-group-lg > .im-btn-disabled-outline, .btn-group-lg > .im-btn-search, .btn-group-lg > .im-card-link {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-outline, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-outline, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search, .btn-group-sm > .im-card-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2465,7 +2468,7 @@ input[type="button"].btn-block {
   right: auto;
   bottom: auto; }
 
-.dropdown-divider {
+.dropdown-divider, .im-divider, .im-divider-dark {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
@@ -2486,7 +2489,7 @@ input[type="button"].btn-block {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa; }
-  .dropdown-item.active, .dropdown-item.im-active, .im-active.im-dropdown-item, .active.im-dropdown-item, .im-dropdown-item.im-navitem-active, .dropdown-item.im-navitem-active, .dropdown-item:active, .im-dropdown-item:active {
+  .dropdown-item.active, .dropdown-item.im-active, .im-active.im-dropdown-item, .dropdown-item.im-navitem-active, .im-navitem-active.im-dropdown-item, .active.im-dropdown-item, .dropdown-item:active, .im-dropdown-item:active {
     color: #fff;
     text-decoration: none;
     background-color: #158FC4; }
@@ -2516,37 +2519,42 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .im-btn, .btn-group > .im-btn-outline, .btn-group > .im-btn-disabled-outline, .btn-group > .im-btn-search,
+  .btn-group > .btn, .btn-group > .im-btn, .btn-group > .im-btn-outline, .btn-group > .im-btn-disabled-outline, .btn-group > .im-btn-search, .btn-group > .im-card-link,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .im-btn,
   .btn-group-vertical > .im-btn-outline,
   .btn-group-vertical > .im-btn-disabled-outline,
-  .btn-group-vertical > .im-btn-search {
+  .btn-group-vertical > .im-btn-search,
+  .btn-group-vertical > .im-card-link {
     position: relative;
     flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .im-btn:hover, .btn-group > .im-btn-outline:hover, .btn-group > .im-btn-disabled-outline:hover, .btn-group > .im-btn-search:hover,
+    .btn-group > .btn:hover, .btn-group > .im-btn:hover, .btn-group > .im-btn-outline:hover, .btn-group > .im-btn-disabled-outline:hover, .btn-group > .im-btn-search:hover, .btn-group > .im-card-link:hover,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .im-btn:hover,
     .btn-group-vertical > .im-btn-outline:hover,
     .btn-group-vertical > .im-btn-disabled-outline:hover,
-    .btn-group-vertical > .im-btn-search:hover {
+    .btn-group-vertical > .im-btn-search:hover,
+    .btn-group-vertical > .im-card-link:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .im-btn:focus, .btn-group > .im-btn-outline:focus, .btn-group > .im-btn-disabled-outline:focus, .btn-group > .im-btn-search:focus, .btn-group > .btn:active, .btn-group > .im-btn:active, .btn-group > .im-btn-outline:active, .btn-group > .im-btn-disabled-outline:active, .btn-group > .im-btn-search:active, .btn-group > .im-active.btn, .btn-group > .im-active.im-btn, .btn-group > .im-active.im-btn-outline, .btn-group > .im-active.im-btn-disabled-outline, .btn-group > .im-active.im-btn-search, .btn-group > .active.btn, .btn-group > .btn.im-navitem-active, .btn-group > .active.im-btn, .btn-group > .active.im-btn-outline, .btn-group > .im-btn-outline.im-navitem-active, .btn-group > .active.im-btn-disabled-outline, .btn-group > .im-btn-disabled-outline.im-navitem-active, .btn-group > .im-btn.im-navitem-active, .btn-group > .active.im-btn-search, .btn-group > .im-btn-search.im-navitem-active,
+    .btn-group > .btn:focus, .btn-group > .im-btn:focus, .btn-group > .im-btn-outline:focus, .btn-group > .im-btn-disabled-outline:focus, .btn-group > .im-btn-search:focus, .btn-group > .im-card-link:focus, .btn-group > .btn:active, .btn-group > .im-btn:active, .btn-group > .im-btn-outline:active, .btn-group > .im-btn-disabled-outline:active, .btn-group > .im-btn-search:active, .btn-group > .im-card-link:active, .btn-group > .im-active.btn, .btn-group > .im-active.im-btn, .btn-group > .im-active.im-btn-outline, .btn-group > .im-active.im-btn-disabled-outline, .btn-group > .im-active.im-btn-search, .btn-group > .im-active.im-card-link, .btn-group > .active.btn, .btn-group > .btn.im-navitem-active, .btn-group > .active.im-btn, .btn-group > .active.im-btn-outline, .btn-group > .im-btn-outline.im-navitem-active, .btn-group > .active.im-btn-disabled-outline, .btn-group > .im-btn-disabled-outline.im-navitem-active, .btn-group > .im-btn.im-navitem-active, .btn-group > .active.im-btn-search, .btn-group > .im-btn-search.im-navitem-active, .btn-group > .active.im-card-link, .btn-group > .im-card-link.im-navitem-active,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .im-btn:focus,
     .btn-group-vertical > .im-btn-outline:focus,
     .btn-group-vertical > .im-btn-disabled-outline:focus,
     .btn-group-vertical > .im-btn-search:focus,
+    .btn-group-vertical > .im-card-link:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .im-btn:active,
     .btn-group-vertical > .im-btn-outline:active,
     .btn-group-vertical > .im-btn-disabled-outline:active,
     .btn-group-vertical > .im-btn-search:active,
+    .btn-group-vertical > .im-card-link:active,
     .btn-group-vertical > .im-active.btn,
     .btn-group-vertical > .im-active.im-btn,
     .btn-group-vertical > .im-active.im-btn-outline,
     .btn-group-vertical > .im-active.im-btn-disabled-outline,
     .btn-group-vertical > .im-active.im-btn-search,
+    .btn-group-vertical > .im-active.im-card-link,
     .btn-group-vertical > .active.btn,
     .btn-group-vertical > .btn.im-navitem-active,
     .btn-group-vertical > .active.im-btn,
@@ -2556,7 +2564,9 @@ input[type="button"].btn-block {
     .btn-group-vertical > .im-btn-disabled-outline.im-navitem-active,
     .btn-group-vertical > .im-btn.im-navitem-active,
     .btn-group-vertical > .active.im-btn-search,
-    .btn-group-vertical > .im-btn-search.im-navitem-active {
+    .btn-group-vertical > .im-btn-search.im-navitem-active,
+    .btn-group-vertical > .active.im-card-link,
+    .btn-group-vertical > .im-card-link.im-navitem-active {
       z-index: 1; }
 
 .btn-toolbar {
@@ -2566,25 +2576,27 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group, .btn-toolbar .im-search-group, .btn-toolbar .im-input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .im-btn,
 .btn-group > .btn-group:not(:last-child) > .im-btn-outline,
 .btn-group > .btn-group:not(:last-child) > .im-btn-disabled-outline,
-.btn-group > .btn-group:not(:last-child) > .im-btn-search {
+.btn-group > .btn-group:not(:last-child) > .im-btn-search,
+.btn-group > .btn-group:not(:last-child) > .im-card-link {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .im-btn,
 .btn-group > .btn-group:not(:first-child) > .im-btn-outline,
 .btn-group > .btn-group:not(:first-child) > .im-btn-disabled-outline,
-.btn-group > .btn-group:not(:first-child) > .im-btn-search {
+.btn-group > .btn-group:not(:first-child) > .im-btn-search,
+.btn-group > .btn-group:not(:first-child) > .im-card-link {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2598,11 +2610,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split, .btn-group-sm > .im-card-link + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .im-btn + .dropdown-toggle-split, .btn-group-lg > .im-btn-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-search + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .im-btn + .dropdown-toggle-split, .btn-group-lg > .im-btn-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-search + .dropdown-toggle-split, .btn-group-lg > .im-card-link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2616,51 +2628,58 @@ input[type="button"].btn-block {
   .btn-group-vertical > .im-btn-outline,
   .btn-group-vertical > .im-btn-disabled-outline,
   .btn-group-vertical > .im-btn-search,
+  .btn-group-vertical > .im-card-link,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-outline,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-disabled-outline,
-  .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-search {
+  .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-search,
+  .btn-group-vertical > .btn-group:not(:last-child) > .im-card-link {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-outline,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-disabled-outline,
-  .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-search {
+  .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-search,
+  .btn-group-vertical > .btn-group:not(:first-child) > .im-card-link {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .im-btn, .btn-group-toggle > .im-btn-outline, .btn-group-toggle > .im-btn-disabled-outline, .btn-group-toggle > .im-btn-search,
+.btn-group-toggle > .btn, .btn-group-toggle > .im-btn, .btn-group-toggle > .im-btn-outline, .btn-group-toggle > .im-btn-disabled-outline, .btn-group-toggle > .im-btn-search, .btn-group-toggle > .im-card-link,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > .im-btn,
 .btn-group-toggle > .btn-group > .im-btn-outline,
 .btn-group-toggle > .btn-group > .im-btn-disabled-outline,
-.btn-group-toggle > .btn-group > .im-btn-search {
+.btn-group-toggle > .btn-group > .im-btn-search,
+.btn-group-toggle > .btn-group > .im-card-link {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .im-btn input[type="radio"], .btn-group-toggle > .im-btn-outline input[type="radio"], .btn-group-toggle > .im-btn-disabled-outline input[type="radio"], .btn-group-toggle > .im-btn-search input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .im-btn input[type="radio"], .btn-group-toggle > .im-btn-outline input[type="radio"], .btn-group-toggle > .im-btn-disabled-outline input[type="radio"], .btn-group-toggle > .im-btn-search input[type="radio"], .btn-group-toggle > .im-card-link input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .im-btn input[type="checkbox"],
   .btn-group-toggle > .im-btn-outline input[type="checkbox"],
   .btn-group-toggle > .im-btn-disabled-outline input[type="checkbox"],
   .btn-group-toggle > .im-btn-search input[type="checkbox"],
+  .btn-group-toggle > .im-card-link input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn-outline input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn-disabled-outline input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn-search input[type="radio"],
+  .btn-group-toggle > .btn-group > .im-card-link input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn-outline input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn-disabled-outline input[type="checkbox"],
-  .btn-group-toggle > .btn-group > .im-btn-search input[type="checkbox"] {
+  .btn-group-toggle > .btn-group > .im-btn-search input[type="checkbox"],
+  .btn-group-toggle > .btn-group > .im-card-link input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -2868,7 +2887,7 @@ input[type="button"].btn-block {
 .input-group-append,
 .im-input-group-append {
   display: flex; }
-  .input-group-prepend .btn, .im-input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline, .input-group-prepend .im-btn-search, .im-input-group-prepend .im-btn-search, .im-input-group .im-btn-search,
+  .input-group-prepend .btn, .im-input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline, .input-group-prepend .im-btn-search, .im-input-group-prepend .im-btn-search, .im-input-group .im-btn-search, .input-group-prepend .im-card-link, .im-input-group-prepend .im-card-link, .im-input-group .im-card-link,
   .input-group-append .btn,
   .im-input-group-append .btn,
   .input-group-append .im-btn,
@@ -2878,10 +2897,12 @@ input[type="button"].btn-block {
   .input-group-append .im-btn-disabled-outline,
   .im-input-group-append .im-btn-disabled-outline,
   .input-group-append .im-btn-search,
-  .im-input-group-append .im-btn-search {
+  .im-input-group-append .im-btn-search,
+  .input-group-append .im-card-link,
+  .im-input-group-append .im-card-link {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .im-input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus, .input-group-prepend .im-btn-search:focus, .im-input-group-prepend .im-btn-search:focus, .im-input-group .im-btn-search:focus,
+    .input-group-prepend .btn:focus, .im-input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus, .input-group-prepend .im-btn-search:focus, .im-input-group-prepend .im-btn-search:focus, .im-input-group .im-btn-search:focus, .input-group-prepend .im-card-link:focus, .im-input-group-prepend .im-card-link:focus, .im-input-group .im-card-link:focus,
     .input-group-append .btn:focus,
     .im-input-group-append .btn:focus,
     .input-group-append .im-btn:focus,
@@ -2891,9 +2912,11 @@ input[type="button"].btn-block {
     .input-group-append .im-btn-disabled-outline:focus,
     .im-input-group-append .im-btn-disabled-outline:focus,
     .input-group-append .im-btn-search:focus,
-    .im-input-group-append .im-btn-search:focus {
+    .im-input-group-append .im-btn-search:focus,
+    .input-group-append .im-card-link:focus,
+    .im-input-group-append .im-card-link:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .im-btn-search + .im-btn, .im-input-group-prepend .im-btn-search + .im-btn, .im-input-group .im-btn-search + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group .im-btn-search + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group .im-btn-search + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .im-btn + .im-btn-search, .im-input-group-prepend .im-btn + .im-btn-search, .im-input-group .im-btn + .im-btn-search, .input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group .im-btn-outline + .im-btn-search, .input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group .im-btn-disabled-outline + .im-btn-search, .input-group-prepend .im-btn-search + .im-btn-search, .im-input-group-prepend .im-btn-search + .im-btn-search, .im-input-group .im-btn-search + .im-btn-search,
+  .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .im-btn-search + .im-btn, .im-input-group-prepend .im-btn-search + .im-btn, .im-input-group .im-btn-search + .im-btn, .input-group-prepend .im-card-link + .im-btn, .im-input-group-prepend .im-card-link + .im-btn, .im-input-group .im-card-link + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group .im-btn-search + .im-btn-outline, .input-group-prepend .im-card-link + .im-btn-outline, .im-input-group-prepend .im-card-link + .im-btn-outline, .im-input-group .im-card-link + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group .im-btn-search + .im-btn-disabled-outline, .input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group .im-card-link + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .im-btn + .im-btn-search, .im-input-group-prepend .im-btn + .im-btn-search, .im-input-group .im-btn + .im-btn-search, .input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group .im-btn-outline + .im-btn-search, .input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group .im-btn-disabled-outline + .im-btn-search, .input-group-prepend .im-btn-search + .im-btn-search, .im-input-group-prepend .im-btn-search + .im-btn-search, .im-input-group .im-btn-search + .im-btn-search, .input-group-prepend .im-card-link + .im-btn-search, .im-input-group-prepend .im-card-link + .im-btn-search, .im-input-group .im-card-link + .im-btn-search, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .im-btn + .im-card-link, .im-input-group-prepend .im-btn + .im-card-link, .im-input-group .im-btn + .im-card-link, .input-group-prepend .im-btn-outline + .im-card-link, .im-input-group-prepend .im-btn-outline + .im-card-link, .im-input-group .im-btn-outline + .im-card-link, .input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group .im-btn-disabled-outline + .im-card-link, .input-group-prepend .im-btn-search + .im-card-link, .im-input-group-prepend .im-btn-search + .im-card-link, .im-input-group .im-btn-search + .im-card-link, .input-group-prepend .im-card-link + .im-card-link, .im-input-group-prepend .im-card-link + .im-card-link, .im-input-group .im-card-link + .im-card-link,
   .input-group-prepend .btn + .input-group-text,
   .im-input-group-prepend .btn + .input-group-text,
   .im-input-group .btn + .input-group-text,
@@ -2909,6 +2932,9 @@ input[type="button"].btn-block {
   .input-group-prepend .im-btn-search + .input-group-text,
   .im-input-group-prepend .im-btn-search + .input-group-text,
   .im-input-group .im-btn-search + .input-group-text,
+  .input-group-prepend .im-card-link + .input-group-text,
+  .im-input-group-prepend .im-card-link + .input-group-text,
+  .im-input-group .im-card-link + .input-group-text,
   .input-group-prepend .btn + .im-input-group-text,
   .im-input-group-prepend .btn + .im-input-group-text,
   .im-input-group .btn + .im-input-group-text,
@@ -2924,6 +2950,9 @@ input[type="button"].btn-block {
   .input-group-prepend .im-btn-search + .im-input-group-text,
   .im-input-group-prepend .im-btn-search + .im-input-group-text,
   .im-input-group .im-btn-search + .im-input-group-text,
+  .input-group-prepend .im-card-link + .im-input-group-text,
+  .im-input-group-prepend .im-card-link + .im-input-group-text,
+  .im-input-group .im-card-link + .im-input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .im-input-group-prepend .input-group-text + .input-group-text,
   .im-input-group .input-group-text + .input-group-text,
@@ -2966,6 +2995,12 @@ input[type="button"].btn-block {
   .input-group-prepend .im-input-group-text + .im-btn-search,
   .im-input-group-prepend .im-input-group-text + .im-btn-search,
   .im-input-group .im-input-group-text + .im-btn-search,
+  .input-group-prepend .input-group-text + .im-card-link,
+  .im-input-group-prepend .input-group-text + .im-card-link,
+  .im-input-group .input-group-text + .im-card-link,
+  .input-group-prepend .im-input-group-text + .im-card-link,
+  .im-input-group-prepend .im-input-group-text + .im-card-link,
+  .im-input-group .im-input-group-text + .im-card-link,
   .input-group-append .btn + .btn,
   .im-input-group-append .btn + .btn,
   .input-group-append .im-btn + .btn,
@@ -2976,6 +3011,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .btn,
   .input-group-append .im-btn-search + .btn,
   .im-input-group-append .im-btn-search + .btn,
+  .input-group-append .im-card-link + .btn,
+  .im-input-group-append .im-card-link + .btn,
   .input-group-append .btn + .im-btn,
   .im-input-group-append .btn + .im-btn,
   .input-group-append .im-btn + .im-btn,
@@ -2986,6 +3023,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .im-btn,
   .input-group-append .im-btn-search + .im-btn,
   .im-input-group-append .im-btn-search + .im-btn,
+  .input-group-append .im-card-link + .im-btn,
+  .im-input-group-append .im-card-link + .im-btn,
   .input-group-append .btn + .im-btn-outline,
   .im-input-group-append .btn + .im-btn-outline,
   .input-group-append .im-btn + .im-btn-outline,
@@ -2996,6 +3035,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .im-btn-outline,
   .input-group-append .im-btn-search + .im-btn-outline,
   .im-input-group-append .im-btn-search + .im-btn-outline,
+  .input-group-append .im-card-link + .im-btn-outline,
+  .im-input-group-append .im-card-link + .im-btn-outline,
   .input-group-append .btn + .im-btn-disabled-outline,
   .im-input-group-append .btn + .im-btn-disabled-outline,
   .input-group-append .im-btn + .im-btn-disabled-outline,
@@ -3006,6 +3047,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .im-btn-disabled-outline,
   .input-group-append .im-btn-search + .im-btn-disabled-outline,
   .im-input-group-append .im-btn-search + .im-btn-disabled-outline,
+  .input-group-append .im-card-link + .im-btn-disabled-outline,
+  .im-input-group-append .im-card-link + .im-btn-disabled-outline,
   .input-group-append .btn + .im-btn-search,
   .im-input-group-append .btn + .im-btn-search,
   .input-group-append .im-btn + .im-btn-search,
@@ -3016,6 +3059,20 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .im-btn-search,
   .input-group-append .im-btn-search + .im-btn-search,
   .im-input-group-append .im-btn-search + .im-btn-search,
+  .input-group-append .im-card-link + .im-btn-search,
+  .im-input-group-append .im-card-link + .im-btn-search,
+  .input-group-append .btn + .im-card-link,
+  .im-input-group-append .btn + .im-card-link,
+  .input-group-append .im-btn + .im-card-link,
+  .im-input-group-append .im-btn + .im-card-link,
+  .input-group-append .im-btn-outline + .im-card-link,
+  .im-input-group-append .im-btn-outline + .im-card-link,
+  .input-group-append .im-btn-disabled-outline + .im-card-link,
+  .im-input-group-append .im-btn-disabled-outline + .im-card-link,
+  .input-group-append .im-btn-search + .im-card-link,
+  .im-input-group-append .im-btn-search + .im-card-link,
+  .input-group-append .im-card-link + .im-card-link,
+  .im-input-group-append .im-card-link + .im-card-link,
   .input-group-append .btn + .input-group-text,
   .im-input-group-append .btn + .input-group-text,
   .input-group-append .im-btn + .input-group-text,
@@ -3026,6 +3083,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .input-group-text,
   .input-group-append .im-btn-search + .input-group-text,
   .im-input-group-append .im-btn-search + .input-group-text,
+  .input-group-append .im-card-link + .input-group-text,
+  .im-input-group-append .im-card-link + .input-group-text,
   .input-group-append .btn + .im-input-group-text,
   .im-input-group-append .btn + .im-input-group-text,
   .input-group-append .im-btn + .im-input-group-text,
@@ -3036,6 +3095,8 @@ input[type="button"].btn-block {
   .im-input-group-append .im-btn-disabled-outline + .im-input-group-text,
   .input-group-append .im-btn-search + .im-input-group-text,
   .im-input-group-append .im-btn-search + .im-input-group-text,
+  .input-group-append .im-card-link + .im-input-group-text,
+  .im-input-group-append .im-card-link + .im-input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .im-input-group-append .input-group-text + .input-group-text,
   .input-group-append .im-input-group-text + .input-group-text,
@@ -3063,7 +3124,11 @@ input[type="button"].btn-block {
   .input-group-append .input-group-text + .im-btn-search,
   .im-input-group-append .input-group-text + .im-btn-search,
   .input-group-append .im-input-group-text + .im-btn-search,
-  .im-input-group-append .im-input-group-text + .im-btn-search {
+  .im-input-group-append .im-input-group-text + .im-btn-search,
+  .input-group-append .input-group-text + .im-card-link,
+  .im-input-group-append .input-group-text + .im-card-link,
+  .input-group-append .im-input-group-text + .im-card-link,
+  .im-input-group-append .im-input-group-text + .im-card-link {
     margin-left: -1px; }
 
 .input-group-prepend, .im-input-group-prepend, .im-input-group {
@@ -3124,6 +3189,9 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .im-btn-search,
 .input-group-lg > .im-input-group-prepend > .im-btn-search,
 .input-group-lg > .im-input-group > .im-btn-search,
+.input-group-lg > .input-group-prepend > .im-card-link,
+.input-group-lg > .im-input-group-prepend > .im-card-link,
+.input-group-lg > .im-input-group > .im-card-link,
 .input-group-lg > .input-group-append > .btn,
 .input-group-lg > .im-input-group-append > .btn,
 .input-group-lg > .input-group-append > .im-btn,
@@ -3133,7 +3201,9 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-append > .im-btn-disabled-outline,
 .input-group-lg > .im-input-group-append > .im-btn-disabled-outline,
 .input-group-lg > .input-group-append > .im-btn-search,
-.input-group-lg > .im-input-group-append > .im-btn-search {
+.input-group-lg > .im-input-group-append > .im-btn-search,
+.input-group-lg > .input-group-append > .im-card-link,
+.input-group-lg > .im-input-group-append > .im-card-link {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -3170,6 +3240,9 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .im-btn-search,
 .input-group-sm > .im-input-group-prepend > .im-btn-search,
 .input-group-sm > .im-input-group > .im-btn-search,
+.input-group-sm > .input-group-prepend > .im-card-link,
+.input-group-sm > .im-input-group-prepend > .im-card-link,
+.input-group-sm > .im-input-group > .im-card-link,
 .input-group-sm > .input-group-append > .btn,
 .input-group-sm > .im-input-group-append > .btn,
 .input-group-sm > .input-group-append > .im-btn,
@@ -3179,7 +3252,9 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-append > .im-btn-disabled-outline,
 .input-group-sm > .im-input-group-append > .im-btn-disabled-outline,
 .input-group-sm > .input-group-append > .im-btn-search,
-.input-group-sm > .im-input-group-append > .im-btn-search {
+.input-group-sm > .im-input-group-append > .im-btn-search,
+.input-group-sm > .input-group-append > .im-card-link,
+.input-group-sm > .im-input-group-append > .im-card-link {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3189,7 +3264,7 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .im-search-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-search-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-search-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-search-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-search-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-search-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-search-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-search-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-search-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-search-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-search-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-search-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-search-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-search-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-search-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search,
+.input-group > .input-group-prepend > .btn, .im-search-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-search-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-search-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-search-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-search-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-search-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-search-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-search-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-search-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-search-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-search-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-search-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-search-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-search-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-search-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search, .input-group > .input-group-prepend > .im-card-link, .im-search-group > .input-group-prepend > .im-card-link, .im-input-group > .input-group-prepend > .im-card-link, .input-group > .im-input-group-prepend > .im-card-link, .im-search-group > .im-input-group-prepend > .im-card-link, .im-input-group > .im-input-group-prepend > .im-card-link, .input-group > .im-input-group > .im-card-link, .im-search-group > .im-input-group > .im-card-link, .im-input-group > .im-input-group > .im-card-link,
 .input-group > .input-group-prepend > .input-group-text,
 .im-search-group > .input-group-prepend > .input-group-text,
 .im-input-group > .input-group-prepend > .input-group-text,
@@ -3238,6 +3313,12 @@ input[type="button"].btn-block {
 .input-group > .im-input-group-append:not(:last-child) > .im-btn-search,
 .im-search-group > .im-input-group-append:not(:last-child) > .im-btn-search,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn-search,
+.input-group > .input-group-append:not(:last-child) > .im-card-link,
+.im-search-group > .input-group-append:not(:last-child) > .im-card-link,
+.im-input-group > .input-group-append:not(:last-child) > .im-card-link,
+.input-group > .im-input-group-append:not(:last-child) > .im-card-link,
+.im-search-group > .im-input-group-append:not(:last-child) > .im-card-link,
+.im-input-group > .im-input-group-append:not(:last-child) > .im-card-link,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .im-search-group > .input-group-append:not(:last-child) > .input-group-text,
 .im-input-group > .input-group-append:not(:last-child) > .input-group-text,
@@ -3280,6 +3361,12 @@ input[type="button"].btn-block {
 .input-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-search-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.input-group > .im-input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-search-group > .im-input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.im-input-group > .im-input-group-append:last-child > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .im-search-group > .input-group-append:last-child > .input-group-text:not(:last-child),
 .im-input-group > .input-group-append:last-child > .input-group-text:not(:last-child),
@@ -3295,7 +3382,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .im-search-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-search-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-search-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-search-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-search-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-search-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-search-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-search-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-search-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-search-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search,
+.input-group > .input-group-append > .btn, .im-search-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-search-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-search-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-search-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-search-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-search-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-search-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-search-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-search-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-search-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search, .input-group > .input-group-append > .im-card-link, .im-search-group > .input-group-append > .im-card-link, .im-input-group > .input-group-append > .im-card-link, .input-group > .im-input-group-append > .im-card-link, .im-search-group > .im-input-group-append > .im-card-link, .im-input-group > .im-input-group-append > .im-card-link,
 .input-group > .input-group-append > .input-group-text,
 .im-search-group > .input-group-append > .input-group-text,
 .im-input-group > .input-group-append > .input-group-text,
@@ -3353,6 +3440,15 @@ input[type="button"].btn-block {
 .input-group > .im-input-group:not(:first-child) > .im-btn-search,
 .im-search-group > .im-input-group:not(:first-child) > .im-btn-search,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn-search,
+.input-group > .input-group-prepend:not(:first-child) > .im-card-link,
+.im-search-group > .input-group-prepend:not(:first-child) > .im-card-link,
+.im-input-group > .input-group-prepend:not(:first-child) > .im-card-link,
+.input-group > .im-input-group-prepend:not(:first-child) > .im-card-link,
+.im-search-group > .im-input-group-prepend:not(:first-child) > .im-card-link,
+.im-input-group > .im-input-group-prepend:not(:first-child) > .im-card-link,
+.input-group > .im-input-group:not(:first-child) > .im-card-link,
+.im-search-group > .im-input-group:not(:first-child) > .im-card-link,
+.im-input-group > .im-input-group:not(:first-child) > .im-card-link,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .im-search-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .im-input-group > .input-group-prepend:not(:first-child) > .input-group-text,
@@ -3416,6 +3512,15 @@ input[type="button"].btn-block {
 .input-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
 .im-search-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn-search:not(:first-child),
+.input-group > .input-group-prepend:first-child > .im-card-link:not(:first-child),
+.im-search-group > .input-group-prepend:first-child > .im-card-link:not(:first-child),
+.im-input-group > .input-group-prepend:first-child > .im-card-link:not(:first-child),
+.input-group > .im-input-group-prepend:first-child > .im-card-link:not(:first-child),
+.im-search-group > .im-input-group-prepend:first-child > .im-card-link:not(:first-child),
+.im-input-group > .im-input-group-prepend:first-child > .im-card-link:not(:first-child),
+.input-group > .im-input-group:first-child > .im-card-link:not(:first-child),
+.im-search-group > .im-input-group:first-child > .im-card-link:not(:first-child),
+.im-input-group > .im-input-group:first-child > .im-card-link:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .im-search-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
@@ -3858,7 +3963,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar .container, .im-navbar .container, .navbar .im-container, .im-navbar .im-container,
+  .navbar .container, .im-navbar .container, .navbar .im-card-container, .im-navbar .im-card-container, .navbar .im-card-div, .im-navbar .im-card-div, .navbar .im-container, .im-navbar .im-container,
   .navbar .container-fluid,
   .im-navbar .container-fluid, .navbar .container-sm, .im-navbar .container-sm, .navbar .container-md, .im-navbar .container-md, .navbar .container-lg, .im-navbar .container-lg, .navbar .container-xl, .im-navbar .container-xl, .navbar .im-container-fluid, .im-navbar .im-container-fluid {
     display: flex;
@@ -3920,8 +4025,8 @@ input[type="button"].btn-block {
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, .navbar-expand-sm > .im-card-container, .navbar-expand-sm > .im-card-div,
-  .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+  .navbar-expand-sm > .container, .navbar-expand-sm > .im-card-container, .navbar-expand-sm > .im-card-div, .navbar-expand-sm > .im-container,
+  .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl, .navbar-expand-sm > .im-container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
@@ -3936,8 +4041,8 @@ input[type="button"].btn-block {
       .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav .im-nav-link, .navbar-expand-sm .navbar-nav .im-tab-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container, .navbar-expand-sm > .im-card-container, .navbar-expand-sm > .im-card-div,
-    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+    .navbar-expand-sm > .container, .navbar-expand-sm > .im-card-container, .navbar-expand-sm > .im-card-div, .navbar-expand-sm > .im-container,
+    .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl, .navbar-expand-sm > .im-container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse {
       display: flex !important;
@@ -3946,8 +4051,8 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, .navbar-expand-md > .im-card-container, .navbar-expand-md > .im-card-div,
-  .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+  .navbar-expand-md > .container, .navbar-expand-md > .im-card-container, .navbar-expand-md > .im-card-div, .navbar-expand-md > .im-container,
+  .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl, .navbar-expand-md > .im-container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
@@ -3962,8 +4067,8 @@ input[type="button"].btn-block {
       .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav .im-nav-link, .navbar-expand-md .navbar-nav .im-tab-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container, .navbar-expand-md > .im-card-container, .navbar-expand-md > .im-card-div,
-    .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+    .navbar-expand-md > .container, .navbar-expand-md > .im-card-container, .navbar-expand-md > .im-card-div, .navbar-expand-md > .im-container,
+    .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl, .navbar-expand-md > .im-container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-md .navbar-collapse {
       display: flex !important;
@@ -3972,7 +4077,7 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, .im-navbar .navbar-expand-lg > .container, .navbar-expand-lg .im-navbar > .container, .im-navbar > .container, .navbar-expand-lg > .im-container, .im-navbar .navbar-expand-lg > .im-container, .navbar-expand-lg .im-navbar > .im-container, .im-navbar > .im-container,
+  .navbar-expand-lg > .container, .im-navbar .navbar-expand-lg > .container, .navbar-expand-lg .im-navbar > .container, .im-navbar > .container, .navbar-expand-lg > .im-card-container, .im-navbar .navbar-expand-lg > .im-card-container, .navbar-expand-lg .im-navbar > .im-card-container, .im-navbar > .im-card-container, .navbar-expand-lg > .im-card-div, .im-navbar .navbar-expand-lg > .im-card-div, .navbar-expand-lg .im-navbar > .im-card-div, .im-navbar > .im-card-div, .navbar-expand-lg > .im-container, .im-navbar .navbar-expand-lg > .im-container, .navbar-expand-lg .im-navbar > .im-container, .im-navbar > .im-container,
   .navbar-expand-lg > .container-fluid,
   .im-navbar .navbar-expand-lg > .container-fluid,
   .navbar-expand-lg .im-navbar > .container-fluid,
@@ -3991,7 +4096,7 @@ input[type="button"].btn-block {
       .navbar-expand-lg .navbar-nav .nav-link, .im-navbar .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav .im-nav-link, .im-navbar .navbar-nav .im-nav-link, .navbar-expand-lg .navbar-nav .im-tab-link, .im-navbar .navbar-nav .im-tab-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container, .im-navbar .navbar-expand-lg > .container, .navbar-expand-lg .im-navbar > .container, .im-navbar > .container, .navbar-expand-lg > .im-container, .im-navbar .navbar-expand-lg > .im-container, .navbar-expand-lg .im-navbar > .im-container, .im-navbar > .im-container,
+    .navbar-expand-lg > .container, .im-navbar .navbar-expand-lg > .container, .navbar-expand-lg .im-navbar > .container, .im-navbar > .container, .navbar-expand-lg > .im-card-container, .im-navbar .navbar-expand-lg > .im-card-container, .navbar-expand-lg .im-navbar > .im-card-container, .im-navbar > .im-card-container, .navbar-expand-lg > .im-card-div, .im-navbar .navbar-expand-lg > .im-card-div, .navbar-expand-lg .im-navbar > .im-card-div, .im-navbar > .im-card-div, .navbar-expand-lg > .im-container, .im-navbar .navbar-expand-lg > .im-container, .navbar-expand-lg .im-navbar > .im-container, .im-navbar > .im-container,
     .navbar-expand-lg > .container-fluid,
     .im-navbar .navbar-expand-lg > .container-fluid,
     .navbar-expand-lg .im-navbar > .container-fluid,
@@ -4004,8 +4109,8 @@ input[type="button"].btn-block {
       display: none; } }
 
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, .navbar-expand-xl > .im-card-container, .navbar-expand-xl > .im-card-div,
-  .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+  .navbar-expand-xl > .container, .navbar-expand-xl > .im-card-container, .navbar-expand-xl > .im-card-div, .navbar-expand-xl > .im-container,
+  .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl, .navbar-expand-xl > .im-container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
@@ -4020,8 +4125,8 @@ input[type="button"].btn-block {
       .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav .im-nav-link, .navbar-expand-xl .navbar-nav .im-tab-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container, .navbar-expand-xl > .im-card-container, .navbar-expand-xl > .im-card-div,
-    .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+    .navbar-expand-xl > .container, .navbar-expand-xl > .im-card-container, .navbar-expand-xl > .im-card-div, .navbar-expand-xl > .im-container,
+    .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl, .navbar-expand-xl > .im-container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-xl .navbar-collapse {
       display: flex !important;
@@ -4032,8 +4137,8 @@ input[type="button"].btn-block {
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start; }
-  .navbar-expand > .container, .navbar-expand > .im-card-container, .navbar-expand > .im-card-div,
-  .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+  .navbar-expand > .container, .navbar-expand > .im-card-container, .navbar-expand > .im-card-div, .navbar-expand > .im-container,
+  .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl, .navbar-expand > .im-container-fluid {
     padding-right: 0;
     padding-left: 0; }
   .navbar-expand .navbar-nav {
@@ -4043,8 +4148,8 @@ input[type="button"].btn-block {
     .navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav .im-nav-link, .navbar-expand .navbar-nav .im-tab-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container, .navbar-expand > .im-card-container, .navbar-expand > .im-card-div,
-  .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+  .navbar-expand > .container, .navbar-expand > .im-card-container, .navbar-expand > .im-card-div, .navbar-expand > .im-container,
+  .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl, .navbar-expand > .im-container-fluid {
     flex-wrap: nowrap; }
   .navbar-expand .navbar-collapse {
     display: flex !important;
@@ -4448,7 +4553,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .im-btn .badge, .im-btn-outline .badge, .im-btn-disabled-outline .badge, .im-btn-search .badge {
+.btn .badge, .im-btn .badge, .im-btn-outline .badge, .im-btn-disabled-outline .badge, .im-btn-search .badge, .im-card-link .badge {
   position: relative;
   top: -1px; }
 
@@ -4723,18 +4828,18 @@ input[type="button"].btn-block {
   .list-group-item:last-child, .im-list-group-item:last-child {
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit; }
-  .list-group-item.disabled, .list-group-item.im-disabled, .list-group-item.im-btn-disabled, .list-group-item.im-btn-disabled-light, .list-group-item:disabled {
+  .list-group-item.disabled, .list-group-item.im-disabled, .im-disabled.im-list-group-item, .list-group-item.im-btn-disabled, .list-group-item.im-btn-disabled-light, .im-btn-disabled-light.im-list-group-item, .im-btn-disabled.im-list-group-item, .disabled.im-list-group-item, .list-group-item:disabled, .im-list-group-item:disabled {
     color: #6c757d;
     pointer-events: none;
     background-color: #fff; }
-  .list-group-item.active, .list-group-item.im-active, .list-group-item.im-navitem-active {
+  .list-group-item.active, .list-group-item.im-active, .im-active.im-list-group-item, .list-group-item.im-navitem-active, .im-navitem-active.im-list-group-item, .active.im-list-group-item {
     z-index: 2;
     color: #fff;
     background-color: #158FC4;
     border-color: #158FC4; }
-  .list-group-item + .list-group-item {
+  .list-group-item + .list-group-item, .im-list-group-item + .list-group-item, .list-group-item + .im-list-group-item, .im-list-group-item + .im-list-group-item {
     border-top-width: 0; }
-    .list-group-item + .list-group-item.active, .list-group-item + .list-group-item.im-active, .list-group-item + .list-group-item.im-navitem-active {
+    .list-group-item + .list-group-item.active, .im-list-group-item + .list-group-item.active, .list-group-item + .list-group-item.im-active, .im-list-group-item + .list-group-item.im-active, .list-group-item + .im-active.im-list-group-item, .im-list-group-item + .im-active.im-list-group-item, .list-group-item + .list-group-item.im-navitem-active, .im-list-group-item + .list-group-item.im-navitem-active, .list-group-item + .im-navitem-active.im-list-group-item, .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-item + .active.im-list-group-item, .im-list-group-item + .active.im-list-group-item {
       margin-top: -1px;
       border-top-width: 1px; }
 
@@ -4746,12 +4851,12 @@ input[type="button"].btn-block {
   .list-group-horizontal > .list-group-item:last-child, .list-group-horizontal > .im-list-group-item:last-child {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0; }
-  .list-group-horizontal > .list-group-item.active, .list-group-horizontal > .list-group-item.im-active, .list-group-horizontal > .list-group-item.im-navitem-active {
+  .list-group-horizontal > .list-group-item.active, .list-group-horizontal > .list-group-item.im-active, .list-group-horizontal > .im-active.im-list-group-item, .list-group-horizontal > .list-group-item.im-navitem-active, .list-group-horizontal > .im-navitem-active.im-list-group-item, .list-group-horizontal > .active.im-list-group-item {
     margin-top: 0; }
   .list-group-horizontal > .list-group-item + .list-group-item, .list-group-horizontal > .im-list-group-item + .list-group-item, .list-group-horizontal > .list-group-item + .im-list-group-item, .list-group-horizontal > .im-list-group-item + .im-list-group-item {
     border-top-width: 1px;
     border-left-width: 0; }
-    .list-group-horizontal > .list-group-item + .list-group-item.active, .list-group-horizontal > .list-group-item + .list-group-item.im-active, .list-group-horizontal > .list-group-item + .list-group-item.im-navitem-active {
+    .list-group-horizontal > .list-group-item + .list-group-item.active, .list-group-horizontal > .im-list-group-item + .list-group-item.active, .list-group-horizontal > .list-group-item + .list-group-item.im-active, .list-group-horizontal > .im-list-group-item + .list-group-item.im-active, .list-group-horizontal > .list-group-item + .im-active.im-list-group-item, .list-group-horizontal > .im-list-group-item + .im-active.im-list-group-item, .list-group-horizontal > .list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal > .im-list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal > .list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal > .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal > .list-group-item + .active.im-list-group-item, .list-group-horizontal > .im-list-group-item + .active.im-list-group-item {
       margin-left: -1px;
       border-left-width: 1px; }
 
@@ -4764,12 +4869,12 @@ input[type="button"].btn-block {
     .list-group-horizontal-sm > .list-group-item:last-child, .list-group-horizontal-sm > .im-list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-sm > .list-group-item.active, .list-group-horizontal-sm > .list-group-item.im-active, .list-group-horizontal-sm > .list-group-item.im-navitem-active {
+    .list-group-horizontal-sm > .list-group-item.active, .list-group-horizontal-sm > .list-group-item.im-active, .list-group-horizontal-sm > .im-active.im-list-group-item, .list-group-horizontal-sm > .list-group-item.im-navitem-active, .list-group-horizontal-sm > .im-navitem-active.im-list-group-item, .list-group-horizontal-sm > .active.im-list-group-item {
       margin-top: 0; }
     .list-group-horizontal-sm > .list-group-item + .list-group-item, .list-group-horizontal-sm > .im-list-group-item + .list-group-item, .list-group-horizontal-sm > .list-group-item + .im-list-group-item, .list-group-horizontal-sm > .im-list-group-item + .im-list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .list-group-horizontal-sm > .list-group-item + .list-group-item.im-active, .list-group-horizontal-sm > .list-group-item + .list-group-item.im-navitem-active {
+      .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .list-group-horizontal-sm > .im-list-group-item + .list-group-item.active, .list-group-horizontal-sm > .list-group-item + .list-group-item.im-active, .list-group-horizontal-sm > .im-list-group-item + .list-group-item.im-active, .list-group-horizontal-sm > .list-group-item + .im-active.im-list-group-item, .list-group-horizontal-sm > .im-list-group-item + .im-active.im-list-group-item, .list-group-horizontal-sm > .list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-sm > .im-list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-sm > .list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-sm > .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-sm > .list-group-item + .active.im-list-group-item, .list-group-horizontal-sm > .im-list-group-item + .active.im-list-group-item {
         margin-left: -1px;
         border-left-width: 1px; } }
 
@@ -4782,12 +4887,12 @@ input[type="button"].btn-block {
     .list-group-horizontal-md > .list-group-item:last-child, .list-group-horizontal-md > .im-list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-md > .list-group-item.active, .list-group-horizontal-md > .list-group-item.im-active, .list-group-horizontal-md > .list-group-item.im-navitem-active {
+    .list-group-horizontal-md > .list-group-item.active, .list-group-horizontal-md > .list-group-item.im-active, .list-group-horizontal-md > .im-active.im-list-group-item, .list-group-horizontal-md > .list-group-item.im-navitem-active, .list-group-horizontal-md > .im-navitem-active.im-list-group-item, .list-group-horizontal-md > .active.im-list-group-item {
       margin-top: 0; }
     .list-group-horizontal-md > .list-group-item + .list-group-item, .list-group-horizontal-md > .im-list-group-item + .list-group-item, .list-group-horizontal-md > .list-group-item + .im-list-group-item, .list-group-horizontal-md > .im-list-group-item + .im-list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-md > .list-group-item + .list-group-item.active, .list-group-horizontal-md > .list-group-item + .list-group-item.im-active, .list-group-horizontal-md > .list-group-item + .list-group-item.im-navitem-active {
+      .list-group-horizontal-md > .list-group-item + .list-group-item.active, .list-group-horizontal-md > .im-list-group-item + .list-group-item.active, .list-group-horizontal-md > .list-group-item + .list-group-item.im-active, .list-group-horizontal-md > .im-list-group-item + .list-group-item.im-active, .list-group-horizontal-md > .list-group-item + .im-active.im-list-group-item, .list-group-horizontal-md > .im-list-group-item + .im-active.im-list-group-item, .list-group-horizontal-md > .list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-md > .im-list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-md > .list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-md > .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-md > .list-group-item + .active.im-list-group-item, .list-group-horizontal-md > .im-list-group-item + .active.im-list-group-item {
         margin-left: -1px;
         border-left-width: 1px; } }
 
@@ -4800,12 +4905,12 @@ input[type="button"].btn-block {
     .list-group-horizontal-lg > .list-group-item:last-child, .list-group-horizontal-lg > .im-list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-lg > .list-group-item.active, .list-group-horizontal-lg > .list-group-item.im-active, .list-group-horizontal-lg > .list-group-item.im-navitem-active {
+    .list-group-horizontal-lg > .list-group-item.active, .list-group-horizontal-lg > .list-group-item.im-active, .list-group-horizontal-lg > .im-active.im-list-group-item, .list-group-horizontal-lg > .list-group-item.im-navitem-active, .list-group-horizontal-lg > .im-navitem-active.im-list-group-item, .list-group-horizontal-lg > .active.im-list-group-item {
       margin-top: 0; }
     .list-group-horizontal-lg > .list-group-item + .list-group-item, .list-group-horizontal-lg > .im-list-group-item + .list-group-item, .list-group-horizontal-lg > .list-group-item + .im-list-group-item, .list-group-horizontal-lg > .im-list-group-item + .im-list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .list-group-horizontal-lg > .list-group-item + .list-group-item.im-active, .list-group-horizontal-lg > .list-group-item + .list-group-item.im-navitem-active {
+      .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .list-group-horizontal-lg > .im-list-group-item + .list-group-item.active, .list-group-horizontal-lg > .list-group-item + .list-group-item.im-active, .list-group-horizontal-lg > .im-list-group-item + .list-group-item.im-active, .list-group-horizontal-lg > .list-group-item + .im-active.im-list-group-item, .list-group-horizontal-lg > .im-list-group-item + .im-active.im-list-group-item, .list-group-horizontal-lg > .list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-lg > .im-list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-lg > .list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-lg > .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-lg > .list-group-item + .active.im-list-group-item, .list-group-horizontal-lg > .im-list-group-item + .active.im-list-group-item {
         margin-left: -1px;
         border-left-width: 1px; } }
 
@@ -4818,12 +4923,12 @@ input[type="button"].btn-block {
     .list-group-horizontal-xl > .list-group-item:last-child, .list-group-horizontal-xl > .im-list-group-item:last-child {
       border-top-right-radius: 0.25rem;
       border-bottom-left-radius: 0; }
-    .list-group-horizontal-xl > .list-group-item.active, .list-group-horizontal-xl > .list-group-item.im-active, .list-group-horizontal-xl > .list-group-item.im-navitem-active {
+    .list-group-horizontal-xl > .list-group-item.active, .list-group-horizontal-xl > .list-group-item.im-active, .list-group-horizontal-xl > .im-active.im-list-group-item, .list-group-horizontal-xl > .list-group-item.im-navitem-active, .list-group-horizontal-xl > .im-navitem-active.im-list-group-item, .list-group-horizontal-xl > .active.im-list-group-item {
       margin-top: 0; }
     .list-group-horizontal-xl > .list-group-item + .list-group-item, .list-group-horizontal-xl > .im-list-group-item + .list-group-item, .list-group-horizontal-xl > .list-group-item + .im-list-group-item, .list-group-horizontal-xl > .im-list-group-item + .im-list-group-item {
       border-top-width: 1px;
       border-left-width: 0; }
-      .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .list-group-horizontal-xl > .list-group-item + .list-group-item.im-active, .list-group-horizontal-xl > .list-group-item + .list-group-item.im-navitem-active {
+      .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .list-group-horizontal-xl > .im-list-group-item + .list-group-item.active, .list-group-horizontal-xl > .list-group-item + .list-group-item.im-active, .list-group-horizontal-xl > .im-list-group-item + .list-group-item.im-active, .list-group-horizontal-xl > .list-group-item + .im-active.im-list-group-item, .list-group-horizontal-xl > .im-list-group-item + .im-active.im-list-group-item, .list-group-horizontal-xl > .list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-xl > .im-list-group-item + .list-group-item.im-navitem-active, .list-group-horizontal-xl > .list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-xl > .im-list-group-item + .im-navitem-active.im-list-group-item, .list-group-horizontal-xl > .list-group-item + .active.im-list-group-item, .list-group-horizontal-xl > .im-list-group-item + .active.im-list-group-item {
         margin-left: -1px;
         border-left-width: 1px; } }
 
@@ -7975,7 +8080,7 @@ a.text-dark:hover, a.text-dark:focus {
   *::after {
     text-shadow: none !important;
     box-shadow: none !important; }
-  a:not(.btn):not(.im-btn):not(.im-btn-outline):not(.im-btn-disabled-outline):not(.im-btn-search) {
+  a:not(.btn):not(.im-btn):not(.im-btn-outline):not(.im-btn-disabled-outline):not(.im-btn-search):not(.im-card-link) {
     text-decoration: underline; }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
@@ -8002,7 +8107,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; }
-  .container, .im-card-container, .im-card-div {
+  .container, .im-card-container, .im-card-div, .im-container {
     min-width: 992px !important; }
   .navbar, .im-navbar {
     display: none; }
@@ -8025,7 +8130,7 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark thead th,
     .table-dark tbody + tbody {
       border-color: #A3A6B4; }
-  .table .thead-dark th {
+  .table .thead-dark th, .im-card-table .thead-dark th, .im-card-no-border-table .thead-dark th {
     color: inherit;
     border-color: #A3A6B4; } }
 
@@ -8081,6 +8186,9 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 18px; }
+
+.im-text {
+  color: #007bff !important; }
 
 .im-text-sm {
   font-weight: 200;
@@ -8238,6 +8346,14 @@ body {
   color: #158FC4 !important;
   font-size: 85%; }
 
+.im-icon-right {
+  padding: 1px 1px 1px 4px !important;
+  color: #007bff !important; }
+
+.im-icon-left {
+  padding: 5px 1px 1px 1px !important;
+  color: #007bff !important; }
+
 .im-input, .im-input-error, .im-input-error-outline, .im-input-success, .im-textbox, .select2-container--default .select2-selection--multiple {
   font-family: "Source Sans Pro", sans-serif;
   border: 1.5px solid #A3A6B4;
@@ -8387,6 +8503,949 @@ body::-webkit-scrollbar {
     box-shadow: none;
     outline: none; }
 
+.im-navbar {
+  background-color: #19A0DA;
+  padding: 0rem 1rem; }
+
+.im-navitem-active {
+  background-color: #158FC4;
+  color: #fff;
+  border-right: 0px solid #21abdf;
+  border-left: 0px solid #21abdf; }
+
+.im-nav-link {
+  color: #fff;
+  border-right: 1px solid #21abdf;
+  border-left: 1px solid #21abdf; }
+
+.navbar-brand img {
+  width: 160px; }
+
+.hd-bell {
+  border-right: 1px solid #979797;
+  padding-right: 10px;
+  position: relative; }
+
+.hd-bell .count {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  width: 20px;
+  height: 20px;
+  background: #ff5b5c;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff; }
+
+.navbar, .im-navbar {
+  padding: 0 15px;
+  font-size: 17px;
+  margin: 0 -15px;
+  border-top: 1px solid #002e83; }
+
+.bg-light {
+  background-color: #01a0da !important; }
+
+.navbar-light .nav-item, .navbar-light .im-navitem-active, .navbar-light .im-navitem, .navbar-light .im-tab-item {
+  position: relative; }
+
+.navbar-light .nav-item.active:after, .navbar-light .nav-item.im-active:after, .navbar-light .im-active.im-navitem-active:after, .navbar-light .im-active.im-navitem:after, .navbar-light .im-active.im-tab-item:after, .navbar-light .im-navitem-active:after, .navbar-light .active.im-navitem:after, .navbar-light .im-navitem.im-navitem-active:after, .navbar-light .active.im-tab-item:after, .navbar-light .im-tab-item.im-navitem-active:after,
+.navbar-light .nav-item.active:before,
+.navbar-light .nav-item.im-active:before,
+.navbar-light .im-active.im-navitem-active:before,
+.navbar-light .im-active.im-navitem:before,
+.navbar-light .im-active.im-tab-item:before,
+.navbar-light .im-navitem-active:before,
+.navbar-light .active.im-navitem:before,
+.navbar-light .im-navitem.im-navitem-active:before,
+.navbar-light .active.im-tab-item:before,
+.navbar-light .im-tab-item.im-navitem-active:before {
+  display: none; }
+
+.navbar-light .nav-item:before, .navbar-light .im-navitem-active:before, .navbar-light .im-navitem:before, .navbar-light .im-tab-item:before {
+  content: "";
+  height: 45px;
+  width: 1px;
+  background: #43bbe6;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.navbar-light .nav-item:first-child:before, .navbar-light .im-navitem-active:first-child:before, .navbar-light .im-navitem:first-child:before, .navbar-light .im-tab-item:first-child:before,
+.navbar-light .nav-item:last-child:after,
+.navbar-light .im-navitem-active:last-child:after,
+.navbar-light .im-navitem:last-child:after,
+.navbar-light .im-tab-item:last-child:after {
+  display: none; }
+
+.navbar-light .nav-item:hover:after, .navbar-light .im-navitem-active:hover:after, .navbar-light .im-navitem:hover:after, .navbar-light .im-tab-item:hover:after,
+.navbar-light .nav-item:focus:after,
+.navbar-light .im-navitem-active:focus:after,
+.navbar-light .im-navitem:focus:after,
+.navbar-light .im-tab-item:focus:after,
+.navbar-light .nav-item:hover:before,
+.navbar-light .im-navitem-active:hover:before,
+.navbar-light .im-navitem:hover:before,
+.navbar-light .im-tab-item:hover:before,
+.navbar-light .nav-item:focus:before,
+.navbar-light .im-navitem-active:focus:before,
+.navbar-light .im-navitem:focus:before,
+.navbar-light .im-tab-item:focus:before {
+  display: none; }
+
+.navbar-light .dropdown-toggle:after, .navbar-light .im-dropdown-toggle:after {
+  content: "\f078";
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  font-size: 12px; }
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .im-nav-link, .navbar-light .navbar-nav .im-tab-link {
+  color: #fff;
+  font-weight: 400;
+  padding: 15px 20px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2); }
+
+.navbar-light .navbar-nav .nav-link i, .navbar-light .navbar-nav .im-nav-link i, .navbar-light .navbar-nav .im-tab-link i {
+  margin-right: 4px; }
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .im-nav-link:hover, .navbar-light .navbar-nav .im-tab-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .im-nav-link:focus, .navbar-light .navbar-nav .im-tab-link:focus {
+  color: #fff;
+  background: #158fc4; }
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .show > .im-nav-link, .navbar-light .navbar-nav .show > .im-tab-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .im-active > .nav-link,
+.navbar-light .navbar-nav .im-navitem-active > .nav-link,
+.navbar-light .navbar-nav .active > .im-nav-link,
+.navbar-light .navbar-nav .im-active > .im-nav-link,
+.navbar-light .navbar-nav .im-navitem-active > .im-nav-link,
+.navbar-light .navbar-nav .active > .im-tab-link,
+.navbar-light .navbar-nav .im-active > .im-tab-link,
+.navbar-light .navbar-nav .im-navitem-active > .im-tab-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show.im-nav-link,
+.navbar-light .navbar-nav .show.im-tab-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.im-active,
+.navbar-light .navbar-nav .im-active.im-nav-link,
+.navbar-light .navbar-nav .im-active.im-tab-link,
+.navbar-light .navbar-nav .nav-link.im-navitem-active,
+.navbar-light .navbar-nav .im-navitem-active.im-nav-link,
+.navbar-light .navbar-nav .im-navitem-active.im-tab-link,
+.navbar-light .navbar-nav .active.im-nav-link,
+.navbar-light .navbar-nav .active.im-tab-link {
+  color: #fff;
+  background: #158fc4; }
+
+.navbar-light .dropdown-menu, .navbar-light .im-dropdown-menu {
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0; }
+
+.navbar-light .dropdown-item:hover, .navbar-light .im-dropdown-item:hover,
+.navbar-light .dropdown-item:focus,
+.navbar-light .im-dropdown-item:focus {
+  color: #002e83;
+  text-decoration: none;
+  background-color: #f8f9fa; }
+
+.navbar-light .dropdown-item, .navbar-light .im-dropdown-item {
+  padding: 8px 16px;
+  color: #475f7b;
+  background-color: transparent; }
+
+.navbar-rgt-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 13px;
+  background: #0077a3;
+  padding: 6px 15px;
+  color: #fff; }
+
+.navbar-rgt-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #158fc4; }
+
+.navbar-rgt-btn img {
+  width: 32px;
+  margin-right: 8px; }
+
+@media (max-width: 1199.97px) {
+  .navbar-rgt-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px; }
+  .navbar, .im-navbar {
+    padding: 8px; }
+  .navbar-nav {
+    margin-top: 10px; }
+  .navbar-light .nav-item:after, .navbar-light .im-navitem-active:after, .navbar-light .im-navitem:after, .navbar-light .im-tab-item:after {
+    display: none; } }
+
+.breadcrumb {
+  background-color: transparent !important; }
+
+.breadcrumb-item {
+  color: #687C93 !important; }
+  .breadcrumb-item > a {
+    color: #687C93 !important; }
+  .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 5px;
+    color: #6c757d;
+    content: ">"; }
+  .im-active.breadcrumb-item, .im-navitem-active.breadcrumb-item, .active.breadcrumb-item {
+    color: #687C93;
+    font-weight: 600; }
+  .breadcrumb-item:hover {
+    text-decoration: none !important; }
+
+.im-nav {
+  background-color: #fff !important; }
+
+.im-tab-link {
+  color: #687C93; }
+
+.im-active {
+  border-bottom: 2px solid #158FC4 !important;
+  color: #2F3440;
+  font-weight: bold; }
+
+.im-cards {
+  -webkit-box-shadow: -1px -1px 15px -8px black;
+  -moz-box-shadow: -1px -1px 15px -8px black;
+  box-shadow: -1px -1px 15px -8px black;
+  width: fit-content;
+  color: #465f7c; }
+
+.im-card-title {
+  font-weight: bold;
+  font-size: larger;
+  font-family: sans-serif;
+  float: right;
+  border-bottom: 2px solid #f5f6fa; }
+
+.im-card-sublabel {
+  font-weight: bold;
+  font-family: sans-serif;
+  float: right;
+  font-size: 14px; }
+
+.im-card-table, .im-card-no-border-table {
+  color: #465f7c; }
+
+.im-card-table thead th, .im-card-no-border-table thead th {
+  color: #a4a7b5;
+  background: #f5f6fa;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff; }
+
+.im-card-table-avatar td {
+  border-right: 1px solid #465f7c !important; }
+
+.im-card-link {
+  float: right;
+  color: #465f7c; }
+
+.im-card-row {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 16px;
+  border-top: 1px solid #e7e7e7;
+  margin: 10px; }
+
+.im-col {
+  border-right: 2px solid #e7e7e7; }
+
+.im-col-4 {
+  text-align: center;
+  font-weight: bold; }
+
+.im-card-avatar-text {
+  text-align: left;
+  padding-left: 32%; }
+
+.im-card-lable-one {
+  margin: 0;
+  font-weight: bold;
+  color: #1ba1da; }
+
+.im-card-lable-two {
+  font-weight: normal; }
+
+.im-col-4 p {
+  margin-top: 17px; }
+
+.im-card-no-border-table {
+  border: 2px solid #edeeee;
+  color: #465f7c; }
+  .im-card-no-border-table tr td {
+    border-top: none !important; }
+
+.im-card-add {
+  content: "+";
+  font-weight: bold;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 26px;
+  margin-right: 8px;
+  padding-top: 1px;
+  -webkit-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.1); }
+
+div.im-card-tab-menu div.list-group > a.active, div.im-card-tab-menu div.im-list-group > a.active, div.im-card-tab-menu div.list-group > a.im-active, div.im-card-tab-menu div.im-list-group > a.im-active, div.im-card-tab-menu div.list-group > a.im-navitem-active, div.im-card-tab-menu div.im-list-group > a.im-navitem-active,
+div.im-card-tab-menu div.list-group > a.active .glyphicon,
+div.im-card-tab-menu div.im-list-group > a.active .glyphicon,
+div.im-card-tab-menu div.list-group > a.im-active .glyphicon,
+div.im-card-tab-menu div.im-list-group > a.im-active .glyphicon,
+div.im-card-tab-menu div.list-group > a.im-navitem-active .glyphicon,
+div.im-card-tab-menu div.im-list-group > a.im-navitem-active .glyphicon,
+div.im-card-tab-menu div.list-group > a.active .fa,
+div.im-card-tab-menu div.im-list-group > a.active .fa,
+div.im-card-tab-menu div.list-group > a.im-active .fa,
+div.im-card-tab-menu div.im-list-group > a.im-active .fa,
+div.im-card-tab-menu div.list-group > a.im-navitem-active .fa,
+div.im-card-tab-menu div.im-list-group > a.im-navitem-active .fa {
+  color: blue; }
+
+div.im-card-tab-menu div.list-group > a.active:after, div.im-card-tab-menu div.im-list-group > a.active:after, div.im-card-tab-menu div.list-group > a.im-active:after, div.im-card-tab-menu div.im-list-group > a.im-active:after, div.im-card-tab-menu div.list-group > a.im-navitem-active:after, div.im-card-tab-menu div.im-list-group > a.im-navitem-active:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  margin-left: 8px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #5A55A3; }
+
+.im-list-group-item {
+  width: 177px;
+  white-space: nowrap;
+  padding: 22px;
+  color: black;
+  font-weight: bold;
+  background-color: #fff !important; }
+  .im-list-group-item .active, .im-list-group-item .im-active, .im-list-group-item .im-navitem-active {
+    background-color: #fff !important; }
+
+.im-list-group .active, .im-list-group .im-active, .im-list-group .im-navitem-active {
+  background-color: #fff !important;
+  border-right: 9px solid;
+  margin-right: 4px; }
+
+.im-card-div {
+  color: black;
+  border: 1px solid #e7e7e7;
+  padding: 24px;
+  background-color: #fbfbfb; }
+
+.im-card-div-row {
+  padding: 15px;
+  padding-bottom: 0px;
+  margin-bottom: -10px; }
+
+.im-card-col-8 {
+  margin-left: -54px; }
+
+.im-card-div-sublable {
+  color: blue !important;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 15px; }
+
+.popup-head-left.pull-left h1 {
+  color: #f7f;
+  float: left;
+  font-family: oswald;
+  font-size: 18px;
+  margin: 2px 0 0 5px; }
+
+.popup-head-left a small {
+  display: table;
+  font-size: 11px;
+  color: #fff;
+  line-height: 4px;
+  opacity: 0.5;
+  padding: 0 0 0 7px; }
+
+.chat-header-button {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  font-size: 15px;
+  height: 26px;
+  opacity: 0.9;
+  padding: 0;
+  text-align: center;
+  width: 26px; }
+
+.popup-head-right {
+  margin: 9px 0 0; }
+
+.popup-head .btn-group {
+  margin: -5px 3px 0 -1px; }
+
+.gurdeepoushan .dropdown-menu, .gurdeepoushan .im-dropdown-menu {
+  padding: 6px; }
+
+.gurdeepoushan .dropdown-menu li a span, .gurdeepoushan .im-dropdown-menu li a span {
+  border: 1px solid;
+  border-radius: 50px;
+  display: list-item;
+  font-size: 19px;
+  height: 40px;
+  line-height: 36px;
+  margin: auto;
+  text-align: center;
+  width: 40px; }
+
+.gurdeepoushan .dropdown-menu li, .gurdeepoushan .im-dropdown-menu li {
+  float: left;
+  text-align: center;
+  width: 33%; }
+
+.gurdeepoushan .dropdown-menu li a, .gurdeepoushan .im-dropdown-menu li a {
+  border-radius: 7px;
+  font-family: oswald;
+  padding: 3px;
+  transition: all 0.3s ease-in-out 0s; }
+
+.gurdeepoushan .dropdown-menu li a:hover, .gurdeepoushan .im-dropdown-menu li a:hover {
+  background: #304445 none repeat scroll 0 0 !important;
+  color: #fff; }
+
+.popup-head {
+  background: #304445 none repeat scroll 0 0 !important;
+  border-bottom: 3px solid #ccc;
+  color: #fff;
+  display: table;
+  width: 100%;
+  padding: 8px; }
+
+.popup-head .md-user-image {
+  border: 2px solid #5a7172;
+  border-radius: 12px;
+  float: left;
+  width: 44px; }
+
+.uk-input-group-addon .glyphicon.glyphicon-send {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 36px;
+  padding: 0 6px; }
+
+.chat_box_wrapper.chat_box_small.chat_box_active {
+  height: 342px;
+  overflow-y: scroll;
+  width: 316px; }
+
+aside {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("https://scontent.fixc1-1.fna.fbcdn.net/v/t1.0-9/12670232_624826600991767_3547881030871377118_n.jpg?oh=92b8b3e25bdd56df4af5dc466feb46ce&oe=57CC10E7");
+  background-origin: padding-box;
+  background-position: center top;
+  background-repeat: repeat;
+  border: 1px solid #304445;
+  bottom: 0;
+  display: none;
+  height: 466px;
+  position: fixed;
+  right: 70px;
+  width: 300px;
+  font-family: 'Open Sans', sans-serif; }
+
+.chat_box {
+  padding: 16px; }
+
+.chat_box .chat_message_wrapper::after {
+  clear: both; }
+
+.chat_box .chat_message_wrapper::after, .chat_box .chat_message_wrapper::before {
+  content: " ";
+  display: table; }
+
+.chat_box .chat_message_wrapper .chat_user_avatar {
+  float: left; }
+
+.chat_box .chat_message_wrapper {
+  margin-bottom: 32px; }
+
+.md-user-image {
+  border-radius: 50%;
+  width: 34px; }
+
+img {
+  border: 0 none;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.chat_box .chat_message_wrapper ul.chat_message, .chat_box .chat_message_wrapper ul.chat_message > li {
+  list-style: outside none none;
+  padding: 0; }
+
+.chat_box .chat_message_wrapper ul.chat_message {
+  float: left;
+  margin: 0 0 0 20px;
+  max-width: 77%; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper ul.chat_message > li:first-child::before {
+  border-right-color: #616161; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li:first-child::before {
+  border-color: transparent #ededed transparent transparent;
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  content: "";
+  height: 0;
+  left: -14px;
+  position: absolute;
+  top: 0;
+  width: 0; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper ul.chat_message > li {
+  background: #FCFBF6 none repeat scroll 0 0;
+  color: #000000; }
+
+.open-btn {
+  border: 2px solid #189d0e;
+  border-radius: 32px;
+  color: #189d0e !important;
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 9px 16px;
+  text-decoration: none !important;
+  text-transform: uppercase; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li {
+  background: #ededed none repeat scroll 0 0;
+  border-radius: 4px;
+  clear: both;
+  color: #212121;
+  display: block;
+  float: left;
+  font-size: 13px;
+  padding: 8px 16px;
+  position: relative;
+  word-break: break-all; }
+
+.chat_box .chat_message_wrapper ul.chat_message, .chat_box .chat_message_wrapper ul.chat_message > li {
+  list-style: outside none none;
+  padding: 0; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li {
+  margin: 0; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li p {
+  margin: 0; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper ul.chat_message > li .chat_message_time {
+  color: rgba(185, 186, 180, 0.9); }
+
+.chat_box .chat_message_wrapper ul.chat_message > li .chat_message_time {
+  color: #727272;
+  display: block;
+  font-size: 11px;
+  padding-top: 2px;
+  text-transform: uppercase; }
+
+.chat_box .chat_message_wrapper.chat_message_right .chat_user_avatar {
+  float: right; }
+
+.chat_box .chat_message_wrapper.chat_message_right ul.chat_message {
+  float: right;
+  margin-left: 0 !important;
+  margin-right: 24px !important; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper.chat_message_right ul.chat_message > li:first-child::before {
+  border-left-color: #E8FFD4; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper ul.chat_message > li:first-child::before {
+  border-right-color: #FCFBF6; }
+
+.chat_box .chat_message_wrapper.chat_message_right ul.chat_message > li:first-child::before {
+  border-color: transparent transparent transparent #ededed;
+  border-width: 0 0 29px 29px;
+  left: auto;
+  right: -14px; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li:first-child::before {
+  border-color: transparent #ededed transparent transparent;
+  border-style: solid;
+  border-width: 0 29px 29px 0;
+  content: "";
+  height: 0;
+  left: -14px;
+  position: absolute;
+  top: 0;
+  width: 0; }
+
+.chat_box.chat_box_colors_a .chat_message_wrapper.chat_message_right ul.chat_message > li {
+  background: #E8FFD4 none repeat scroll 0 0; }
+
+.chat_box .chat_message_wrapper ul.chat_message > li {
+  background: #ededed none repeat scroll 0 0;
+  border-radius: 12px;
+  clear: both;
+  color: #212121;
+  display: block;
+  float: left;
+  font-size: 13px;
+  padding: 8px 16px;
+  position: relative; }
+
+.gurdeep-chat-box {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 5px;
+  float: left;
+  padding: 3px; }
+
+#submit_message {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  padding: 4px; }
+
+.gurdeep-chat-box i {
+  color: #333;
+  font-size: 21px;
+  line-height: 1px; }
+
+.chat_submit_box {
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  width: 100%; }
+
+.uk-input-group {
+  border-collapse: separate;
+  display: table;
+  position: relative; }
+
+.im-div-label-h1 {
+  font-weight: bold; }
+
+.im-div-label-h6 {
+  font-weight: bold;
+  font-style: italic; }
+
+.im-company-card {
+  font-size: 15px;
+  padding: 28px;
+  padding-left: 43px;
+  margin-left: 32px;
+  margin-right: 32px;
+  border: 1px solid #b9c2cd;
+  border-radius: 16px; }
+
+.im-company-main-column {
+  background-color: #f5f6f9;
+  color: black;
+  min-height: 328px;
+  height: auto; }
+
+.im-company-title-row {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid;
+  margin-bottom: 13px;
+  color: #c4c6d0;
+  text-transform: uppercase; }
+
+.im-company-row-sub-title {
+  float: right; }
+
+.im-company-main-title {
+  width: 87%; }
+
+.im-company-name {
+  margin: 9px 0px 0px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0ca6e5;
+  text-transform: capitalize; }
+
+.im-company-card-bottom-row {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #b9c2cd;
+  margin-bottom: 9px; }
+
+.im-company-checked {
+  color: yellow; }
+
+.im-company-second-row {
+  border-bottom: 1px solid #b9c2cd;
+  margin: 1px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  text-align: center; }
+
+.im-company-col4 {
+  color: #8e8e8e; }
+
+.im-company-col4-border {
+  border-right: 1px solid #b9c2cd;
+  color: #8e8e8e; }
+
+.im-p-span-text {
+  font-weight: bold; }
+
+.im-company-bottom {
+  margin-left: 50%;
+  color: blue;
+  font-weight: bold; }
+
+.im-company-link {
+  margin-left: 20%;
+  color: blue; }
+
+.im-company-second-first-row {
+  margin: 1px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  text-align: center; }
+
+.im-div-section-two {
+  color: black;
+  padding: 29px;
+  background-color: #efe2e2; }
+
+.im-div-recent-btn {
+  border-radius: 7px;
+  border: none;
+  padding: 17px;
+  margin-left: 27px;
+  margin-top: 28px;
+  width: 28%; }
+
+.im-div-left-align {
+  margin-left: -23px; }
+
+.im-added-label {
+  color: cadetblue; }
+
+.im-div-sec-two {
+  float: none;
+  margin-top: 12px;
+  margin-bottom: 32px; }
+
+.im-div-sec-two-border {
+  float: none;
+  margin-top: 12px;
+  border-right: 2px solid #d9acac;
+  margin-bottom: 32px; }
+
+.div-recent-row {
+  height: min-content;
+  border: 2px solid #d9acac;
+  font-size: 23px;
+  text-align: center;
+  height: 100px; }
+
+#demo-chat-body {
+  display: block; }
+
+.panel {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+  border: 1px solid #a1a1a1;
+  margin-bottom: 24px;
+  color: blue; }
+
+.panel .panel-heading, .panel > :first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.panel-heading {
+  position: relative;
+  height: 50px;
+  padding: 0;
+  border-bottom: 1px solid #eee;
+  background-color: #f1f1f1; }
+
+.panel-control {
+  height: 100%;
+  position: relative;
+  float: right;
+  padding: 0 15px; }
+
+.panel-title {
+  font-weight: normal;
+  padding: 0 20px 0 20px;
+  font-size: 1.416em;
+  line-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.panel-control > .btn:last-child, .panel-control > .im-btn:last-child, .panel-control > .im-btn-outline:last-child, .panel-control > .im-btn-disabled-outline:last-child, .panel-control > .im-btn-search:last-child, .panel-control > .im-card-link:last-child, .panel-control > .btn-group:last-child > .btn:first-child, .panel-control > .btn-group:last-child > .im-btn:first-child, .panel-control > .btn-group:last-child > .im-btn-outline:first-child, .panel-control > .btn-group:last-child > .im-btn-disabled-outline:first-child, .panel-control > .btn-group:last-child > .im-btn-search:first-child, .panel-control > .btn-group:last-child > .im-card-link:first-child {
+  border-bottom-right-radius: 0; }
+
+.panel-control .btn, .panel-control .im-btn, .panel-control .im-btn-outline, .panel-control .im-btn-disabled-outline, .panel-control .im-btn-search, .panel-control .im-card-link, .panel-control .dropdown-toggle.btn, .panel-control .btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn, .panel-control .dropdown-toggle.im-btn-outline, .panel-control .im-btn-outline.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn-disabled-outline, .panel-control .im-btn-disabled-outline.im-dropdown-toggle, .panel-control .im-btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn-search, .panel-control .im-btn-search.im-dropdown-toggle, .panel-control .dropdown-toggle.im-card-link, .panel-control .im-card-link.im-dropdown-toggle {
+  border: 0; }
+
+.nano {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.nano > .nano-content {
+  position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.pad-all {
+  padding: 15px; }
+
+.mar-btm {
+  margin-bottom: 15px; }
+
+.media-block .media-left {
+  display: block;
+  float: left; }
+
+.img-sm {
+  width: 46px;
+  height: 46px; }
+
+.media-block .media-body {
+  display: block;
+  overflow: hidden;
+  width: auto; }
+
+.pad-hor {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.speech {
+  position: relative;
+  background: #f5f6f9;
+  color: #317787;
+  display: inline-block;
+  border-radius: 0;
+  padding: 12px 20px;
+  border-radius: 12px; }
+
+.speech:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #f5f6f9;
+  margin: 7px 0 0 -6px; }
+
+.speech-right > .speech:before {
+  left: auto;
+  right: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #f5f6f9;
+  border-right: 0;
+  margin: 7px -6px 0 0; }
+
+.speech .media-heading {
+  font-size: 1.2em;
+  color: #317787;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-weight: 300; }
+
+.speech-time {
+  margin-bottom: 0;
+  font-size: .8em;
+  font-weight: 300;
+  color: #99a2a7; }
+
+.media-block .media-right {
+  float: right; }
+
+.speech-right {
+  text-align: right; }
+
+.pad-hor {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.speech-right > .speech {
+  background: #f5f6f9;
+  color: #317787;
+  text-align: right; }
+
+.speech-right > .speech .media-heading {
+  color: #a07617; }
+
+.nano > .nano-pane {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 5px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all .7s;
+  transition: all .7s; }
+
+.img-circle {
+  border-radius: 50%; }
+
+.chat-row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.speech p {
+  text-align: left; }
+
 .im-rounded {
   border-radius: 0.4rem !important; }
 
@@ -8426,6 +9485,11 @@ body::-webkit-scrollbar {
   .im-dropdown-item:hover {
     background-color: #fff;
     color: #343a40; }
+
+.im-divider, .im-divider-dark {
+  border-top: 1.5px solid #A3A6B4 !important; }
+  .im-divider-dark {
+    border-top: 2.5px solid #47607D !important; }
 
 .im-navbar {
   background-color: #19A0DA;

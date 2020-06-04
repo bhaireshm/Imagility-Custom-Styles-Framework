@@ -107,10 +107,11 @@
     </div>
     <hr>
 
+    <label for="">Dropdown</label>
     <div class="dropdown">
         <button class="im-input im-dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Select
         </button>
         <div class="im-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="im-dropdown-item dropdown-item" href="#">Action</a>
@@ -157,10 +158,36 @@
     </div>
     <hr>
 
-    <a href="#">Text Link</a> |
-    <a href="#" class="im-disabled">Disabled</a> |
+    <a href="#" class="mr-4">Text Link</a> 
+    <a href="#" class="im-disabled mr-4">Disabled</a> 
+    <span class="im-text-group mr-4">
+        <span class="im-icon-left">
+            <i class="fa fa-phone"></i>
+        </span>
+        <span class="im-text">Left Icon</span>
+    </span> 
+    <span class="im-text-group im-disabled mr-4">
+        <span class="im-icon-left">
+            <i class="fa fa-phone"></i>
+        </span>
+        <span class="im-text">Disabled</span>
+    </span> 
+    <span class="im-text-group mr-4">
+        <span class="im-text">Right Icon</span>
+        <span class="im-icon-right">
+            <i class="fa fa-phone"></i>
+        </span>
+    </span>
+    <span class="im-text-group im-disabled mr-4">
+        <span class="im-text">Disabled</span>
+        <span class="im-icon-right">
+            <i class="fa fa-phone"></i>
+        </span>
+    </span>
+
     <span class="im-spinner" role="status" aria-hidden="true"></span>Loading...
-    <br>
+
+    <hr>
 
     <div class="im-progress-value" data-valuenow="50">50%</div>
     <div class="im-progress">
@@ -198,7 +225,7 @@
 
     <br>
 
-    <button class="im-tag ">John</button> <button class="im-x"></button>
+    <button class="im-tag ">John</button>
     <button class="im-tag">Rim Jhong</button>
 
     <hr>
@@ -221,17 +248,6 @@
     </div>
 
     <hr>
-    <!-- <div class="im-input-group im-border-rounded">
-        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
-            class="im-input im-input-search">
-        <div class="im-input-group-append border-0">
-            <button id="button-search" type="button" class="im-btn im-btn-link text-success">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-        </div>
-    </div>
-
-    <br> -->
 
     <div class="row">
         <div class="col-6">
@@ -299,7 +315,6 @@
             </ul>
         </div>
         <a class="navbar-rgt-btn" href="#">
-            <!-- <img src="img/icon1.png" alt=""> -->
             <div>RECOMMENDED<br>TOOLS FOR YOU</div>
         </a>
     </nav>
@@ -342,9 +357,18 @@
 
     <hr>
 
-    <!-- <div>
-        <i class="fa fa-chevron-down" aria-hidden="true" style="color: gray"></i>
-    </div> -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="im-text-center">Divider</div>
+            <div class="im-divider"></div><br><br>
+            <div class="im-divider-dark"></div><br>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <hr>
+
 
 </body>
 <script src="./js/bootstrap-datetimepicker.min.js"></script>
@@ -358,7 +382,6 @@
             }
         });
     });
-    
 </script>
 
 </html>

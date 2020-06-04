@@ -40,3 +40,13 @@
         color: $dark;
     }
 }
+
+.im-divider {
+    @extend .dropdown-divider;
+    border-top: 1.5px solid $mischka-gray !important;
+
+    &-dark {
+        @extend .im-divider;
+        border-top: 2.5px solid $chambray-blue !important;
+    }
+}
