@@ -1,0 +1,25 @@
+.im-navbar {
+    @extend .navbar,.navbar-expand-lg;    
+    background-color: $vivid-blue;
+    padding: 0rem 1rem;
+}
+
+.im-navitem-active {
+    @extend .nav-item,.active;    
+    background-color: $denim-blue;
+    color: $white;
+    border-right: 0px solid #21abdf;
+    border-left: 0px solid #21abdf;
+}
+
+.im-navitem {
+    @extend .nav-item;
+    
+}
+
+.im-nav-link {
+    @extend .nav-link;
+    color:$white;
+    border-right: 1px solid #21abdf;
+    border-left: 1px solid #21abdf;
+}

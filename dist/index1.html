@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Style Framework</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script>
+    $(document).ready(function () {
+      $("div.im-card-tab-menu>div.im-list-group>a").click(function (e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+      });
+    });
+  </script>
+
+</head>
+
+<body class="container mb-5 pb-5">
+
+  <!-- <p class="im-h1">Heading 1</p>
+    <p class="im-h2">Heading 2</p>
+    <p class="im-h3">Heading 3</p>
+    <p class="im-h4">Heading 4</p>
+
+    <hr>
+    <p class="im-btn-1 im-text-uppercase">Button 1 text</p>
+    <p class="im-btn-2">Button 2 text</p>
+
+    <hr>
+    <div class="im-caption-1">Caption 1</div>
+    <div class="im-caption-2">Caption 2</div>
+
+    <hr>
+    <h2 id="text-alignment">
+        <div>Text alignment</div>
+    </h2>
+    <div class="im-text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+        fermentum.
+        Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos
+        hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+        Cras mattis iudicium purus sit amet fermentum.
+    </div>
+    <div class="highlight">
+        <pre> <p class="im-text-justify"></p> </pre>
+    </div>
+    <hr>
+    <h2 id="im-text-transform">
+        <div>Text transform</div>
+    </h2>
+    <p>Transform text in components with text capitalization classes.</p>
+    <p class="im-text-lowercase">Lowercased text.</p>
+    <p class="im-text-uppercase">Uppercased text.</p>
+    <p class="im-text-capitalize">CapiTaliZed text.</p>
+
+    <hr>
+
+    <button class="im-btn im-text-uppercase im-btn-primary">Default</button>
+    <button class="im-btn im-text-uppercase im-btn-secondary">Default</button>
+    <button class="im-btn im-text-uppercase im-btn-outline">Default</button>
+    <br><br>
+    <button class="im-btn im-text-uppercase im-btn-disabled">Disabled</button>
+    <button class="im-btn im-text-uppercase im-btn-disabled-light">Disabled</button>
+    <button class="im-btn im-text-uppercase im-btn-disabled-outline">Disabled</button>
+     -->
+  <hr>
+  <br>
+
+
+  <div class="container">
+    <input type="text" class="im-input" placeholder="Placeholder">
+    <input type="text" class="im-input" placeholder="Disabled" disabled>
+  </div>
+  <hr>
+  <br>
+
+  <div class="im-cards">
+    <div class="im-card-body">
+      <div class="col-12 im-card-title"> <label class="">Attroneys (12)</label><label
+          class="pull-right im-card-sublabel"> <a class="im-card-add">+</a>Add collection</label></div>
+
+      <a href="" class="im-card-link">View all</a>
+
+
+
+      <table class="im-card-table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <br />
+  <!--Card2-->
+  <div class="im-cards">
+    <div class="im-card-body">
+      <div class="col-12 im-card-title"> <label class="">Team members (10)</label><label
+          class="pull-right im-card-sublabel"><a class="im-card-add">+</a>Add</label></div>
+      <!--<a href="" class="im-card-link">View all</a> -->
+
+      <div class="im-card-row">
+        <div class="im-col-4 im-col">
+          <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" style="width: 26%;"
+            class="float-left rounded-circle">
+          <div class="im-card-avatar-text">
+            <label class="im-card-lable-one">You</label><br />
+            <span class="im-card-lable-two">Active</span>
+
+          </div>
+
+
+
+        </div>
+
+        <div class="im-col-4 im-col">
+          <p>Designation</p>
+        </div>
+
+        <div class="im-col-4">
+          <p>View</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Tabs -->
+
+  <br />
+  <br />
+  <table class="im-card-no-border-table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br />
+  <br />
+
+  <div class="im-card-container">
+    <div class="im-card-tab-row">
+      <div class="imcard-tab-container">
+        <div class="im-card-tab-menu">
+          <div class="im-list-group">
+            <a href="#" class="im-list-group-item active">
+              Education
+            </a>
+            <a href="#" class="im-list-group-item ">
+              Imigration
+
+
+            </a>
+            <a href="#" class="im-list-group-item">
+              Work experience
+            </a>
+            <a href="#" class="im-list-group-item">
+              Other documents
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <!-- Card sections-->
+  <div class="im-card-container im-card-div">
+    <div class="im-card-div-row">
+      <div class="col-2">
+        <img src="test.PNG" />
+      </div>
+      <div class="im-card-col-8">
+        <h2 class="im-div-label-h3">Email</h2>
+        <h6 class="im-div-label-h6">Add or Remove email address on your account</h6>
+
+      </div>
+      <a class="im-card-div-sublable">Close</a>
+    </div>
+
+    <div class="im-card-div-row">
+      <div class="col-2">
+
+      </div>
+      <div class="im-card-col-8">
+        <h2 class="im-div-label-h3">Company</h2>
+        <h6 class="im-div-label-h6">vinod@test.com</h6>
+
+      </div>
+    </div>
+
+
+    <div class="im-card-div-row">
+      <div class="col-2">
+
+      </div>
+      <div class="im-card-col-8">
+        <h2 class="im-div-label-h3">Personal</h2>
+        <h6 class="im-div-label-h6">vinod@test.com</h6>
+
+      </div>
+    </div>
+
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <!--Phone number-->
+
+  <div class="im-card-container im-card-div">
+    <div class="im-card-div-row">
+      <div class="col-2">
+        <img src="phone.PNG" />
+      </div>
+      <div class="im-card-col-8">
+        <h2 class="im-div-label-h3">Phone</h2>
+        <h6 class="im-div-label-h6">Add or edit contact details</h6>
+      </div>
+      <div class="">
+
+        <a class="im-card-div-sublable">Close</a>
+        <h6 class="im-div-label-h6">1 phone number</h6>
+
+      </div>
+
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+
+  <div class="container">
+    <div class="col-md-12 col-lg-6">
+      <div class="panel">
+        <!--Heading-->
+        <div class="panel-heading">
+          <div class="panel-control">
+            <div class="btn-group">
+              <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body"><i
+                  class="fa fa-chevron-down"></i></button>
+              <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-gear"></i></button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Available</a></li>
+                <li><a href="#">Busy</a></li>
+                <li><a href="#">Away</a></li>
+                <li class="divider"></li>
+                <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a>
+                </li>
+                <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="panel-title">Chat</h3>
+        </div>
+
+        <!--Widget body-->
+        <div id="demo-chat-body" class="collapse in">
+          <div class="nano has-scrollbar" style="height:380px">
+            <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+              <ul class="list-unstyled media-block">
+                <li class="mar-btm">
+                  <div class="media-left">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor">
+                    <div class="speech">
+
+                      <p>Hello Lucy, how can I help you today ?</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-right">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor speech-right">
+                    <div class="speech">
+
+                      <p>Hi, I want to buy a new shoes.</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-left">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor">
+                    <div class="speech">
+
+                      <p>Shipment is free. You\'ll get your shoes tomorrow!</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-right">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor speech-right">
+                    <div class="speech">
+
+                      <p>Wow, that\'s great!</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-right">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor speech-right">
+                    <div class="speech">
+
+                      <p>Ok. Thanks for the answer. Appreciated.</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-left">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor">
+                    <div class="speech">
+
+                      <p>You are welcome! <br> Is there anything else I can do for you today?</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-right">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor speech-right">
+                    <div class="speech">
+
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      </p>
+
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+
+                  </div>
+                </li>
+                <li class="mar-btm">
+                  <div class="media-left">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm"
+                      alt="Profile Picture">
+                  </div>
+                  <div class="media-body pad-hor">
+                    <div class="speech">
+
+                      <p>Thank you for contacting us today</p>
+
+                    </div>
+                    <p class="speech-time">
+                      <i class="fa fa-clock-o fa-fw"></i> 1 day ago
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nano-pane">
+              <div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div>
+            </div>
+          </div>
+
+          <!--Widget footer-->
+          <div class="panel-footer">
+            <div class="chat-row">
+              <div class="col-9">
+                <input type="text" placeholder="Enter your text" class="form-control chat-input">
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-block" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="im-company-main-column">
+    <div class="im-company-title-row">
+      <h6 class="im-company-main-title">Software Developers</h6>
+      <h6 class="im-company-row-sub-title">12 Jobs</h6>
+    </div>
+
+
+    <div class="im-company-card">
+      <div class="im-company-card-bottom-row">
+        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
+        <label class="im-company-name">Company name</label>
+      </div>
+      <legend></legend>
+      <div class="im-company-second-first-row">
+        <div class="im-company-col4-border">
+          4.5 <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span><br />
+          81% Recommended
+        </div>
+        <div class="im-company-col4-border">
+          18<br />
+          Visa Opportunities
+        </div>
+
+        <div class="im-company-col4">
+          1.5 <br />
+          Reviews
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="im-company-card">
+      <div class="im-company-card-bottom-row">
+        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
+        <label class="im-company-name">Company name</label>
+      </div>
+      <legend></legend>
+      <div class="im-company-second-row">
+        <div class="im-company-col4-border">
+          4.5 <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star im-company-checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span><br />
+          81% Recommended
+        </div>
+        <div class="im-company-col4-border">
+          18<br />
+          Visa Opportunities
+        </div>
+
+        <div class="im-company-col4">
+          1.5 <br />
+          Reviews
+        </div>
+      </div>
+      <legend></legend>
+      <p>You had applied for <span class="im-p-span-text">H1B Transfer on DD/MM/YYYY </span> from through petitioner</p>
+      <div class="im-company-bottom">
+        <a class="">Apply</a> <a class="im-company-link">View details</a>
+      </div>
+    </div>
+
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="im-div-section-two">
+    <h2>Recent</h2>
+    <div class="im-card-container im-card-div">
+      <div class="im-card-div-row">
+        <div class="col-2">
+          <img src="calender.PNG" />
+        </div>
+        <div class="im-card-col-8">
+          <button class="im-div-recent-btn">Application</h2>
+
+
+        </div>
+
+        <div class="div-recent-row">
+
+          <div class="im-div-sec-two-border col-6">
+            <div>
+              <i class="fa fa-eye" aria-hidden="true"></i><br />
+              <label>View</label>
+            </div>
+          </div>
+          <div class="im-div-sec-two col-6">
+            <div>
+              <i class="fa fa-trash" aria-hidden="true"></i><br />
+              <label>Delete</label>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="im-card-div-row">
+        <div class="col-2">
+
+        </div>
+        <div class="im-card-col-8 im-div-left-align">
+          <h2 class="im-div-label-h3">Application recieved by USIC</h2>
+          <h6 class="">vinod@test.com</h6>
+
+        </div>
+      </div>
+
+
+      <div class="im-card-div-row">
+        <div class="col-2">
+
+        </div>
+        <div class="im-card-col-8 im-div-left-align">
+          <h2 class="im-added-label">Added by -Ceil nel</h2>
+
+
+        </div>
+        <label>
+          <i class="fa fa-clock-o fa-fw"></i>13 April 2020 at 9.30
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="im-company-card">
+    <div class="im-company-card-bottom-row">
+      <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
+      <label class="im-company-name">Company name</label>
+    </div>
+    <legend></legend>
+    <div class="im-company-second-first-row">
+      Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.
+    </div>
+  </div>
+
+  <footer class="" style="margin-top:100px;"></footer>
+
+</body>
+
+
+</html>
