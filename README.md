@@ -31,3 +31,16 @@ node-sass ./src/scss/style.scss ./dist/css/style.css
 ```
 
 If you are using Visual Studio Code press `Ctrl+Shift+B` and select `Sass Compile`, it will do rest.
+
+### Required Imports in Index.html file
+
+    jquery@3.5.1
+    popper.js@1.16.0
+    Font Awesome
+
+### References
+
+   - [DateTimePicker](https://www.npmjs.com/package/bootstrap-datetime-picker)
+   - [Select2 - Tags](https://select2.org/getting-started/basic-usage)
+        - select2@4.1.0 (Both CSS & Js)
+

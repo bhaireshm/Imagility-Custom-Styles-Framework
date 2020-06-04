@@ -3,12 +3,23 @@
 @import "fonts";
 @import "variables";
 
+// Mixins
+@import "mixins/background-variant";
+@import "mixins/mixin-forms";
+
+// Pluggin
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import "text";
+// Cusom Styles
+@import "text"; 
 @import "buttons";
+@import "loader";
 @import "forms";
 @import "nav";
 @import "cards";
 @import "chat";
 //@import "grid"; 
+@import "grid";
+@import "dropdown";
+@import "nav";
+@import "datetimepicker/datetimepicker";

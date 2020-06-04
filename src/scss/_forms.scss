@@ -1,15 +1,172 @@
 .im-input {
     @extend .form-control;
+    @extend .im-box-shadow;
 
     font-family: $sans-pro;
     border: 1.5px solid $mischka-gray;
     border-radius: $radius;
     height: $input-height;
     font-size: $input-font-size;
+
+    &:focus {
+        border: 1.5px solid $mischka-gray;
+        color: $mischka-gray;
+    }
+}
+
+.im-input-error {
+    @extend .im-input;
+    @extend .is-invalid;
+
+    color: $im-danger;
+    border: 1.5px solid $im-danger;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C' cx='6' cy='6' r='4.5'/></svg>");
+    // background-repeat: no-repeat;
+
+    &:focus {
+        border: 1.5px solid $im-danger;
+        color: $im-danger;
+    }
+}
+
+.im-input-error-outline {
+    @extend .im-input-error;
+    color: $im-danger;
+    border: 1.5px solid $im-danger;
+    background-image: none;
+}
+
+.im-input-success {
+    @extend .im-input;
+    @extend .is-valid;
+    color: $im-success;
+    border: 1.5px solid $im-success;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='%2386D87F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
 }
 
 .im-input:disabled,
 .im-input[disabled] {
     background-color: $gainsboro-gray;
     opacity: 1;
+}
+
+input.im-input {
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+textarea.im-textarea {
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 1.5px solid $mischka-gray;
+    }
+}
+
+.im-input-group {
+    @extend .im-input-group;
+    border-radius: $radius;
+}
+
+.im-input-search {
+    border: 0 !important;
+}
+
+.im-input-group-prepend {
+    @extend .input-group-prepend;
+}
+
+.im-input-group-append {
+    @extend .input-group-append;
+}
+
+.im-textbox {
+    @extend .im-input;
+    border-radius: $radius * 2;
+    color: $im-dark;
+    font-weight: 400;
+}
+
+.im-textarea {
+    @extend .im-box-shadow;
+    @extend .form-control;
+    border-radius: $radius * 2;
+    border: 1.5px solid $mischka-gray;
+    color: $im-dark;
+    font-weight: 400;
+    min-height: 100px;
+}
+
+// .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+//     font-family: "FontAwesome";
+//     content: "\f00c";
+//     color: #158FC4 !important;
+//     background-color: #fff;
+//     font-size: 70%;
+//     text-align: center;
+//     border-radius: 25px;
+// }
+
+// .custom-control-input:checked~.custom-control-label::before {
+//     color: #fff;
+//     border-color: none !important;
+//     background-color: #fff;
+// }
+
+// .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+//     background-color: $im-primary;
+//     transform: translateX(0.75rem);
+// }
+
+
+// Select Input box
+.select2-container--default .select2-selection--multiple {
+    @extend .im-input;
+    border: 1.5px solid $mischka-gray !important;
+    border-radius: $radius !important;
+}
+
+// Tags
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: $patterns-blue !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    padding: 4px !important;
+    margin-top: 0px !important;
+    font-size: $input-font-size !important;
+    color: $font-color !important
+}
+
+// Tag remove btn
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: $font-color !important;
+    border-radius: 1.5rem !important;
+    color: $white-smoke !important;
+    font-size: 1em !important;
+    padding: 0px 5px !important;
+}
+
+// Tag content
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    padding-left: 5px !important;
+}
+
+// List Box
+.select2-container--open .select2-dropdown--above{
+    border: 1.5px solid $mischka-gray !important;
+    margin: 2px 0px !important;
+    border-radius: $radius !important;
+}
+
+.select2-container--open .select2-dropdown--below{
+    border: 1.5px solid $mischka-gray !important;
+    margin: 2px 0px !important;
+    border-radius: $radius !important;
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{
+    border-radius: $radius !important;
+    margin-top: 0.5rem !important;
 }

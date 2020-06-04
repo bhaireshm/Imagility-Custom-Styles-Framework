@@ -6,70 +6,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Style Framework</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./css/datetimepicker/datetimepicker.css">
+
     <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
 
 </head>
 
 <body class="container mb-5 pb-5">
 
-    <!-- <p class="im-h1">Heading 1</p>
-    <p class="im-h2">Heading 2</p>
-    <p class="im-h3">Heading 3</p>
-    <p class="im-h4">Heading 4</p>
+    <div>
+        <p class="im-h1">Heading 1</p>
+        <p class="im-h2">Heading 2</p>
+        <p class="im-h3">Heading 3</p>
+        <p class="im-h4">Heading 4</p>
 
-    <hr>
-    <p class="im-btn-1 im-text-uppercase">Button 1 text</p>
-    <p class="im-btn-2">Button 2 text</p>
+        <hr>
+        <p class="im-btn-1 im-text-uppercase">Button 1 text</p>
+        <p class="im-btn-2">Button 2 text</p>
 
-    <hr>
-    <div class="im-caption-1">Caption 1</div>
-    <div class="im-caption-2">Caption 2</div>
+        <hr>
+        <div class="im-caption-1">Caption 1</div>
+        <div class="im-caption-2">Caption 2</div>
 
-    <hr>
-    <h2 id="text-alignment">
-        <div>Text alignment</div>
-    </h2>
-    <div class="im-text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
-        fermentum.
-        Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos
-        hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
-        Cras mattis iudicium purus sit amet fermentum.
+        <hr>
+        <h2 id="text-alignment">
+            <div>Text alignment</div>
+        </h2>
+        <div class="im-text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet
+            fermentum.
+            Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos
+            hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+            Cras mattis iudicium purus sit amet fermentum.
+        </div>
+        <div class="highlight">
+            <pre> <p class="im-text-justify"></p> </pre>
+        </div>
+        <hr>
+        <h2 id="im-text-transform">
+            <div>Text transform</div>
+        </h2>
+        <p>Transform text in components with text capitalization classes.</p>
+        <p class="im-text-lowercase">Lowercased text.</p>
+        <p class="im-text-uppercase">Uppercased text.</p>
+        <p class="im-text-capitalize">CapiTaliZed text.</p>
     </div>
-    <div class="highlight">
-        <pre> <p class="im-text-justify"></p> </pre>
+    <hr>
+
+    <div>
+        <button class="im-btn im-text-uppercase im-btn-primary px-5">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-secondary px-5">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-outline px-5">Default</button>
+        <br><br>
+        <button class="im-btn im-text-uppercase im-btn-disabled px-5">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-light px-5">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-outline px-5">Disabled</button>
+        <hr>
+    </div>
+
+    <div class="im-container">
+        <input type="text" class="im-input" placeholder="Placeholder" required>
+        <br>
+        <input type="text" class="im-input" placeholder="Disabled" disabled required>
+        <br>
+        <input type="text" class="im-input im-input-error" placeholder="Error" required>
+        <br>
+        <input type="password" class="im-input im-input-error-outline" placeholder="Error" required>
+        <br>
+        <input type="text" class="im-input im-input-success" placeholder="Successfull" required>
+        <br>
+        <div class="im-input-container">
+            <input type="password" class="im-input" placeholder="Password" required>
+        </div>
     </div>
     <hr>
-    <h2 id="im-text-transform">
-        <div>Text transform</div>
-    </h2>
-    <p>Transform text in components with text capitalization classes.</p>
-    <p class="im-text-lowercase">Lowercased text.</p>
-    <p class="im-text-uppercase">Uppercased text.</p>
-    <p class="im-text-capitalize">CapiTaliZed text.</p>
 
+    <div class="dropdown">
+        <button class="im-input im-dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="im-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="im-dropdown-item dropdown-item" href="#">Action</a>
+            <a class="im-dropdown-item dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item im-dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
     <hr>
 
-    <button class="im-btn im-text-uppercase im-btn-primary">Default</button>
-    <button class="im-btn im-text-uppercase im-btn-secondary">Default</button>
-    <button class="im-btn im-text-uppercase im-btn-outline">Default</button>
-    <br><br>
-    <button class="im-btn im-text-uppercase im-btn-disabled">Disabled</button>
-    <button class="im-btn im-text-uppercase im-btn-disabled-light">Disabled</button>
-    <button class="im-btn im-text-uppercase im-btn-disabled-outline">Disabled</button>
-     -->
+    <div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">Disabled Checkox</label>
+        </div>
+
+        <hr>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio">Toggle this custom radio</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+        <hr>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Toggle this switch element</label>
+        </div>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+        </div>
+
+        <hr>
+        <label for="customRange3">Example range</label>
+        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+
+    </div>
     <hr>
+
+    <a href="#">Text Link</a> |
+    <a href="#" class="im-disabled">Disabled</a> |
+    <span class="im-spinner" role="status" aria-hidden="true"></span>Loading...
     <br>
 
-    <div class="container">
-        <input type="text" class="im-input" placeholder="Placeholder">
-        <input type="text" class="im-input" placeholder="Disabled" disabled>
+    <div class="im-progress-value" data-valuenow="50">50%</div>
+    <div class="im-progress">
+        <div class="im-progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <br>
+
+    <div class="im-progress-value" data-valuenow="100"></div>
+    <div class="im-progress">
+        <div class="im-progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+    <hr>
+    <div class="im-gradient-1 im-rounded im-text-center" style="height: 75px;"></div><br>
+    <div class="im-gradient-2 im-rounded im-text-center" style="height: 75px;"></div>
+    <hr>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+    <hr>
+
+    <div class="im-input-group im-border col-5" style="widows: 220px;">
+        <input type="text" id="datetimepicker" class="datetimepicker im-input bg-none border-0">
+        <div class="im-input-group-append border-0">
+            <button id="button-search" type="button" class="btn btn-search im-text-dark"><i
+                    class="fa fa-calendar"></i></button>
+        </div>
+    </div>
+
+    <hr>
+    <!-- <div class="im-input-group im-border-rounded">
+        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+            class="im-input im-input-search">
+        <div class="im-input-group-append border-0">
+            <button id="button-search" type="button" class="im-btn im-btn-link text-success">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <br> -->
+
+    <div class="im-input-group im-border col-5">
+        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+            class="im-input im-box-shadow-none bg-none border-0">
+        <div class="im-input-group-append border-0">
+            <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
+                    class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+    <hr>
+
+    <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="im-nav-item active dropdown">
+                    <a class="im-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-home"></i> DASHBOARD
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">DASHBOARD 1</a>
+                        <a class="dropdown-item" href="#">DASHBOARD 2</a>
+                    </div>
+                </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-file-alt"></i> PETITIONS</a>
+                </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-hand-holding-usd"></i> BENEFICIARIES</a>
+                </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-record-vinyl"></i> ATTORNEYS</a>
+                </li>
+                <li class="im-nav-item dropdown">
+                    <a class="im-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-database"></i> DATA SETUP
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">DATA SETUP 1</a>
+                        <a class="dropdown-item" href="#">DATA SETUP 2</a>
+                    </div>
+                </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-file-contract"></i> REPORTS</a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-rgt-btn" href="#">
+            <!-- <img src="img/icon1.png" alt=""> -->
+            <div>RECOMMENDED<br>TOOLS FOR YOU</div>
+        </a>
+    </nav>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <label for=""> Text box</label>
+            <input type="text" class="im-textbox mb-2">
+            <input type="text" class="im-textbox" value="Hello, World">
+        </div>
+        <div class="col-6">
+            <label for="">Text area</label>
+            <textarea class="im-textarea mb-2" type="text"></textarea>
+            <textarea class="im-textarea" type="text" value="Very nice and cozy place!"></textarea>
+        </div>
+    </div>
+
+    <hr>
+
+    <label for="">Tabs</label>
+
+    <div class="row">
+        <div class="col-6">
+            <ul class="im-nav im-tab">
+                <li class="im-tab-item">
+                    <a class="im-tab-link im-active" href="javascript:void(0);">Active</a>
+                </li>
+                <li class="im-tab-item">
+                    <a class="im-tab-link" href="javascript:void(0);" tabindex="-1"
+                        aria-disabled="true">select</a>
+                </li>
+                <li class="im-tab-item">
+                    <a class="im-tab-link disabled" href="javascript:void(0);" tabindex="-1"
+                        aria-disabled="true">Inactive</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <label for="">Tags</label><br>
+
+    <div class="row">
+        <select class="js-example-basic-multiple col-6" name="states[]" multiple="multiple" style="width: '80%'">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+            <option value="WY">wuhan</option>
+            <option value="WY">Japan</option>
+            <option value="WY">Barn owl</option>
+            <option value="WY">aria</option>
+            <option value="WY">chevron</option>
+        </select>
     </div>
 
 
-
-    <footer class="" style="margin-top:100px;"></footer>
+    <!-- <div>
+        <i class="fa fa-chevron-down" aria-hidden="true" style="color: gray"></i>
+    </div> -->
 
 </body>
+<script src="./js/bootstrap-datetimepicker.min.js"></script>
+<script src="./js/imagility.js"></script>
 
+<script>
+    $(document).ready(function () {
+        $('.js-example-basic-multiple').select2({
+            'style': {
+                backgroundColor: 'red'
+            }
+        });
+    });
+</script>
 
 </html>

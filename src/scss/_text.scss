@@ -1,8 +1,8 @@
 @import "mixins/mixin-text";
 
 // Text 
-* {
-    font-family: $sans-pro;
+body {
+    font-family: $sans-pro !important;
 }
 
 .im-h1 {
@@ -138,6 +138,10 @@
     color: $danger !important;
 }
 
+.im-text-dark {
+    color: $im-dark !important;
+}
+
 .im-success {
     color: $success !important;
 }
@@ -152,4 +156,19 @@
 
 .im-danger {
     color: $danger !important;
+}
+
+.im-light {
+    color: $im-light !important;
+}
+
+.im-disabled {
+    @extend .disabled;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+    text-decoration: none !important;
+}
+
+.im-active {
+    @extend .active;
 }
