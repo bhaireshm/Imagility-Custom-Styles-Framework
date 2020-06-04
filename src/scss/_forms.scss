@@ -70,10 +70,6 @@ textarea.im-textarea {
     border-radius: $radius;
 }
 
-.im-input-search {
-    border: 0 !important;
-}
-
 .im-input-group-prepend {
     @extend .input-group-prepend;
 }
@@ -154,19 +150,94 @@ textarea.im-textarea {
 }
 
 // List Box
-.select2-container--open .select2-dropdown--above{
+.select2-container--open .select2-dropdown--above {
     border: 1.5px solid $mischka-gray !important;
     margin: 2px 0px !important;
     border-radius: $radius !important;
 }
 
-.select2-container--open .select2-dropdown--below{
+.select2-container--open .select2-dropdown--below {
     border: 1.5px solid $mischka-gray !important;
     margin: 2px 0px !important;
     border-radius: $radius !important;
 }
 
-.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
     border-radius: $radius !important;
-    margin-top: 0.5rem !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px $white-smoke;
+    border-radius: $radius;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: $radius;
+    -webkit-box-shadow: inset 0 0 5px $mischka-gray;
+}
+
+// Search List
+input.im-input.im-search {
+    margin-left: 15px !important;
+    color: $font-color !important;
+}
+
+.im-search-group {
+    @extend .input-group;
+    @extend .im-border;
+    border-radius: 2rem;
+}
+
+.im-search {
+    @extend .im-box-shadow-none;
+    @extend .border-0;
+}
+
+.im-x {
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #2F3440 !important;
+    border-radius: 1.5rem !important;
+    color: #F6F6F6 !important;
+    font-size: 1em !important;
+    padding: 0px 5px !important;
+
+    font-family: "FontAwesome";
+    content: "\f00c";
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+.im-tag {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #E0F0F7 !important;
+    border: none !important;
+    border-radius: 1rem !important;
+    @extend .pt-1;
+    @extend .pr-3;
+    @extend .pb-1;
+    @extend .pl-3;
+    margin-top: 0px !important;
+    font-size: 13px !important;
+    color: #2F3440 !important;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
 }
