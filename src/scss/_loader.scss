@@ -8,7 +8,7 @@
     &-dark {
         color: $im-dark;
     }
-} 
+}
 
 .im-progress {
     @extend .progress;
@@ -42,4 +42,14 @@
     content: "Done \f00c";
     color: $im-primary;
     font-size: 85%;
+}
+
+.im-icon-right {
+    padding: 1px 1px 1px 4px !important;
+    color: $primary !important;
+}
+
+.im-icon-left {
+    padding: 5px 1px 1px 1px !important;
+    color: $primary !important;
 }
