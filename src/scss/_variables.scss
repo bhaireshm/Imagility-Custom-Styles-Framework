@@ -7,15 +7,15 @@ $success-color: $pastel-green;
 $warning-color: $golden-tainoi;
 $danger-color:$salmon-red;
 
-$im-primary: $denim-blue !important;
-$im-secondary: $cerulean-blue !important;
-$im-success: $success-color !important;
-$im-info: $info-color !important;
-$im-warning: $warning-color !important;
-$im-danger: $danger-color !important;
-$im-light: $gainsboro-gray !important;
-$im-dark: $black-rock !important;
-$im-gray: $slate-gray !important;
+$im-primary: $denim-blue !default;
+$im-secondary: $cerulean-blue !default;
+$im-success: $success-color !default;
+$im-info: $info-color !default;
+$im-warning: $warning-color !default;
+$im-danger: $danger-color !default;
+$im-light: $gainsboro-gray !default;
+$im-dark: $black-rock !default;
+$im-gray: $slate-gray !default;
 
 $theme-colors: ("primary": #158FC4,
     "secondary": #0077A3,

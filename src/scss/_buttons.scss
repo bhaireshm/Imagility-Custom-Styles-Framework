@@ -12,19 +12,39 @@
     color: $white;
     border-radius: 0.5rem !important;
 
-    &-sm{
+    &-sm {
         @extend .btn-sm;
         padding: .15rem .5rem !important;
         font-size: .75rem;
         line-height: 1.2;
     }
 
+    &-lg {
+        @extend .px-5;
+    }
+
+    &-md {
+        @extend .px-3;
+    }
+
     &-primary {
         background-color: $im-primary;
+        border: 1.5px solid $im-primary;
+
+        &:hover {
+            color: $white;
+            filter: opacity(85%);
+        }
     }
 
     &-secondary {
         background-color: $im-secondary;
+        border: 1.5px solid $im-secondary;
+
+        &:hover {
+            color: $white;
+            filter: opacity(85%);
+        }
     }
 
     &-light {
@@ -33,6 +53,26 @@
 
         &:hover {
             color: lighten($color:$font-color, $amount: 25%)
+        }
+    }
+
+    &-dark {
+        background-color: $im-dark;
+        border: 1.5px solid $im-dark;
+
+        &:hover {
+            color: $white;
+            filter: opacity(85%);
+        }
+    }
+
+    &-gray {
+        background-color: $im-gray;
+        border: 1.5px solid $im-gray;
+
+        &:hover {
+            color: $white;
+            filter: opacity(85%);
         }
     }
 
@@ -48,13 +88,55 @@
 }
 
 .im-btn-outline {
-    @extend .im-btn;
-    border: 2px solid $im-primary;
-    color: $summer-sky-blue;
 
-    &:hover {
-        @extend .im-btn-primary;
-        color: $white;
+    &-primary {
+        color: $im-primary;
+        border: 1.5px solid $im-primary;
+
+        &:hover {
+            background-color: $im-primary;
+            color: $white !important;
+        }
+    }
+
+    &-secondary {
+        color: $im-secondary;
+        border: 1.5px solid $im-secondary;
+
+        &:hover {
+            background-color: $im-secondary;
+            color: $white !important;
+        }
+    }
+
+    &-light {
+        color: $im-dark;
+        border: 1.5px solid $im-light;
+
+        &:hover {
+            background-color: $im-light;
+            color: $white !important;
+        }
+    }
+
+    &-dark {
+        color: $im-dark;
+        border: 1.5px solid $im-dark;
+
+        &:hover {
+            background-color: $im-dark;
+            color: $white !important;
+        }
+    }
+
+    &-gray {
+        color: $im-gray;
+        border: 1.5px solid $im-gray;
+
+        &:hover {
+            background-color: $im-gray;
+            color: $white !important;
+        }
     }
 }
 
@@ -76,7 +158,7 @@
     background-color: inherit;
     $font-color: $mischka-gray;
     color: $font-color;
-    
+
     &:hover {
         color: $font-color;
     }
