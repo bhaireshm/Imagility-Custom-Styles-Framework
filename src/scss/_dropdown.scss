@@ -50,3 +50,14 @@
         border-top: 2.5px solid $chambray-blue !important;
     }
 }
+
+.im-drop-icon {
+    background-color: $im-light;
+    border-radius: $radius-rounded;
+    padding: 4.5px;
+    font-size: 85%;
+
+    &-dark {
+        background-color: $mischka-gray;
+    }
+}
