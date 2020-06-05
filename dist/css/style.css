@@ -22,7 +22,7 @@
 .im-box-shadow-none, .im-search, .datetimepicker {
   box-shadow: none !important; }
 
-.remove-focus, .im-disabled, .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, input.datetimepicker:focus {
+.remove-focus, .im-disabled, .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline, .btn:focus, .im-btn:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, input.datetimepicker:focus {
   outline: none;
   box-shadow: none; }
 
@@ -1816,7 +1816,7 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
+.btn, .im-btn, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -1831,23 +1831,22 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .im-btn, .im-btn-outline, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
+    .btn, .im-btn, .im-btn-disabled-outline, .im-btn-search, .im-card-link {
       transition: none; } }
-  .btn:hover, .im-btn:hover, .im-btn-outline:hover, .im-btn-disabled-outline:hover, .im-btn-search:hover, .im-card-link:hover {
+  .btn:hover, .im-btn:hover, .im-btn-disabled-outline:hover, .im-btn-search:hover, .im-card-link:hover {
     color: #212529;
     text-decoration: none; }
-  .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, .focus.btn, .focus.im-btn, .focus.im-btn-outline, .focus.im-btn-disabled-outline, .focus.im-btn-search, .focus.im-card-link {
+  .btn:focus, .im-btn:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, .focus.btn, .focus.im-btn, .focus.im-btn-disabled-outline, .focus.im-btn-search, .focus.im-card-link {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.25); }
-  .im-disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .im-disabled.im-btn, .im-disabled.im-btn-outline, .im-btn-outline.im-btn-disabled, .im-btn-outline.im-btn-disabled-light, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-outline, .im-disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .im-disabled.im-card-link, .im-card-link.im-btn-disabled, .im-card-link.im-btn-disabled-light, .disabled.btn, .disabled.im-btn, .disabled.im-btn-outline, .disabled.im-btn-search, .disabled.im-card-link, .btn:disabled, .im-btn:disabled, .im-btn-outline:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled, .im-card-link:disabled {
+  .im-disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .im-disabled.im-btn, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-outline, .im-disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .im-disabled.im-card-link, .im-card-link.im-btn-disabled, .im-card-link.im-btn-disabled-light, .disabled.btn, .disabled.im-btn, .disabled.im-btn-search, .disabled.im-card-link, .btn:disabled, .im-btn:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled, .im-card-link:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-card-link:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline) {
+  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-card-link:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline) {
     cursor: pointer; }
 
-a.im-disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.im-disabled.im-btn, a.im-disabled.im-btn-outline, a.im-btn-outline.im-btn-disabled, a.im-btn-outline.im-btn-disabled-light, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light, a.im-disabled.im-card-link, a.im-card-link.im-btn-disabled, a.im-card-link.im-btn-disabled-light, a.disabled.btn, a.disabled.im-btn, a.disabled.im-btn-outline, a.disabled.im-btn-search, a.disabled.im-card-link,
+a.im-disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.im-disabled.im-btn, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light, a.im-disabled.im-card-link, a.im-card-link.im-btn-disabled, a.im-card-link.im-btn-disabled-light, a.disabled.btn, a.disabled.im-btn, a.disabled.im-btn-search, a.disabled.im-card-link,
 fieldset:disabled a.btn,
 fieldset:disabled a.im-btn,
-fieldset:disabled a.im-btn-outline,
 fieldset:disabled a.im-btn-disabled-outline,
 fieldset:disabled a.im-btn-search,
 fieldset:disabled a.im-card-link {
@@ -2274,13 +2273,13 @@ fieldset:disabled a.im-card-link {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .im-btn, .btn-group-lg > .im-btn-outline, .btn-group-lg > .im-btn-disabled-outline, .btn-group-lg > .im-btn-search, .btn-group-lg > .im-card-link {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .im-btn, .btn-group-lg > .im-btn-disabled-outline, .btn-group-lg > .im-btn-search, .btn-group-lg > .im-card-link {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-outline, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search, .btn-group-sm > .im-card-link, .im-btn-sm {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search, .btn-group-sm > .im-card-link, .im-btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2524,47 +2523,40 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .im-btn, .btn-group > .im-btn-outline, .btn-group > .im-btn-disabled-outline, .btn-group > .im-btn-search, .btn-group > .im-card-link,
+  .btn-group > .btn, .btn-group > .im-btn, .btn-group > .im-btn-disabled-outline, .btn-group > .im-btn-search, .btn-group > .im-card-link,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .im-btn,
-  .btn-group-vertical > .im-btn-outline,
   .btn-group-vertical > .im-btn-disabled-outline,
   .btn-group-vertical > .im-btn-search,
   .btn-group-vertical > .im-card-link {
     position: relative;
     flex: 1 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .im-btn:hover, .btn-group > .im-btn-outline:hover, .btn-group > .im-btn-disabled-outline:hover, .btn-group > .im-btn-search:hover, .btn-group > .im-card-link:hover,
+    .btn-group > .btn:hover, .btn-group > .im-btn:hover, .btn-group > .im-btn-disabled-outline:hover, .btn-group > .im-btn-search:hover, .btn-group > .im-card-link:hover,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .im-btn:hover,
-    .btn-group-vertical > .im-btn-outline:hover,
     .btn-group-vertical > .im-btn-disabled-outline:hover,
     .btn-group-vertical > .im-btn-search:hover,
     .btn-group-vertical > .im-card-link:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .im-btn:focus, .btn-group > .im-btn-outline:focus, .btn-group > .im-btn-disabled-outline:focus, .btn-group > .im-btn-search:focus, .btn-group > .im-card-link:focus, .btn-group > .btn:active, .btn-group > .im-btn:active, .btn-group > .im-btn-outline:active, .btn-group > .im-btn-disabled-outline:active, .btn-group > .im-btn-search:active, .btn-group > .im-card-link:active, .btn-group > .im-active.btn, .btn-group > .im-active.im-btn, .btn-group > .im-active.im-btn-outline, .btn-group > .im-active.im-btn-disabled-outline, .btn-group > .im-active.im-btn-search, .btn-group > .im-active.im-card-link, .btn-group > .active.btn, .btn-group > .btn.im-navitem-active, .btn-group > .active.im-btn, .btn-group > .active.im-btn-outline, .btn-group > .im-btn-outline.im-navitem-active, .btn-group > .active.im-btn-disabled-outline, .btn-group > .im-btn-disabled-outline.im-navitem-active, .btn-group > .im-btn.im-navitem-active, .btn-group > .active.im-btn-search, .btn-group > .im-btn-search.im-navitem-active, .btn-group > .active.im-card-link, .btn-group > .im-card-link.im-navitem-active,
+    .btn-group > .btn:focus, .btn-group > .im-btn:focus, .btn-group > .im-btn-disabled-outline:focus, .btn-group > .im-btn-search:focus, .btn-group > .im-card-link:focus, .btn-group > .btn:active, .btn-group > .im-btn:active, .btn-group > .im-btn-disabled-outline:active, .btn-group > .im-btn-search:active, .btn-group > .im-card-link:active, .btn-group > .im-active.btn, .btn-group > .im-active.im-btn, .btn-group > .im-active.im-btn-disabled-outline, .btn-group > .im-active.im-btn-search, .btn-group > .im-active.im-card-link, .btn-group > .active.btn, .btn-group > .btn.im-navitem-active, .btn-group > .active.im-btn, .btn-group > .active.im-btn-disabled-outline, .btn-group > .im-btn-disabled-outline.im-navitem-active, .btn-group > .im-btn.im-navitem-active, .btn-group > .active.im-btn-search, .btn-group > .im-btn-search.im-navitem-active, .btn-group > .active.im-card-link, .btn-group > .im-card-link.im-navitem-active,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .im-btn:focus,
-    .btn-group-vertical > .im-btn-outline:focus,
     .btn-group-vertical > .im-btn-disabled-outline:focus,
     .btn-group-vertical > .im-btn-search:focus,
     .btn-group-vertical > .im-card-link:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .im-btn:active,
-    .btn-group-vertical > .im-btn-outline:active,
     .btn-group-vertical > .im-btn-disabled-outline:active,
     .btn-group-vertical > .im-btn-search:active,
     .btn-group-vertical > .im-card-link:active,
     .btn-group-vertical > .im-active.btn,
     .btn-group-vertical > .im-active.im-btn,
-    .btn-group-vertical > .im-active.im-btn-outline,
     .btn-group-vertical > .im-active.im-btn-disabled-outline,
     .btn-group-vertical > .im-active.im-btn-search,
     .btn-group-vertical > .im-active.im-card-link,
     .btn-group-vertical > .active.btn,
     .btn-group-vertical > .btn.im-navitem-active,
     .btn-group-vertical > .active.im-btn,
-    .btn-group-vertical > .active.im-btn-outline,
-    .btn-group-vertical > .im-btn-outline.im-navitem-active,
     .btn-group-vertical > .active.im-btn-disabled-outline,
     .btn-group-vertical > .im-btn-disabled-outline.im-navitem-active,
     .btn-group-vertical > .im-btn.im-navitem-active,
@@ -2581,24 +2573,22 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group, .btn-toolbar .im-search-group, .btn-toolbar .im-input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .im-btn,
-.btn-group > .btn-group:not(:last-child) > .im-btn-outline,
 .btn-group > .btn-group:not(:last-child) > .im-btn-disabled-outline,
 .btn-group > .btn-group:not(:last-child) > .im-btn-search,
 .btn-group > .btn-group:not(:last-child) > .im-card-link {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-outline:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .im-btn:not(:first-child), .btn-group > .im-btn-disabled-outline:not(:first-child), .btn-group > .im-btn-search:not(:first-child), .btn-group > .im-card-link:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .im-btn,
-.btn-group > .btn-group:not(:first-child) > .im-btn-outline,
 .btn-group > .btn-group:not(:first-child) > .im-btn-disabled-outline,
 .btn-group > .btn-group:not(:first-child) > .im-btn-search,
 .btn-group > .btn-group:not(:first-child) > .im-card-link {
@@ -2615,11 +2605,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split, .btn-group-sm > .im-card-link + .dropdown-toggle-split, .im-btn-sm + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split, .btn-group-sm > .im-card-link + .dropdown-toggle-split, .im-btn-sm + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .im-btn + .dropdown-toggle-split, .btn-group-lg > .im-btn-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-search + .dropdown-toggle-split, .btn-group-lg > .im-card-link + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .im-btn + .dropdown-toggle-split, .btn-group-lg > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-lg > .im-btn-search + .dropdown-toggle-split, .btn-group-lg > .im-card-link + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2630,58 +2620,51 @@ input[type="button"].btn-block {
   
   .btn-group-vertical > .btn,
   .btn-group-vertical > .im-btn,
-  .btn-group-vertical > .im-btn-outline,
   .btn-group-vertical > .im-btn-disabled-outline,
   .btn-group-vertical > .im-btn-search,
   .btn-group-vertical > .im-card-link,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-btn-search:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle), .btn-group-vertical > .im-card-link:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn,
-  .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-outline,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-disabled-outline,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-btn-search,
   .btn-group-vertical > .btn-group:not(:last-child) > .im-card-link {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-outline:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .im-btn:not(:first-child), .btn-group-vertical > .im-btn-disabled-outline:not(:first-child), .btn-group-vertical > .im-btn-search:not(:first-child), .btn-group-vertical > .im-card-link:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn,
-  .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-outline,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-disabled-outline,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-btn-search,
   .btn-group-vertical > .btn-group:not(:first-child) > .im-card-link {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .im-btn, .btn-group-toggle > .im-btn-outline, .btn-group-toggle > .im-btn-disabled-outline, .btn-group-toggle > .im-btn-search, .btn-group-toggle > .im-card-link,
+.btn-group-toggle > .btn, .btn-group-toggle > .im-btn, .btn-group-toggle > .im-btn-disabled-outline, .btn-group-toggle > .im-btn-search, .btn-group-toggle > .im-card-link,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > .im-btn,
-.btn-group-toggle > .btn-group > .im-btn-outline,
 .btn-group-toggle > .btn-group > .im-btn-disabled-outline,
 .btn-group-toggle > .btn-group > .im-btn-search,
 .btn-group-toggle > .btn-group > .im-card-link {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .im-btn input[type="radio"], .btn-group-toggle > .im-btn-outline input[type="radio"], .btn-group-toggle > .im-btn-disabled-outline input[type="radio"], .btn-group-toggle > .im-btn-search input[type="radio"], .btn-group-toggle > .im-card-link input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .im-btn input[type="radio"], .btn-group-toggle > .im-btn-disabled-outline input[type="radio"], .btn-group-toggle > .im-btn-search input[type="radio"], .btn-group-toggle > .im-card-link input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .im-btn input[type="checkbox"],
-  .btn-group-toggle > .im-btn-outline input[type="checkbox"],
   .btn-group-toggle > .im-btn-disabled-outline input[type="checkbox"],
   .btn-group-toggle > .im-btn-search input[type="checkbox"],
   .btn-group-toggle > .im-card-link input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn input[type="radio"],
-  .btn-group-toggle > .btn-group > .im-btn-outline input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn-disabled-outline input[type="radio"],
   .btn-group-toggle > .btn-group > .im-btn-search input[type="radio"],
   .btn-group-toggle > .btn-group > .im-card-link input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn input[type="checkbox"],
-  .btn-group-toggle > .btn-group > .im-btn-outline input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn-disabled-outline input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-btn-search input[type="checkbox"],
   .btn-group-toggle > .btn-group > .im-card-link input[type="checkbox"] {
@@ -2892,13 +2875,11 @@ input[type="button"].btn-block {
 .input-group-append,
 .im-input-group-append {
   display: flex; }
-  .input-group-prepend .btn, .im-input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-outline, .im-input-group-prepend .im-btn-outline, .im-input-group .im-btn-outline, .input-group-prepend .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline, .input-group-prepend .im-btn-search, .im-input-group-prepend .im-btn-search, .im-input-group .im-btn-search, .input-group-prepend .im-card-link, .im-input-group-prepend .im-card-link, .im-input-group .im-card-link,
+  .input-group-prepend .btn, .im-input-group-prepend .btn, .im-input-group .btn, .input-group-prepend .im-btn, .im-input-group-prepend .im-btn, .im-input-group .im-btn, .input-group-prepend .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline, .input-group-prepend .im-btn-search, .im-input-group-prepend .im-btn-search, .im-input-group .im-btn-search, .input-group-prepend .im-card-link, .im-input-group-prepend .im-card-link, .im-input-group .im-card-link,
   .input-group-append .btn,
   .im-input-group-append .btn,
   .input-group-append .im-btn,
   .im-input-group-append .im-btn,
-  .input-group-append .im-btn-outline,
-  .im-input-group-append .im-btn-outline,
   .input-group-append .im-btn-disabled-outline,
   .im-input-group-append .im-btn-disabled-outline,
   .input-group-append .im-btn-search,
@@ -2907,13 +2888,11 @@ input[type="button"].btn-block {
   .im-input-group-append .im-card-link {
     position: relative;
     z-index: 2; }
-    .input-group-prepend .btn:focus, .im-input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-outline:focus, .im-input-group-prepend .im-btn-outline:focus, .im-input-group .im-btn-outline:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus, .input-group-prepend .im-btn-search:focus, .im-input-group-prepend .im-btn-search:focus, .im-input-group .im-btn-search:focus, .input-group-prepend .im-card-link:focus, .im-input-group-prepend .im-card-link:focus, .im-input-group .im-card-link:focus,
+    .input-group-prepend .btn:focus, .im-input-group-prepend .btn:focus, .im-input-group .btn:focus, .input-group-prepend .im-btn:focus, .im-input-group-prepend .im-btn:focus, .im-input-group .im-btn:focus, .input-group-prepend .im-btn-disabled-outline:focus, .im-input-group-prepend .im-btn-disabled-outline:focus, .im-input-group .im-btn-disabled-outline:focus, .input-group-prepend .im-btn-search:focus, .im-input-group-prepend .im-btn-search:focus, .im-input-group .im-btn-search:focus, .input-group-prepend .im-card-link:focus, .im-input-group-prepend .im-card-link:focus, .im-input-group .im-card-link:focus,
     .input-group-append .btn:focus,
     .im-input-group-append .btn:focus,
     .input-group-append .im-btn:focus,
     .im-input-group-append .im-btn:focus,
-    .input-group-append .im-btn-outline:focus,
-    .im-input-group-append .im-btn-outline:focus,
     .input-group-append .im-btn-disabled-outline:focus,
     .im-input-group-append .im-btn-disabled-outline:focus,
     .input-group-append .im-btn-search:focus,
@@ -2921,16 +2900,13 @@ input[type="button"].btn-block {
     .input-group-append .im-card-link:focus,
     .im-input-group-append .im-card-link:focus {
       z-index: 3; }
-  .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-outline + .btn, .im-input-group-prepend .im-btn-outline + .btn, .im-input-group .im-btn-outline + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-outline + .im-btn, .im-input-group-prepend .im-btn-outline + .im-btn, .im-input-group .im-btn-outline + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .im-btn-search + .im-btn, .im-input-group-prepend .im-btn-search + .im-btn, .im-input-group .im-btn-search + .im-btn, .input-group-prepend .im-card-link + .im-btn, .im-input-group-prepend .im-card-link + .im-btn, .im-input-group .im-card-link + .im-btn, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .btn + .im-btn-outline, .im-input-group-prepend .btn + .im-btn-outline, .im-input-group .btn + .im-btn-outline, .input-group-prepend .im-btn + .im-btn-outline, .im-input-group-prepend .im-btn + .im-btn-outline, .im-input-group .im-btn + .im-btn-outline, .input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group-prepend .im-btn-outline + .im-btn-outline, .im-input-group .im-btn-outline + .im-btn-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-outline, .im-input-group .im-btn-disabled-outline + .im-btn-outline, .input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group-prepend .im-btn-search + .im-btn-outline, .im-input-group .im-btn-search + .im-btn-outline, .input-group-prepend .im-card-link + .im-btn-outline, .im-input-group-prepend .im-card-link + .im-btn-outline, .im-input-group .im-card-link + .im-btn-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-outline + .im-btn-disabled-outline, .im-input-group .im-btn-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group .im-btn-search + .im-btn-disabled-outline, .input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group .im-card-link + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .im-btn + .im-btn-search, .im-input-group-prepend .im-btn + .im-btn-search, .im-input-group .im-btn + .im-btn-search, .input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group-prepend .im-btn-outline + .im-btn-search, .im-input-group .im-btn-outline + .im-btn-search, .input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group .im-btn-disabled-outline + .im-btn-search, .input-group-prepend .im-btn-search + .im-btn-search, .im-input-group-prepend .im-btn-search + .im-btn-search, .im-input-group .im-btn-search + .im-btn-search, .input-group-prepend .im-card-link + .im-btn-search, .im-input-group-prepend .im-card-link + .im-btn-search, .im-input-group .im-card-link + .im-btn-search, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .im-btn + .im-card-link, .im-input-group-prepend .im-btn + .im-card-link, .im-input-group .im-btn + .im-card-link, .input-group-prepend .im-btn-outline + .im-card-link, .im-input-group-prepend .im-btn-outline + .im-card-link, .im-input-group .im-btn-outline + .im-card-link, .input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group .im-btn-disabled-outline + .im-card-link, .input-group-prepend .im-btn-search + .im-card-link, .im-input-group-prepend .im-btn-search + .im-card-link, .im-input-group .im-btn-search + .im-card-link, .input-group-prepend .im-card-link + .im-card-link, .im-input-group-prepend .im-card-link + .im-card-link, .im-input-group .im-card-link + .im-card-link,
+  .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .btn + .btn, .im-input-group-prepend .btn + .btn, .im-input-group .btn + .btn, .input-group-prepend .im-btn + .btn, .im-input-group-prepend .im-btn + .btn, .im-input-group .im-btn + .btn, .input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group-prepend .im-btn-disabled-outline + .btn, .im-input-group .im-btn-disabled-outline + .btn, .input-group-prepend .im-btn-search + .btn, .im-input-group-prepend .im-btn-search + .btn, .im-input-group .im-btn-search + .btn, .input-group-prepend .im-card-link + .btn, .im-input-group-prepend .im-card-link + .btn, .im-input-group .im-card-link + .btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .btn + .im-btn, .im-input-group-prepend .btn + .im-btn, .im-input-group .btn + .im-btn, .input-group-prepend .im-btn + .im-btn, .im-input-group-prepend .im-btn + .im-btn, .im-input-group .im-btn + .im-btn, .input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group-prepend .im-btn-disabled-outline + .im-btn, .im-input-group .im-btn-disabled-outline + .im-btn, .input-group-prepend .im-btn-search + .im-btn, .im-input-group-prepend .im-btn-search + .im-btn, .im-input-group .im-btn-search + .im-btn, .input-group-prepend .im-card-link + .im-btn, .im-input-group-prepend .im-card-link + .im-btn, .im-input-group .im-card-link + .im-btn, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group-prepend .btn + .im-btn-disabled-outline, .im-input-group .btn + .im-btn-disabled-outline, .input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group-prepend .im-btn + .im-btn-disabled-outline, .im-input-group .im-btn + .im-btn-disabled-outline, .input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-disabled-outline, .im-input-group .im-btn-disabled-outline + .im-btn-disabled-outline, .input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group-prepend .im-btn-search + .im-btn-disabled-outline, .im-input-group .im-btn-search + .im-btn-disabled-outline, .input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group-prepend .im-card-link + .im-btn-disabled-outline, .im-input-group .im-card-link + .im-btn-disabled-outline, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .btn + .im-btn-search, .im-input-group-prepend .btn + .im-btn-search, .im-input-group .btn + .im-btn-search, .input-group-prepend .im-btn + .im-btn-search, .im-input-group-prepend .im-btn + .im-btn-search, .im-input-group .im-btn + .im-btn-search, .input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group-prepend .im-btn-disabled-outline + .im-btn-search, .im-input-group .im-btn-disabled-outline + .im-btn-search, .input-group-prepend .im-btn-search + .im-btn-search, .im-input-group-prepend .im-btn-search + .im-btn-search, .im-input-group .im-btn-search + .im-btn-search, .input-group-prepend .im-card-link + .im-btn-search, .im-input-group-prepend .im-card-link + .im-btn-search, .im-input-group .im-card-link + .im-btn-search, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .btn + .im-card-link, .im-input-group-prepend .btn + .im-card-link, .im-input-group .btn + .im-card-link, .input-group-prepend .im-btn + .im-card-link, .im-input-group-prepend .im-btn + .im-card-link, .im-input-group .im-btn + .im-card-link, .input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group-prepend .im-btn-disabled-outline + .im-card-link, .im-input-group .im-btn-disabled-outline + .im-card-link, .input-group-prepend .im-btn-search + .im-card-link, .im-input-group-prepend .im-btn-search + .im-card-link, .im-input-group .im-btn-search + .im-card-link, .input-group-prepend .im-card-link + .im-card-link, .im-input-group-prepend .im-card-link + .im-card-link, .im-input-group .im-card-link + .im-card-link,
   .input-group-prepend .btn + .input-group-text,
   .im-input-group-prepend .btn + .input-group-text,
   .im-input-group .btn + .input-group-text,
   .input-group-prepend .im-btn + .input-group-text,
   .im-input-group-prepend .im-btn + .input-group-text,
   .im-input-group .im-btn + .input-group-text,
-  .input-group-prepend .im-btn-outline + .input-group-text,
-  .im-input-group-prepend .im-btn-outline + .input-group-text,
-  .im-input-group .im-btn-outline + .input-group-text,
   .input-group-prepend .im-btn-disabled-outline + .input-group-text,
   .im-input-group-prepend .im-btn-disabled-outline + .input-group-text,
   .im-input-group .im-btn-disabled-outline + .input-group-text,
@@ -2946,9 +2922,6 @@ input[type="button"].btn-block {
   .input-group-prepend .im-btn + .im-input-group-text,
   .im-input-group-prepend .im-btn + .im-input-group-text,
   .im-input-group .im-btn + .im-input-group-text,
-  .input-group-prepend .im-btn-outline + .im-input-group-text,
-  .im-input-group-prepend .im-btn-outline + .im-input-group-text,
-  .im-input-group .im-btn-outline + .im-input-group-text,
   .input-group-prepend .im-btn-disabled-outline + .im-input-group-text,
   .im-input-group-prepend .im-btn-disabled-outline + .im-input-group-text,
   .im-input-group .im-btn-disabled-outline + .im-input-group-text,
@@ -2982,12 +2955,6 @@ input[type="button"].btn-block {
   .input-group-prepend .im-input-group-text + .im-btn,
   .im-input-group-prepend .im-input-group-text + .im-btn,
   .im-input-group .im-input-group-text + .im-btn,
-  .input-group-prepend .input-group-text + .im-btn-outline,
-  .im-input-group-prepend .input-group-text + .im-btn-outline,
-  .im-input-group .input-group-text + .im-btn-outline,
-  .input-group-prepend .im-input-group-text + .im-btn-outline,
-  .im-input-group-prepend .im-input-group-text + .im-btn-outline,
-  .im-input-group .im-input-group-text + .im-btn-outline,
   .input-group-prepend .input-group-text + .im-btn-disabled-outline,
   .im-input-group-prepend .input-group-text + .im-btn-disabled-outline,
   .im-input-group .input-group-text + .im-btn-disabled-outline,
@@ -3010,8 +2977,6 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .btn,
   .input-group-append .im-btn + .btn,
   .im-input-group-append .im-btn + .btn,
-  .input-group-append .im-btn-outline + .btn,
-  .im-input-group-append .im-btn-outline + .btn,
   .input-group-append .im-btn-disabled-outline + .btn,
   .im-input-group-append .im-btn-disabled-outline + .btn,
   .input-group-append .im-btn-search + .btn,
@@ -3022,32 +2987,16 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .im-btn,
   .input-group-append .im-btn + .im-btn,
   .im-input-group-append .im-btn + .im-btn,
-  .input-group-append .im-btn-outline + .im-btn,
-  .im-input-group-append .im-btn-outline + .im-btn,
   .input-group-append .im-btn-disabled-outline + .im-btn,
   .im-input-group-append .im-btn-disabled-outline + .im-btn,
   .input-group-append .im-btn-search + .im-btn,
   .im-input-group-append .im-btn-search + .im-btn,
   .input-group-append .im-card-link + .im-btn,
   .im-input-group-append .im-card-link + .im-btn,
-  .input-group-append .btn + .im-btn-outline,
-  .im-input-group-append .btn + .im-btn-outline,
-  .input-group-append .im-btn + .im-btn-outline,
-  .im-input-group-append .im-btn + .im-btn-outline,
-  .input-group-append .im-btn-outline + .im-btn-outline,
-  .im-input-group-append .im-btn-outline + .im-btn-outline,
-  .input-group-append .im-btn-disabled-outline + .im-btn-outline,
-  .im-input-group-append .im-btn-disabled-outline + .im-btn-outline,
-  .input-group-append .im-btn-search + .im-btn-outline,
-  .im-input-group-append .im-btn-search + .im-btn-outline,
-  .input-group-append .im-card-link + .im-btn-outline,
-  .im-input-group-append .im-card-link + .im-btn-outline,
   .input-group-append .btn + .im-btn-disabled-outline,
   .im-input-group-append .btn + .im-btn-disabled-outline,
   .input-group-append .im-btn + .im-btn-disabled-outline,
   .im-input-group-append .im-btn + .im-btn-disabled-outline,
-  .input-group-append .im-btn-outline + .im-btn-disabled-outline,
-  .im-input-group-append .im-btn-outline + .im-btn-disabled-outline,
   .input-group-append .im-btn-disabled-outline + .im-btn-disabled-outline,
   .im-input-group-append .im-btn-disabled-outline + .im-btn-disabled-outline,
   .input-group-append .im-btn-search + .im-btn-disabled-outline,
@@ -3058,8 +3007,6 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .im-btn-search,
   .input-group-append .im-btn + .im-btn-search,
   .im-input-group-append .im-btn + .im-btn-search,
-  .input-group-append .im-btn-outline + .im-btn-search,
-  .im-input-group-append .im-btn-outline + .im-btn-search,
   .input-group-append .im-btn-disabled-outline + .im-btn-search,
   .im-input-group-append .im-btn-disabled-outline + .im-btn-search,
   .input-group-append .im-btn-search + .im-btn-search,
@@ -3070,8 +3017,6 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .im-card-link,
   .input-group-append .im-btn + .im-card-link,
   .im-input-group-append .im-btn + .im-card-link,
-  .input-group-append .im-btn-outline + .im-card-link,
-  .im-input-group-append .im-btn-outline + .im-card-link,
   .input-group-append .im-btn-disabled-outline + .im-card-link,
   .im-input-group-append .im-btn-disabled-outline + .im-card-link,
   .input-group-append .im-btn-search + .im-card-link,
@@ -3082,8 +3027,6 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .input-group-text,
   .input-group-append .im-btn + .input-group-text,
   .im-input-group-append .im-btn + .input-group-text,
-  .input-group-append .im-btn-outline + .input-group-text,
-  .im-input-group-append .im-btn-outline + .input-group-text,
   .input-group-append .im-btn-disabled-outline + .input-group-text,
   .im-input-group-append .im-btn-disabled-outline + .input-group-text,
   .input-group-append .im-btn-search + .input-group-text,
@@ -3094,8 +3037,6 @@ input[type="button"].btn-block {
   .im-input-group-append .btn + .im-input-group-text,
   .input-group-append .im-btn + .im-input-group-text,
   .im-input-group-append .im-btn + .im-input-group-text,
-  .input-group-append .im-btn-outline + .im-input-group-text,
-  .im-input-group-append .im-btn-outline + .im-input-group-text,
   .input-group-append .im-btn-disabled-outline + .im-input-group-text,
   .im-input-group-append .im-btn-disabled-outline + .im-input-group-text,
   .input-group-append .im-btn-search + .im-input-group-text,
@@ -3118,10 +3059,6 @@ input[type="button"].btn-block {
   .im-input-group-append .input-group-text + .im-btn,
   .input-group-append .im-input-group-text + .im-btn,
   .im-input-group-append .im-input-group-text + .im-btn,
-  .input-group-append .input-group-text + .im-btn-outline,
-  .im-input-group-append .input-group-text + .im-btn-outline,
-  .input-group-append .im-input-group-text + .im-btn-outline,
-  .im-input-group-append .im-input-group-text + .im-btn-outline,
   .input-group-append .input-group-text + .im-btn-disabled-outline,
   .im-input-group-append .input-group-text + .im-btn-disabled-outline,
   .input-group-append .im-input-group-text + .im-btn-disabled-outline,
@@ -3185,9 +3122,6 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .im-btn,
 .input-group-lg > .im-input-group-prepend > .im-btn,
 .input-group-lg > .im-input-group > .im-btn,
-.input-group-lg > .input-group-prepend > .im-btn-outline,
-.input-group-lg > .im-input-group-prepend > .im-btn-outline,
-.input-group-lg > .im-input-group > .im-btn-outline,
 .input-group-lg > .input-group-prepend > .im-btn-disabled-outline,
 .input-group-lg > .im-input-group-prepend > .im-btn-disabled-outline,
 .input-group-lg > .im-input-group > .im-btn-disabled-outline,
@@ -3201,8 +3135,6 @@ input[type="button"].btn-block {
 .input-group-lg > .im-input-group-append > .btn,
 .input-group-lg > .input-group-append > .im-btn,
 .input-group-lg > .im-input-group-append > .im-btn,
-.input-group-lg > .input-group-append > .im-btn-outline,
-.input-group-lg > .im-input-group-append > .im-btn-outline,
 .input-group-lg > .input-group-append > .im-btn-disabled-outline,
 .input-group-lg > .im-input-group-append > .im-btn-disabled-outline,
 .input-group-lg > .input-group-append > .im-btn-search,
@@ -3236,9 +3168,6 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .im-btn,
 .input-group-sm > .im-input-group-prepend > .im-btn,
 .input-group-sm > .im-input-group > .im-btn,
-.input-group-sm > .input-group-prepend > .im-btn-outline,
-.input-group-sm > .im-input-group-prepend > .im-btn-outline,
-.input-group-sm > .im-input-group > .im-btn-outline,
 .input-group-sm > .input-group-prepend > .im-btn-disabled-outline,
 .input-group-sm > .im-input-group-prepend > .im-btn-disabled-outline,
 .input-group-sm > .im-input-group > .im-btn-disabled-outline,
@@ -3252,8 +3181,6 @@ input[type="button"].btn-block {
 .input-group-sm > .im-input-group-append > .btn,
 .input-group-sm > .input-group-append > .im-btn,
 .input-group-sm > .im-input-group-append > .im-btn,
-.input-group-sm > .input-group-append > .im-btn-outline,
-.input-group-sm > .im-input-group-append > .im-btn-outline,
 .input-group-sm > .input-group-append > .im-btn-disabled-outline,
 .input-group-sm > .im-input-group-append > .im-btn-disabled-outline,
 .input-group-sm > .input-group-append > .im-btn-search,
@@ -3269,7 +3196,7 @@ input[type="button"].btn-block {
 .input-group-sm > .custom-select {
   padding-right: 1.75rem; }
 
-.input-group > .input-group-prepend > .btn, .im-search-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-search-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-search-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-search-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-search-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-search-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-outline, .im-search-group > .input-group-prepend > .im-btn-outline, .im-input-group > .input-group-prepend > .im-btn-outline, .input-group > .im-input-group-prepend > .im-btn-outline, .im-search-group > .im-input-group-prepend > .im-btn-outline, .im-input-group > .im-input-group-prepend > .im-btn-outline, .input-group > .im-input-group > .im-btn-outline, .im-search-group > .im-input-group > .im-btn-outline, .im-input-group > .im-input-group > .im-btn-outline, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-search-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-search-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-search-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-search-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-search-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-search-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search, .input-group > .input-group-prepend > .im-card-link, .im-search-group > .input-group-prepend > .im-card-link, .im-input-group > .input-group-prepend > .im-card-link, .input-group > .im-input-group-prepend > .im-card-link, .im-search-group > .im-input-group-prepend > .im-card-link, .im-input-group > .im-input-group-prepend > .im-card-link, .input-group > .im-input-group > .im-card-link, .im-search-group > .im-input-group > .im-card-link, .im-input-group > .im-input-group > .im-card-link,
+.input-group > .input-group-prepend > .btn, .im-search-group > .input-group-prepend > .btn, .im-input-group > .input-group-prepend > .btn, .input-group > .im-input-group-prepend > .btn, .im-search-group > .im-input-group-prepend > .btn, .im-input-group > .im-input-group-prepend > .btn, .input-group > .im-input-group > .btn, .im-search-group > .im-input-group > .btn, .im-input-group > .im-input-group > .btn, .input-group > .input-group-prepend > .im-btn, .im-search-group > .input-group-prepend > .im-btn, .im-input-group > .input-group-prepend > .im-btn, .input-group > .im-input-group-prepend > .im-btn, .im-search-group > .im-input-group-prepend > .im-btn, .im-input-group > .im-input-group-prepend > .im-btn, .input-group > .im-input-group > .im-btn, .im-search-group > .im-input-group > .im-btn, .im-input-group > .im-input-group > .im-btn, .input-group > .input-group-prepend > .im-btn-disabled-outline, .im-search-group > .input-group-prepend > .im-btn-disabled-outline, .im-input-group > .input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-search-group > .im-input-group-prepend > .im-btn-disabled-outline, .im-input-group > .im-input-group-prepend > .im-btn-disabled-outline, .input-group > .im-input-group > .im-btn-disabled-outline, .im-search-group > .im-input-group > .im-btn-disabled-outline, .im-input-group > .im-input-group > .im-btn-disabled-outline, .input-group > .input-group-prepend > .im-btn-search, .im-search-group > .input-group-prepend > .im-btn-search, .im-input-group > .input-group-prepend > .im-btn-search, .input-group > .im-input-group-prepend > .im-btn-search, .im-search-group > .im-input-group-prepend > .im-btn-search, .im-input-group > .im-input-group-prepend > .im-btn-search, .input-group > .im-input-group > .im-btn-search, .im-search-group > .im-input-group > .im-btn-search, .im-input-group > .im-input-group > .im-btn-search, .input-group > .input-group-prepend > .im-card-link, .im-search-group > .input-group-prepend > .im-card-link, .im-input-group > .input-group-prepend > .im-card-link, .input-group > .im-input-group-prepend > .im-card-link, .im-search-group > .im-input-group-prepend > .im-card-link, .im-input-group > .im-input-group-prepend > .im-card-link, .input-group > .im-input-group > .im-card-link, .im-search-group > .im-input-group > .im-card-link, .im-input-group > .im-input-group > .im-card-link,
 .input-group > .input-group-prepend > .input-group-text,
 .im-search-group > .input-group-prepend > .input-group-text,
 .im-input-group > .input-group-prepend > .input-group-text,
@@ -3300,12 +3227,6 @@ input[type="button"].btn-block {
 .input-group > .im-input-group-append:not(:last-child) > .im-btn,
 .im-search-group > .im-input-group-append:not(:last-child) > .im-btn,
 .im-input-group > .im-input-group-append:not(:last-child) > .im-btn,
-.input-group > .input-group-append:not(:last-child) > .im-btn-outline,
-.im-search-group > .input-group-append:not(:last-child) > .im-btn-outline,
-.im-input-group > .input-group-append:not(:last-child) > .im-btn-outline,
-.input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
-.im-search-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
-.im-input-group > .im-input-group-append:not(:last-child) > .im-btn-outline,
 .input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .im-search-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-append:not(:last-child) > .im-btn-disabled-outline,
@@ -3348,12 +3269,6 @@ input[type="button"].btn-block {
 .input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-search-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .im-input-group-append:last-child > .im-btn:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.im-search-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.im-input-group > .input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.im-search-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
-.im-input-group > .im-input-group-append:last-child > .im-btn-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-search-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
 .im-input-group > .input-group-append:last-child > .im-btn-disabled-outline:not(:last-child):not(.dropdown-toggle):not(.im-dropdown-toggle),
@@ -3387,7 +3302,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .im-search-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-search-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-search-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-search-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-outline, .im-search-group > .input-group-append > .im-btn-outline, .im-input-group > .input-group-append > .im-btn-outline, .input-group > .im-input-group-append > .im-btn-outline, .im-search-group > .im-input-group-append > .im-btn-outline, .im-input-group > .im-input-group-append > .im-btn-outline, .input-group > .input-group-append > .im-btn-disabled-outline, .im-search-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-search-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-search-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-search-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search, .input-group > .input-group-append > .im-card-link, .im-search-group > .input-group-append > .im-card-link, .im-input-group > .input-group-append > .im-card-link, .input-group > .im-input-group-append > .im-card-link, .im-search-group > .im-input-group-append > .im-card-link, .im-input-group > .im-input-group-append > .im-card-link,
+.input-group > .input-group-append > .btn, .im-search-group > .input-group-append > .btn, .im-input-group > .input-group-append > .btn, .input-group > .im-input-group-append > .btn, .im-search-group > .im-input-group-append > .btn, .im-input-group > .im-input-group-append > .btn, .input-group > .input-group-append > .im-btn, .im-search-group > .input-group-append > .im-btn, .im-input-group > .input-group-append > .im-btn, .input-group > .im-input-group-append > .im-btn, .im-search-group > .im-input-group-append > .im-btn, .im-input-group > .im-input-group-append > .im-btn, .input-group > .input-group-append > .im-btn-disabled-outline, .im-search-group > .input-group-append > .im-btn-disabled-outline, .im-input-group > .input-group-append > .im-btn-disabled-outline, .input-group > .im-input-group-append > .im-btn-disabled-outline, .im-search-group > .im-input-group-append > .im-btn-disabled-outline, .im-input-group > .im-input-group-append > .im-btn-disabled-outline, .input-group > .input-group-append > .im-btn-search, .im-search-group > .input-group-append > .im-btn-search, .im-input-group > .input-group-append > .im-btn-search, .input-group > .im-input-group-append > .im-btn-search, .im-search-group > .im-input-group-append > .im-btn-search, .im-input-group > .im-input-group-append > .im-btn-search, .input-group > .input-group-append > .im-card-link, .im-search-group > .input-group-append > .im-card-link, .im-input-group > .input-group-append > .im-card-link, .input-group > .im-input-group-append > .im-card-link, .im-search-group > .im-input-group-append > .im-card-link, .im-input-group > .im-input-group-append > .im-card-link,
 .input-group > .input-group-append > .input-group-text,
 .im-search-group > .input-group-append > .input-group-text,
 .im-input-group > .input-group-append > .input-group-text,
@@ -3418,15 +3333,6 @@ input[type="button"].btn-block {
 .input-group > .im-input-group:not(:first-child) > .im-btn,
 .im-search-group > .im-input-group:not(:first-child) > .im-btn,
 .im-input-group > .im-input-group:not(:first-child) > .im-btn,
-.input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
-.im-search-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
-.im-input-group > .input-group-prepend:not(:first-child) > .im-btn-outline,
-.input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
-.im-search-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
-.im-input-group > .im-input-group-prepend:not(:first-child) > .im-btn-outline,
-.input-group > .im-input-group:not(:first-child) > .im-btn-outline,
-.im-search-group > .im-input-group:not(:first-child) > .im-btn-outline,
-.im-input-group > .im-input-group:not(:first-child) > .im-btn-outline,
 .input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .im-search-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
 .im-input-group > .input-group-prepend:not(:first-child) > .im-btn-disabled-outline,
@@ -3490,15 +3396,6 @@ input[type="button"].btn-block {
 .input-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .im-search-group > .im-input-group:first-child > .im-btn:not(:first-child),
 .im-input-group > .im-input-group:first-child > .im-btn:not(:first-child),
-.input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.im-search-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.im-input-group > .input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.im-search-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.im-input-group > .im-input-group-prepend:first-child > .im-btn-outline:not(:first-child),
-.input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
-.im-search-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
-.im-input-group > .im-input-group:first-child > .im-btn-outline:not(:first-child),
 .input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-search-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
 .im-input-group > .input-group-prepend:first-child > .im-btn-disabled-outline:not(:first-child),
@@ -3610,7 +3507,7 @@ input[type="button"].btn-block {
   border-radius: 0.25rem; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: str-replace%28url%28"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23158FC4 !important' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"%29, "%23", "%23"%29; }
+  background-image: str-replace%28url%28"data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23158FC4' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"%29, "%23", "%23"%29; }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
   border-color: #158FC4;
@@ -4463,7 +4360,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item:hover::before {
     text-decoration: none; }
   .im-active.breadcrumb-item, .im-navitem-active.breadcrumb-item, .active.breadcrumb-item {
-    color: #2F3440 !important; }
+    color: #2F3440; }
 
 .pagination {
   display: flex;
@@ -4558,7 +4455,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .im-btn .badge, .im-btn-outline .badge, .im-btn-disabled-outline .badge, .im-btn-search .badge, .im-card-link .badge {
+.btn .badge, .im-btn .badge, .im-btn-disabled-outline .badge, .im-btn-search .badge, .im-card-link .badge {
   position: relative;
   top: -1px; }
 
@@ -6700,7 +6597,8 @@ button.bg-dark:focus {
   padding-top: 0.5rem !important; }
 
 .pr-2,
-.px-2 {
+.px-2,
+.im-btn-with-icon {
   padding-right: 0.5rem !important; }
 
 .pb-2,
@@ -6708,7 +6606,8 @@ button.bg-dark:focus {
   padding-bottom: 0.5rem !important; }
 
 .pl-2,
-.px-2 {
+.px-2,
+.im-btn-with-icon {
   padding-left: 0.5rem !important; }
 
 .p-3 {
@@ -6719,7 +6618,8 @@ button.bg-dark:focus {
   padding-top: 1rem !important; }
 
 .pr-3, .im-tag,
-.px-3 {
+.px-3,
+.im-btn-md {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -6727,7 +6627,8 @@ button.bg-dark:focus {
   padding-bottom: 1rem !important; }
 
 .pl-3, .im-tag,
-.px-3 {
+.px-3,
+.im-btn-md {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6757,7 +6658,8 @@ button.bg-dark:focus {
   padding-top: 3rem !important; }
 
 .pr-5,
-.px-5 {
+.px-5,
+.im-btn-lg {
   padding-right: 3rem !important; }
 
 .pb-5,
@@ -6765,7 +6667,8 @@ button.bg-dark:focus {
   padding-bottom: 3rem !important; }
 
 .pl-5,
-.px-5 {
+.px-5,
+.im-btn-lg {
   padding-left: 3rem !important; }
 
 .m-n1 {
@@ -8085,7 +7988,7 @@ a.text-dark:hover, a.text-dark:focus {
   *::after {
     text-shadow: none !important;
     box-shadow: none !important; }
-  a:not(.btn):not(.im-btn):not(.im-btn-outline):not(.im-btn-disabled-outline):not(.im-btn-search):not(.im-card-link) {
+  a:not(.btn):not(.im-btn):not(.im-btn-disabled-outline):not(.im-btn-search):not(.im-card-link) {
     text-decoration: underline; }
   abbr[title]::after {
     content: " (" attr(title) ")"; }
@@ -8266,7 +8169,7 @@ body {
   color: #dc3545 !important; }
 
 .im-text-dark {
-  color: #2F3440 !important !important; }
+  color: #2F3440 !important; }
 
 .im-success {
   color: #28a745 !important; }
@@ -8281,7 +8184,7 @@ body {
   color: #dc3545 !important; }
 
 .im-light {
-  color: #DEDEDE !important !important; }
+  color: #DEDEDE !important; }
 
 .im-disabled, .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline {
   cursor: not-allowed !important;
@@ -8289,7 +8192,7 @@ body {
   text-decoration: none !important;
   box-shadow: none !important; }
 
-.im-btn, .im-btn-outline, .im-btn-disabled-outline {
+.im-btn, .im-btn-disabled-outline {
   font-weight: 300;
   font-size: 13px;
   line-height: 22px;
@@ -8299,27 +8202,83 @@ body {
     padding: .15rem .5rem !important;
     font-size: .75rem;
     line-height: 1.2; }
-  .im-btn-primary, .im-btn-outline:hover {
-    background-color: #158FC4 !important; }
+  .im-btn-primary {
+    background-color: #158FC4;
+    border: 1.5px solid #158FC4; }
+    .im-btn-primary:hover {
+      color: #fff;
+      filter: opacity(85%); }
   .im-btn-secondary {
-    background-color: #0077A3 !important; }
+    background-color: #0077A3;
+    border: 1.5px solid #0077A3; }
+    .im-btn-secondary:hover {
+      color: #fff;
+      filter: opacity(85%); }
   .im-btn-light {
-    background-color: #DEDEDE !important;
+    background-color: #DEDEDE;
     color: #2F3440; }
     .im-btn-light:hover {
       color: #65708a; }
+  .im-btn-dark {
+    background-color: #2F3440;
+    border: 1.5px solid #2F3440; }
+    .im-btn-dark:hover {
+      color: #fff;
+      filter: opacity(85%); }
+  .im-btn-gray {
+    background-color: #687C93;
+    border: 1.5px solid #687C93; }
+    .im-btn-gray:hover {
+      color: #fff;
+      filter: opacity(85%); }
   .im-btn-white {
     background-color: #fff;
     color: #2F3440;
     border: 1px solid #A3A6B4; }
     .im-btn-white:hover {
       color: #65708a; }
+  .im-btn-danger {
+    background-color: #FD747C;
+    color: #2F3440;
+    font-weight: bold;
+    font-size: 125%; }
+    .im-btn-danger:hover {
+      filter: opacity(85%); }
 
-.im-btn-outline {
-  border: 2px solid #158FC4 !important;
-  color: #19A0DA; }
-  .im-btn-outline:hover {
-    color: #fff; }
+.im-btn-outline-primary {
+  color: #158FC4;
+  border: 1.5px solid #158FC4; }
+  .im-btn-outline-primary:hover {
+    background-color: #158FC4;
+    color: #fff !important; }
+
+.im-btn-outline-secondary {
+  color: #0077A3;
+  border: 1.5px solid #0077A3; }
+  .im-btn-outline-secondary:hover {
+    background-color: #0077A3;
+    color: #fff !important; }
+
+.im-btn-outline-light {
+  color: #2F3440;
+  border: 1.5px solid #DEDEDE; }
+  .im-btn-outline-light:hover {
+    background-color: #DEDEDE;
+    color: #fff !important; }
+
+.im-btn-outline-dark {
+  color: #2F3440;
+  border: 1.5px solid #2F3440; }
+  .im-btn-outline-dark:hover {
+    background-color: #2F3440;
+    color: #fff !important; }
+
+.im-btn-outline-gray {
+  color: #687C93;
+  border: 1.5px solid #687C93; }
+  .im-btn-outline-gray:hover {
+    background-color: #687C93;
+    color: #fff !important; }
 
 .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline {
   color: #2F3440;
@@ -8338,9 +8297,9 @@ body {
 .im-spinner {
   margin-right: 5px;
   font-size: 50%;
-  color: #158FC4 !important; }
+  color: #158FC4; }
   .im-spinner-dark {
-    color: #2F3440 !important; }
+    color: #2F3440; }
 
 .im-progress {
   border-radius: 0.8rem;
@@ -8354,14 +8313,14 @@ body {
   border-radius: inherit !important; }
 
 .im-progress-value {
-  color: #158FC4 !important;
+  color: #158FC4;
   width: 100%;
   font-size: 75%; }
 
 .im-progress-value[data-valuenow='100']:after {
   font-family: 'FontAwesome', sans-serif;
   content: "Done \f00c";
-  color: #158FC4 !important;
+  color: #158FC4;
   font-size: 85%; }
 
 .im-icon-right {
@@ -8383,21 +8342,21 @@ body {
     color: #A3A6B4; }
 
 .im-input-error, .im-input-error-outline {
-  color: #FD747C !important;
-  border: 1.5px solid #FD747C !important;
+  color: #FD747C;
+  border: 1.5px solid #FD747C;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23FD747C' viewBox='0 0 12 12'><circle fill='%23FD747C' cx='6' cy='6' r='4.5'/></svg>"); }
   .im-input-error:focus, .im-input-error-outline:focus {
-    border: 1.5px solid #FD747C !important;
-    color: #FD747C !important; }
+    border: 1.5px solid #FD747C;
+    color: #FD747C; }
 
 .im-input-error-outline {
-  color: #FD747C !important;
-  border: 1.5px solid #FD747C !important;
+  color: #FD747C;
+  border: 1.5px solid #FD747C;
   background-image: none; }
 
 .im-input-success {
-  color: #86D87F !important;
-  border: 1.5px solid #86D87F !important;
+  color: #86D87F;
+  border: 1.5px solid #86D87F;
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='%2386D87F' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>"); }
 
 .im-input:disabled, .im-input-error:disabled, .im-input-error-outline:disabled, .im-input-success:disabled, .im-textbox:disabled, .select2-container--default .select2-selection--multiple:disabled,
@@ -8424,13 +8383,13 @@ textarea.im-textarea:focus {
 
 .im-textbox {
   border-radius: 0.8rem;
-  color: #2F3440 !important;
+  color: #2F3440;
   font-weight: 400; }
 
 .im-textarea {
   border-radius: 0.8rem;
   border: 1.5px solid #A3A6B4;
-  color: #2F3440 !important;
+  color: #2F3440;
   font-weight: 400;
   min-height: 100px; }
 
@@ -8563,7 +8522,7 @@ body::-webkit-scrollbar {
   margin: 0 -15px; }
 
 .bg-light {
-  background-color: #DEDEDE !important !important; }
+  background-color: #DEDEDE !important; }
 
 .navbar-light {
   background-color: #01a0da; }
@@ -8752,7 +8711,7 @@ body::-webkit-scrollbar {
   color: #687C93; }
 
 .im-active {
-  border-bottom: 2px solid #158FC4 !important;
+  border-bottom: 2px solid #158FC4;
   color: #2F3440;
   font-weight: bold; }
 
@@ -9337,10 +9296,10 @@ img {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-.panel-control > .btn:last-child, .panel-control > .im-btn:last-child, .panel-control > .im-btn-outline:last-child, .panel-control > .im-btn-disabled-outline:last-child, .panel-control > .im-btn-search:last-child, .panel-control > .im-card-link:last-child, .panel-control > .btn-group:last-child > .btn:first-child, .panel-control > .btn-group:last-child > .im-btn:first-child, .panel-control > .btn-group:last-child > .im-btn-outline:first-child, .panel-control > .btn-group:last-child > .im-btn-disabled-outline:first-child, .panel-control > .btn-group:last-child > .im-btn-search:first-child, .panel-control > .btn-group:last-child > .im-card-link:first-child {
+.panel-control > .btn:last-child, .panel-control > .im-btn:last-child, .panel-control > .im-btn-disabled-outline:last-child, .panel-control > .im-btn-search:last-child, .panel-control > .im-card-link:last-child, .panel-control > .btn-group:last-child > .btn:first-child, .panel-control > .btn-group:last-child > .im-btn:first-child, .panel-control > .btn-group:last-child > .im-btn-disabled-outline:first-child, .panel-control > .btn-group:last-child > .im-btn-search:first-child, .panel-control > .btn-group:last-child > .im-card-link:first-child {
   border-bottom-right-radius: 0; }
 
-.panel-control .btn, .panel-control .im-btn, .panel-control .im-btn-outline, .panel-control .im-btn-disabled-outline, .panel-control .im-btn-search, .panel-control .im-card-link, .panel-control .dropdown-toggle.btn, .panel-control .btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn, .panel-control .dropdown-toggle.im-btn-outline, .panel-control .im-btn-outline.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn-disabled-outline, .panel-control .im-btn-disabled-outline.im-dropdown-toggle, .panel-control .im-btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn-search, .panel-control .im-btn-search.im-dropdown-toggle, .panel-control .dropdown-toggle.im-card-link, .panel-control .im-card-link.im-dropdown-toggle {
+.panel-control .btn, .panel-control .im-btn, .panel-control .im-btn-disabled-outline, .panel-control .im-btn-search, .panel-control .im-card-link, .panel-control .dropdown-toggle.btn, .panel-control .btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn, .panel-control .dropdown-toggle.im-btn-disabled-outline, .panel-control .im-btn-disabled-outline.im-dropdown-toggle, .panel-control .im-btn.im-dropdown-toggle, .panel-control .dropdown-toggle.im-btn-search, .panel-control .im-btn-search.im-dropdown-toggle, .panel-control .dropdown-toggle.im-card-link, .panel-control .im-card-link.im-dropdown-toggle {
   border: 0; }
 
 .nano {
@@ -9511,13 +9470,23 @@ img {
   .im-divider-dark {
     border-top: 2.5px solid #47607D !important; }
 
+.fa {
+  margin-left: 3px;
+  margin-right: 3px; }
+
 .im-drop-icon {
-  background-color: #DEDEDE !important;
+  background-color: #DEDEDE;
   border-radius: 1.5rem;
   padding: 4.5px;
-  font-size: 85%; }
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 80%; }
   .im-drop-icon-dark {
     background-color: #A3A6B4; }
+  .im-drop-icon-white {
+    background-color: #fff; }
+    .im-drop-icon-white:before {
+      color: #007bff; }
 
 .im-navbar {
   background-color: #19A0DA;
@@ -9561,7 +9530,7 @@ img {
   margin: 0 -15px; }
 
 .bg-light {
-  background-color: #DEDEDE !important !important; }
+  background-color: #DEDEDE !important; }
 
 .navbar-light {
   background-color: #01a0da; }
@@ -9750,7 +9719,7 @@ img {
   color: #687C93; }
 
 .im-active {
-  border-bottom: 2px solid #158FC4 !important;
+  border-bottom: 2px solid #158FC4;
   color: #2F3440;
   font-weight: bold; }
 

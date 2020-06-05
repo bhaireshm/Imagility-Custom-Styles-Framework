@@ -51,13 +51,28 @@
     }
 }
 
+.fa {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .im-drop-icon {
     background-color: $im-light;
     border-radius: $radius-rounded;
     padding: 4.5px;
-    font-size: 85%;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 80%;
 
     &-dark {
         background-color: $mischka-gray;
+    }
+
+    &-white {
+        background-color: $white;
+
+        &:before {
+            color: $primary;
+        }
     }
 }

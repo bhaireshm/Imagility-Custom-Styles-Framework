@@ -85,6 +85,17 @@
             color: lighten($color:$font-color, $amount: 25%)
         }
     }
+
+    &-danger {
+        background-color: $im-danger;
+        color: $font-color;
+        font-weight: bold;
+        font-size: 125%;
+
+        &:hover {
+            filter: opacity(85%);
+        }
+    }
 }
 
 .im-btn-outline {
@@ -171,4 +182,9 @@
     &:focus {
         @extend .remove-focus;
     }
+}
+
+.im-btn-with-icon {
+    @extend .px-2;
+
 }
