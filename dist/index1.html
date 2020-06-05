@@ -298,9 +298,22 @@
         <div class="panel-heading">
           <div class="panel-control">
             <div class="btn-group">
-              <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body"><i
-                  class="fa fa-chevron-down"></i></button>
-              <button type="button" class="btn btn-default" data-toggle="dropdown"><i class="fa fa-gear"></i></button>
+                        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body">
+                  <!--<i
+                  class="fa fa-chevron-down"></i></button>c-->
+                  <i class="fa fa-phone" aria-hidden="true"></i> </button>
+
+
+                  <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </button>
+
+                <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#demo-chat-body">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </button>
+
+            <!--  <button type="button" class="btn btn-default" data-toggle="dropdown">
+                  <i class="fa fa-gear"></i></button>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li><a href="#">Available</a></li>
                 <li><a href="#">Busy</a></li>
@@ -309,10 +322,12 @@
                 <li><a id="demo-connect-chat" href="#" class="disabled-link" data-target="#demo-chat-body">Connect</a>
                 </li>
                 <li><a id="demo-disconnect-chat" href="#" data-target="#demo-chat-body">Disconect</a></li>
-              </ul>
+              </ul> -->
             </div>
           </div>
-          <h3 class="panel-title">Chat</h3>
+          <h3 class="panel-title">Alexa Richardson</h3><br/>
+          <div class="chat-panel-row"><h6 class="dot"></h6><span class="chat-span-text">Available</span></div>
+
         </div>
 
         <!--Widget body-->
@@ -461,12 +476,13 @@
           <!--Widget footer-->
           <div class="panel-footer">
             <div class="chat-row">
-              <div class="col-9">
+                <i class="fa fa-paperclip im-paper-plane" aria-hidden="true"></i>
+              <div class="col-10">
                 <input type="text" placeholder="Enter your text" class="form-control chat-input">
               </div>
-              <div class="col-3">
-                <button class="btn btn-primary btn-block" type="submit">Send</button>
-              </div>
+                         
+                 <i class="fa fa-paper-plane im-paper-plane-no-rotate" aria-hidden="true"></i>
+        
             </div>
           </div>
         </div>
@@ -618,9 +634,13 @@
   <br/>
 
   <div class="im-company-card">
-    <div class="im-company-card-bottom-row">
+      <label class="im-three-dots">...</label>
+    <div class="im-company-card-bottom-row im-company-card-bottom-row-profile">
       <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-circle img-sm" alt="Profile Picture">
-      <label class="im-company-name">Company name</label>
+      <div class="test">
+      <label class="im-company-name">Company name</label><br/>
+      <label class="im-company-time">9.30 AM</label>
+    </div>
     </div>
     <legend></legend>
     <div class="im-company-second-first-row">

@@ -16,25 +16,29 @@
 }
 .panel-heading {
     position: relative;
-    height: 50px;
+    height: 72px;
     padding: 0;
     border-bottom:1px solid #eee;
     background-color: #f1f1f1;
+    color: black;
 }
 .panel-control {
     height: 100%;
     position: relative;
     float: right;
     padding: 0 15px;
+    margin-top: 18px;
 }
 .panel-title {
     font-weight: normal;
-    padding: 0 20px 0 20px;
-    font-size: 1.416em;
-    line-height: 50px;
+    /* padding: 0 20px 0 20px; */
+    font-size: 21px;
+    /* line-height: 50px; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 20px;
+    padding-top: 12px;
 }
 .panel-control>.btn:last-child, .panel-control>.btn-group:last-child>.btn:first-child {
     border-bottom-right-radius: 0;
@@ -166,8 +170,44 @@
     @extend .row;
     margin-right: 0px;
     margin-left: 0px;
+    background-color: #f5f6f9;
+    padding: 10px;
+    margin: 10px;
 }
 
 .speech p{
     text-align: left;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #6dd400;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .chat-panel-row{
+    @extend .row;
+    margin-top: -26px;
+    margin-left: 19px;
+}
+.chat-span-text{
+    margin-top: -9px;
+    margin-left: 9px;
+}
+
+.im-paper-plane{
+    font-size: 34px !important;
+    transform: rotateY(178deg);
+    color:#949597;
+}
+
+.im-paper-plane-no-rotate{
+    font-size: 34px !important;
+    color:#949597;
+    float: right;
+}
+.chat-input{
+    height: auto;
 }
