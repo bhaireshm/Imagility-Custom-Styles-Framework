@@ -14,11 +14,10 @@ $im-info: $info-color !important;
 $im-warning: $warning-color !important;
 $im-danger: $danger-color !important;
 $im-light: $gainsboro-gray !important;
-$im-dark: $black-rock !important; 
+$im-dark: $black-rock !important;
 $im-gray: $slate-gray !important;
 
-$theme-colors: (
-    "primary": #158FC4,
+$theme-colors: ("primary": #158FC4,
     "secondary": #0077A3,
     "success": #86D87F,
     "info": #158FC4,
@@ -35,8 +34,9 @@ $font-family-base: $sans-pro;
 // $body-color: $white;
 
 $radius: 0.4rem;
+$radius-rounded: 1.5rem;
 $border-color: $mischka-gray;
-
+$box-shadow-color: rgba(163, 166, 180, 0.8); // $mischka-gray
 $pl: 2rem;
 $pr: $pl;
 $pb: 0.5rem;

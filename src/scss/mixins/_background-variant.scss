@@ -41,6 +41,12 @@
     box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
 }
 
+.im-box-shadow-dark {
+    -webkit-box-shadow: 0px 1px 3px 1px $box-shadow-color;
+    -moz-box-shadow: 0px 1px 3px 1px $box-shadow-color;
+    box-shadow: 0px 1px 3px 1px $box-shadow-color;
+}
+
 .im-box-shadow-none {
     box-shadow: none !important;
 }
@@ -52,4 +58,9 @@
 
 .im-border {
     border: 1.5px solid !important;
+}
+
+.border-none{
+    @extend .border-0;
+    
 }

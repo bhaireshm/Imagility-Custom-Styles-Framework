@@ -80,13 +80,29 @@
     <hr>
 
     <div>
-        <button class="im-btn im-text-uppercase im-btn-primary px-5">Default</button>
-        <button class="im-btn im-text-uppercase im-btn-secondary px-5">Default</button>
-        <button class="im-btn im-text-uppercase im-btn-outline px-5">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-primary px-5 mr-2">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-secondary px-5 mr-2">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-outline px-5 mr-2">Default</button>
         <br><br>
-        <button class="im-btn im-text-uppercase im-btn-disabled px-5">Disabled</button>
-        <button class="im-btn im-text-uppercase im-btn-disabled-light px-5">Disabled</button>
-        <button class="im-btn im-text-uppercase im-btn-disabled-outline px-5">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled px-5 mr-2">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-light px-5 mr-2">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-outline px-5 mr-2">Disabled</button>
+        <br><br>
+        <button class="im-btn im-text-uppercase im-btn-light px-4 mr-2"><i class="fa fa-sun-o"></i>&nbsp;
+            Settings</button>
+        <button class="im-btn im-btn-white im-box-shadow-dark border-none px-3 mr-2"><i class="fa fa-user-plus"></i>
+            &nbsp; Add
+            Petition</button>
+        <button class="im-btn im-btn-white px-3 mr-2"> 10 &nbsp;<i class="fa fa-chevron-down im-drop-icon"></i></button>
+        <button class="im-btn im-btn-white px-3 mr-2"><i class="fa fa-print"></i> &nbsp;
+            Print</button>
+        <button class="im-btn im-btn-white px-3 mr-2"><i class="fa fa-file-excel-o"></i>&nbsp;Excel
+            &nbsp;<i class="fa fa-chevron-down im-drop-icon"></i></button>
+        <button class="im-btn im-btn-sm im-btn-white px-3 mr-2">Past 6 months &nbsp;<i class="fa fa-chevron-down"></i></button>
+        <br><br>
+        <button class="im-btn im-btn-primary px-3 mr-2"> Apply &nbsp;<i class="fa fa-filter"></i></button>
+        <button class="im-btn im-btn-secondary px-3 mr-2"><i class="fa fa-filter"></i>&nbsp;Create New</button>
+
         <hr>
     </div>
 
@@ -158,20 +174,20 @@
     </div>
     <hr>
 
-    <a href="#" class="mr-4">Text Link</a> 
-    <a href="#" class="im-disabled mr-4">Disabled</a> 
+    <a href="#" class="mr-4">Text Link</a>
+    <a href="#" class="im-disabled mr-4">Disabled</a>
     <span class="im-text-group mr-4">
         <span class="im-icon-left">
             <i class="fa fa-phone"></i>
         </span>
         <span class="im-text">Left Icon</span>
-    </span> 
+    </span>
     <span class="im-text-group im-disabled mr-4">
         <span class="im-icon-left">
             <i class="fa fa-phone"></i>
         </span>
         <span class="im-text">Disabled</span>
-    </span> 
+    </span>
     <span class="im-text-group mr-4">
         <span class="im-text">Right Icon</span>
         <span class="im-icon-right">
@@ -240,8 +256,8 @@
     <hr>
 
     <div class="im-input-group im-border col-5" style="widows: 220px;">
-        <input type="text" id="datetimepicker" class="datetimepicker im-input bg-none border-0">
-        <div class="im-input-group-append border-0">
+        <input type="text" id="datetimepicker" class="datetimepicker im-input bg-none border-none">
+        <div class="im-input-group-append border-none">
             <button id="button-search" type="button" class="btn btn-search im-text-dark"><i
                     class="fa fa-calendar"></i></button>
         </div>
@@ -254,7 +270,7 @@
             <div class="im-search-group">
                 <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
                     class="im-input im-search">
-                <div class="im-input-group-append border-0">
+                <div class="im-input-group-append border-none">
                     <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
                             class="fa fa-search"></i></button>
                 </div>
@@ -264,7 +280,7 @@
             <div class="im-search-group">
                 <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
                     class="im-input im-search">
-                <div class="im-input-group-append border-0">
+                <div class="im-input-group-append border-none">
                     <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
                             class="fa fa-search"></i></button>
                 </div>
@@ -273,7 +289,7 @@
     </div>
     <hr>
 
-    <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
+    <nav class="im-navbar navbar-expand-xl navbar-light mb-4">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -299,18 +315,19 @@
                 <li class="im-nav-item">
                     <a class="im-nav-link" href="#"><i class="fa fa-record-vinyl"></i> ATTORNEYS</a>
                 </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-file-contract"></i> REPORTS</a>
+                </li>
                 <li class="im-nav-item dropdown">
                     <a class="im-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-database"></i> DATA SETUP
+                        <i class="fa fa-database"></i> ADMIN
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">DATA SETUP 1</a>
-                        <a class="dropdown-item" href="#">DATA SETUP 2</a>
+                        <a class="dropdown-item" href="#">Users</a>
+                        <a class="dropdown-item" href="#">Roles</a>
+                        <a class="dropdown-item" href="#">Companies</a>
                     </div>
-                </li>
-                <li class="im-nav-item">
-                    <a class="im-nav-link" href="#"><i class="fa fa-file-contract"></i> REPORTS</a>
                 </li>
             </ul>
         </div>
@@ -345,10 +362,11 @@
                     <a class="im-tab-link im-active" href="javascript:void(0);">Active</a>
                 </li>
                 <li class="im-tab-item">
-                    <a class="im-tab-link" href="javascript:void(0);" tabindex="-1" aria-disabled="true">select</a>
+                    <a class="im-tab-link im-disabled" href="javascript:void(0);" tabindex="-1"
+                        aria-disabled="true">Inactive</a>
                 </li>
                 <li class="im-tab-item">
-                    <a class="im-tab-link disabled" href="javascript:void(0);" tabindex="-1"
+                    <a class="im-tab-link im-disabled" href="javascript:void(0);" tabindex="-1"
                         aria-disabled="true">Inactive</a>
                 </li>
             </ul>

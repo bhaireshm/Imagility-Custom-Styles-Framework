@@ -14,10 +14,15 @@
   -moz-box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8);
   box-shadow: 0px 10px 10px 0px rgba(246, 246, 246, 0.8); }
 
+.im-box-shadow-dark {
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(163, 166, 180, 0.8);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(163, 166, 180, 0.8);
+  box-shadow: 0px 1px 3px 1px rgba(163, 166, 180, 0.8); }
+
 .im-box-shadow-none, .im-search, .datetimepicker {
   box-shadow: none !important; }
 
-.remove-focus, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, input.datetimepicker:focus {
+.remove-focus, .im-disabled, .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline, .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, input.datetimepicker:focus {
   outline: none;
   box-shadow: none; }
 
@@ -1834,12 +1839,12 @@ textarea.form-control, textarea.im-input, textarea.im-input-error, textarea.im-i
   .btn:focus, .im-btn:focus, .im-btn-outline:focus, .im-btn-disabled-outline:focus, .im-btn-search:focus, .im-card-link:focus, .focus.btn, .focus.im-btn, .focus.im-btn-outline, .focus.im-btn-disabled-outline, .focus.im-btn-search, .focus.im-card-link {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.25); }
-  .im-disabled.btn, .im-disabled.im-btn, .im-disabled.im-btn-outline, .im-disabled.im-btn-disabled-outline, .im-disabled.im-btn-search, .im-disabled.im-card-link, .disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .disabled.im-btn, .disabled.im-btn-outline, .im-btn-outline.im-btn-disabled, .im-btn-outline.im-btn-disabled-light, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-light.im-btn-disabled-outline, .im-btn-disabled.im-btn-disabled-outline, .disabled.im-btn-disabled-outline, .disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .disabled.im-card-link, .im-card-link.im-btn-disabled, .im-card-link.im-btn-disabled-light, .btn:disabled, .im-btn:disabled, .im-btn-outline:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled, .im-card-link:disabled {
+  .im-disabled.btn, .btn.im-btn-disabled, .btn.im-btn-disabled-light, .im-disabled.im-btn, .im-disabled.im-btn-outline, .im-btn-outline.im-btn-disabled, .im-btn-outline.im-btn-disabled-light, .im-btn.im-btn-disabled, .im-btn.im-btn-disabled-light, .im-btn-disabled-outline, .im-disabled.im-btn-search, .im-btn-search.im-btn-disabled, .im-btn-search.im-btn-disabled-light, .im-disabled.im-card-link, .im-card-link.im-btn-disabled, .im-card-link.im-btn-disabled-light, .disabled.btn, .disabled.im-btn, .disabled.im-btn-outline, .disabled.im-btn-search, .disabled.im-card-link, .btn:disabled, .im-btn:disabled, .im-btn-outline:disabled, .im-btn-disabled-outline:disabled, .im-btn-search:disabled, .im-card-link:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .im-card-link:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light) {
+  .btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-disabled-outline:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-btn-search:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .im-card-link:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline) {
     cursor: pointer; }
 
-a.im-disabled.btn, a.im-disabled.im-btn, a.im-disabled.im-btn-outline, a.im-disabled.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.im-disabled.im-card-link, a.disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.disabled.im-btn, a.disabled.im-btn-outline, a.im-btn-outline.im-btn-disabled, a.im-btn-outline.im-btn-disabled-light, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-light.im-btn-disabled-outline, a.im-btn-disabled.im-btn-disabled-outline, a.disabled.im-btn-disabled-outline, a.disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light, a.disabled.im-card-link, a.im-card-link.im-btn-disabled, a.im-card-link.im-btn-disabled-light,
+a.im-disabled.btn, a.btn.im-btn-disabled, a.btn.im-btn-disabled-light, a.im-disabled.im-btn, a.im-disabled.im-btn-outline, a.im-btn-outline.im-btn-disabled, a.im-btn-outline.im-btn-disabled-light, a.im-btn.im-btn-disabled, a.im-btn.im-btn-disabled-light, a.im-btn-disabled-outline, a.im-disabled.im-btn-search, a.im-btn-search.im-btn-disabled, a.im-btn-search.im-btn-disabled-light, a.im-disabled.im-card-link, a.im-card-link.im-btn-disabled, a.im-card-link.im-btn-disabled-light, a.disabled.btn, a.disabled.im-btn, a.disabled.im-btn-outline, a.disabled.im-btn-search, a.disabled.im-card-link,
 fieldset:disabled a.btn,
 fieldset:disabled a.im-btn,
 fieldset:disabled a.im-btn-outline,
@@ -1861,17 +1866,17 @@ fieldset:disabled a.im-card-link {
     background-color: #1176a1;
     border-color: #106d96;
     box-shadow: 0 0 0 0.2rem rgba(56, 160, 205, 0.5); }
-  .btn-primary.disabled, .btn-primary.im-disabled, .btn-primary.im-btn-disabled, .btn-primary.im-btn-disabled-light, .btn-primary:disabled {
+  .btn-primary.disabled, .btn-primary.im-disabled, .btn-primary.im-btn-disabled, .btn-primary.im-btn-disabled-light, .btn-primary.im-btn-disabled-outline, .btn-primary:disabled {
     color: #fff;
     background-color: #158FC4;
     border-color: #158FC4; }
-  .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.im-dropdown-toggle {
     color: #fff;
     background-color: #106d96;
     border-color: #0f658a; }
-    .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-primary.dropdown-toggle:focus,
     .show > .btn-primary.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(56, 160, 205, 0.5); }
@@ -1889,17 +1894,17 @@ fieldset:disabled a.im-card-link {
     background-color: #005b7d;
     border-color: #005270;
     box-shadow: 0 0 0 0.2rem rgba(38, 139, 177, 0.5); }
-  .btn-secondary.disabled, .btn-secondary.im-disabled, .btn-secondary.im-btn-disabled, .btn-secondary.im-btn-disabled-light, .btn-secondary:disabled {
+  .btn-secondary.disabled, .btn-secondary.im-disabled, .btn-secondary.im-btn-disabled, .btn-secondary.im-btn-disabled-light, .btn-secondary.im-btn-disabled-outline, .btn-secondary:disabled {
     color: #fff;
     background-color: #0077A3;
     border-color: #0077A3; }
-  .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-secondary.dropdown-toggle,
   .show > .btn-secondary.im-dropdown-toggle {
     color: #fff;
     background-color: #005270;
     border-color: #004863; }
-    .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-secondary.dropdown-toggle:focus,
     .show > .btn-secondary.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(38, 139, 177, 0.5); }
@@ -1917,17 +1922,17 @@ fieldset:disabled a.im-card-link {
     background-color: #6acf62;
     border-color: #61cc58;
     box-shadow: 0 0 0 0.2rem rgba(119, 189, 114, 0.5); }
-  .btn-success.disabled, .btn-success.im-disabled, .btn-success.im-btn-disabled, .btn-success.im-btn-disabled-light, .btn-success:disabled {
+  .btn-success.disabled, .btn-success.im-disabled, .btn-success.im-btn-disabled, .btn-success.im-btn-disabled-light, .btn-success.im-btn-disabled-outline, .btn-success:disabled {
     color: #212529;
     background-color: #86D87F;
     border-color: #86D87F; }
-  .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-success.dropdown-toggle,
   .show > .btn-success.im-dropdown-toggle {
     color: #212529;
     background-color: #61cc58;
     border-color: #58c94e; }
-    .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-success.dropdown-toggle:focus,
     .show > .btn-success.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(119, 189, 114, 0.5); }
@@ -1945,17 +1950,17 @@ fieldset:disabled a.im-card-link {
     background-color: #1176a1;
     border-color: #106d96;
     box-shadow: 0 0 0 0.2rem rgba(56, 160, 205, 0.5); }
-  .btn-info.disabled, .btn-info.im-disabled, .btn-info.im-btn-disabled, .btn-info.im-btn-disabled-light, .btn-info:disabled {
+  .btn-info.disabled, .btn-info.im-disabled, .btn-info.im-btn-disabled, .btn-info.im-btn-disabled-light, .btn-info.im-btn-disabled-outline, .btn-info:disabled {
     color: #fff;
     background-color: #158FC4;
     border-color: #158FC4; }
-  .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-info.dropdown-toggle,
   .show > .btn-info.im-dropdown-toggle {
     color: #fff;
     background-color: #106d96;
     border-color: #0f658a; }
-    .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-info.dropdown-toggle:focus,
     .show > .btn-info.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(56, 160, 205, 0.5); }
@@ -1973,17 +1978,17 @@ fieldset:disabled a.im-card-link {
     background-color: #fead2e;
     border-color: #fea821;
     box-shadow: 0 0 0 0.2rem rgba(221, 165, 78, 0.5); }
-  .btn-warning.disabled, .btn-warning.im-disabled, .btn-warning.im-btn-disabled, .btn-warning.im-btn-disabled-light, .btn-warning:disabled {
+  .btn-warning.disabled, .btn-warning.im-disabled, .btn-warning.im-btn-disabled, .btn-warning.im-btn-disabled-light, .btn-warning.im-btn-disabled-outline, .btn-warning:disabled {
     color: #212529;
     background-color: #FEBC54;
     border-color: #FEBC54; }
-  .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-warning.dropdown-toggle,
   .show > .btn-warning.im-dropdown-toggle {
     color: #212529;
     background-color: #fea821;
     border-color: #fea315; }
-    .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-warning.dropdown-toggle:focus,
     .show > .btn-warning.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(221, 165, 78, 0.5); }
@@ -2001,17 +2006,17 @@ fieldset:disabled a.im-card-link {
     background-color: #fc4e58;
     border-color: #fc424d;
     box-shadow: 0 0 0 0.2rem rgba(220, 104, 112, 0.5); }
-  .btn-danger.disabled, .btn-danger.im-disabled, .btn-danger.im-btn-disabled, .btn-danger.im-btn-disabled-light, .btn-danger:disabled {
+  .btn-danger.disabled, .btn-danger.im-disabled, .btn-danger.im-btn-disabled, .btn-danger.im-btn-disabled-light, .btn-danger.im-btn-disabled-outline, .btn-danger:disabled {
     color: #212529;
     background-color: #FD747C;
     border-color: #FD747C; }
-  .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-danger.dropdown-toggle,
   .show > .btn-danger.im-dropdown-toggle {
     color: #fff;
     background-color: #fc424d;
     border-color: #fc3541; }
-    .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-danger.dropdown-toggle:focus,
     .show > .btn-danger.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(220, 104, 112, 0.5); }
@@ -2029,17 +2034,17 @@ fieldset:disabled a.im-card-link {
     background-color: #cbcbcb;
     border-color: #c5c5c5;
     box-shadow: 0 0 0 0.2rem rgba(194, 194, 195, 0.5); }
-  .btn-light.disabled, .btn-light.im-disabled, .btn-light.im-btn-disabled, .btn-light.im-btn-disabled-light, .btn-light:disabled {
+  .btn-light.disabled, .btn-light.im-disabled, .btn-light.im-btn-disabled, .btn-light.im-btn-disabled-light, .btn-light.im-btn-disabled-outline, .btn-light:disabled {
     color: #212529;
     background-color: #DEDEDE;
     border-color: #DEDEDE; }
-  .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-light.dropdown-toggle,
   .show > .btn-light.im-dropdown-toggle {
     color: #212529;
     background-color: #c5c5c5;
     border-color: #bebebe; }
-    .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-light.dropdown-toggle:focus,
     .show > .btn-light.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(194, 194, 195, 0.5); }
@@ -2057,17 +2062,17 @@ fieldset:disabled a.im-card-link {
     background-color: #1f222a;
     border-color: #191c23;
     box-shadow: 0 0 0 0.2rem rgba(78, 82, 93, 0.5); }
-  .btn-dark.disabled, .btn-dark.im-disabled, .btn-dark.im-btn-disabled, .btn-dark.im-btn-disabled-light, .btn-dark:disabled {
+  .btn-dark.disabled, .btn-dark.im-disabled, .btn-dark.im-btn-disabled, .btn-dark.im-btn-disabled-light, .btn-dark.im-btn-disabled-outline, .btn-dark:disabled {
     color: #fff;
     background-color: #2F3440;
     border-color: #2F3440; }
-  .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-dark.dropdown-toggle,
   .show > .btn-dark.im-dropdown-toggle {
     color: #fff;
     background-color: #191c23;
     border-color: #14161b; }
-    .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-dark.dropdown-toggle:focus,
     .show > .btn-dark.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(78, 82, 93, 0.5); }
@@ -2081,16 +2086,16 @@ fieldset:disabled a.im-card-link {
     border-color: #158FC4; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.5); }
-  .btn-outline-primary.disabled, .btn-outline-primary.im-disabled, .btn-outline-primary.im-btn-disabled, .btn-outline-primary.im-btn-disabled-light, .btn-outline-primary:disabled {
+  .btn-outline-primary.disabled, .btn-outline-primary.im-disabled, .btn-outline-primary.im-btn-disabled, .btn-outline-primary.im-btn-disabled-light, .btn-outline-primary.im-btn-disabled-outline, .btn-outline-primary:disabled {
     color: #158FC4;
     background-color: transparent; }
-  .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-primary.dropdown-toggle,
   .show > .btn-outline-primary.im-dropdown-toggle {
     color: #fff;
     background-color: #158FC4;
     border-color: #158FC4; }
-    .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-primary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-primary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-primary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-primary.dropdown-toggle:focus,
     .show > .btn-outline-primary.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.5); }
@@ -2104,16 +2109,16 @@ fieldset:disabled a.im-card-link {
     border-color: #0077A3; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 119, 163, 0.5); }
-  .btn-outline-secondary.disabled, .btn-outline-secondary.im-disabled, .btn-outline-secondary.im-btn-disabled, .btn-outline-secondary.im-btn-disabled-light, .btn-outline-secondary:disabled {
+  .btn-outline-secondary.disabled, .btn-outline-secondary.im-disabled, .btn-outline-secondary.im-btn-disabled, .btn-outline-secondary.im-btn-disabled-light, .btn-outline-secondary.im-btn-disabled-outline, .btn-outline-secondary:disabled {
     color: #0077A3;
     background-color: transparent; }
-  .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-secondary.dropdown-toggle,
   .show > .btn-outline-secondary.im-dropdown-toggle {
     color: #fff;
     background-color: #0077A3;
     border-color: #0077A3; }
-    .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-secondary.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-secondary.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-secondary.dropdown-toggle:focus,
     .show > .btn-outline-secondary.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 119, 163, 0.5); }
@@ -2127,16 +2132,16 @@ fieldset:disabled a.im-card-link {
     border-color: #86D87F; }
   .btn-outline-success:focus, .btn-outline-success.focus {
     box-shadow: 0 0 0 0.2rem rgba(134, 216, 127, 0.5); }
-  .btn-outline-success.disabled, .btn-outline-success.im-disabled, .btn-outline-success.im-btn-disabled, .btn-outline-success.im-btn-disabled-light, .btn-outline-success:disabled {
+  .btn-outline-success.disabled, .btn-outline-success.im-disabled, .btn-outline-success.im-btn-disabled, .btn-outline-success.im-btn-disabled-light, .btn-outline-success.im-btn-disabled-outline, .btn-outline-success:disabled {
     color: #86D87F;
     background-color: transparent; }
-  .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-success.dropdown-toggle,
   .show > .btn-outline-success.im-dropdown-toggle {
     color: #212529;
     background-color: #86D87F;
     border-color: #86D87F; }
-    .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-success:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-success.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-success.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-success.dropdown-toggle:focus,
     .show > .btn-outline-success.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(134, 216, 127, 0.5); }
@@ -2150,16 +2155,16 @@ fieldset:disabled a.im-card-link {
     border-color: #158FC4; }
   .btn-outline-info:focus, .btn-outline-info.focus {
     box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.5); }
-  .btn-outline-info.disabled, .btn-outline-info.im-disabled, .btn-outline-info.im-btn-disabled, .btn-outline-info.im-btn-disabled-light, .btn-outline-info:disabled {
+  .btn-outline-info.disabled, .btn-outline-info.im-disabled, .btn-outline-info.im-btn-disabled, .btn-outline-info.im-btn-disabled-light, .btn-outline-info.im-btn-disabled-outline, .btn-outline-info:disabled {
     color: #158FC4;
     background-color: transparent; }
-  .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-info.dropdown-toggle,
   .show > .btn-outline-info.im-dropdown-toggle {
     color: #fff;
     background-color: #158FC4;
     border-color: #158FC4; }
-    .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-info:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-info.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-info.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-info.dropdown-toggle:focus,
     .show > .btn-outline-info.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(21, 143, 196, 0.5); }
@@ -2173,16 +2178,16 @@ fieldset:disabled a.im-card-link {
     border-color: #FEBC54; }
   .btn-outline-warning:focus, .btn-outline-warning.focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 188, 84, 0.5); }
-  .btn-outline-warning.disabled, .btn-outline-warning.im-disabled, .btn-outline-warning.im-btn-disabled, .btn-outline-warning.im-btn-disabled-light, .btn-outline-warning:disabled {
+  .btn-outline-warning.disabled, .btn-outline-warning.im-disabled, .btn-outline-warning.im-btn-disabled, .btn-outline-warning.im-btn-disabled-light, .btn-outline-warning.im-btn-disabled-outline, .btn-outline-warning:disabled {
     color: #FEBC54;
     background-color: transparent; }
-  .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-warning.dropdown-toggle,
   .show > .btn-outline-warning.im-dropdown-toggle {
     color: #212529;
     background-color: #FEBC54;
     border-color: #FEBC54; }
-    .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-warning:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-warning.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-warning.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-warning.dropdown-toggle:focus,
     .show > .btn-outline-warning.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(254, 188, 84, 0.5); }
@@ -2196,16 +2201,16 @@ fieldset:disabled a.im-card-link {
     border-color: #FD747C; }
   .btn-outline-danger:focus, .btn-outline-danger.focus {
     box-shadow: 0 0 0 0.2rem rgba(253, 116, 124, 0.5); }
-  .btn-outline-danger.disabled, .btn-outline-danger.im-disabled, .btn-outline-danger.im-btn-disabled, .btn-outline-danger.im-btn-disabled-light, .btn-outline-danger:disabled {
+  .btn-outline-danger.disabled, .btn-outline-danger.im-disabled, .btn-outline-danger.im-btn-disabled, .btn-outline-danger.im-btn-disabled-light, .btn-outline-danger.im-btn-disabled-outline, .btn-outline-danger:disabled {
     color: #FD747C;
     background-color: transparent; }
-  .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-danger.dropdown-toggle,
   .show > .btn-outline-danger.im-dropdown-toggle {
     color: #212529;
     background-color: #FD747C;
     border-color: #FD747C; }
-    .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-danger:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-danger.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-danger.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-danger.dropdown-toggle:focus,
     .show > .btn-outline-danger.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(253, 116, 124, 0.5); }
@@ -2219,16 +2224,16 @@ fieldset:disabled a.im-card-link {
     border-color: #DEDEDE; }
   .btn-outline-light:focus, .btn-outline-light.focus {
     box-shadow: 0 0 0 0.2rem rgba(222, 222, 222, 0.5); }
-  .btn-outline-light.disabled, .btn-outline-light.im-disabled, .btn-outline-light.im-btn-disabled, .btn-outline-light.im-btn-disabled-light, .btn-outline-light:disabled {
+  .btn-outline-light.disabled, .btn-outline-light.im-disabled, .btn-outline-light.im-btn-disabled, .btn-outline-light.im-btn-disabled-light, .btn-outline-light.im-btn-disabled-outline, .btn-outline-light:disabled {
     color: #DEDEDE;
     background-color: transparent; }
-  .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-light.dropdown-toggle,
   .show > .btn-outline-light.im-dropdown-toggle {
     color: #212529;
     background-color: #DEDEDE;
     border-color: #DEDEDE; }
-    .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-light:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-light.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-light.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-light.dropdown-toggle:focus,
     .show > .btn-outline-light.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(222, 222, 222, 0.5); }
@@ -2242,16 +2247,16 @@ fieldset:disabled a.im-card-link {
     border-color: #2F3440; }
   .btn-outline-dark:focus, .btn-outline-dark.focus {
     box-shadow: 0 0 0 0.2rem rgba(47, 52, 64, 0.5); }
-  .btn-outline-dark.disabled, .btn-outline-dark.im-disabled, .btn-outline-dark.im-btn-disabled, .btn-outline-dark.im-btn-disabled-light, .btn-outline-dark:disabled {
+  .btn-outline-dark.disabled, .btn-outline-dark.im-disabled, .btn-outline-dark.im-btn-disabled, .btn-outline-dark.im-btn-disabled-light, .btn-outline-dark.im-btn-disabled-outline, .btn-outline-dark:disabled {
     color: #2F3440;
     background-color: transparent; }
-  .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active, .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active, .btn-outline-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light), .btn-outline-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light),
+  .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active, .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active, .btn-outline-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline), .btn-outline-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline),
   .show > .btn-outline-dark.dropdown-toggle,
   .show > .btn-outline-dark.im-dropdown-toggle {
     color: #fff;
     background-color: #2F3440;
     border-color: #2F3440; }
-    .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):active:focus, .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light).active:focus, .btn-outline-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus, .btn-outline-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus,
+    .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):active:focus, .btn-outline-dark:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline).active:focus, .btn-outline-dark.im-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus, .btn-outline-dark.im-navitem-active:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus,
     .show > .btn-outline-dark.dropdown-toggle:focus,
     .show > .btn-outline-dark.im-dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(47, 52, 64, 0.5); }
@@ -2265,7 +2270,7 @@ fieldset:disabled a.im-card-link {
     text-decoration: underline; }
   .btn-link:focus, .im-btn-search:focus, .btn-link.focus, .focus.im-btn-search {
     text-decoration: underline; }
-  .btn-link:disabled, .im-btn-search:disabled, .btn-link.disabled, .btn-link.im-disabled, .im-disabled.im-btn-search, .btn-link.im-btn-disabled, .btn-link.im-btn-disabled-light, .im-btn-disabled-light.im-btn-search, .im-btn-disabled.im-btn-search, .disabled.im-btn-search {
+  .btn-link:disabled, .im-btn-search:disabled, .btn-link.disabled, .btn-link.im-disabled, .btn-link.im-btn-disabled, .btn-link.im-btn-disabled-light, .im-btn-disabled-light.im-btn-search, .btn-link.im-btn-disabled-outline, .im-btn-disabled-outline.im-btn-search, .im-btn-disabled.im-btn-search, .im-disabled.im-btn-search, .disabled.im-btn-search {
     color: #6c757d;
     pointer-events: none; }
 
@@ -2275,7 +2280,7 @@ fieldset:disabled a.im-card-link {
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-outline, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search, .btn-group-sm > .im-card-link {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .im-btn, .btn-group-sm > .im-btn-outline, .btn-group-sm > .im-btn-disabled-outline, .btn-group-sm > .im-btn-search, .btn-group-sm > .im-card-link, .im-btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2493,7 +2498,7 @@ input[type="button"].btn-block {
     color: #fff;
     text-decoration: none;
     background-color: #158FC4; }
-  .dropdown-item.disabled, .dropdown-item.im-disabled, .im-disabled.im-dropdown-item, .dropdown-item.im-btn-disabled, .dropdown-item.im-btn-disabled-light, .im-btn-disabled-light.im-dropdown-item, .im-btn-disabled.im-dropdown-item, .disabled.im-dropdown-item, .dropdown-item:disabled, .im-dropdown-item:disabled {
+  .dropdown-item.disabled, .dropdown-item.im-disabled, .dropdown-item.im-btn-disabled, .dropdown-item.im-btn-disabled-light, .im-btn-disabled-light.im-dropdown-item, .dropdown-item.im-btn-disabled-outline, .im-btn-disabled-outline.im-dropdown-item, .im-btn-disabled.im-dropdown-item, .im-disabled.im-dropdown-item, .disabled.im-dropdown-item, .dropdown-item:disabled, .im-dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
     background-color: transparent; }
@@ -2610,7 +2615,7 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split, .btn-group-sm > .im-card-link + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .im-btn + .dropdown-toggle-split, .btn-group-sm > .im-btn-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-disabled-outline + .dropdown-toggle-split, .btn-group-sm > .im-btn-search + .dropdown-toggle-split, .btn-group-sm > .im-card-link + .dropdown-toggle-split, .im-btn-sm + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
@@ -3879,7 +3884,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 1rem; }
   .nav-link:hover, .im-nav-link:hover, .im-tab-link:hover, .nav-link:focus, .im-nav-link:focus, .im-tab-link:focus {
     text-decoration: none; }
-  .nav-link.disabled, .nav-link.im-disabled, .im-disabled.im-nav-link, .im-disabled.im-tab-link, .nav-link.im-btn-disabled, .nav-link.im-btn-disabled-light, .im-btn-disabled-light.im-nav-link, .im-btn-disabled-light.im-tab-link, .im-btn-disabled.im-nav-link, .im-btn-disabled.im-tab-link, .disabled.im-nav-link, .disabled.im-tab-link {
+  .nav-link.disabled, .nav-link.im-disabled, .nav-link.im-btn-disabled, .nav-link.im-btn-disabled-light, .im-btn-disabled-light.im-nav-link, .im-btn-disabled-light.im-tab-link, .nav-link.im-btn-disabled-outline, .im-btn-disabled-outline.im-nav-link, .im-btn-disabled-outline.im-tab-link, .im-btn-disabled.im-nav-link, .im-btn-disabled.im-tab-link, .im-disabled.im-nav-link, .im-disabled.im-tab-link, .disabled.im-nav-link, .disabled.im-tab-link {
     color: #6c757d;
     pointer-events: none;
     cursor: default; }
@@ -3894,7 +3899,7 @@ input[type="button"].btn-block {
     border-top-right-radius: 0.25rem; }
     .nav-tabs .nav-link:hover, .im-tabs .nav-link:hover, .nav-tabs .im-nav-link:hover, .im-tabs .im-nav-link:hover, .nav-tabs .im-tab-link:hover, .im-tabs .im-tab-link:hover, .nav-tabs .nav-link:focus, .im-tabs .nav-link:focus, .nav-tabs .im-nav-link:focus, .im-tabs .im-nav-link:focus, .nav-tabs .im-tab-link:focus, .im-tabs .im-tab-link:focus {
       border-color: #e9ecef #e9ecef #dee2e6; }
-    .nav-tabs .nav-link.disabled, .im-tabs .nav-link.disabled, .nav-tabs .nav-link.im-disabled, .im-tabs .nav-link.im-disabled, .nav-tabs .im-disabled.im-nav-link, .im-tabs .im-disabled.im-nav-link, .nav-tabs .im-disabled.im-tab-link, .im-tabs .im-disabled.im-tab-link, .nav-tabs .nav-link.im-btn-disabled, .im-tabs .nav-link.im-btn-disabled, .nav-tabs .nav-link.im-btn-disabled-light, .im-tabs .nav-link.im-btn-disabled-light, .nav-tabs .im-btn-disabled-light.im-nav-link, .im-tabs .im-btn-disabled-light.im-nav-link, .nav-tabs .im-btn-disabled-light.im-tab-link, .im-tabs .im-btn-disabled-light.im-tab-link, .nav-tabs .im-btn-disabled.im-nav-link, .im-tabs .im-btn-disabled.im-nav-link, .nav-tabs .im-btn-disabled.im-tab-link, .im-tabs .im-btn-disabled.im-tab-link, .nav-tabs .disabled.im-nav-link, .im-tabs .disabled.im-nav-link, .nav-tabs .disabled.im-tab-link, .im-tabs .disabled.im-tab-link {
+    .nav-tabs .nav-link.disabled, .im-tabs .nav-link.disabled, .nav-tabs .nav-link.im-disabled, .im-tabs .nav-link.im-disabled, .nav-tabs .nav-link.im-btn-disabled, .im-tabs .nav-link.im-btn-disabled, .nav-tabs .nav-link.im-btn-disabled-light, .im-tabs .nav-link.im-btn-disabled-light, .nav-tabs .im-btn-disabled-light.im-nav-link, .im-tabs .im-btn-disabled-light.im-nav-link, .nav-tabs .im-btn-disabled-light.im-tab-link, .im-tabs .im-btn-disabled-light.im-tab-link, .nav-tabs .nav-link.im-btn-disabled-outline, .im-tabs .nav-link.im-btn-disabled-outline, .nav-tabs .im-btn-disabled-outline.im-nav-link, .im-tabs .im-btn-disabled-outline.im-nav-link, .nav-tabs .im-btn-disabled-outline.im-tab-link, .im-tabs .im-btn-disabled-outline.im-tab-link, .nav-tabs .im-btn-disabled.im-nav-link, .im-tabs .im-btn-disabled.im-nav-link, .nav-tabs .im-btn-disabled.im-tab-link, .im-tabs .im-btn-disabled.im-tab-link, .nav-tabs .im-disabled.im-nav-link, .im-tabs .im-disabled.im-nav-link, .nav-tabs .im-disabled.im-tab-link, .im-tabs .im-disabled.im-tab-link, .nav-tabs .disabled.im-nav-link, .im-tabs .disabled.im-nav-link, .nav-tabs .disabled.im-tab-link, .im-tabs .disabled.im-tab-link {
       color: #6c757d;
       background-color: transparent;
       border-color: transparent; }
@@ -4166,7 +4171,7 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.5); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .im-nav-link:hover, .navbar-light .navbar-nav .im-tab-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .im-nav-link:focus, .navbar-light .navbar-nav .im-tab-link:focus {
     color: rgba(0, 0, 0, 0.7); }
-  .navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .nav-link.im-disabled, .navbar-light .navbar-nav .im-disabled.im-nav-link, .navbar-light .navbar-nav .im-disabled.im-tab-link, .navbar-light .navbar-nav .nav-link.im-btn-disabled, .navbar-light .navbar-nav .nav-link.im-btn-disabled-light, .navbar-light .navbar-nav .im-btn-disabled-light.im-nav-link, .navbar-light .navbar-nav .im-btn-disabled-light.im-tab-link, .navbar-light .navbar-nav .im-btn-disabled.im-nav-link, .navbar-light .navbar-nav .im-btn-disabled.im-tab-link, .navbar-light .navbar-nav .disabled.im-nav-link, .navbar-light .navbar-nav .disabled.im-tab-link {
+  .navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav .nav-link.im-disabled, .navbar-light .navbar-nav .nav-link.im-btn-disabled, .navbar-light .navbar-nav .nav-link.im-btn-disabled-light, .navbar-light .navbar-nav .im-btn-disabled-light.im-nav-link, .navbar-light .navbar-nav .im-btn-disabled-light.im-tab-link, .navbar-light .navbar-nav .nav-link.im-btn-disabled-outline, .navbar-light .navbar-nav .im-btn-disabled-outline.im-nav-link, .navbar-light .navbar-nav .im-btn-disabled-outline.im-tab-link, .navbar-light .navbar-nav .im-btn-disabled.im-nav-link, .navbar-light .navbar-nav .im-btn-disabled.im-tab-link, .navbar-light .navbar-nav .im-disabled.im-nav-link, .navbar-light .navbar-nav .im-disabled.im-tab-link, .navbar-light .navbar-nav .disabled.im-nav-link, .navbar-light .navbar-nav .disabled.im-tab-link {
     color: rgba(0, 0, 0, 0.3); }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .show > .im-nav-link, .navbar-light .navbar-nav .show > .im-tab-link,
@@ -4216,7 +4221,7 @@ input[type="button"].btn-block {
   color: rgba(255, 255, 255, 0.5); }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .im-nav-link:hover, .navbar-dark .navbar-nav .im-tab-link:hover, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .im-nav-link:focus, .navbar-dark .navbar-nav .im-tab-link:focus {
     color: rgba(255, 255, 255, 0.75); }
-  .navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .nav-link.im-disabled, .navbar-dark .navbar-nav .im-disabled.im-nav-link, .navbar-dark .navbar-nav .im-disabled.im-tab-link, .navbar-dark .navbar-nav .nav-link.im-btn-disabled, .navbar-dark .navbar-nav .nav-link.im-btn-disabled-light, .navbar-dark .navbar-nav .im-btn-disabled-light.im-nav-link, .navbar-dark .navbar-nav .im-btn-disabled-light.im-tab-link, .navbar-dark .navbar-nav .im-btn-disabled.im-nav-link, .navbar-dark .navbar-nav .im-btn-disabled.im-tab-link, .navbar-dark .navbar-nav .disabled.im-nav-link, .navbar-dark .navbar-nav .disabled.im-tab-link {
+  .navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav .nav-link.im-disabled, .navbar-dark .navbar-nav .nav-link.im-btn-disabled, .navbar-dark .navbar-nav .nav-link.im-btn-disabled-light, .navbar-dark .navbar-nav .im-btn-disabled-light.im-nav-link, .navbar-dark .navbar-nav .im-btn-disabled-light.im-tab-link, .navbar-dark .navbar-nav .nav-link.im-btn-disabled-outline, .navbar-dark .navbar-nav .im-btn-disabled-outline.im-nav-link, .navbar-dark .navbar-nav .im-btn-disabled-outline.im-tab-link, .navbar-dark .navbar-nav .im-btn-disabled.im-nav-link, .navbar-dark .navbar-nav .im-btn-disabled.im-tab-link, .navbar-dark .navbar-nav .im-disabled.im-nav-link, .navbar-dark .navbar-nav .im-disabled.im-tab-link, .navbar-dark .navbar-nav .disabled.im-nav-link, .navbar-dark .navbar-nav .disabled.im-tab-link {
     color: rgba(255, 255, 255, 0.25); }
 
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .show > .im-nav-link, .navbar-dark .navbar-nav .show > .im-tab-link,
@@ -4501,7 +4506,7 @@ input[type="button"].btn-block {
   background-color: #158FC4;
   border-color: #158FC4; }
 
-.page-item.disabled .page-link, .page-item.im-disabled .page-link, .page-item.im-btn-disabled .page-link, .page-item.im-btn-disabled-light .page-link {
+.page-item.disabled .page-link, .page-item.im-disabled .page-link, .page-item.im-btn-disabled .page-link, .page-item.im-btn-disabled-light .page-link, .page-item.im-btn-disabled-outline .page-link {
   color: #6c757d;
   pointer-events: none;
   cursor: auto;
@@ -4828,7 +4833,7 @@ input[type="button"].btn-block {
   .list-group-item:last-child, .im-list-group-item:last-child {
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit; }
-  .list-group-item.disabled, .list-group-item.im-disabled, .im-disabled.im-list-group-item, .list-group-item.im-btn-disabled, .list-group-item.im-btn-disabled-light, .im-btn-disabled-light.im-list-group-item, .im-btn-disabled.im-list-group-item, .disabled.im-list-group-item, .list-group-item:disabled, .im-list-group-item:disabled {
+  .list-group-item.disabled, .list-group-item.im-disabled, .list-group-item.im-btn-disabled, .list-group-item.im-btn-disabled-light, .im-btn-disabled-light.im-list-group-item, .list-group-item.im-btn-disabled-outline, .im-btn-disabled-outline.im-list-group-item, .im-btn-disabled.im-list-group-item, .im-disabled.im-list-group-item, .disabled.im-list-group-item, .list-group-item:disabled, .im-list-group-item:disabled {
     color: #6c757d;
     pointer-events: none;
     background-color: #fff; }
@@ -5038,7 +5043,7 @@ input[type="button"].btn-block {
   .close:hover {
     color: #000000;
     text-decoration: none; }
-  .close:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):hover, .close:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):focus {
+  .close:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):hover, .close:not(:disabled):not(.disabled):not(.im-disabled):not(.im-btn-disabled):not(.im-btn-disabled-light):not(.im-btn-disabled-outline):focus {
     opacity: .75; }
 
 button.close {
@@ -5046,7 +5051,7 @@ button.close {
   background-color: transparent;
   border: 0; }
 
-a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-disabled-light {
+a.close.disabled, a.close.im-disabled, a.close.im-btn-disabled, a.close.im-btn-disabled-light, a.close.im-btn-disabled-outline {
   pointer-events: none; }
 
 .toast {
@@ -5741,7 +5746,7 @@ button.bg-dark:focus {
 .border-left {
   border-left: 1px solid #A3A6B4 !important; }
 
-.border-0, .im-search {
+.border-0, .border-none, .im-search {
   border: 0 !important; }
 
 .border-top-0 {
@@ -8278,10 +8283,11 @@ body {
 .im-light {
   color: #DEDEDE !important !important; }
 
-.im-disabled {
+.im-disabled, .im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline {
   cursor: not-allowed !important;
   opacity: 0.5 !important;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  box-shadow: none !important; }
 
 .im-btn, .im-btn-outline, .im-btn-disabled-outline {
   font-weight: 300;
@@ -8289,10 +8295,25 @@ body {
   line-height: 22px;
   color: #fff;
   border-radius: 0.5rem !important; }
+  .im-btn-sm {
+    padding: .15rem .5rem !important;
+    font-size: .75rem;
+    line-height: 1.2; }
   .im-btn-primary, .im-btn-outline:hover {
     background-color: #158FC4 !important; }
   .im-btn-secondary {
     background-color: #0077A3 !important; }
+  .im-btn-light {
+    background-color: #DEDEDE !important;
+    color: #2F3440; }
+    .im-btn-light:hover {
+      color: #65708a; }
+  .im-btn-white {
+    background-color: #fff;
+    color: #2F3440;
+    border: 1px solid #A3A6B4; }
+    .im-btn-white:hover {
+      color: #65708a; }
 
 .im-btn-outline {
   border: 2px solid #158FC4 !important;
@@ -8300,20 +8321,17 @@ body {
   .im-btn-outline:hover {
     color: #fff; }
 
-.im-btn-disabled, .im-btn-disabled-light {
+.im-btn-disabled, .im-btn-disabled-light, .im-btn-disabled-outline {
   color: #2F3440;
   background-color: #DEDEDE; }
-  .im-btn-disabled:hover, .im-btn-disabled-light:hover {
-    cursor: default;
-    color: #2F3440; }
 
 .im-btn-disabled-light {
   background-color: #EDEDED; }
 
 .im-btn-disabled-outline {
   border: 2px solid #A3A6B4;
-  color: #A3A6B4;
-  cursor: default !important; }
+  background-color: inherit;
+  color: #A3A6B4; }
   .im-btn-disabled-outline:hover {
     color: #A3A6B4; }
 
@@ -8542,11 +8560,13 @@ body::-webkit-scrollbar {
 .navbar, .im-navbar {
   padding: 0 15px;
   font-size: 17px;
-  margin: 0 -15px;
-  border-top: 1px solid #002e83; }
+  margin: 0 -15px; }
 
 .bg-light {
-  background-color: #01a0da !important; }
+  background-color: #DEDEDE !important !important; }
+
+.navbar-light {
+  background-color: #01a0da; }
 
 .navbar-light .nav-item, .navbar-light .im-navitem-active, .navbar-light .im-navitem, .navbar-light .im-tab-item {
   position: relative; }
@@ -9491,6 +9511,14 @@ img {
   .im-divider-dark {
     border-top: 2.5px solid #47607D !important; }
 
+.im-drop-icon {
+  background-color: #DEDEDE !important;
+  border-radius: 1.5rem;
+  padding: 4.5px;
+  font-size: 85%; }
+  .im-drop-icon-dark {
+    background-color: #A3A6B4; }
+
 .im-navbar {
   background-color: #19A0DA;
   padding: 0rem 1rem; }
@@ -9530,11 +9558,13 @@ img {
 .navbar, .im-navbar {
   padding: 0 15px;
   font-size: 17px;
-  margin: 0 -15px;
-  border-top: 1px solid #002e83; }
+  margin: 0 -15px; }
 
 .bg-light {
-  background-color: #01a0da !important; }
+  background-color: #DEDEDE !important !important; }
+
+.navbar-light {
+  background-color: #01a0da; }
 
 .navbar-light .nav-item, .navbar-light .im-navitem-active, .navbar-light .im-navitem, .navbar-light .im-tab-item {
   position: relative; }
@@ -9871,11 +9901,12 @@ img {
 .datetimepicker table tr td.new {
   color: #999999; }
 
-.datetimepicker table tr td.disabled, .datetimepicker table tr td.im-disabled, .datetimepicker table tr td.im-btn-disabled, .datetimepicker table tr td.im-btn-disabled-light,
+.datetimepicker table tr td.disabled, .datetimepicker table tr td.im-disabled, .datetimepicker table tr td.im-btn-disabled, .datetimepicker table tr td.im-btn-disabled-light, .datetimepicker table tr td.im-btn-disabled-outline,
 .datetimepicker table tr td.disabled:hover,
 .datetimepicker table tr td.im-disabled:hover,
 .datetimepicker table tr td.im-btn-disabled:hover,
-.datetimepicker table tr td.im-btn-disabled-light:hover {
+.datetimepicker table tr td.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-outline:hover {
   background: none;
   color: #999999;
   cursor: default; }
@@ -9886,10 +9917,12 @@ img {
 .datetimepicker table tr td.today.im-disabled,
 .datetimepicker table tr td.today.im-btn-disabled,
 .datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-outline,
 .datetimepicker table tr td.today.disabled:hover,
 .datetimepicker table tr td.today.im-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover,
-.datetimepicker table tr td.today.im-btn-disabled-light:hover {
+.datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover {
   background-color: #fde19a;
   background-image: -moz-linear-gradient(top, #fdd49a, #fdf59a);
   background-image: -ms-linear-gradient(top, #fdd49a, #fdf59a);
@@ -9910,20 +9943,24 @@ img {
 .datetimepicker table tr td.today.im-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.today.disabled:hover:hover,
 .datetimepicker table tr td.today.im-disabled:hover:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover:hover,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover:hover,
 .datetimepicker table tr td.today:active,
 .datetimepicker table tr td.today:hover:active,
 .datetimepicker table tr td.today.disabled:active,
 .datetimepicker table tr td.today.im-disabled:active,
 .datetimepicker table tr td.today.im-btn-disabled:active,
 .datetimepicker table tr td.today.im-btn-disabled-light:active,
+.datetimepicker table tr td.today.im-btn-disabled-outline:active,
 .datetimepicker table tr td.today.disabled:hover:active,
 .datetimepicker table tr td.today.im-disabled:hover:active,
 .datetimepicker table tr td.today.im-btn-disabled:hover:active,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td.today.active,
 .datetimepicker table tr td.today.im-active,
 .datetimepicker table tr td.today.im-navitem-active,
@@ -9933,35 +9970,43 @@ img {
 .datetimepicker table tr td.today.disabled.active,
 .datetimepicker table tr td.today.active.im-disabled,
 .datetimepicker table tr td.today.im-disabled.im-active,
-.datetimepicker table tr td.today.im-disabled.im-navitem-active,
-.datetimepicker table tr td.today.disabled.im-active,
 .datetimepicker table tr td.today.im-active.im-btn-disabled,
 .datetimepicker table tr td.today.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.today.active.im-btn-disabled,
 .datetimepicker table tr td.today.active.im-btn-disabled-light,
 .datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.today.active.im-btn-disabled-outline,
+.datetimepicker table tr td.today.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.today.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled.im-active,
 .datetimepicker table tr td.today.disabled.im-navitem-active,
 .datetimepicker table tr td.today.disabled:hover.active,
 .datetimepicker table tr td.today.im-disabled:hover.active,
 .datetimepicker table tr td.today.im-disabled.im-active:hover,
-.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.today.disabled.im-active:hover,
 .datetimepicker table tr td.today.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.today.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover.active,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.today.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.im-active:hover,
 .datetimepicker table tr td.today.disabled.im-navitem-active:hover,
 .datetimepicker table tr td.today.disabled,
 .datetimepicker table tr td.today.im-disabled,
 .datetimepicker table tr td.today.im-btn-disabled,
 .datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-outline,
 .datetimepicker table tr td.today:hover.disabled,
 .datetimepicker table tr td.today.im-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.today.disabled.disabled,
 .datetimepicker table tr td.today.im-disabled,
 .datetimepicker table tr td.today.im-disabled,
@@ -9969,6 +10014,8 @@ img {
 .datetimepicker table tr td.today.im-btn-disabled,
 .datetimepicker table tr td.today.im-btn-disabled-light,
 .datetimepicker table tr td.today.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-btn-disabled-outline,
+.datetimepicker table tr td.today.im-btn-disabled-outline,
 .datetimepicker table tr td.today.disabled:hover.disabled,
 .datetimepicker table tr td.today.im-disabled:hover,
 .datetimepicker table tr td.today.im-disabled:hover,
@@ -9976,16 +10023,20 @@ img {
 .datetimepicker table tr td.today.im-btn-disabled:hover,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.today[disabled],
 .datetimepicker table tr td.today:hover[disabled],
 .datetimepicker table tr td.today.disabled[disabled],
 .datetimepicker table tr td.today.im-disabled[disabled],
 .datetimepicker table tr td.today.im-btn-disabled[disabled],
 .datetimepicker table tr td.today.im-btn-disabled-light[disabled],
+.datetimepicker table tr td.today.im-btn-disabled-outline[disabled],
 .datetimepicker table tr td.today.disabled:hover[disabled],
 .datetimepicker table tr td.today.im-disabled:hover[disabled],
 .datetimepicker table tr td.today.im-btn-disabled:hover[disabled],
-.datetimepicker table tr td.today.im-btn-disabled-light:hover[disabled] {
+.datetimepicker table tr td.today.im-btn-disabled-light:hover[disabled],
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover[disabled] {
   background-color: #fdf59a; }
 
 
@@ -9995,10 +10046,12 @@ img {
 .datetimepicker table tr td.today.im-disabled:active,
 .datetimepicker table tr td.today.im-btn-disabled:active,
 .datetimepicker table tr td.today.im-btn-disabled-light:active,
+.datetimepicker table tr td.today.im-btn-disabled-outline:active,
 .datetimepicker table tr td.today.disabled:hover:active,
 .datetimepicker table tr td.today.im-disabled:hover:active,
 .datetimepicker table tr td.today.im-btn-disabled:hover:active,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td.today.active,
 .datetimepicker table tr td.today.im-active,
 .datetimepicker table tr td.today.im-navitem-active,
@@ -10008,26 +10061,32 @@ img {
 .datetimepicker table tr td.today.disabled.active,
 .datetimepicker table tr td.today.active.im-disabled,
 .datetimepicker table tr td.today.im-disabled.im-active,
-.datetimepicker table tr td.today.im-disabled.im-navitem-active,
-.datetimepicker table tr td.today.disabled.im-active,
 .datetimepicker table tr td.today.im-active.im-btn-disabled,
 .datetimepicker table tr td.today.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.today.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.today.active.im-btn-disabled,
 .datetimepicker table tr td.today.active.im-btn-disabled-light,
 .datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.today.active.im-btn-disabled-outline,
+.datetimepicker table tr td.today.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.today.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active,
+.datetimepicker table tr td.today.disabled.im-active,
 .datetimepicker table tr td.today.disabled.im-navitem-active,
 .datetimepicker table tr td.today.disabled:hover.active,
 .datetimepicker table tr td.today.im-disabled:hover.active,
 .datetimepicker table tr td.today.im-disabled.im-active:hover,
-.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.today.disabled.im-active:hover,
 .datetimepicker table tr td.today.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.today.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.today.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.today.im-btn-disabled:hover.active,
 .datetimepicker table tr td.today.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td.today.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td.today.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.today.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.today.disabled.im-active:hover,
 .datetimepicker table tr td.today.disabled.im-navitem-active:hover {
   background-color: #fbf069; }
 
@@ -10038,26 +10097,32 @@ img {
 .datetimepicker table tr td.active.disabled,
 .datetimepicker table tr td.active.im-disabled,
 .datetimepicker table tr td.im-disabled.im-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.active.im-btn-disabled,
 .datetimepicker table tr td.active.im-btn-disabled-light,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.active.disabled:hover,
 .datetimepicker table tr td.active.im-disabled:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover {
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
@@ -10084,26 +10149,32 @@ img {
 .datetimepicker table tr td.active.disabled:hover,
 .datetimepicker table tr td.active.im-disabled:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover,
 .datetimepicker table tr td.active.disabled:hover:hover,
 .datetimepicker table tr td.active.im-disabled:hover:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover:hover,
-.datetimepicker table tr td.disabled.im-active:hover:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover:hover,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td.disabled.im-active:hover:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover:hover,
 .datetimepicker table tr td.active:active,
 .datetimepicker table tr td.im-active:active,
@@ -10114,26 +10185,32 @@ img {
 .datetimepicker table tr td.active.disabled:active,
 .datetimepicker table tr td.active.im-disabled:active,
 .datetimepicker table tr td.im-disabled.im-active:active,
-.datetimepicker table tr td.im-disabled.im-navitem-active:active,
-.datetimepicker table tr td.disabled.im-active:active,
 .datetimepicker table tr td.im-active.im-btn-disabled:active,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:active,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:active,
 .datetimepicker table tr td.active.im-btn-disabled:active,
 .datetimepicker table tr td.active.im-btn-disabled-light:active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td.active.im-btn-disabled-outline:active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td.disabled.im-active:active,
 .datetimepicker table tr td.disabled.im-navitem-active:active,
 .datetimepicker table tr td.active.disabled:hover:active,
 .datetimepicker table tr td.active.im-disabled:hover:active,
 .datetimepicker table tr td.im-disabled.im-active:hover:active,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
-.datetimepicker table tr td.disabled.im-active:hover:active,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover:active,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td.active.im-btn-disabled:hover:active,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover:active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover:active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover:active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.disabled.im-active:hover:active,
 .datetimepicker table tr td.disabled.im-navitem-active:hover:active,
 .datetimepicker table tr td.active.active,
 .datetimepicker table tr td.im-active,
@@ -10149,107 +10226,135 @@ img {
 .datetimepicker table tr td.active.active.im-disabled,
 .datetimepicker table tr td.im-disabled.im-active,
 .datetimepicker table tr td.im-disabled.im-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.disabled.im-active,
-.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.active.active.im-btn-disabled,
 .datetimepicker table tr td.active.active.im-btn-disabled-light,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.active.active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-active,
+.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.active.disabled:hover.active,
 .datetimepicker table tr td.active.im-disabled:hover.active,
 .datetimepicker table tr td.im-disabled.im-active:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover.active,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover,
 .datetimepicker table tr td.active.disabled,
 .datetimepicker table tr td.active.im-disabled,
 .datetimepicker table tr td.im-disabled.im-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.active.im-btn-disabled,
 .datetimepicker table tr td.active.im-btn-disabled-light,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.active:hover.disabled,
 .datetimepicker table tr td.active.im-disabled:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.im-active:hover.disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-active:hover.disabled,
 .datetimepicker table tr td.im-navitem-active:hover.disabled,
 .datetimepicker table tr td.active.disabled.disabled,
 .datetimepicker table tr td.active.im-disabled,
 .datetimepicker table tr td.active.im-disabled,
 .datetimepicker table tr td.im-disabled.im-active,
 .datetimepicker table tr td.im-disabled.im-active,
+.datetimepicker table tr td.im-active.im-btn-disabled,
+.datetimepicker table tr td.im-active.im-btn-disabled,
+.datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.active.im-btn-disabled-light,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.active.im-btn-disabled-outline,
+.datetimepicker table tr td.active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td.im-disabled.im-navitem-active,
 .datetimepicker table tr td.im-disabled.im-navitem-active,
 .datetimepicker table tr td.disabled.disabled.im-active,
-.datetimepicker table tr td.im-active.im-btn-disabled,
-.datetimepicker table tr td.im-active.im-btn-disabled,
-.datetimepicker table tr td.im-active.im-btn-disabled-light,
-.datetimepicker table tr td.im-active.im-btn-disabled-light,
-.datetimepicker table tr td.active.im-btn-disabled,
-.datetimepicker table tr td.active.im-btn-disabled,
-.datetimepicker table tr td.active.im-btn-disabled-light,
-.datetimepicker table tr td.active.im-btn-disabled-light,
-.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
-.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
-.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
-.datetimepicker table tr td.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td.disabled.disabled.im-navitem-active,
 .datetimepicker table tr td.active.disabled:hover.disabled,
 .datetimepicker table tr td.active.im-disabled:hover,
 .datetimepicker table tr td.active.im-disabled:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.im-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.im-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.disabled.im-active:hover.disabled,
-.datetimepicker table tr td.im-active.im-btn-disabled:hover,
-.datetimepicker table tr td.im-active.im-btn-disabled:hover,
-.datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
-.datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
-.datetimepicker table tr td.active.im-btn-disabled:hover,
-.datetimepicker table tr td.active.im-btn-disabled:hover,
-.datetimepicker table tr td.active.im-btn-disabled-light:hover,
-.datetimepicker table tr td.active.im-btn-disabled-light:hover,
-.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
-.datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
-.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover.disabled,
 .datetimepicker table tr td.active[disabled],
 .datetimepicker table tr td.im-active[disabled],
@@ -10260,26 +10365,32 @@ img {
 .datetimepicker table tr td.active.disabled[disabled],
 .datetimepicker table tr td.active.im-disabled[disabled],
 .datetimepicker table tr td.im-disabled.im-active[disabled],
-.datetimepicker table tr td.im-disabled.im-navitem-active[disabled],
-.datetimepicker table tr td.disabled.im-active[disabled],
 .datetimepicker table tr td.im-active.im-btn-disabled[disabled],
 .datetimepicker table tr td.im-active.im-btn-disabled-light[disabled],
+.datetimepicker table tr td.im-active.im-btn-disabled-outline[disabled],
 .datetimepicker table tr td.active.im-btn-disabled[disabled],
 .datetimepicker table tr td.active.im-btn-disabled-light[disabled],
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active[disabled],
+.datetimepicker table tr td.active.im-btn-disabled-outline[disabled],
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active[disabled],
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td.im-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td.disabled.im-active[disabled],
 .datetimepicker table tr td.disabled.im-navitem-active[disabled],
 .datetimepicker table tr td.active.disabled:hover[disabled],
 .datetimepicker table tr td.active.im-disabled:hover[disabled],
 .datetimepicker table tr td.im-disabled.im-active:hover[disabled],
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover[disabled],
-.datetimepicker table tr td.disabled.im-active:hover[disabled],
 .datetimepicker table tr td.im-active.im-btn-disabled:hover[disabled],
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover[disabled],
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover[disabled],
 .datetimepicker table tr td.active.im-btn-disabled:hover[disabled],
 .datetimepicker table tr td.active.im-btn-disabled-light:hover[disabled],
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover[disabled],
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover[disabled],
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td.disabled.im-active:hover[disabled],
 .datetimepicker table tr td.disabled.im-navitem-active:hover[disabled] {
   background-color: #0044cc; }
 
@@ -10293,26 +10404,32 @@ img {
 .datetimepicker table tr td.active.disabled:active,
 .datetimepicker table tr td.active.im-disabled:active,
 .datetimepicker table tr td.im-disabled.im-active:active,
-.datetimepicker table tr td.im-disabled.im-navitem-active:active,
-.datetimepicker table tr td.disabled.im-active:active,
 .datetimepicker table tr td.im-active.im-btn-disabled:active,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:active,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:active,
 .datetimepicker table tr td.active.im-btn-disabled:active,
 .datetimepicker table tr td.active.im-btn-disabled-light:active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td.active.im-btn-disabled-outline:active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td.disabled.im-active:active,
 .datetimepicker table tr td.disabled.im-navitem-active:active,
 .datetimepicker table tr td.active.disabled:hover:active,
 .datetimepicker table tr td.active.im-disabled:hover:active,
 .datetimepicker table tr td.im-disabled.im-active:hover:active,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
-.datetimepicker table tr td.disabled.im-active:hover:active,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover:active,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td.active.im-btn-disabled:hover:active,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover:active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover:active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover:active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td.disabled.im-active:hover:active,
 .datetimepicker table tr td.disabled.im-navitem-active:hover:active,
 .datetimepicker table tr td.active.active,
 .datetimepicker table tr td.im-active,
@@ -10328,40 +10445,50 @@ img {
 .datetimepicker table tr td.active.active.im-disabled,
 .datetimepicker table tr td.im-disabled.im-active,
 .datetimepicker table tr td.im-disabled.im-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.im-disabled.im-navitem-active,
-.datetimepicker table tr td.disabled.im-active,
-.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
 .datetimepicker table tr td.im-active.im-btn-disabled-light,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td.active.active.im-btn-disabled,
 .datetimepicker table tr td.active.active.im-btn-disabled-light,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td.active.active.im-btn-disabled-outline,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.im-disabled.im-navitem-active,
+.datetimepicker table tr td.disabled.im-active,
+.datetimepicker table tr td.disabled.im-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.disabled.im-navitem-active,
 .datetimepicker table tr td.active.disabled:hover.active,
 .datetimepicker table tr td.active.im-disabled:hover.active,
 .datetimepicker table tr td.im-disabled.im-active:hover,
 .datetimepicker table tr td.im-disabled.im-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
-.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
 .datetimepicker table tr td.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td.active.im-btn-disabled:hover.active,
 .datetimepicker table tr td.active.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td.active.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
+.datetimepicker table tr td.disabled.im-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover,
 .datetimepicker table tr td.disabled.im-navitem-active:hover {
   background-color: #003399; }
@@ -10398,11 +10525,12 @@ img {
 .datetimepicker table tr td span:hover {
   background: #eeeeee; }
 
-.datetimepicker table tr td span.disabled, .datetimepicker table tr td span.im-disabled, .datetimepicker table tr td span.im-btn-disabled, .datetimepicker table tr td span.im-btn-disabled-light,
+.datetimepicker table tr td span.disabled, .datetimepicker table tr td span.im-disabled, .datetimepicker table tr td span.im-btn-disabled, .datetimepicker table tr td span.im-btn-disabled-light, .datetimepicker table tr td span.im-btn-disabled-outline,
 .datetimepicker table tr td span.disabled:hover,
 .datetimepicker table tr td span.im-disabled:hover,
 .datetimepicker table tr td span.im-btn-disabled:hover,
-.datetimepicker table tr td span.im-btn-disabled-light:hover {
+.datetimepicker table tr td span.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline:hover {
   background: none;
   color: #999999;
   cursor: default; }
@@ -10414,26 +10542,32 @@ img {
 .datetimepicker table tr td span.active.disabled,
 .datetimepicker table tr td span.active.im-disabled,
 .datetimepicker table tr td span.im-disabled.im-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td span.active.im-btn-disabled,
 .datetimepicker table tr td span.active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.active.disabled:hover,
 .datetimepicker table tr td span.active.im-disabled:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover {
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
@@ -10460,26 +10594,32 @@ img {
 .datetimepicker table tr td span.active.disabled:hover,
 .datetimepicker table tr td span.active.im-disabled:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.active.disabled:hover:hover,
 .datetimepicker table tr td span.active.im-disabled:hover:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:hover,
-.datetimepicker table tr td span.disabled.im-active:hover:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover:hover,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:hover,
+.datetimepicker table tr td span.disabled.im-active:hover:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover:hover,
 .datetimepicker table tr td span.active:active,
 .datetimepicker table tr td span.im-active:active,
@@ -10490,26 +10630,32 @@ img {
 .datetimepicker table tr td span.active.disabled:active,
 .datetimepicker table tr td span.active.im-disabled:active,
 .datetimepicker table tr td span.im-disabled.im-active:active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
-.datetimepicker table tr td span.disabled.im-active:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:active,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:active,
 .datetimepicker table tr td span.active.im-btn-disabled:active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.disabled.im-active:active,
 .datetimepicker table tr td span.disabled.im-navitem-active:active,
 .datetimepicker table tr td span.active.disabled:hover:active,
 .datetimepicker table tr td span.active.im-disabled:hover:active,
 .datetimepicker table tr td span.im-disabled.im-active:hover:active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
-.datetimepicker table tr td span.disabled.im-active:hover:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td span.active.im-btn-disabled:hover:active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover:active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover:active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover:active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.disabled.im-active:hover:active,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover:active,
 .datetimepicker table tr td span.active.active,
 .datetimepicker table tr td span.im-active,
@@ -10525,107 +10671,135 @@ img {
 .datetimepicker table tr td span.active.active.im-disabled,
 .datetimepicker table tr td span.im-disabled.im-active,
 .datetimepicker table tr td span.im-disabled.im-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.disabled.im-active,
-.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td span.active.active.im-btn-disabled,
 .datetimepicker table tr td span.active.active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.active.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-active,
+.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.active.disabled:hover.active,
 .datetimepicker table tr td span.active.im-disabled:hover.active,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover.active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.active.disabled,
 .datetimepicker table tr td span.active.im-disabled,
 .datetimepicker table tr td span.im-disabled.im-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td span.active.im-btn-disabled,
 .datetimepicker table tr td span.active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.active:hover.disabled,
 .datetimepicker table tr td span.active.im-disabled:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.im-active:hover.disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-active:hover.disabled,
 .datetimepicker table tr td span.im-navitem-active:hover.disabled,
 .datetimepicker table tr td span.active.disabled.disabled,
 .datetimepicker table tr td span.active.im-disabled,
 .datetimepicker table tr td span.active.im-disabled,
 .datetimepicker table tr td span.im-disabled.im-active,
 .datetimepicker table tr td span.im-disabled.im-active,
+.datetimepicker table tr td span.im-active.im-btn-disabled,
+.datetimepicker table tr td span.im-active.im-btn-disabled,
+.datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td span.im-disabled.im-navitem-active,
 .datetimepicker table tr td span.im-disabled.im-navitem-active,
 .datetimepicker table tr td span.disabled.disabled.im-active,
-.datetimepicker table tr td span.im-active.im-btn-disabled,
-.datetimepicker table tr td span.im-active.im-btn-disabled,
-.datetimepicker table tr td span.im-active.im-btn-disabled-light,
-.datetimepicker table tr td span.im-active.im-btn-disabled-light,
-.datetimepicker table tr td span.active.im-btn-disabled,
-.datetimepicker table tr td span.active.im-btn-disabled,
-.datetimepicker table tr td span.active.im-btn-disabled-light,
-.datetimepicker table tr td span.active.im-btn-disabled-light,
-.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
-.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
-.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
-.datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td span.disabled.disabled.im-navitem-active,
 .datetimepicker table tr td span.active.disabled:hover.disabled,
 .datetimepicker table tr td span.active.im-disabled:hover,
 .datetimepicker table tr td span.active.im-disabled:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.disabled.im-active:hover.disabled,
-.datetimepicker table tr td span.im-active.im-btn-disabled:hover,
-.datetimepicker table tr td span.im-active.im-btn-disabled:hover,
-.datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
-.datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
-.datetimepicker table tr td span.active.im-btn-disabled:hover,
-.datetimepicker table tr td span.active.im-btn-disabled:hover,
-.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
-.datetimepicker table tr td span.active.im-btn-disabled-light:hover,
-.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
-.datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
-.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover.disabled,
 .datetimepicker table tr td span.active[disabled],
 .datetimepicker table tr td span.im-active[disabled],
@@ -10636,26 +10810,32 @@ img {
 .datetimepicker table tr td span.active.disabled[disabled],
 .datetimepicker table tr td span.active.im-disabled[disabled],
 .datetimepicker table tr td span.im-disabled.im-active[disabled],
-.datetimepicker table tr td span.im-disabled.im-navitem-active[disabled],
-.datetimepicker table tr td span.disabled.im-active[disabled],
 .datetimepicker table tr td span.im-active.im-btn-disabled[disabled],
 .datetimepicker table tr td span.im-active.im-btn-disabled-light[disabled],
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline[disabled],
 .datetimepicker table tr td span.active.im-btn-disabled[disabled],
 .datetimepicker table tr td span.active.im-btn-disabled-light[disabled],
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled-outline[disabled],
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active[disabled],
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td span.im-disabled.im-navitem-active[disabled],
+.datetimepicker table tr td span.disabled.im-active[disabled],
 .datetimepicker table tr td span.disabled.im-navitem-active[disabled],
 .datetimepicker table tr td span.active.disabled:hover[disabled],
 .datetimepicker table tr td span.active.im-disabled:hover[disabled],
 .datetimepicker table tr td span.im-disabled.im-active:hover[disabled],
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover[disabled],
-.datetimepicker table tr td span.disabled.im-active:hover[disabled],
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover[disabled],
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover[disabled],
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover[disabled],
 .datetimepicker table tr td span.active.im-btn-disabled:hover[disabled],
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover[disabled],
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover[disabled],
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover[disabled],
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover[disabled],
+.datetimepicker table tr td span.disabled.im-active:hover[disabled],
 .datetimepicker table tr td span.disabled.im-navitem-active:hover[disabled] {
   background-color: #0044cc; }
 
@@ -10669,26 +10849,32 @@ img {
 .datetimepicker table tr td span.active.disabled:active,
 .datetimepicker table tr td span.active.im-disabled:active,
 .datetimepicker table tr td span.im-disabled.im-active:active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
-.datetimepicker table tr td span.disabled.im-active:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:active,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:active,
 .datetimepicker table tr td span.active.im-btn-disabled:active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:active,
+.datetimepicker table tr td span.disabled.im-active:active,
 .datetimepicker table tr td span.disabled.im-navitem-active:active,
 .datetimepicker table tr td span.active.disabled:hover:active,
 .datetimepicker table tr td span.active.im-disabled:hover:active,
 .datetimepicker table tr td span.im-disabled.im-active:hover:active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
-.datetimepicker table tr td span.disabled.im-active:hover:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover:active,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover:active,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover:active,
 .datetimepicker table tr td span.active.im-btn-disabled:hover:active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover:active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover:active,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover:active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover:active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover:active,
+.datetimepicker table tr td span.disabled.im-active:hover:active,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover:active,
 .datetimepicker table tr td span.active.active,
 .datetimepicker table tr td span.im-active,
@@ -10704,40 +10890,50 @@ img {
 .datetimepicker table tr td span.active.active.im-disabled,
 .datetimepicker table tr td span.im-disabled.im-active,
 .datetimepicker table tr td span.im-disabled.im-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.im-disabled.im-navitem-active,
-.datetimepicker table tr td span.disabled.im-active,
-.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline,
 .datetimepicker table tr td span.active.active.im-btn-disabled,
 .datetimepicker table tr td span.active.active.im-btn-disabled-light,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active,
+.datetimepicker table tr td span.active.active.im-btn-disabled-outline,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.im-disabled.im-navitem-active,
+.datetimepicker table tr td span.disabled.im-active,
+.datetimepicker table tr td span.disabled.im-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.disabled.im-navitem-active,
 .datetimepicker table tr td span.active.disabled:hover.active,
 .datetimepicker table tr td span.active.im-disabled:hover.active,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
 .datetimepicker table tr td span.im-disabled.im-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
-.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
 .datetimepicker table tr td span.im-active.im-btn-disabled-light:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
+.datetimepicker table tr td span.im-active.im-btn-disabled-outline:hover,
 .datetimepicker table tr td span.active.im-btn-disabled:hover.active,
 .datetimepicker table tr td span.active.im-btn-disabled-light:hover.active,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled-light.im-navitem-active:hover,
+.datetimepicker table tr td span.active.im-btn-disabled-outline:hover.active,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
+.datetimepicker table tr td span.im-btn-disabled-outline.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.im-btn-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.im-disabled.im-navitem-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
+.datetimepicker table tr td span.disabled.im-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover,
 .datetimepicker table tr td span.disabled.im-navitem-active:hover {
   background-color: #003399; }
