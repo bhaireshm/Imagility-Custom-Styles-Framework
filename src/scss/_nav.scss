@@ -53,11 +53,14 @@
     padding: 0 15px;
     font-size: 17px;
     margin: 0 -15px;
-    border-top: 1px solid #002e83;
 }
 
 .bg-light {
-    background-color: #01a0da !important;
+    background-color: $im-light !important;
+}
+
+.navbar-light{
+    background-color: #01a0da 
 }
 
 .navbar-light .nav-item {

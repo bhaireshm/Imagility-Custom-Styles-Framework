@@ -45,6 +45,10 @@ body {
     @include body-2;
 }
 
+.im-text {
+    color: $primary !important;
+}
+
 .im-text-sm {
     font: {
         weight: $regular-weight;
@@ -164,9 +168,11 @@ body {
 
 .im-disabled {
     @extend .disabled;
+    @extend .remove-focus;
     cursor: not-allowed !important;
     opacity: 0.5 !important;
     text-decoration: none !important;
+    box-shadow: none !important;
 }
 
 .im-active {

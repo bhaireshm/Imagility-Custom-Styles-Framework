@@ -11,9 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="./img/site.webmanifest">
 
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="./css/datetimepicker/datetimepicker.css">
@@ -26,6 +26,9 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -77,13 +80,42 @@
     <hr>
 
     <div>
-        <button class="im-btn im-text-uppercase im-btn-primary px-5">Default</button>
-        <button class="im-btn im-text-uppercase im-btn-secondary px-5">Default</button>
-        <button class="im-btn im-text-uppercase im-btn-outline px-5">Default</button>
+        <label for="">Large Buttons</label><br>
+
+        <button class="im-btn im-text-uppercase im-btn-primary im-btn-lg mr-2">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-secondary im-btn-lg mr-2">Default</button>
+        <button class="im-btn im-text-uppercase im-btn-outline-primary im-btn-lg mr-2">Default</button>
         <br><br>
-        <button class="im-btn im-text-uppercase im-btn-disabled px-5">Disabled</button>
-        <button class="im-btn im-text-uppercase im-btn-disabled-light px-5">Disabled</button>
-        <button class="im-btn im-text-uppercase im-btn-disabled-outline px-5">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled im-btn-lg mr-2">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-light im-btn-lg mr-2">Disabled</button>
+        <button class="im-btn im-text-uppercase im-btn-disabled-outline im-btn-lg mr-2">Disabled</button>
+        <br><br>
+        <label for="">Other Buttons</label><br>
+        <button class="im-btn im-btn-with-icon im-text-uppercase im-btn-light mr-2"><i class="fa fa-sun-o"></i>&nbsp;
+            Settings</button>
+        <button class="im-btn im-btn-with-icon im-btn-white im-box-shadow-dark border-none mr-2"><i class="fa fa-user-plus"></i>
+            &nbsp; Add
+            Petition</button>
+        <button class="im-btn im-btn-with-icon im-btn-white mr-2"> 10 &nbsp;<i class="fa fa-chevron-down im-drop-icon"></i></button>
+        <button class="im-btn im-btn-with-icon im-btn-white mr-2"><i class="fa fa-print"></i> &nbsp;
+            Print</button>
+        <button class="im-btn im-btn-with-icon im-btn-white mr-2"><i class="fa fa-file-excel-o"></i>&nbsp;Excel
+            &nbsp;<i class="fa fa-chevron-down im-drop-icon"></i></button>
+        <br><br>
+        <button class="im-btn im-btn-with-icon im-btn-primary mr-2"> Apply &nbsp;<i class="fa fa-filter"></i></button>
+        <button class="im-btn im-btn-with-icon im-btn-dark mr-2"><i class="fa fa-plus-circle"></i>&nbsp;Create New</button>
+        <br><br>
+        <label for="">Small Buttons</label><br>
+        <button class="im-btn im-btn-with-icon im-btn-sm im-btn-white mr-2">Past 6 months &nbsp;<i
+                class="fa fa-chevron-down"></i></button>
+        <br><br>
+
+        <button class="im-btn im-btn-with-icon im-btn-light mr-2"><i class="fa fa-chevron-left im-drop-icon im-drop-icon-dark"></i> &nbsp; BACK</button>
+        <button class="im-btn im-btn-with-icon im-btn-light mr-2"><i class="fa fa-save"></i> &nbsp;SAVE</button>
+        <button class="im-btn im-btn-with-icon im-btn-primary mr-2"><i class="fa fa-chevron-right im-drop-icon im-drop-icon-white"></i> &nbsp;CONTINUE</button>
+
+        <br><br>
+        <div class="im-btn im-btn-danger p-3">Expiry Warning</div>
         <hr>
     </div>
 
@@ -104,10 +136,11 @@
     </div>
     <hr>
 
+    <label for="">Dropdown</label>
     <div class="dropdown">
         <button class="im-input im-dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            Select
         </button>
         <div class="im-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="im-dropdown-item dropdown-item" href="#">Action</a>
@@ -154,10 +187,36 @@
     </div>
     <hr>
 
-    <a href="#">Text Link</a> |
-    <a href="#" class="im-disabled">Disabled</a> |
+    <a href="#" class="mr-4">Text Link</a>
+    <a href="#" class="im-disabled mr-4">Disabled</a>
+    <span class="im-text-group mr-4">
+        <span class="im-icon-left">
+            <i class="fa fa-phone"></i>
+        </span>
+        <span class="im-text">Left Icon</span>
+    </span>
+    <span class="im-text-group im-disabled mr-4">
+        <span class="im-icon-left">
+            <i class="fa fa-phone"></i>
+        </span>
+        <span class="im-text">Disabled</span>
+    </span>
+    <span class="im-text-group mr-4">
+        <span class="im-text">Right Icon</span>
+        <span class="im-icon-right">
+            <i class="fa fa-phone"></i>
+        </span>
+    </span>
+    <span class="im-text-group im-disabled mr-4">
+        <span class="im-text">Disabled</span>
+        <span class="im-icon-right">
+            <i class="fa fa-phone"></i>
+        </span>
+    </span>
+
     <span class="im-spinner" role="status" aria-hidden="true"></span>Loading...
-    <br>
+
+    <hr>
 
     <div class="im-progress-value" data-valuenow="50">50%</div>
     <div class="im-progress">
@@ -178,6 +237,28 @@
     <div class="im-gradient-2 im-rounded im-text-center" style="height: 75px;"></div>
     <hr>
 
+    <label for="">Tags</label><br>
+
+    <div class="row">
+        <select class="js-example-basic-multiple col-6 im-dropdown-list" name="states[]" multiple="multiple"
+            style="width: '80%'">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+            <option value="WY">wuhan</option>
+            <option value="WY">Japan</option>
+            <option value="WY">Barn owl</option>
+            <option value="WY">aria</option>
+            <option value="WY">chevron</option>
+        </select>
+    </div>
+
+    <br>
+
+    <button class="im-tag ">John</button>
+    <button class="im-tag">Rim Jhong</button>
+
+    <hr>
+
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -188,38 +269,40 @@
     <hr>
 
     <div class="im-input-group im-border col-5" style="widows: 220px;">
-        <input type="text" id="datetimepicker" class="datetimepicker im-input bg-none border-0">
-        <div class="im-input-group-append border-0">
+        <input type="text" id="datetimepicker" class="datetimepicker im-input bg-none border-none">
+        <div class="im-input-group-append border-none">
             <button id="button-search" type="button" class="btn btn-search im-text-dark"><i
                     class="fa fa-calendar"></i></button>
         </div>
     </div>
 
     <hr>
-    <!-- <div class="im-input-group im-border-rounded">
-        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
-            class="im-input im-input-search">
-        <div class="im-input-group-append border-0">
-            <button id="button-search" type="button" class="im-btn im-btn-link text-success">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="im-search-group">
+                <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+                    class="im-input im-search">
+                <div class="im-input-group-append border-none">
+                    <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="im-search-group">
+                <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
+                    class="im-input im-search">
+                <div class="im-input-group-append border-none">
+                    <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <br> -->
-
-    <div class="im-input-group im-border col-5">
-        <input type="search" placeholder="What're you searching for?" aria-describedby="button-search"
-            class="im-input im-box-shadow-none bg-none border-0">
-        <div class="im-input-group-append border-0">
-            <button id="button-search" type="button" class="im-btn-search im-text-dark"><i
-                    class="fa fa-search"></i></button>
-        </div>
-    </div>
-
     <hr>
 
-    <nav class="im-navbar navbar-expand-xl navbar-light bg-light mb-4">
+    <nav class="im-navbar navbar-expand-xl navbar-light mb-4">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -245,23 +328,23 @@
                 <li class="im-nav-item">
                     <a class="im-nav-link" href="#"><i class="fa fa-record-vinyl"></i> ATTORNEYS</a>
                 </li>
+                <li class="im-nav-item">
+                    <a class="im-nav-link" href="#"><i class="fa fa-file-contract"></i> REPORTS</a>
+                </li>
                 <li class="im-nav-item dropdown">
                     <a class="im-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-database"></i> DATA SETUP
+                        <i class="fa fa-database"></i> ADMIN
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">DATA SETUP 1</a>
-                        <a class="dropdown-item" href="#">DATA SETUP 2</a>
+                        <a class="dropdown-item" href="#">Users</a>
+                        <a class="dropdown-item" href="#">Roles</a>
+                        <a class="dropdown-item" href="#">Companies</a>
                     </div>
-                </li>
-                <li class="im-nav-item">
-                    <a class="im-nav-link" href="#"><i class="fa fa-file-contract"></i> REPORTS</a>
                 </li>
             </ul>
         </div>
         <a class="navbar-rgt-btn" href="#">
-            <!-- <img src="img/icon1.png" alt=""> -->
             <div>RECOMMENDED<br>TOOLS FOR YOU</div>
         </a>
     </nav>
@@ -292,11 +375,11 @@
                     <a class="im-tab-link im-active" href="javascript:void(0);">Active</a>
                 </li>
                 <li class="im-tab-item">
-                    <a class="im-tab-link" href="javascript:void(0);" tabindex="-1"
-                        aria-disabled="true">select</a>
+                    <a class="im-tab-link im-disabled" href="javascript:void(0);" tabindex="-1"
+                        aria-disabled="true">Inactive</a>
                 </li>
                 <li class="im-tab-item">
-                    <a class="im-tab-link disabled" href="javascript:void(0);" tabindex="-1"
+                    <a class="im-tab-link im-disabled" href="javascript:void(0);" tabindex="-1"
                         aria-disabled="true">Inactive</a>
                 </li>
             </ul>
@@ -304,24 +387,19 @@
     </div>
 
     <hr>
-    <label for="">Tags</label><br>
 
     <div class="row">
-        <select class="js-example-basic-multiple col-6" name="states[]" multiple="multiple" style="width: '80%'">
-            <option value="AL">Alabama</option>
-            <option value="WY">Wyoming</option>
-            <option value="WY">wuhan</option>
-            <option value="WY">Japan</option>
-            <option value="WY">Barn owl</option>
-            <option value="WY">aria</option>
-            <option value="WY">chevron</option>
-        </select>
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="im-text-center">Divider</div>
+            <div class="im-divider"></div><br><br>
+            <div class="im-divider-dark"></div><br>
+        </div>
+        <div class="col-1"></div>
     </div>
 
+    <hr>
 
-    <!-- <div>
-        <i class="fa fa-chevron-down" aria-hidden="true" style="color: gray"></i>
-    </div> -->
 
 </body>
 <script src="./js/bootstrap-datetimepicker.min.js"></script>
