@@ -9,10 +9,15 @@
 .im-btn {
     @extend .btn;
     @include btn-2;
-
     color: $white;
-    // padding: $pb $pl;
     border-radius: 0.5rem !important;
+
+    &-sm{
+        @extend .btn-sm;
+        padding: .15rem .5rem !important;
+        font-size: .75rem;
+        line-height: 1.2;
+    }
 
     &-primary {
         background-color: $im-primary;
@@ -20,6 +25,25 @@
 
     &-secondary {
         background-color: $im-secondary;
+    }
+
+    &-light {
+        background-color: $im-light;
+        color: $font-color;
+
+        &:hover {
+            color: lighten($color:$font-color, $amount: 25%)
+        }
+    }
+
+    &-white {
+        background-color: $white;
+        color: $font-color;
+        border: 1px solid $border-color;
+
+        &:hover {
+            color: lighten($color:$font-color, $amount: 25%)
+        }
     }
 }
 
@@ -35,14 +59,9 @@
 }
 
 .im-btn-disabled {
-    @extend .disabled;
+    @extend .im-disabled;
     color: $font-color;
     background-color: $gainsboro-gray;
-
-    &:hover {
-        cursor: default;
-        color: $font-color;
-    }
 }
 
 .im-btn-disabled-light {
@@ -52,11 +71,12 @@
 
 .im-btn-disabled-outline {
     @extend .im-btn;
+    @extend .im-btn-disabled;
     border: 2px solid $mischka-gray;
+    background-color: inherit;
     $font-color: $mischka-gray;
     color: $font-color;
-    cursor: default !important;
-
+    
     &:hover {
         color: $font-color;
     }
