@@ -44,6 +44,10 @@
     font-size: 85%;
 }
 
+.im-icon{
+    @extend .px-1;
+}
+
 .im-icon-right {
     padding: 1px 1px 1px 4px !important;
     color: $primary !important;

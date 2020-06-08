@@ -59,8 +59,8 @@
     background-color: $im-light !important;
 }
 
-.navbar-light{
-    background-color: #01a0da 
+.navbar-light {
+    background-color: #01a0da
 }
 
 .navbar-light .nav-item {
@@ -250,26 +250,32 @@
 }
 
 .im-tabs {
-    @extend .nav-tabs;
-
+    // @extend .nav-tab-pills;
 }
 
 .im-tab-item {
     @extend .nav-item;
- 
 }
 
 .im-tab-link {
     @extend .nav-link;
     color: $font-color-gray;
+
+    &:focus {
+        outline: none !important;
+    }
 }
 
-.im-active {
+.im-tab-link.active {
     border-bottom: 2px solid $im-primary;
-    color : $font-color;
-    font-weight: bold;
+    border-bottom-style: inset;
+    color: $font-color;
+}
 
-    // +.im-tab-link {
-    //     padding-bottom: .75rem !important;
-    // }
+.im-nav-tab-pills>.im-nav-item {
+    border-right: 3px solid $white;
+}
+
+.im-nav-link.active {
+    border-bottom: 3px solid $im-secondary;
 }

@@ -62,5 +62,8 @@
 
 .border-none{
     @extend .border-0;
-    
+}
+
+.im-bg-light{
+    @extend .bg-light;
 }
